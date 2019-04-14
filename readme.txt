@@ -5,7 +5,7 @@ Donate link: 		https://dinesh-ghimire.com.np/
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.1.1
 Requires PHP:       5.3
-Version:            1.0.0
+Version:            1.0.1
 Stable tag:         trunk
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
@@ -56,10 +56,16 @@ https://github.com/sachinchoolur/lightslider - MIT License
 
 == Changelog ==
 
-= 1.0.0 - 2019/04/12 =
+= 1.0.1 - 2019/04/14 =
+    *  All Error Fixed
+
+= 1.0.0 - 2019/04/14 =
     * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.1 = 
+*  All Error Fixed
 
 = 1.0.0 = 
 *  Initial Release

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
-"POT-Creation-Date: 2019-04-12 13:10:59+00:00\n"
+"POT-Creation-Date: 2019-04-14 17:14:47+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,19 +29,19 @@ msgstr ""
 msgid "4"
 msgstr ""
 
-#: 404.php:18
+#: 404.php:20
 msgid "404"
 msgstr ""
 
-#: 404.php:16
+#: 404.php:18
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:18
+#: 404.php:20
 msgid "error"
 msgstr ""
 
-#: 404.php:20
+#: 404.php:22
 msgid "It looks like nothing was found at this location."
 msgstr ""
 
@@ -470,38 +470,12 @@ msgstr ""
 msgid "Enter read more button text for archive page."
 msgstr ""
 
-#: inc/customizer/templates/templates-homepage.php:18
-msgid "Magazine Layout on home page"
+#: inc/customizer/templates/templates-homepage.php:16
+msgid "Static page as Magazine Layout"
 msgstr ""
 
-#: inc/customizer/templates/templates-homepage.php:19
-msgid ""
-"If you enable setting than home page show magazine layout other wise "
-"default blog listing shows on home page."
-msgstr ""
-
-#: inc/customizer/templates/templates-homepage.php:47
-msgid "Front Page layout"
-msgstr ""
-
-#: inc/customizer/templates/templates-homepage.php:48
-msgid "Please choose front page layout.."
-msgstr ""
-
-#: inc/customizer/templates/templates-homepage.php:51
-msgid "Default Page"
-msgstr ""
-
-#: inc/customizer/templates/templates-homepage.php:52
-msgid "Default Archive"
-msgstr ""
-
-#: inc/customizer/templates/templates-homepage.php:53
-msgid "Default Index"
-msgstr ""
-
-#: inc/customizer/templates/templates-homepage.php:54
-msgid "Magazine Layout"
+#: inc/customizer/templates/templates-homepage.php:25
+msgid "Enable static front page as magazine layout."
 msgstr ""
 
 #: inc/customizer/templates/templates-page-details.php:9
@@ -1355,7 +1329,7 @@ msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
 #: inc/hooks/footer.php:95
-msgid "BlogMag"
+msgid "BlogMagazine"
 msgstr ""
 
 #: inc/hooks/footer.php:103

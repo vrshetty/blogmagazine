@@ -10,6 +10,9 @@ if(!function_exists('dblib_reaction_icons_callback')):
 		$display_reaction_value = get_theme_mod( 'display_reaction_value', 'percentage' );
 		$visitor_reaction_icons_json = get_theme_mod( 'dglib_reaction_icons', false );
 		$visitor_reactions_icons_arr = json_decode( $visitor_reaction_icons_json, true );
+		if(!$visitor_reactions_icons_arr){
+			return;
+		}
 		$selected_reaction_icon_names = array_unique(array_column($visitor_reactions_icons_arr, 'reaction_icon_name') );
 		$visitor_reactions_unique = array_intersect_key( $visitor_reactions_icons_arr, $selected_reaction_icon_names );
 		$singular_post_id = get_the_ID();

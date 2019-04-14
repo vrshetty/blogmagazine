@@ -14,6 +14,10 @@
  * @since 1.0.0
  */
 get_header(); 
+$enable_magazine_layout = get_theme_mod( 'enable_magazine_layout', 'enable' );
+if(is_front_page() && $enable_magazine_layout=='enable'):
+	get_template_part( 'template-parts/templates/front', 'page' );
+else:
 ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
@@ -30,5 +34,5 @@ get_header();
 	</div><!-- #primary -->
 	<?php
 	get_sidebar();
-
+endif;
 get_footer();
