@@ -1,0 +1,68 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+
+
+
+.blogmagazine_block_posts{
+
+	.layout1{
+	
+	}
+
+	.layout2{
+	
+	}
+
+	.layout3{
+		.blogmagazine-primary-block-wrap{
+			position:relative;
+			.blogmagazine-single-post{
+				.blogmagazine-post-content{
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					padding: 20px;
+					position: absolute;
+					background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
+				}
+			}
+		}
+	}
+
+	.layout4{
+		.no-thumb{
+			display:block;
+			padding-top:100%;
+			background-color:#f2f2f2;
+		}
+		.blogmagazine-post-thumb{
+			height:50%;
+		}
+		.blogmagazine-post-excerpt {
+		    line-height: 27px;
+		    margin-top: 10px;
+		}
+		.blogmagazine-post-content{
+			height:50%;
+			overflow: hidden;
+			padding: 11px 15px 15px;
+			border:1px solid #f2f2f2;
+		}
+		.blogmagazine-alt-grid-post{
+		    width:33.33%;
+		    float:left;
+		    display:table;
+		    &:nth-child(2n+2){
+		    	.blogmagazine-post-thumb{
+		    		display:table-footer-group;
+		    	}
+		    }
+		}
+		.blogmagazine-block-posts-wrapper {
+		    display:block;
+		}
+	}
+}

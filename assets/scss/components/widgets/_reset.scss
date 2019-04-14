@@ -1,0 +1,48 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+ 
+.widget{
+    margin: 0 0 30px;
+    a{
+        &:hover{
+            color: #029FB2;
+            &:before{
+                color:inherit;
+            }
+        }
+    }
+    li{
+        &:hover{
+            &:before{
+                color: #029FB2;
+            }
+        }
+    }
+    select{
+        max-width: 100%;
+    }
+}
+
+.blogmagazine-block-title{
+    color:#fff;
+    display:block;
+    font-size: 16px;
+    margin: 0 0 20px;
+    text-align: left;
+    border-left: none;
+    border-right: none;
+    border: 1px solid #029FB2;
+    border-bottom:3px solid #029FB2;
+    .title-wrapper{
+        padding:6px 20px 3px;
+        display:inline-block;
+        background-color:#029FB2; 
+        text-transform: uppercase; 
+        a{
+            color:inherit;
+        }
+    }
+}

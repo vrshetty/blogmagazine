@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+Sidebar layout css 
+--------------------------------------------------------------*/
+
+#primary{
+    float: left;
+    width: 70%;
+}
+
+#secondary{
+    float: right;
+    width: 27%;
+}
+
+.left-sidebar{
+    #primary{
+        float: right;
+    }
+    #secondary {
+        float: left;
+    }
+}
+
+.no-sidebar{
+    #primary{
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #secondary{
+        display: none;
+    }
+}
+
+.no-sidebar-center{
+    #primary{
+        float: none;
+        margin: 0 auto;
+    }
+}

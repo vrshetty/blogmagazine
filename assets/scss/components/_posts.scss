@@ -1,0 +1,424 @@
+/*--------------------------------------------------------------
+Posts and pages
+--------------------------------------------------------------*/
+
+.sticky {
+    display: block;
+}
+
+h1.entry-title {
+    color: #353535;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-transform: capitalize;
+}
+
+h1.entry-title a {
+    color: #3d3d3d;
+}
+
+.hentry {
+    margin: 0 0 15px;
+}
+
+.single .byline,
+.group-blog .byline,
+.posted-on,
+.blog-author,
+.blog-cat {
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.cat-links {
+    margin-right: 10px;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+    margin: 15px 0 0;
+}
+
+.page-links {
+    clear: both;
+    margin: 0 0 15px;
+}
+
+.edit-link .post-edit-link {
+    background: #029fb2;
+    padding: 4px 10px;
+    color: #FFF !important;
+    line-height: 1;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.edit-link .post-edit-link:before {
+    content: "\f044";
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
+
+#blog-post article.hentry,
+.search article.hentry,
+.archive article.hentry,
+.tag article.hentry,
+.category article.hentry,
+.blog article.hentry {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #DDD;
+}
+
+article.hentry .edit-link {
+    display: block;
+    margin-top: 20px;
+}
+
+article.hentry h1.entry-title {
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+article.hentry .entry-footer>span {
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.posted-on:before {
+    content: "\f073";
+    font-family: FontAwesome;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.cat-links:before {
+    content: "\f07c";
+    font-family: FontAwesome;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.comments-link:before {
+    content: "\f075";
+    font-family: FontAwesome;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.byline:before {
+    content: "\f007";
+    font-family: FontAwesome;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.tags-links:before {
+    content: "\f02c";
+    font-family: FontAwesome;
+    font-style: normal;
+    margin-right: 3px;
+}
+
+.entry-footer .tags-links a {
+    border: 1px solid #e1e1e1;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0 10px;
+}
+
+.updated {
+    display: none;
+}
+
+.published.updated {
+    display: inline-block;
+}
+
+.entry-footer a {
+    color: #999;
+}
+
+.entry-footer a:hover {
+    color: #029fb2
+}
+
+.nav-links{
+    &:after{
+        content:"";
+        display:block;
+        clear:both;
+    }   
+}
+
+.nav-links .meta-nav {
+    display: none;
+}
+
+.nav-links .nav-previous,
+.nav-links .nav-next {
+    width: 50%;
+    float: left;
+}
+
+.nav-links .nav-next {
+    text-align: right;
+    float: right;
+}
+
+.nav-links .nav-previous a:before {
+    content: "\f0d9";
+    font-family: FontAwesome;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.nav-links .nav-next a:after {
+    content: "\f0da";
+    font-family: FontAwesome;
+    font-style: normal;
+    margin-left: 5px;
+}
+
+.nav-links .nav-previous,
+.nav-links .nav-next {
+    float: left;
+    width: 25%;
+}
+
+.nav-links .nav-next {
+    float: right;
+}
+
+.nav-links .nav-next a,
+.nav-links .nav-previous a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.entry-thumbnail {
+    width: 38%;
+    float: left;
+}
+
+.entry-excerpt {
+    width: 60%;
+    float: right;
+}
+
+.short-content {
+    margin-bottom: 10px;
+}
+
+.short-content+.bttn {
+    float: right;
+}
+
+.entry-footer {
+    margin-top: 10px;
+}
+
+.full-width {
+    float: none;
+    width: 100%;
+}
+
+
+
+/*--------------------------------------------------------------
+Asides
+--------------------------------------------------------------*/
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+    display: none;
+}
+
+
+
+/*--------------------------------------------------------------
+Comments
+--------------------------------------------------------------*/
+
+.comment-content a {
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+#comments h2.comments-title {
+    color: #333;
+    display: inline-block;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 15px 0;
+    padding: 8px 15px;
+}
+
+#comments h3 {
+    margin: 0 0 10px;
+    color: #141414;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+#commentform label {
+    width: 120px;
+    display: block;
+}
+
+textarea#comment {
+    width: 100%;
+    height: 150px;
+}
+
+
+
+/*Comment Lists*/
+
+.comments-area ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.comments-area ol.children {
+    margin: 0 0 0 15px;
+}
+
+.comment-list .comment-body {
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #F2F2F2;
+    border-top: 2px solid #029fb2;
+}
+
+.comment-author img {
+    vertical-align: text-top;
+    margin-right: 15px;
+}
+
+.comment-metadata {
+    margin-top: -10px;
+    padding-left: 57px;
+}
+
+.comment-content {
+    padding-left: 58px;
+    margin-top: 10px;
+}
+
+.comment-author .fn {
+    font-style: normal;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.comment-author .fn .url {
+    color: #333;
+    padding: 0 5px;
+}
+
+.comment-author .fn .url:hover {
+    color: #029fb2;
+}
+
+.comment-author .says {
+    display: none;
+}
+
+.commentmetadata {
+    float: right;
+    font-weight: normal;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.commentmetadata a {
+    color: #666;
+}
+
+.commentmetadata .comment-edit-link {
+    color: #01AEFD;
+}
+
+.commentmetadata+.clear {
+    margin-bottom: 20px;
+}
+
+.reply .comment-reply-link {
+    background: none repeat scroll 0 0 #029fb2;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 1;
+    padding: 2px 10px;
+}
+
+#respond {
+    background: #f9f9f9 none repeat scroll 0 0;
+    color: #141414;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+#commentform .form-submit {
+    margin-bottom: 0;
+}
+
+#cancel-comment-reply-link {
+    font-style: italic;
+    color: #029fb2;
+}
+
+#cancel-comment-reply-link:before {
+    font-family: FontAwesome;
+    content: "\f057";
+    margin: 0 5px 0 20px;
+    font-style: normal;
+    color: #029fb2;
+}
+
+.logged-in-as a {
+    color: #029fb2;
+}
+
+/*--------------------------------------------------------------
+Infinite scroll
+--------------------------------------------------------------*/
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+
+.infinite-scroll .paging-navigation,
+
+
+/* Older / Newer Posts Navigation (always hidden) */
+
+.infinite-scroll.neverending .site-footer {
+    /* Theme Footer (when set to scrolling) */
+    display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+
+.infinity-end.neverending .site-footer {
+    display: block;
+}
+
+#infinite-footer {
+    display: none;
+}

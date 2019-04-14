@@ -1,0 +1,311 @@
+/* Large desktop */
+@media (max-width: 1200px){
+    .boxed_layout #page {
+        width: 100%;
+    }
+    .dg-container{
+        padding: 0 2%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    #site-navigation {
+        display: block !important;
+    }
+}
+
+@media (max-width: 1170px) {
+    #masthead .blogmagazine-header-ads-area {
+        width: 65%;
+        margin-top: 5px;
+    }
+    .blogmagazine_featured_posts .blogmagazine-single-post .blogmagazine-post-meta span {
+        margin-right: 8px;
+    }
+    .blogmagazine_featured_posts .blogmagazine-single-post .blogmagazine-post-content .blogmagazine-post-title a {
+        font-size: 14px;
+    }
+    .blogmagazine_featured_posts .layout2 .blogmagazine-single-post-wrap .blogmagazine-post-content .blogmagazine-post-title a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 979px) {
+    #masthead .blogmagazine-header-ads-area {
+        width: 100%;
+        text-align: center;
+    }
+    #masthead .site-branding {
+        text-align: center;
+        float: none;
+        margin-top: 0;
+    }
+    .blogmagazine_featured_slider .slider-posts {
+        float: none;
+        width: 100%;
+    }
+    .blogmagazine-home-top-section .blogmagazine_featured_posts,
+    .blogmagazine_featured_slider .featured-posts {
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .blogmagazine_featured_slider .slider-posts img,
+    .blogmagazine_featured_slider .featured-posts img {
+        width: 100%;
+    }
+    .blogmagazine_featured_posts .blogmagazine-single-post .blogmagazine-post-content .blogmagazine-post-title a {
+        font-size: 16px;
+    }
+    .blogmagazine-home-top-section .blogmagazine_slider .blogmagazine-single-slide-wrap img {
+        width: 100%;
+    }
+    .blogmagazine_featured_posts .blogmagazine-featured-posts-wrapper {
+        margin-left: 0;
+    }
+    .blogmagazine_featured_posts .blogmagazine-single-post-wrap {
+        margin: 1% 0 1% 2%;
+        width: 48%;
+    }
+    .blogmagazine_featured_posts .blogmagazine-single-post-wrap .blogmagazine-post-content .blogmagazine-post-title a {
+        font-size: 14px;
+    }
+    .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-thumb img,
+    .blogmagazine_default_tabbed .blogmagazine-post-thumb img {
+        width: 100%;
+    }
+    .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-thumb {
+        float: left;
+        width: 30%;
+    }
+    .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-thumb .blogmagazine-post-title.small-size a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+}
+
+
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 769px) and (max-width: 1200px) {}
+
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 768px) {
+    .blogmagazine-home-middle-section .middle-primary,
+    .blogmagazine-home-middle-section .middle-aside {
+        float: none;
+        width: 100%;
+    }
+    .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-title.small-size a,
+    .blogmagazine_default_tabbed .blogmagazine-post-title.small-size a {
+        font-size: 16px;
+    }
+    #top-footer.footer_column_one .dg-footer-widget,
+    #top-footer.footer_column_two .dg-footer-widget,
+    #top-footer.footer_column_three .dg-footer-widget,
+    #top-footer.footer_column_four .dg-footer-widget {
+        float: none;
+        width: 98%;
+    }
+    .menu-toggle {
+        display: block;
+        color: #ffffff !important;
+    }
+    #site-navigation {
+        background: #029FB2 none repeat scroll 0 0;
+        display: none;
+        left: 0;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        z-index: 99;
+    }
+    .blogmagazine-header-menu-wrapper {
+        position: relative;
+    }
+    #site-navigation ul li {
+        display: block;
+        float: none;
+    }
+    .sub-toggle {
+        background: #fff none repeat scroll 0 0;
+        color: #029FB2;
+        cursor: pointer;
+        display: block;
+        height: 24px;
+        line-height: 25px;
+        position: absolute;
+        right: 15px;
+        text-align: center;
+        top: 6px;
+        width: 24px;
+    }
+    #site-navigation ul>li:hover>.sub-toggle,
+    #site-navigation ul>li.current-menu-item .sub-toggle,
+    #site-navigation ul>li.current-menu-ancestor .sub-toggle {
+        background: #fff;
+    }
+    .main-small-navigation li.current-menu-item>.sub-toggle {
+        background: #ffffff none repeat scroll 0 0;
+    }
+    .main-small-navigation li.current-menu-item>.sub-toggle i {
+        color: #029FB2;
+    }
+    .menu-primary-container .sub-menu,
+    #site-navigation li.menu-item-has-children>a:before,
+    #site-navigation ul li.page_item_has_children>a:before {
+        display: none;
+    }
+    #site-navigation ul.sub-menu,
+    #site-navigation ul.children {
+        position: static;
+        min-width: 100%;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        visibility: visible;
+        display: none;
+        background: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+    #site-navigation ul>li:hover>.sub-menu,
+    #site-navigation ul>li:hover>.children {
+        top: 0;
+    }
+    #site-navigation ul#primary-menu>li:hover>a::after,
+    #site-navigation ul#primary-menu>li.current-menu-item>a::after {
+        display: none;
+    }
+    #site-navigation ul.sub-menu li, 
+    #site-navigation ul.children li {
+        border-bottom: none;
+    }
+    #primary,
+    .home.blog #primary,
+    #secondary,
+    .home.blog #secondary {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+/* Landscape phones and down */
+
+@media (max-width: 600px) {
+    .blogmagazine_featured_slider .featured-posts.blogmagazine-single-post-wrap {
+        width: 98%;
+    }
+    .blogmagazine_featured_posts .blogmagazine-single-post-wrap {
+        margin: 2% 0 2% 2%;
+        width: 97%;
+    }
+    .blogmagazine_block_posts .blogmagazine-primary-block-wrap {
+        width: 100%;
+        float: none;
+    }
+    .blogmagazine_block_posts .blogmagazine-secondary-block-wrap {
+        float: none;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .blogmagazine_block_posts .layout2 .blogmagazine-primary-block-wrap .blogmagazine-single-post,
+    .blogmagazine_block_posts .layout2 .blogmagazine-secondary-block-wrap .blogmagazine-single-post {
+        float: none;
+        width: 97%;
+    }
+    .blogmagazine_block_posts .layout2 .blogmagazine-primary-block-wrap .blogmagazine-single-post:first-child {
+        margin-bottom: 3%;
+    }
+    .blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap .blogmagazine-single-post {
+        float: none;
+        width: 97%;
+    }
+    .blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap .blogmagazine-single-post {
+        float: none;
+        width: 97%;
+    }
+    .blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap .blogmagazine-single-post img {
+        width: 100%;
+    }
+    .blogmagazine-top-left-section-wrapper .date-section,
+    .top-navigation {
+        display: inline-block;
+        float: none;
+    }
+    .blogmagazine-top-right-section-wrapper,
+    .blogmagazine-top-left-section-wrapper {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    .blogmagazine-social-icons-wrapper {
+        display: inline-block;
+        margin-top: 8px;
+    }
+    .site-info,
+    #footer-navigation ul {
+        float: none;
+        text-align: center;
+    }
+    .ticker-caption {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .blogmagazine-archive-grid-post-wrapper article {
+        width: 97%;
+        display: block;
+        margin-right: 0;
+    }
+    .np-related-section-wrapper .blogmagazine-single-post {
+        width: 98%;
+    }
+    .np-related-section-wrapper .blogmagazine-single-post {
+        margin-top: 20px;
+        width: 98%;
+    }
+    .blogmagazine_block_posts .layout4 .blogmagazine-block-posts-wrapper .blogmagazine-alt-grid-post {
+        display: block;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+    .blogmagazine_block_posts .layout4 .blogmagazine-block-posts-wrapper .blogmagazine-alt-grid-post .blogmagazine-post-content {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .blogmagazine_block_posts .layout4 .blogmagazine-block-posts-wrapper .blogmagazine-alt-grid-post:last-child .blogmagazine-post-content {
+        margin-bottom: 0;
+    }
+    .blogmagazine_block_posts .layout4 .blogmagazine-block-posts-wrapper .blogmagazine-alt-grid-post img {
+        width: 100%;
+    }
+    .middle-primary .blogmagazine_featured_posts .layout1 .blogmagazine-single-post-wrap {
+        width: 98%;
+    }
+}
+
+@media (max-width: 480px) {
+    .blogmagazine-home-top-section .blogmagazine_featured_posts .blogmagazine-block-wrapper.layout2 {
+        padding: 10px;
+    }
+    .np-related-section-wrapper .blogmagazine-single-post {
+        width: 98%;
+    }
+    .blogmagazine_featured_slider .featured-posts .blogmagazine-single-post-wrap {
+        width: 98%;
+    }
+}

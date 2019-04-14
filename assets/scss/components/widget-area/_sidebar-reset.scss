@@ -1,0 +1,26 @@
+.blogmagazine-sidebar-area{
+	.blogmagazine_featured_posts{
+		.blogmagazine-single-post-wrap{
+			float:none;
+			width:100%;
+			margin-left:0px;
+			padding-bottom:15px;
+		}
+		.blogmagazine-featured-posts-wrapper{
+			margin-left:0px;
+		}
+	}
+	.blogmagazine_featured_slider{
+		.slider-posts{
+			width:100%;
+			float:none;
+			margin:0 0 15px;
+		}
+		.featured-posts{
+			width:100%;
+			.post-cats-list, .blogmagazine-post-meta{
+				display:none;
+			}
+		}
+	}
+}
