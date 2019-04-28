@@ -13,8 +13,8 @@ $wp_customize->add_control(
         $wp_customize, 
         'enable_magazine_layout', 
         array(
-            'label' => esc_html__('Static page as Magazine Layout', 'blogmagazine'),
-            'section' => 'template_post_options',
+            'label' => esc_html__('Static homepage as Magazine Layout', 'blogmagazine'),
+            'section' => 'static_front_page',
             'settings' => 'enable_magazine_layout',
             'priority' => 50,
             'type'=>'switch',
@@ -22,7 +22,7 @@ $wp_customize->add_control(
                 'enable'=> esc_html__('Enable', 'blogmagazine'),
                 'disable'=> esc_html__('Disable', 'blogmagazine'),
             ),
-            'description'=> esc_html__('Enable static front page as magazine layout.', 'blogmagazine'),
+            'description'=> esc_html__('Enable static homepage as magazine layout.', 'blogmagazine'),
         )
     )
 );

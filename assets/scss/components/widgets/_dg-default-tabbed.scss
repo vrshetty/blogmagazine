@@ -1,0 +1,123 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.2
+ */
+.blogmagazine_default_tabbed{
+	.blogmagazine-post-thumb {
+	    float: left;
+	    width: 30%;
+	}
+	.blogmagazine-post-content{
+		float: right;
+		width: 66%;
+	}
+	.blogmagazine-single-post{
+		border-bottom: 1px solid #e1e1e1;
+	    margin-bottom: 12px;
+	    padding-bottom: 12px;
+	    &:last-child{
+	    	border-bottom: none;
+		    margin-bottom: 0;
+		    padding-bottom: 0;
+	    }
+	}
+	#comments{
+		ul{
+			li{
+				border-bottom: 1px solid #e1e1e1;
+				margin-bottom: 12px;
+				padding-bottom: 12px;
+				&:last-child{
+			    	border-bottom: none;
+				    margin-bottom: 0;
+				    padding-bottom: 0;
+			    }
+			}
+		}
+	}
+	.blogmagazine-post-meta{
+		span{
+			font-size: 12px;
+			a{
+				font-size: 12px;
+			}
+		}
+	}
+	.widget-tabs{
+		margin: 0;
+		list-style: none;
+		li{
+			background: #029fb2 none repeat scroll 0 0;
+			display: inline-block;
+			margin-right: -4px;
+			padding: 5px 0;
+			text-align: center;
+			width: 50%;
+			position: relative;
+			a{
+				color: #fff;
+				font-weight: 600;
+				text-transform: uppercase;
+				display: block;
+			}
+		}
+	}
+}
+
+.blogmagazine_default_tabbed ul.widget-tabs li.ui-tabs-active,
+.blogmagazine_default_tabbed ul.widget-tabs li:hover {
+    background: #028A9A;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.blogmagazine_default_tabbed ul.widget-tabs li.ui-tabs-active:before,
+.blogmagazine_default_tabbed ul.widget-tabs li:hover:before {
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    bottom: 0;
+    content: "";
+    height: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 0;
+}
+
+.blogmagazine_default_tabbed .blogmagazine-tabbed-section {
+    margin-top: 20px;
+}
+
+.blogmagazine_default_tabbed .blogmagazine-tabbed-section {
+    border: 1px solid #e1e1e1;
+    border-top: none;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.blogmagazine_default_tabbed .blogmagazine-post-meta span {
+    margin-right: 10px;
+}
+
+.blogmagazine_default_tabbed #comments ul {
+    margin: 0;
+    list-style: none;
+}
+
+.blogmagazine_default_tabbed #comments ul .blogmagazine-comment-avatar {
+    float: left;
+    width: 25%;
+}
+
+.blogmagazine_default_tabbed #comments ul .blogmagazine-comment-desc-wrap {
+    float: right;
+    width: 71%;
+}
+
+.blogmagazine_default_tabbed #comments ul .blogmagazine-comment-avatar img {
+    width: 100%;
+}

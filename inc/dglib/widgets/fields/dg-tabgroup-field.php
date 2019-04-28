@@ -33,7 +33,8 @@ $current_widget_slug = $centurywidget->id_base.'_'.$centurywidget->number.'_';
 			            foreach ( $widget_fields as $widget_field ) {
 			                // Make array elements available as variables
 			                extract( $widget_field );
-			                $dg_widgets_field_value = ! empty( $this_widget_instance[ $dg_widget_field_name ] ) ? $this_widget_instance[ $dg_widget_field_name ] : '';
+			                $dg_widget_field_default = isset($widget_field['dg_widget_field_default']) ? $widget_field['dg_widget_field_default'] : '';
+			                $dg_widgets_field_value = ! empty( $this_widget_instance[ $dg_widget_field_name ] ) ? $this_widget_instance[ $dg_widget_field_name ] : $dg_widget_field_default;
 			                dg_widgets_show_widget_field( $centurywidget, $widget_field, $dg_widgets_field_value );
 			            }
 			        else:

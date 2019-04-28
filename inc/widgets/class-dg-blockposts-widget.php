@@ -78,6 +78,44 @@ class BlogMagazine_BlockPosts_Widget extends Dglib_Master_Widget{
                                 'dg_widget_field_type'   => 'multitermlist',
                                 'dg_widget_taxonomy_type' => 'category',
                             ),
+                            'tab_term_list' => array(
+                                'dg_widget_field_name'         => 'tab_term_list',
+                                'dg_widget_field_title'        => esc_html__( 'Tab Category List', 'blogmagazine' ),
+                                'dg_widget_field_default'      => 'none',
+                                'dg_widget_field_type'   => 'select',
+                                'dg_widget_field_options' => array(
+                                    'none' => esc_html__( 'None', 'blogmagazine' ),
+                                    'selected' => esc_html__( 'Block Category List', 'blogmagazine' ),
+                                    'otherterm' => esc_html__( 'Others Category List', 'blogmagazine' ),
+                                ),
+                                'dg_widget_field_relation' => array(
+                                    'values' => array(
+                                        'otherterm' => array(
+                                            'show_fields'   => array(
+                                                'tabs-terms', 
+                                            ),
+                                        ),
+                                        'none' => array(
+                                            'hide_fields'   => array(
+                                                'tabs-terms', 
+                                            ),
+                                        ),
+                                        'selected' => array(
+                                            'hide_fields'   => array(
+                                                'tabs-terms', 
+                                            ),
+                                        ),
+                                    ),
+                                ),
+                            ),
+                            'tabs_terms' => array(
+                                'dg_widget_field_name'         => 'tabs_terms',
+                                'dg_widget_field_wraper'       => 'tabs-terms',
+                                'dg_widget_field_title'        => esc_html__( 'Tab Categories', 'blogmagazine' ),
+                                'dg_widget_field_default'      => 0,
+                                'dg_widget_field_type'   => 'multitermlist',
+                                'dg_widget_taxonomy_type' => 'category',
+                            ),
                             'excerpt_length' => array(
                                 'dg_widget_field_name'         => 'excerpt_length',
                                 'dg_widget_field_title'        => esc_html__( 'Description Length', 'blogmagazine' ),
@@ -153,7 +191,9 @@ class BlogMagazine_BlockPosts_Widget extends Dglib_Master_Widget{
         $title_target = isset( $instance['title_target'] ) ? esc_attr($instance['title_target']) : '';
         $terms_ids   = isset( $instance['terms_ids'] ) ? $instance['terms_ids'] : '';
         $excerpt_length   = isset( $instance['excerpt_length'] ) ? $instance['excerpt_length'] : 100;
-        
+        $tab_term_list   = isset( $instance['tab_term_list'] ) ? esc_attr($instance['tab_term_list']) : 'none';
+        $tabs_terms   = isset( $instance['tabs_terms'] ) ? $instance['tabs_terms'] : '';
+
         /*
          * Layout Tab
          */
@@ -169,8 +209,11 @@ class BlogMagazine_BlockPosts_Widget extends Dglib_Master_Widget{
             'title_target'=> $title_target,
             'title_link' => $title_link,
             'before_title'=>$before_title,
-            'after_title'=>$after_title
+            'after_title'=>$after_title,
         );
+        if($tab_term_list!='none'){
+            $title_args['title_terms'] = ($tab_term_list=='otherterm') ? $tabs_terms : $terms_ids;
+        }
         do_action('blogmagazine_widget_title', $title_args);
         
         ?>

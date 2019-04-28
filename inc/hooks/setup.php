@@ -135,3 +135,19 @@ function blogmagazine_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'blogmagazine_pingback_header' );
+
+/*
+ * Admin Enqueue Scripts and Styles
+ */
+
+if(!function_exists('blogmagazine_admin_enqueue_scripts') ):
+
+	function blogmagazine_admin_enqueue_scripts(){
+
+		wp_enqueue_style( 'blogmagazine-admin-styles', get_template_directory_uri().'/assets/css/admin-styles.min.css', array(), '1.0.0');
+
+	}
+
+endif;
+
+add_action('admin_enqueue_scripts', 'blogmagazine_admin_enqueue_scripts');

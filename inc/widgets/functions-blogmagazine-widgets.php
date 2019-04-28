@@ -23,7 +23,8 @@ if( ! function_exists( 'blogmagazine_widget_title_callback' ) ) :
 		$before_title = (isset($title_args['before_title'])) ? $title_args['before_title'] : '';
 		$after_title = (isset($title_args['after_title'])) ? $title_args['after_title'] : '';
 		$slider_nav = (isset($title_args['slider_nav'])) ? $title_args['slider_nav'] : '';
-
+		$title_terms = (isset($title_args['title_terms'])) ? $title_args['title_terms'] : '';
+		$tab_taxonomy = (isset($title_args['tab_taxonomy'])) ? $title_args['tab_taxonomy'] : 'category';
 		if ( ! empty( $title ) ){
 			echo $before_title; 
 			if($title_target && $title_link){
@@ -34,6 +35,20 @@ if( ! function_exists( 'blogmagazine_widget_title_callback' ) ) :
 				?></a><?php 
 			}
 			$title_other_html = '';
+
+			if($title_terms && $tab_taxonomy){
+				$title_other_html .= '<ul class="wdgt-title-tabs">';
+				foreach($title_terms as $tab_term_id){
+					$tab_term_detail = get_term_by( 'id', absint( $tab_term_id ), $tab_taxonomy );
+					$title_other_html .= '<li class="wdgt-tab-term">';
+					$title_other_html .= '<a href="'.get_term_link($tab_term_id, $tab_taxonomy).'">';
+					$title_other_html .= $tab_term_detail->name;
+					$title_other_html .= '</a>';
+					$title_other_html .= '</li>';
+				}
+				$title_other_html .= '</ul>';
+			}
+
 			if($slider_nav){
 				$title_other_html .= '<div class="carousel-nav-action">';
 				$title_other_html .= '<span class="blogmagazine-nav-prev blogmagazine-carousel-control">';
