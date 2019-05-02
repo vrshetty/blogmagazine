@@ -201,6 +201,7 @@ class BlogMagazine_BlockPosts_Widget extends Dglib_Master_Widget{
         $thumbnail_size = isset( $instance['thumbnail_size'] ) ? esc_attr($instance['thumbnail_size']) : 'thumbnail';
         $largeimg_size = isset( $instance['largeimg_size'] ) ? esc_attr($instance['largeimg_size']) : 'full';
 
+        
 
         echo $before_widget;
 
@@ -211,14 +212,29 @@ class BlogMagazine_BlockPosts_Widget extends Dglib_Master_Widget{
             'before_title'=>$before_title,
             'after_title'=>$after_title,
         );
+
         if($tab_term_list!='none'){
+
             $title_args['title_terms'] = ($tab_term_list=='otherterm') ? $tabs_terms : $terms_ids;
+            $title_args['tab_ajax_data'] = array(
+                'type'      => 'POST',
+                'dataType'  => 'json',
+                'url'       => admin_url( 'admin-ajax.php' ),
+                'data'      => array(
+                    'action'                => 'blogmagazine_block_posts_tabs',
+                    'block_layout'          => $block_layout,
+                    'thumbnail_size'        => $thumbnail_size,
+                    'largeimg_size'         => $largeimg_size,
+                    'excerpt_length'        => $excerpt_length,
+                    'posts_per_page'        => 6,
+                    'block_posts_nonce'    => wp_create_nonce( 'blogmagazine_block_post_tabs_nonce' )
+                ),
+            );
         }
         do_action('blogmagazine_widget_title', $title_args);
-        
         ?>
         <div class="blogmagazine-block-wrapper block-posts dg-clearfix <?php echo esc_attr( $block_layout ); ?>">
-            <div class="blogmagazine-block-posts-wrapper">
+            <div class="blogmagazine-block-posts-wrapper blgmg-tab-alldata tab-active">
             	<?php
                 $blogmagazine_args = array(
                     'terms_ids' => $terms_ids,
@@ -237,7 +253,7 @@ class BlogMagazine_BlockPosts_Widget extends Dglib_Master_Widget{
                     blogmagazine_block_alternate_grid_section( $blogmagazine_args );
                     break;
                     default:
-                    blogmagazine_block_default_layout_section( $blogmagazine_args );
+                    blogmagazine_block_first_layout_section( $blogmagazine_args );
                     break;
                 }
                 ?>

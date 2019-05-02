@@ -13,7 +13,7 @@
 
     "use strict";
     
-    var BLOGMAG = {
+    var BLOGMAGAZINE = {
 
         Snipits: {
 
@@ -110,7 +110,45 @@
                 });
             },
 
+            Widget_Title_Tab: function(evt){
+                evt.preventDefault();
+                var tab_item = $(this);
+                
+                var tab_content_class = tab_item.data('tab');
+                var widget_title = tab_item.closest('.blogmagazine-block-title');
+                var widget_title_tabs =  tab_item.closest('.wdgt-title-tabs');
+                var block_post_widget = tab_item.closest('.widget');
+                
+                widget_title_tabs.find('.wdgt-tab-term').removeClass('active-item');
+                tab_item.closest('li').addClass('active-item');
+                block_post_widget.find('.blogmagazine-block-posts-wrapper').removeClass('tab-active');
+                if( block_post_widget.find( '.' + tab_content_class ).length ){
+                    block_post_widget.find( '.' + tab_content_class ).addClass('tab-active');
+                    return;
+                }
+
+                var ajax_args = $(this).data('ajax-args');
+                ajax_args.beforeSend = function(){
+                    //megamenu_terms_item.attr('data-running', 'true');
+                    //$('.' + megamenu_tab_class ).siblings('.dglib-menu-preloader').removeClass('hidden');
+                };
+                ajax_args.success = function(data, status, settings){
+                    var widget_html = data.widget_html;
+                    if(widget_html){
+                        block_post_widget.find('.blgmg-tab-alldata').after(widget_html);
+                    }else{
+                        console.warn('Sorry faild to retrive widget html data on ajax call');    
+                    }
+                };
+                ajax_args.fail = function( xhr, textStatus, errorThrown ){
+                    console.warn('Sorry faild widget tab ajax call');
+                };
+                $.ajax(ajax_args);                
+
+            },
+
             StickyMenu: function(){
+
                 if(typeof $().sticky != 'function'){
                     return;
                 }
@@ -120,21 +158,30 @@
                 }else{
                     jQuery("#blogmagazine-menu-wrap").sticky({topSpacing:0});
                 }
+
             },
 
         },
     
         Events: function(){
             
+            var __this = BLOGMAGAZINE;
+            var snipits = __this.Snipits;
+
+            var dgwidt_title_tab = snipits.Widget_Title_Tab;
+            $(document).on( 'click', '.dgwidgt-title-tab', dgwidt_title_tab );
+
         },
     
         Ready: function(){
 
-            var __this = BLOGMAG;
+            var __this = BLOGMAGAZINE;
             var snipits = __this.Snipits;
 
             snipits.StickyMenu();
             snipits.Sliders();
+
+            __this.Events();
 
         },
 
@@ -152,7 +199,7 @@
 
         Init: function(){
 
-            var __this = BLOGMAG;
+            var __this = BLOGMAGAZINE;
             var docready = __this.Ready;
             var winload = __this.Load;
             var winresize = __this.Resize;
@@ -167,7 +214,7 @@
     
     };
 
-    BLOGMAG.Init();
+    BLOGMAGAZINE.Init();
 
 })(jQuery);
 

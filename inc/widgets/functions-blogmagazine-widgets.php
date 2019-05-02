@@ -16,6 +16,7 @@
 if( ! function_exists( 'blogmagazine_widget_title_callback' ) ) :
 
 	function blogmagazine_widget_title_callback( $title_args ){
+
 		extract($title_args);
 		$title = (isset($title_args['title'])) ? $title_args['title'] : '';
 		$title_target = (isset($title_args['title_target'])) ? $title_args['title_target'] : '';
@@ -24,7 +25,10 @@ if( ! function_exists( 'blogmagazine_widget_title_callback' ) ) :
 		$after_title = (isset($title_args['after_title'])) ? $title_args['after_title'] : '';
 		$slider_nav = (isset($title_args['slider_nav'])) ? $title_args['slider_nav'] : '';
 		$title_terms = (isset($title_args['title_terms'])) ? $title_args['title_terms'] : '';
+		$tab_default_label = (isset($title_args['tab_default_label'])) ? $title_args['tab_default_label'] : esc_html__('Default', 'blogmagazine');
 		$tab_taxonomy = (isset($title_args['tab_taxonomy'])) ? $title_args['tab_taxonomy'] : 'category';
+		$tab_ajax_data = (isset($title_args['tab_ajax_data'])) ? $title_args['tab_ajax_data'] : array();
+
 		if ( ! empty( $title ) ){
 			echo $before_title; 
 			if($title_target && $title_link){
@@ -35,17 +39,22 @@ if( ! function_exists( 'blogmagazine_widget_title_callback' ) ) :
 				?></a><?php 
 			}
 			$title_other_html = '';
-
 			if($title_terms && $tab_taxonomy){
 				$title_other_html .= '<ul class="wdgt-title-tabs">';
 				foreach($title_terms as $tab_term_id){
+					$tab_ajax_data['data']['terms_ids'] = $tab_term_id;
 					$tab_term_detail = get_term_by( 'id', absint( $tab_term_id ), $tab_taxonomy );
 					$title_other_html .= '<li class="wdgt-tab-term">';
-					$title_other_html .= '<a href="'.get_term_link($tab_term_id, $tab_taxonomy).'">';
+					$title_other_html .= '<a data-tab="blgmg-tab-term-'.absint($tab_term_id).'" class="dgwidgt-title-tab" data-ajax-args=\'' . json_encode($tab_ajax_data) . '\' href="'.get_term_link($tab_term_id, $tab_taxonomy).'">';
 					$title_other_html .= $tab_term_detail->name;
 					$title_other_html .= '</a>';
 					$title_other_html .= '</li>';
 				}
+				$title_other_html .= '<li class="wdgt-tab-term active-item">';
+				$title_other_html .= '<a data-tab="blgmg-tab-alldata" class="dgwidgt-title-tab" href="#">';
+				$title_other_html .= $tab_default_label;
+				$title_other_html .= '</a>';
+					$title_other_html .= '</li>';
 				$title_other_html .= '</ul>';
 			}
 
@@ -69,7 +78,6 @@ if( ! function_exists( 'blogmagazine_widget_title_callback' ) ) :
 					$after_title = str_replace( $replace_tag, $title_other_html.$replace_tag, $after_title );
 				}
 			}
-
 			echo $after_title;
 		}
 	}
@@ -83,9 +91,9 @@ add_action( 'blogmagazine_widget_title', 'blogmagazine_widget_title_callback' );
  *
  * @since 1.0.0
  */
-if( ! function_exists( 'blogmagazine_block_default_layout_section' ) ) :
+if( ! function_exists( 'blogmagazine_block_first_layout_section' ) ) :
 
-	function blogmagazine_block_default_layout_section( $blogmagazine_args ) {
+	function blogmagazine_block_first_layout_section( $blogmagazine_args ) {
 
 		$terms_ids = $blogmagazine_args['terms_ids'];
 		$thumbnail_size = $blogmagazine_args['thumbnail_size'];
@@ -96,7 +104,7 @@ if( ! function_exists( 'blogmagazine_block_default_layout_section' ) ) :
 			'post_type' => 'post',
 			'posts_per_page' => absint( $posts_page_page ),
 		);
-		if( ! empty( $terms_ids ) ) {
+		if( ! empty( $terms_ids ) ){
 			$block_args['tax_query'] = array(
 				array(
 					'taxonomy' => 'category',
@@ -124,7 +132,8 @@ if( ! function_exists( 'blogmagazine_block_default_layout_section' ) ) :
 				?>
 				<div class="blogmagazine-single-post dg-clearfix">
 					<div class="blogmagazine-post-thumb">
-						<a href="<?php the_permalink(); ?>">
+						<?php $thumbnail_class = (has_post_thumbnail()) ? 'has-thumb' : 'no-thumb'; ?>
+						<a href="<?php the_permalink(); ?>" class="<?php echo esc_attr($thumbnail_class); ?>">
 							<?php 
 							if( $post_count == 1 ) {
 								the_post_thumbnail( $largeimg_size );
@@ -203,11 +212,12 @@ if( ! function_exists( 'blogmagazine_block_second_layout_section' ) ) :
 				?>
 				<div class="blogmagazine-single-post dg-clearfix">
 					<div class="blogmagazine-post-thumb">
-						<a href="<?php the_permalink(); ?>">
+						<?php $thumbnail_class = (has_post_thumbnail()) ? 'has-thumb' : 'no-thumb'; ?>
+						<a href="<?php the_permalink(); ?>" class="<?php echo esc_attr($thumbnail_class); ?>">
 							<?php 
-							if( $post_count <= 2 ) {
+							if( $post_count <= 2 ){
 								the_post_thumbnail( $largeimg_size );
-							} else {
+							}else{
 								the_post_thumbnail( $thumbnail_size );
 							}
 							?>
@@ -282,7 +292,8 @@ if( ! function_exists( 'blogmagazine_block_box_layout_section' ) ) :
 				?>
 				<div class="blogmagazine-single-post">
 					<div class="blogmagazine-post-thumb">
-						<a href="<?php the_permalink(); ?>">
+						<?php $thumb_class = (has_post_thumbnail()) ? 'has-thumb' : 'no-thumb' ?>
+						<a href="<?php the_permalink(); ?>" class="<?php echo esc_attr($thumb_class); ?>">
 							<?php 
 							if( $post_count == 1 ) {
 								the_post_thumbnail( $largeimg_size );

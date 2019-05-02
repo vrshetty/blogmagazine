@@ -20,6 +20,11 @@ require_once blogmagazine_file_directory('inc/hooks/header.php');
 require_once blogmagazine_file_directory('inc/hooks/footer.php');
 
 /**
+ * Ajax Related code goes here
+ */
+require_once blogmagazine_file_directory('inc/hooks/ajax.php');
+
+/**
  * Dynamic styles from customizer and settings
  */
 require_once blogmagazine_file_directory('inc/hooks/styles.php');
