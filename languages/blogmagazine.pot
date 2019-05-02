@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
-"POT-Creation-Date: 2019-04-14 17:14:47+00:00\n"
+"POT-Creation-Date: 2019-05-02 06:33:39+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -471,11 +471,11 @@ msgid "Enter read more button text for archive page."
 msgstr ""
 
 #: inc/customizer/templates/templates-homepage.php:16
-msgid "Static page as Magazine Layout"
+msgid "Static homepage as Magazine Layout"
 msgstr ""
 
 #: inc/customizer/templates/templates-homepage.php:25
-msgid "Enable static front page as magazine layout."
+msgid "Enable static homepage as magazine layout."
 msgstr ""
 
 #: inc/customizer/templates/templates-page-details.php:9
@@ -551,6 +551,7 @@ msgid "DESC"
 msgstr ""
 
 #: inc/dglib/core/functions.php:108
+#: inc/widgets/class-dg-blockposts-widget.php:87
 msgid "None"
 msgstr ""
 
@@ -609,6 +610,8 @@ msgid "Columns"
 msgstr ""
 
 #: inc/dglib/core/functions.php:205
+#: inc/widgets/class-dg-blockposts-widget.php:128
+#: inc/widgets/functions-blogmagazine-widgets.php:28
 msgid "Default"
 msgstr ""
 
@@ -872,12 +875,12 @@ msgid "You can enable reaction to show after post details."
 msgstr ""
 
 #: inc/dglib/hooks/ajax.php:20
-#: inc/dglib/walkers/dg-walker-mega-menu-ajax.php:20
+#: inc/dglib/walkers/dg-walker-mega-menu-ajax.php:20 inc/hooks/ajax.php:27
 msgid "Nonce doesnot exist."
 msgstr ""
 
 #: inc/dglib/hooks/ajax.php:26
-#: inc/dglib/walkers/dg-walker-mega-menu-ajax.php:26
+#: inc/dglib/walkers/dg-walker-mega-menu-ajax.php:26 inc/hooks/ajax.php:33
 msgid "Nonce doesnot match."
 msgstr ""
 
@@ -1164,7 +1167,7 @@ msgid "Avatar Size"
 msgstr ""
 
 #: inc/dglib/widgets/class-dg-author-info-widget.php:122
-#: inc/widgets/class-dg-blockposts-widget.php:91
+#: inc/widgets/class-dg-blockposts-widget.php:141
 #: inc/widgets/class-dg-carousel-widget.php:95
 #: inc/widgets/class-dg-featured-posts-widget.php:86
 msgid "Layout"
@@ -1268,11 +1271,11 @@ msgstr ""
 msgid "Add row"
 msgstr ""
 
-#: inc/dglib/widgets/fields/dg-tabgroup-field.php:40
+#: inc/dglib/widgets/fields/dg-tabgroup-field.php:41
 msgid "No fields are added on "
 msgstr ""
 
-#: inc/dglib/widgets/fields/dg-tabgroup-field.php:40
+#: inc/dglib/widgets/fields/dg-tabgroup-field.php:41
 msgid " tab"
 msgstr ""
 
@@ -1397,39 +1400,59 @@ msgid "Block Category"
 msgstr ""
 
 #: inc/widgets/class-dg-blockposts-widget.php:83
+msgid "Tab Category List"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:88
+msgid "Block Category List"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:89
+msgid "Others Category List"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:119
+msgid "Tab Categories"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:127
+msgid "Default Tab Label"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:133
 #: inc/widgets/class-dg-featured-posts-widget.php:98
 msgid "Description Length"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:86
+#: inc/widgets/class-dg-blockposts-widget.php:136
 msgid "Enter the short description length in character."
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:95
+#: inc/widgets/class-dg-blockposts-widget.php:145
 msgid "Block Layouts"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:99
+#: inc/widgets/class-dg-blockposts-widget.php:149
 msgid "Layout 1"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:100
+#: inc/widgets/class-dg-blockposts-widget.php:150
 msgid "Layout 2"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:101
+#: inc/widgets/class-dg-blockposts-widget.php:151
 msgid "Layout 3"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:102
+#: inc/widgets/class-dg-blockposts-widget.php:152
 msgid "Layout 4"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:107
+#: inc/widgets/class-dg-blockposts-widget.php:157
 msgid "Large Image Size"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:115
+#: inc/widgets/class-dg-blockposts-widget.php:165
 #: inc/widgets/class-dg-recent-posts-widget.php:80
 #: inc/widgets/class-dg-tabbed-widget.php:66
 msgid "Thumbnail Image Size"
