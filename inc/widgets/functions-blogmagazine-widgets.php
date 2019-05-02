@@ -25,7 +25,7 @@ if( ! function_exists( 'blogmagazine_widget_title_callback' ) ) :
 		$after_title = (isset($title_args['after_title'])) ? $title_args['after_title'] : '';
 		$slider_nav = (isset($title_args['slider_nav'])) ? $title_args['slider_nav'] : '';
 		$title_terms = (isset($title_args['title_terms'])) ? $title_args['title_terms'] : '';
-		$tab_default_label = (isset($title_args['tab_default_label'])) ? $title_args['tab_default_label'] : esc_html__('Default', 'blogmagazine');
+		$default_tablabel = (isset($title_args['default_tablabel'])) ? $title_args['default_tablabel'] : esc_html__('Default', 'blogmagazine');
 		$tab_taxonomy = (isset($title_args['tab_taxonomy'])) ? $title_args['tab_taxonomy'] : 'category';
 		$tab_ajax_data = (isset($title_args['tab_ajax_data'])) ? $title_args['tab_ajax_data'] : array();
 
@@ -52,7 +52,7 @@ if( ! function_exists( 'blogmagazine_widget_title_callback' ) ) :
 				}
 				$title_other_html .= '<li class="wdgt-tab-term active-item">';
 				$title_other_html .= '<a data-tab="blgmg-tab-alldata" class="dgwidgt-title-tab" href="#">';
-				$title_other_html .= $tab_default_label;
+				$title_other_html .= $default_tablabel;
 				$title_other_html .= '</a>';
 					$title_other_html .= '</li>';
 				$title_other_html .= '</ul>';

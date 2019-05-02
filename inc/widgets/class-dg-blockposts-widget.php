@@ -93,16 +93,21 @@ class BlogMagazine_BlockPosts_Widget extends Dglib_Master_Widget{
                                         'otherterm' => array(
                                             'show_fields'   => array(
                                                 'tabs-terms', 
+                                                'default-tablabel',
                                             ),
                                         ),
                                         'none' => array(
                                             'hide_fields'   => array(
                                                 'tabs-terms', 
+                                                'default-tablabel',
                                             ),
                                         ),
                                         'selected' => array(
                                             'hide_fields'   => array(
                                                 'tabs-terms', 
+                                            ),
+                                            'show_fields'   => array(
+                                                'default-tablabel',
                                             ),
                                         ),
                                     ),
@@ -115,6 +120,13 @@ class BlogMagazine_BlockPosts_Widget extends Dglib_Master_Widget{
                                 'dg_widget_field_default'      => 0,
                                 'dg_widget_field_type'   => 'multitermlist',
                                 'dg_widget_taxonomy_type' => 'category',
+                            ),
+                            'default_tablabel' => array(
+                                'dg_widget_field_name'         => 'default_tablabel',
+                                'dg_widget_field_wraper'       => 'default-tablabel',
+                                'dg_widget_field_title'        => esc_html__( 'Default Tab Label', 'blogmagazine' ),
+                                'dg_widget_field_default'      => esc_html__('Default', 'blogmagazine'),
+                                'dg_widget_field_type'         => 'text',
                             ),
                             'excerpt_length' => array(
                                 'dg_widget_field_name'         => 'excerpt_length',
@@ -190,6 +202,7 @@ class BlogMagazine_BlockPosts_Widget extends Dglib_Master_Widget{
         $title_link = isset( $instance['title_link'] ) ? esc_url($instance['title_link']) : '';
         $title_target = isset( $instance['title_target'] ) ? esc_attr($instance['title_target']) : '';
         $terms_ids   = isset( $instance['terms_ids'] ) ? $instance['terms_ids'] : '';
+        $default_tablabel   = isset( $instance['default_tablabel'] ) ? esc_attr($instance['default_tablabel']) : '';
         $excerpt_length   = isset( $instance['excerpt_length'] ) ? $instance['excerpt_length'] : 100;
         $tab_term_list   = isset( $instance['tab_term_list'] ) ? esc_attr($instance['tab_term_list']) : 'none';
         $tabs_terms   = isset( $instance['tabs_terms'] ) ? $instance['tabs_terms'] : '';
@@ -212,10 +225,9 @@ class BlogMagazine_BlockPosts_Widget extends Dglib_Master_Widget{
             'before_title'=>$before_title,
             'after_title'=>$after_title,
         );
-
         if($tab_term_list!='none'){
-
             $title_args['title_terms'] = ($tab_term_list=='otherterm') ? $tabs_terms : $terms_ids;
+            $title_args['default_tablabel'] = isset( $instance['default_tablabel'] ) ? esc_attr($instance['default_tablabel']) : '';
             $title_args['tab_ajax_data'] = array(
                 'type'      => 'POST',
                 'dataType'  => 'json',
