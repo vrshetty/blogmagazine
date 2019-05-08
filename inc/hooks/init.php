@@ -28,3 +28,9 @@ require_once blogmagazine_file_directory('inc/hooks/ajax.php');
  * Dynamic styles from customizer and settings
  */
 require_once blogmagazine_file_directory('inc/hooks/styles.php');
+
+
+/**
+ * Single related hooks
+ */
+require_once blogmagazine_file_directory('inc/hooks/single.php');

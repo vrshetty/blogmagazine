@@ -192,8 +192,8 @@
     }
     #primary,
     .home.blog #primary,
-    #secondary,
-    .home.blog #secondary {
+    .sidebar-main,
+    .home.blog .sidebar-main {
         float: none;
         width: 100%;
     }
@@ -270,10 +270,10 @@
         display: block;
         margin-right: 0;
     }
-    .np-related-section-wrapper .blogmagazine-single-post {
+    .blgmg-related-section-wrapper .blogmagazine-single-post {
         width: 98%;
     }
-    .np-related-section-wrapper .blogmagazine-single-post {
+    .blgmg-related-section-wrapper .blogmagazine-single-post {
         margin-top: 20px;
         width: 98%;
     }
@@ -302,7 +302,7 @@
     .blogmagazine-home-top-section .blogmagazine_featured_posts .blogmagazine-block-wrapper.layout2 {
         padding: 10px;
     }
-    .np-related-section-wrapper .blogmagazine-single-post {
+    .blgmg-related-section-wrapper .blogmagazine-single-post {
         width: 98%;
     }
     .blogmagazine_featured_slider .featured-posts .blogmagazine-single-post-wrap {

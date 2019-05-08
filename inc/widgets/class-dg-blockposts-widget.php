@@ -270,6 +270,10 @@ class BlogMagazine_BlockPosts_Widget extends Dglib_Master_Widget{
                 }
                 ?>
             </div><!-- .blogmagazine-block-posts-wrapper -->
+            <figure class="blgmg-wdgt-preloader hidden">
+                <span class="helper"></span>
+                <img src="<?php echo dglib_directory_uri('assets/img/preloader/loader3.gif'); ?>" height="100" width="100" alt="Preloader" title="Preloader" />
+            </figure>
         </div><!--- .blogmagazine-block-wrapper -->
         <?php
         echo $after_widget;

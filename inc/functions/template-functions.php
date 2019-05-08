@@ -7,11 +7,40 @@
  * @since 1.0.0
  */
 
-if(!function_exists('blogmagazine_body_sidebar_class')):
+if(!function_exists('blogmagazine_body_sidebar_id')):
 
-    function blogmagazine_body_sidebar_class( ) {
+    function blogmagazine_body_sidebar_id( ) {
+
+        $sidebar_id = 'right_sidebar';
+
+        if(is_archive()){
+            $sidebar_id        = get_theme_mod( 'blogmagazine_archive_sidebar', 'right_sidebar' );
+        }
+
+        if(is_search()){
+            $sidebar_id        = get_theme_mod( 'blogmagazine_search_sidebar', 'right_sidebar' );
+        }
+
+        $post_type = get_post_type();
+        if( is_singular() && $post_type == 'page' ){
+            $sidebar_id        = get_theme_mod( 'blogmagazine_default_page_sidebar', 'right_sidebar' );
+        }
+
+        if( is_singular() && $post_type == 'post' ){
+            $sidebar_id        = get_theme_mod( 'blogmagazine_default_post_sidebar', 'right_sidebar' );
+        }
+       
+        if(is_singular()){
+
+            $sidebar_metabox = get_post_meta( get_the_ID(), 'dglib_single_post_sidebar', true );
+            $sidebar_layout = (isset($sidebar_metabox['sidebar_layout'])) ? $sidebar_metabox['sidebar_layout'] : '';
+            $sidebar_id = ( $sidebar_layout && $sidebar_layout != 'default_sidebar' ) ? $sidebar_layout : $sidebar_id;
+        }
+
+        return $sidebar_id;
 
     }
+
 
 endif;
 
@@ -24,15 +53,6 @@ endif;
 function blogmagazine_body_classes_old( $classes ) {
 
     global $post;
-    // Adds a class of group-blog to blogs with more than 1 published author.
-    if ( is_multi_author() ) {
-        $classes[] = 'group-blog';
-    }
-
-    // Adds a class of hfeed to non-singular pages.
-    if ( ! is_singular() ) {
-        $classes[] = 'hfeed';
-    }
 
     /**
      * Sidebar option for post/page/archive
@@ -124,12 +144,51 @@ if( !function_exists( 'blogmagazine_body_classes' ) ):
     
     function blogmagazine_body_classes( $classes ) {
 
+        if ( is_multi_author() ) {
+            $classes[] = 'group-blog';
+        }
+
+        // Adds a class of hfeed to non-singular pages.
+        if ( ! is_singular() ) {
+            $classes[] = 'hfeed';
+        }
+
+        $sidebar_id = blogmagazine_body_sidebar_id();
+        
+        $sidebar_class = 'right-sidebar';
+        
+        switch($sidebar_id){
+
+            case 'right_sidebar':
+                $sidebar_class = 'right-sidebar';
+                break;
+
+            case 'left_sidebar':
+                $sidebar_class = 'left-sidebar';
+                break;
+
+            case 'no_sidebar':
+                $sidebar_class = 'no-sidebar';
+                break;
+
+            case 'no_sidebar_center':
+                $sidebar_class = 'no-sidebar-center';
+                break;
+
+            default: 
+                $sidebar_class = 'right-sidebar';
+                break;
+
+        }
+
+        $classes[] = $sidebar_class;
 
         return $classes;
 
     }
 
 endif;
+
 add_filter( 'body_class', 'blogmagazine_body_classes' );
 
 /*-----------------------------------------------------------------------------------------------------------------------*/
@@ -432,9 +491,25 @@ if( ! function_exists( 'blogmagazine_archive_read_more_button' ) ) :
      * function to show the read more button
      */
     function blogmagazine_archive_read_more_button() {
-        $blogmagazine_archive_read_more_text = get_theme_mod( 'blogmagazine_archive_read_more_text', __( 'Continue Reading', 'blogmagazine' ) );
+        $blogmagazine_archive_read_more_text = get_theme_mod( 'blogmagazine_archive_read_more_text', esc_html__( 'Continue Reading', 'blogmagazine' ) );
         if( !empty( $blogmagazine_archive_read_more_text ) ) {
             echo '<span class="blogmagazine-archive-more"><a href="'. esc_url( get_the_permalink() ) .'" class="blogmagazine-button"><i class="fa fa-arrow-circle-o-right"></i>'. esc_html( $blogmagazine_archive_read_more_text ) .'</a></span>';
+        }
+    }
+
+endif;
+
+
+
+if( ! function_exists( 'blogmagazine_search_read_more_button' ) ) :
+
+    /**
+     * function to show the read more button
+     */
+    function blogmagazine_search_read_more_button() {
+        $blogmagazine_search_read_more_text = get_theme_mod( 'blogmagazine_search_read_more_text', esc_html__( 'Continue Reading', 'blogmagazine' ) );
+        if( !empty( $blogmagazine_search_read_more_text ) ) {
+            echo '<span class="blogmagazine-archive-more"><a href="'. esc_url( get_the_permalink() ) .'" class="blogmagazine-button"><i class="fa fa-arrow-circle-o-right"></i>'. esc_html( $blogmagazine_search_read_more_text ) .'</a></span>';
         }
     }
 

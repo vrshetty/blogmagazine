@@ -83,19 +83,6 @@ Block Post Widget CSS
     }
 }
 
-.blogmagazine-related-title {
-    background-color: #f7f7f7;
-    border: 1px solid #e1e1e1;
-    font-size: 16px;
-    margin: 0 0 20px;
-    padding: 6px 20px;
-    text-transform: uppercase;
-    border-left: none;
-    border-right: none;
-    color: #029FB2;
-    text-align: left;
-}
-
 .page-header{
     display:block;
     font-size: 20px;
@@ -220,8 +207,8 @@ Block Post Widget CSS
 
 .blogmagazine-secondary-block-wrap .blogmagazine-post-meta span,
 .blogmagazine-secondary-block-wrap .blogmagazine-post-meta span a,
-.np-related-posts-wrap .blogmagazine-post-meta span,
-.np-related-posts-wrap .blogmagazine-post-meta span a {
+.blgmg-related-posts-wrap .blogmagazine-post-meta span,
+.blgmg-related-posts-wrap .blogmagazine-post-meta span a {
     font-size: 12px;
 }
 
@@ -420,7 +407,7 @@ Archive CSS
     margin-left: -3%;
 }
 
-.np-related-posts-wrap .blogmagazine-post-title {
+.blgmg-related-posts-wrap .blogmagazine-post-title {
   margin: 10px 0 5px;
 }
 
@@ -429,7 +416,7 @@ article.hentry h1.entry-title {
     margin: 10px 0;
 }
 
-.np-related-section-wrapper{
+.blgmg-related-section-wrapper{
     margin-top: 80px;
     .blogmagazine-single-post{
         float: left;
@@ -438,7 +425,7 @@ article.hentry h1.entry-title {
     }
 }
 
-.np-related-posts-wrap {
+.blgmg-related-posts-wrap {
     margin-left: -2%;
 }
 

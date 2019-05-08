@@ -14,7 +14,7 @@ foreach( $sidebar_list_items as $index=>$sidebar_name ){
 		continue;
 	}
 	?>
-	<aside id="secondary" class="blogmagazine-sidebar-area widget-area <?php echo esc_attr($sidebar_name); ?>" role="complementary">
+	<aside id="secondary" class="sidebar-main widget-area <?php echo esc_attr($sidebar_name); ?>" role="complementary">
 		<?php dynamic_sidebar( $sidebar_name ); ?>
 	</aside><!-- #secondary -->
 	<?php

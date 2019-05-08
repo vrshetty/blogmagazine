@@ -141,3 +141,16 @@
 .blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap .blogmagazine-single-post .blogmagazine-post-content {
     margin-top: 10px;
 }
+
+.blgmg-wdgt-preloader{
+	min-height: 500px;
+	text-align: center;
+	.helper{
+		height: 500px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&.hidden{
+		display:none;
+	}
+}

@@ -99,3 +99,21 @@ $wp_customize->selective_refresh->add_partial(
         'render_callback' => 'blogmagazine_customize_partial_related_title',
     )
 );
+$wp_customize->add_setting(
+    'blogmagazine_related_posts_from',
+    array(
+        'default'    => 'category',
+        'transport'  => 'postMessage',
+        'sanitize_callback' => 'esc_attr'
+    )
+);
+$wp_customize->add_control(
+    'blogmagazine_related_posts_from',
+    array(
+        'type'      => 'select',
+        'label'     => esc_html__( 'Related Posts from?', 'blogmagazine' ),
+        'section'   => 'template_post_options',
+        'priority'  => 40,
+        'choices'   => blogmagazine_get_taxonomy_list( 'post' ),
+    )
+);

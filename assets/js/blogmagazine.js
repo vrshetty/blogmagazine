@@ -129,10 +129,10 @@
 
                 var ajax_args = $(this).data('ajax-args');
                 ajax_args.beforeSend = function(){
-                    //megamenu_terms_item.attr('data-running', 'true');
-                    //$('.' + megamenu_tab_class ).siblings('.dglib-menu-preloader').removeClass('hidden');
+                    block_post_widget.find('.blgmg-wdgt-preloader').removeClass('hidden');
                 };
                 ajax_args.success = function(data, status, settings){
+                    block_post_widget.find('.blgmg-wdgt-preloader').addClass('hidden');
                     var widget_html = data.widget_html;
                     if(widget_html){
                         block_post_widget.find('.blgmg-tab-alldata').after(widget_html);

@@ -7,32 +7,32 @@ Sidebar layout css
     width: 70%;
 }
 
-#secondary{
+.sidebar-main{
     float: right;
     width: 27%;
 }
 
-.left-sidebar{
+body.left-sidebar{
     #primary{
         float: right;
     }
-    #secondary {
+    .sidebar-main {
         float: left;
     }
 }
 
-.no-sidebar{
+body.no-sidebar{
     #primary{
         float: none;
         width: 100%;
         margin: 0 auto;
     }
-    #secondary{
+    .sidebar-main{
         display: none;
     }
 }
 
-.no-sidebar-center{
+body.no-sidebar-center{
     #primary{
         float: none;
         margin: 0 auto;

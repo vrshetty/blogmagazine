@@ -5,7 +5,7 @@ Donate link: 		https://dinesh-ghimire.com.np/
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.1.1
 Requires PHP:       5.3
-Version:            1.0.1
+Version:            1.0.2
 Stable tag:         trunk
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
@@ -55,6 +55,11 @@ https://github.com/garand/sticky - MIT License
 https://github.com/sachinchoolur/lightslider - MIT License
 
 == Changelog ==
+
+= 1.0.2 - 2019/05/-- =
+    * Added: Widget Tab added
+    * Fixed: Widget Default value issue fixed
+    * 
 
 = 1.0.1 - 2019/04/14 =
     *  All Error Fixed

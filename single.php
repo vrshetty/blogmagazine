@@ -25,9 +25,9 @@ get_header(); ?>
 			/**
 		     * blogmagazine_related_posts hook
 		     *
-		     * @hooked - blogmagazine_related_posts_start - 5
-		     * @hooked - blogmagazine_related_posts_section - 10
-		     * @hooked - blogmagazine_related_posts_end - 15
+		     * @hooked - blogmagazine_related_posts_start - 10
+		     * @hooked - blogmagazine_related_posts_section - 20
+		     * @hooked - blogmagazine_related_posts_end - 30
 		     *
 		     * @since 1.0.0
 		     */

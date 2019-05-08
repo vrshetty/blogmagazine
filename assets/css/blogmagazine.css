@@ -765,6 +765,16 @@ Clearings
 .blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap .blogmagazine-single-post .blogmagazine-post-content {
   margin-top: 10px; }
 
+.blgmg-wdgt-preloader {
+  min-height: 500px;
+  text-align: center; }
+  .blgmg-wdgt-preloader .helper {
+    height: 500px;
+    display: inline-block;
+    vertical-align: middle; }
+  .blgmg-wdgt-preloader.hidden {
+    display: none; }
+
 /*
  * @package dineshghimire
  * @subpackage blogmagazine
@@ -1323,6 +1333,9 @@ Clearings
   margin: 0;
   list-style: none; }
 
+.rsswidget {
+  vertical-align: middle; }
+
 /*
  * @package dineshghimire
  * @subpackage blogmagazine
@@ -1362,23 +1375,23 @@ Clearings
  * @subpackage blogmagazine
  * @since 1.0.0
  */
-.blogmagazine-sidebar-area .blogmagazine_featured_posts .blogmagazine-single-post-wrap {
+.sidebar-main .blogmagazine_featured_posts .blogmagazine-single-post-wrap {
   float: none;
   width: 100%;
   margin-left: 0px;
   padding-bottom: 15px; }
 
-.blogmagazine-sidebar-area .blogmagazine_featured_posts .blogmagazine-featured-posts-wrapper {
+.sidebar-main .blogmagazine_featured_posts .blogmagazine-featured-posts-wrapper {
   margin-left: 0px; }
 
-.blogmagazine-sidebar-area .blogmagazine_featured_slider .slider-posts {
+.sidebar-main .blogmagazine_featured_slider .slider-posts {
   width: 100%;
   float: none;
   margin: 0 0 15px; }
 
-.blogmagazine-sidebar-area .blogmagazine_featured_slider .featured-posts {
+.sidebar-main .blogmagazine_featured_slider .featured-posts {
   width: 100%; }
-  .blogmagazine-sidebar-area .blogmagazine_featured_slider .featured-posts .post-cats-list, .blogmagazine-sidebar-area .blogmagazine_featured_slider .featured-posts .blogmagazine-post-meta {
+  .sidebar-main .blogmagazine_featured_slider .featured-posts .post-cats-list, .sidebar-main .blogmagazine_featured_slider .featured-posts .blogmagazine-post-meta {
     display: none; }
 
 /*--------------------------------------------------------------
@@ -1586,9 +1599,10 @@ Comments
   word-wrap: break-word; }
 
 .bypostauthor {
-  display: block; }
+  display: block;
+  border-bottom: 1px dashed #dedede; }
 
-#comments h2.comments-title {
+.comments-area h2.comments-title {
   color: #333;
   display: inline-block;
   font-size: 22px;
@@ -1597,7 +1611,7 @@ Comments
   margin: 15px 0;
   padding: 8px 15px; }
 
-#comments h3 {
+.comments-area h3 {
   margin: 0 0 10px;
   color: #141414;
   font-weight: 600;
@@ -1605,7 +1619,7 @@ Comments
   line-height: 22px;
   font-size: 18px; }
 
-#commentform label {
+.comment-form label {
   width: 120px;
   display: block; }
 
@@ -1618,26 +1632,23 @@ textarea#comment {
   margin: 0;
   padding: 0;
   list-style: none; }
-
-.comments-area ol.children {
-  margin: 0 0 0 15px; }
+  .comments-area ol.children {
+    margin: 0 0 0 15px; }
 
 .comment-list .comment-body {
   padding: 15px;
-  margin-bottom: 20px;
-  background: #F2F2F2;
-  border-top: 2px solid #029fb2; }
+  margin-bottom: 20px; }
 
 .comment-author img {
-  vertical-align: text-top;
-  margin-right: 15px; }
+  max-width: 70px;
+  margin-right: 15px;
+  vertical-align: text-top; }
 
 .comment-metadata {
   margin-top: -10px;
   padding-left: 57px; }
 
 .comment-content {
-  padding-left: 58px;
   margin-top: 10px; }
 
 .comment-author .fn {
@@ -1645,13 +1656,11 @@ textarea#comment {
   font-size: 16px;
   text-transform: capitalize;
   font-weight: bold; }
-
-.comment-author .fn .url {
-  color: #333;
-  padding: 0 5px; }
-
-.comment-author .fn .url:hover {
-  color: #029fb2; }
+  .comment-author .fn .url {
+    color: #333;
+    padding: 0 5px; }
+    .comment-author .fn .url:hover {
+      color: #029fb2; }
 
 .comment-author .says {
   display: none; }
@@ -1662,15 +1671,12 @@ textarea#comment {
   font-size: 12px;
   font-style: italic;
   font-weight: 300; }
-
-.commentmetadata a {
-  color: #666; }
-
-.commentmetadata .comment-edit-link {
-  color: #01AEFD; }
-
-.commentmetadata + .clear {
-  margin-bottom: 20px; }
+  .commentmetadata a {
+    color: #666; }
+  .commentmetadata .comment-edit-link {
+    color: #01AEFD; }
+  .commentmetadata + .clear {
+    margin-bottom: 20px; }
 
 .reply .comment-reply-link {
   background: none repeat scroll 0 0 #029fb2;
@@ -1680,25 +1686,24 @@ textarea#comment {
   line-height: 1;
   padding: 2px 10px; }
 
-#respond {
-  background: #f9f9f9 none repeat scroll 0 0;
+.comment-respond {
+  padding: 20px;
   color: #141414;
   margin-top: 40px;
-  padding: 20px; }
+  background-color: #f2f2f24d; }
 
-#commentform .form-submit {
+.comment-form .form-submit {
   margin-bottom: 0; }
 
 #cancel-comment-reply-link {
   font-style: italic;
   color: #029fb2; }
-
-#cancel-comment-reply-link:before {
-  font-family: FontAwesome;
-  content: "\f057";
-  margin: 0 5px 0 20px;
-  font-style: normal;
-  color: #029fb2; }
+  #cancel-comment-reply-link:before {
+    font-family: FontAwesome;
+    content: "\f057";
+    margin: 0 5px 0 20px;
+    font-style: normal;
+    color: #029fb2; }
 
 .logged-in-as a {
   color: #029fb2; }
@@ -1870,25 +1875,25 @@ Sidebar layout css
   float: left;
   width: 70%; }
 
-#secondary {
+.sidebar-main {
   float: right;
   width: 27%; }
 
-.left-sidebar #primary {
+body.left-sidebar #primary {
   float: right; }
 
-.left-sidebar #secondary {
+body.left-sidebar .sidebar-main {
   float: left; }
 
-.no-sidebar #primary {
+body.no-sidebar #primary {
   float: none;
   width: 100%;
   margin: 0 auto; }
 
-.no-sidebar #secondary {
+body.no-sidebar .sidebar-main {
   display: none; }
 
-.no-sidebar-center #primary {
+body.no-sidebar-center #primary {
   float: none;
   margin: 0 auto; }
 
@@ -1939,8 +1944,8 @@ Header CSS
     .blogmagazine-top-right-section-wrapper .social-link a {
       color: #fff;
       display: inline-block;
-      font-size: 12px;
-      line-height: 12px;
+      font-size: 14px;
+      line-height: 14px;
       margin: 0 0 0 10px; }
 
 .site-header .site-branding {
@@ -2444,18 +2449,6 @@ Block Post Widget CSS
   float: right;
   width: 31%; }
 
-.blogmagazine-related-title {
-  background-color: #f7f7f7;
-  border: 1px solid #e1e1e1;
-  font-size: 16px;
-  margin: 0 0 20px;
-  padding: 6px 20px;
-  text-transform: uppercase;
-  border-left: none;
-  border-right: none;
-  color: #029FB2;
-  text-align: left; }
-
 .page-header {
   display: block;
   font-size: 20px;
@@ -2559,8 +2552,8 @@ Block Post Widget CSS
 
 .blogmagazine-secondary-block-wrap .blogmagazine-post-meta span,
 .blogmagazine-secondary-block-wrap .blogmagazine-post-meta span a,
-.np-related-posts-wrap .blogmagazine-post-meta span,
-.np-related-posts-wrap .blogmagazine-post-meta span a {
+.blgmg-related-posts-wrap .blogmagazine-post-meta span,
+.blgmg-related-posts-wrap .blogmagazine-post-meta span a {
   font-size: 12px; }
 
 /*--------------------------------------------------------------
@@ -2723,21 +2716,21 @@ Archive CSS
 .blogmagazine-archive-grid-post-wrapper {
   margin-left: -3%; }
 
-.np-related-posts-wrap .blogmagazine-post-title {
+.blgmg-related-posts-wrap .blogmagazine-post-title {
   margin: 10px 0 5px; }
 
 article.hentry h1.entry-title {
   font-size: 26px;
   margin: 10px 0; }
 
-.np-related-section-wrapper {
+.blgmg-related-section-wrapper {
   margin-top: 80px; }
-  .np-related-section-wrapper .blogmagazine-single-post {
+  .blgmg-related-section-wrapper .blogmagazine-single-post {
     float: left;
     margin-left: 2%;
     width: 31.33%; }
 
-.np-related-posts-wrap {
+.blgmg-related-posts-wrap {
   margin-left: -2%; }
 
 .site-content {
@@ -2947,8 +2940,8 @@ scroll to top css
     border-bottom: none; }
   #primary,
   .home.blog #primary,
-  #secondary,
-  .home.blog #secondary {
+  .sidebar-main,
+  .home.blog .sidebar-main {
     float: none;
     width: 100%; } }
 
@@ -3004,9 +2997,9 @@ scroll to top css
     width: 97%;
     display: block;
     margin-right: 0; }
-  .np-related-section-wrapper .blogmagazine-single-post {
+  .blgmg-related-section-wrapper .blogmagazine-single-post {
     width: 98%; }
-  .np-related-section-wrapper .blogmagazine-single-post {
+  .blgmg-related-section-wrapper .blogmagazine-single-post {
     margin-top: 20px;
     width: 98%; }
   .blogmagazine_block_posts .layout4 .blogmagazine-block-posts-wrapper .blogmagazine-alt-grid-post {
@@ -3026,7 +3019,7 @@ scroll to top css
 @media (max-width: 480px) {
   .blogmagazine-home-top-section .blogmagazine_featured_posts .blogmagazine-block-wrapper.layout2 {
     padding: 10px; }
-  .np-related-section-wrapper .blogmagazine-single-post {
+  .blgmg-related-section-wrapper .blogmagazine-single-post {
     width: 98%; }
   .blogmagazine_featured_slider .featured-posts .blogmagazine-single-post-wrap {
     width: 98%; } }

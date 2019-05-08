@@ -31,7 +31,11 @@
 		<div class="entry-content">
 			<?php
 			the_excerpt();
-			blogmagazine_archive_read_more_button();
+			if(is_search()){
+				blogmagazine_search_read_more_button();
+			}else{
+				blogmagazine_archive_read_more_button();
+			}
 			?>
 		</div><!-- .entry-content -->
 		<footer class="entry-footer">
