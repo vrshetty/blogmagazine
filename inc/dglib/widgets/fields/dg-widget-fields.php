@@ -20,7 +20,7 @@ function dg_widgets_show_widget_field( $centurywidget = '', $widget_field = '', 
 		require $widget_fild_path;
 	}else{
 		?>
-		<p><?php echo esc_html__('Field type', 'blogmagazine').' '.esc_attr($dg_widget_field_type).' '.esc_html__('Not found.', 'blogmagazine'); ?></p>
+		<p><?php echo esc_html__('Field type', '__Text_Domain__').' '.esc_attr($dg_widget_field_type).' '.esc_html__('Not found.', '__Text_Domain__'); ?></p>
 		<?php
 	}
 

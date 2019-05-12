@@ -555,6 +555,69 @@ Clearings
   margin: 0;
   list-style: none; }
 
+/*  ----------------------------------------------------
+author Widgets
+-------------------------------------------------------- */
+.lekh_author_details .widget_wrap {
+  padding: 0px;
+  border: none;
+  background-color: transparent; }
+
+.card {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.87);
+  background: #fff;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  overflow: visible; }
+
+.card-profile {
+  text-align: center; }
+
+.card-profile .card-avatar {
+  max-width: 130px;
+  max-height: 130px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+
+.card-avatar img {
+  margin: 0px;
+  width: 100%; }
+
+.card-profile .card-avatar + .card-content {
+  margin-top: 15px; }
+
+.card-profile .card .card-content {
+  padding: 15px 30px; }
+
+.card-description {
+  color: #616161;
+  font-size: 14px; }
+
+.card-profile .card-title {
+  font-size: 1.3em;
+  line-height: 1.55em;
+  color: #3C4858;
+  text-decoration: none;
+  font-weight: 700; }
+
+.card .card-content {
+  padding: 15px 30px; }
+
+.card-profile .lekh-social-icons-wrapper {
+  padding: 0; }
+  .card-profile .lekh-social-icons-wrapper .social-link .fa {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2em; }
+
 /*
  * @package dineshghimire
  * @subpackage blogmagazine
@@ -812,11 +875,11 @@ Clearings
     margin-bottom: 0;
     padding-bottom: 0; }
 
-.blogmagazine_default_tabbed #comments ul li {
+.blogmagazine_default_tabbed .tabbed-comments ul li {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 12px;
   padding-bottom: 12px; }
-  .blogmagazine_default_tabbed #comments ul li:last-child {
+  .blogmagazine_default_tabbed .tabbed-comments ul li:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0; }
@@ -843,57 +906,48 @@ Clearings
       text-transform: uppercase;
       display: block; }
 
-.blogmagazine_default_tabbed ul.widget-tabs li.ui-tabs-active,
-.blogmagazine_default_tabbed ul.widget-tabs li:hover {
+.blogmagazine_default_tabbed .widget-tabs li.active-item, .blogmagazine_default_tabbed .widget-tabs li:hover {
   background: #028A9A;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease; }
-
-.blogmagazine_default_tabbed ul.widget-tabs li.ui-tabs-active:before,
-.blogmagazine_default_tabbed ul.widget-tabs li:hover:before {
-  border-bottom: 5px solid #fff;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  bottom: 0;
-  content: "";
-  height: 0;
-  left: 50%;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-     -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-       -o-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 0; }
+  .blogmagazine_default_tabbed .widget-tabs li.active-item:before, .blogmagazine_default_tabbed .widget-tabs li:hover:before {
+    bottom: 0;
+    content: "";
+    height: 0;
+    left: 50%;
+    width: 0;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent; }
 
 .blogmagazine_default_tabbed .blogmagazine-tabbed-section {
-  margin-top: 20px; }
-
-.blogmagazine_default_tabbed .blogmagazine-tabbed-section {
-  border: 1px solid #e1e1e1;
-  border-top: none;
+  display: none;
   margin-top: 0;
-  padding: 20px; }
+  padding: 20px;
+  border-top: none;
+  border: 1px solid #e1e1e1; }
+  .blogmagazine_default_tabbed .blogmagazine-tabbed-section.active {
+    display: block; }
 
-.blogmagazine_default_tabbed .blogmagazine-post-meta span {
-  margin-right: 10px; }
-
-.blogmagazine_default_tabbed #comments ul {
+.blogmagazine_default_tabbed .tabbed-comments ul {
   margin: 0;
   list-style: none; }
-
-.blogmagazine_default_tabbed #comments ul .blogmagazine-comment-avatar {
-  float: left;
-  width: 25%; }
-
-.blogmagazine_default_tabbed #comments ul .blogmagazine-comment-desc-wrap {
-  float: right;
-  width: 71%; }
-
-.blogmagazine_default_tabbed #comments ul .blogmagazine-comment-avatar img {
-  width: 100%; }
+  .blogmagazine_default_tabbed .tabbed-comments ul .blogmagazine-comment-avatar {
+    float: left;
+    width: 25%; }
+    .blogmagazine_default_tabbed .tabbed-comments ul .blogmagazine-comment-avatar img {
+      width: 100%; }
+  .blogmagazine_default_tabbed .tabbed-comments ul .blogmagazine-comment-desc-wrap {
+    float: right;
+    width: 71%; }
 
 /*
  * @package dineshghimire
@@ -3023,4 +3077,66 @@ scroll to top css
     width: 98%; }
   .blogmagazine_featured_slider .featured-posts .blogmagazine-single-post-wrap {
     width: 98%; } }
+
+/*  ----------------------------------------------------
+author Widgets
+-------------------------------------------------------- */
+.lekh_author_details .widget_wrap {
+  padding: 0px;
+  border: none;
+  background-color: transparent; }
+
+.card {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.87);
+  background: #fff;
+  overflow: visible;
+  padding: 15px 0 0 0;
+  border: 1px solid #029fb2; }
+
+.card-profile {
+  text-align: center; }
+
+.card-profile .card-avatar {
+  max-width: 130px;
+  max-height: 130px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+
+.card-avatar img {
+  margin: 0px;
+  width: 100%; }
+
+.card-profile .card-avatar + .card-content {
+  margin-top: 15px; }
+
+.card-profile .card .card-content {
+  padding: 15px 30px; }
+
+.card-description {
+  color: #616161;
+  font-size: 14px; }
+
+.card-profile .card-title {
+  font-size: 1.3em;
+  line-height: 1.55em;
+  color: #3C4858;
+  text-decoration: none;
+  font-weight: 700; }
+
+.card .card-content {
+  padding: 15px 30px; }
+
+.card-profile .lekh-social-icons-wrapper {
+  padding: 0; }
+  .card-profile .lekh-social-icons-wrapper .social-link .fa {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2em; }
 /*# sourceMappingURL=blogmagazine.css.map */

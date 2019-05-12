@@ -18,13 +18,13 @@
 		'name'                  => esc_attr( $centurywidget->get_field_name( $dg_widget_field_name ) ),
 		'id'                    => esc_attr( $centurywidget->get_field_id( $dg_widget_field_name ) ),
 		'class'                 => 'widefat',
-		'show_option_none'      => esc_html__('Select Page','blogmagazine'),
+		'show_option_none'      => esc_html__('Select Page','__Text_Domain__'),
 		'option_none_value'     => 0 // string
 	);
 	wp_dropdown_pages( $args );
 	if($dg_widget_field_value){
 		/*?>
-		<a href="<?php echo get_edit_post_link($dg_widget_field_value ); ?>" target="_blank"><?php esc_html_e('Edit Page', 'blogmagazine') ?></a>
+		<a href="<?php echo get_edit_post_link($dg_widget_field_value ); ?>" target="_blank"><?php esc_html_e('Edit Page', '__Text_Domain__') ?></a>
 		<?php */
 	}
 	if ( isset( $dg_widget_field_description ) ) { 

@@ -9,27 +9,27 @@ if(!function_exists('dglib_megamenu_field_list')):
 			array(
 				'name' => 'menu_icon',
 				'type' => 'icon',
-				'label'=> esc_html__('Menu Icon', 'blogmagazine'),
-				'description' => esc_html__('Choose icons for to show in navigation menu.', 'blogmagazine'),
+				'label'=> esc_html__('Menu Icon', '__Text_Domain__'),
+				'description' => esc_html__('Choose icons for to show in navigation menu.', '__Text_Domain__'),
 			),
 			array(
 				'name' => 'description_tips',
 				'type' => 'checkbox',
-				'label'=> esc_html__('Description as title tips.', 'blogmagazine'),
-				'description' => esc_html__('Show description as tool tips.', 'blogmagazine'),
+				'label'=> esc_html__('Description as title tips.', '__Text_Domain__'),
+				'description' => esc_html__('Show description as tool tips.', '__Text_Domain__'),
 			),
 			array(
 				'name' => 'enable_megamenu',
 				'type' => 'checkbox',
-				'label'=> esc_html__('Enable Megamenu', 'blogmagazine'),
-				'description' => esc_html__('Enabel megamneu to show megamenu with the replacement of normal menu.', 'blogmagazine'),
+				'label'=> esc_html__('Enable Megamenu', '__Text_Domain__'),
+				'description' => esc_html__('Enabel megamneu to show megamenu with the replacement of normal menu.', '__Text_Domain__'),
 			),
 			array(
 				'name' => 'megamenu_categories',
 				'type' => 'termsmulti',
 				'taxonomy' => 'category',
-				'label'=> esc_html__('Select Categories', 'blogmagazine'),
-				'description' => esc_html__('Choose multiple categories to show megamenu.', 'blogmagazine'),
+				'label'=> esc_html__('Select Categories', '__Text_Domain__'),
+				'description' => esc_html__('Choose multiple categories to show megamenu.', '__Text_Domain__'),
 			),
 			
 		);
@@ -77,16 +77,16 @@ if(!function_exists('dglib_mega_menu_item_form')):
 							<?php if( !empty( $value ) ) { echo '<i class="fa '. esc_attr( $value ).'"></i>'; } ?>
 						</div>
 						<div class="remove-icon">
-							<?php esc_html_e('Remove', 'blogmagazine'); ?>
+							<?php esc_html_e('Remove', '__Text_Domain__'); ?>
 							<span class="dashicons dashicons-no"></span>
 						</div>
 						<div class="icon-toggle">
-							<?php esc_html_e('Icon List','blogmagazine'); ?>
+							<?php esc_html_e('Icon List','__Text_Domain__'); ?>
 							<span class="dashicons dashicons-arrow-down"></span>
 						</div>
 					</div>
 					<div class="icons-list-wrapper hidden">
-						<input class="icon-search widefat" type="text" placeholder="<?php esc_attr_e('Search Icon','blogmagazine')?>">
+						<input class="icon-search widefat" type="text" placeholder="<?php esc_attr_e('Search Icon','__Text_Domain__')?>">
 						<?php
 						$dglib_icons_list = dglib_fa_iconslist();
 						foreach ( $dglib_icons_list as $single_icon ) {
@@ -155,10 +155,10 @@ if(!function_exists('dglib_mega_menu_item_form')):
 									<?php
 								}
 							}else{
-								?><span><?php esc_html_e( 'No terms found in this taxonomy', 'blogmagazine' ); ?></span><?php
+								?><span><?php esc_html_e( 'No terms found in this taxonomy', '__Text_Domain__' ); ?></span><?php
 							}
 						}else{
-							?><span><?php esc_html_e( 'Selected taxonomy doesn\'t exist', 'blogmagazine' ); ?></span><?php
+							?><span><?php esc_html_e( 'Selected taxonomy doesn\'t exist', '__Text_Domain__' ); ?></span><?php
 						}
 						?>
 					</ul>
@@ -171,7 +171,7 @@ if(!function_exists('dglib_mega_menu_item_form')):
 				<?php
 				break;
 				default:
-				?><p class="dg-menu-field-wrapper field-<?php echo esc_attr($name); ?> <?php echo esc_attr($name); ?> <?php echo esc_attr($name); ?>-wide"><?php echo esc_html__('Field ', 'blogmagazine') . $type . esc_html__( ' not found.', 'blogmagazine'); ?></p><?php
+				?><p class="dg-menu-field-wrapper field-<?php echo esc_attr($name); ?> <?php echo esc_attr($name); ?> <?php echo esc_attr($name); ?>-wide"><?php echo esc_html__('Field ', '__Text_Domain__') . $type . esc_html__( ' not found.', '__Text_Domain__'); ?></p><?php
 				break;
 			}
 		}

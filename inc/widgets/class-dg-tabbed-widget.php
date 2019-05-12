@@ -114,12 +114,12 @@ class BlogMagazine_Tabbed_Widget extends Dglib_Master_Widget{
         ?>
         <div class="blogmagazine-default-tabbed-wrapper dg-clearfix" id="blogmagazine-tabbed-widget">
 
-            <ul class="widget-tabs dg-clearfix" id="blogmagazine-widget-tab">
-                <li><a href="#latest"><?php echo esc_html( $latest_tab_title ); ?></a></li>
-                <li><a href="#comments"><?php echo esc_html( $comments_tab_title ); ?></a></li>
+            <ul class="widget-tabs dg-clearfix blogmagazine-widget-tab" >
+                <li class="active-item"><a href="#<?php echo esc_attr( 'latest_' . $this->id ); ?>"><?php echo esc_html( $latest_tab_title ); ?></a></li>
+                <li><a href="#<?php echo esc_attr( 'comments_' . $this->id ); ?>"><?php echo esc_html( $comments_tab_title ); ?></a></li>
             </ul><!-- .widget-tabs -->
 
-            <div id="latest" class="blogmagazine-tabbed-section dg-clearfix">
+            <div id="<?php echo esc_attr( 'latest_' . $this->id ); ?>" class="blogmagazine-tabbed-section tabbed-latest dg-clearfix active">
                 <?php
                 $args = array(
                     'posts_per_page' => $posts_per_page
@@ -145,7 +145,7 @@ class BlogMagazine_Tabbed_Widget extends Dglib_Master_Widget{
                 ?>
             </div><!-- #latest -->
 
-            <div id="comments" class="blogmagazine-tabbed-section dg-clearfix">
+            <div id="<?php echo esc_attr( 'comments_' . $this->id ); ?>" class="blogmagazine-tabbed-section tabbed-comments dg-clearfix">
                 <ul>
                     <?php
                     $tab_comments = get_comments( array( 'number' => $comments_per_page ) );

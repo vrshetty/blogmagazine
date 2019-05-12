@@ -289,8 +289,6 @@ function blogmagazine_scripts() {
 
     wp_enqueue_script( 'lightslider', get_template_directory_uri().'/assets/library/lightslider/js/lightslider.min.js', array('jquery'), '1.1.6', true );
 
-    wp_enqueue_script( 'jquery-ui-tabs' );
-
     wp_enqueue_script( 'blogmagazine-main', get_template_directory_uri().'/assets/js/blogmagazine.min.js', array('jquery'), esc_attr( $blogmagazine_version ), true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

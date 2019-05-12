@@ -12,11 +12,11 @@
         <?php if( !empty( $dg_widget_field_value ) ) { echo '<i class="fa '. esc_attr( $dg_widget_field_value ).'"></i>'; } ?>
     </div>
     <div class="icon-toggle">
-        <?php echo ( empty( $dg_widget_field_value )? esc_html__('Add Icon','blogmagazine'): esc_html__('Edit Icon','blogmagazine') ); ?>
+        <?php echo ( empty( $dg_widget_field_value )? esc_html__('Add Icon','__Text_Domain__'): esc_html__('Edit Icon','__Text_Domain__') ); ?>
         <span class="dashicons dashicons-arrow-down"></span>
     </div>
     <div class="icons-list-wrapper hidden">
-        <input class="icon-search widefat" type="text" placeholder="<?php esc_attr_e('Search Icon','blogmagazine')?>">
+        <input class="icon-search widefat" type="text" placeholder="<?php esc_attr_e('Search Icon','__Text_Domain__')?>">
         <?php
         $dglib_icons_list = dglib_fa_iconslist();
         foreach ( $dglib_icons_list as $single_icon ) {

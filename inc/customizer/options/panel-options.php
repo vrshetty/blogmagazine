@@ -13,6 +13,5 @@ $wp_customize->add_panel(
 	)
 );
 require_once blogmagazine_file_directory( 'inc/customizer/options/section-background-image.php' );
-require_once blogmagazine_file_directory( 'inc/customizer/options/section-widget-settings.php' );
 require_once blogmagazine_file_directory( 'inc/customizer/options/section-website-layout.php' );
 require_once blogmagazine_file_directory( 'inc/customizer/options/section-image-settings.php' );

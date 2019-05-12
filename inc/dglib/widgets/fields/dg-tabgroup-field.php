@@ -38,7 +38,7 @@ $current_widget_slug = $centurywidget->id_base.'_'.$centurywidget->number.'_';
 			                dg_widgets_show_widget_field( $centurywidget, $widget_field, $dg_widgets_field_value );
 			            }
 			        else:
-			        	?><p><?php echo esc_html__('No fields are added on ', 'blogmagazine').esc_attr($tab_details['dg_widget_field_name']).esc_html__(' tab', 'blogmagazine'); ?></p><?php
+			        	?><p><?php echo esc_html__('No fields are added on ', '__Text_Domain__').esc_attr($tab_details['dg_widget_field_name']).esc_html__(' tab', '__Text_Domain__'); ?></p><?php
 			        endif;
 				?>
 			</div>

@@ -31,11 +31,11 @@ if ( !class_exists( 'Dglib_Customize_Icons_Control' )):
                         <?php if( !empty( $value ) ) { echo '<i class="fa '. esc_attr( $value ) .'"></i>'; } ?>
                     </span>
                     <span class="dg-icon-toggle">
-                        <?php echo ( empty( $value ) ? esc_html__('Add Icon','blogmagazine'): esc_html__('Change Icon','blogmagazine') ); ?>
+                        <?php echo ( empty( $value ) ? esc_html__('Add Icon','__Text_Domain__'): esc_html__('Change Icon','__Text_Domain__') ); ?>
                         <span class="dashicons dashicons-arrow-down"></span>
                     </span>
                     <span class="dg-icons-list-wrapper hidden">
-                        <input class="icon-search" type="text" placeholder="<?php esc_attr_e('Search Icon','blogmagazine'); ?>">
+                        <input class="icon-search" type="text" placeholder="<?php esc_attr_e('Search Icon','__Text_Domain__'); ?>">
 	                    <?php
 	                    $fa_icon_list_array = dglib_fa_iconslist();
 	                    foreach ( $fa_icon_list_array as $single_icon ) {

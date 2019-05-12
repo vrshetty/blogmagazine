@@ -3,7 +3,7 @@
 Contributors:       developerdinesh1
 Donate link: 		https://dinesh-ghimire.com.np/
 Requires at least:  WordPress 4.0
-Tested up to:       WordPress 5.1.1
+Tested up to:       WordPress 5.2
 Requires PHP:       5.3
 Version:            1.0.2
 Stable tag:         trunk

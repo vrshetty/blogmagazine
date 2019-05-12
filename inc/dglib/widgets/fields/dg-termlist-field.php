@@ -15,7 +15,7 @@
 	/* see more here https://codex.wordpress.org/Function_Reference/wp_dropdown_pages*/
 	if( taxonomy_exists( $dg_widget_taxonomy_type ) ){
 		$args = array(
-			'show_option_all'	=> esc_html__('Show All', 'blogmagazine'),
+			'show_option_all'	=> esc_html__('Show All', '__Text_Domain__'),
 			'show_option_none'   => false,
 			'orderby'            => 'name',
 			'order'              => 'asc',
@@ -33,7 +33,7 @@
 		wp_dropdown_categories( $args );	
 	}else{
 		?><select id="<?php echo esc_attr( $centurywidget->get_field_id( $dg_widget_field_name ) ); ?>" name="<?php echo esc_attr( $centurywidget->get_field_name( $dg_widget_field_name ) ); ?>" class="widefat">
-			<option value=""><?php esc_html_e( 'No terms found in this taxonomy', 'blogmagazine' ); ?></option>
+			<option value=""><?php esc_html_e( 'No terms found in this taxonomy', '__Text_Domain__' ); ?></option>
 		</select><?php
 	}	
 
