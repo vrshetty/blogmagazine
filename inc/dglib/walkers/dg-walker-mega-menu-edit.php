@@ -28,8 +28,7 @@ class Dglib_Walker_Mega_Menu_Edit extends Dglib_Walker_Nav_Menu_Edit{
         /**
          * Get menu item custom fields from plugins/themes
          *
-         * @since 0.1.0
-         * @since 1.0.0 Pass correct parameters.
+         * @since 1.0.0 
          *
          * @param int    $item_id  Menu item ID.
          * @param object $item     Menu item data object.

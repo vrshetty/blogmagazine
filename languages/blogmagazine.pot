@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
-"POT-Creation-Date: 2019-05-02 06:33:39+00:00\n"
+"POT-Creation-Date: 2019-05-27 06:25:40+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -45,20 +45,20 @@ msgstr ""
 msgid "It looks like nothing was found at this location."
 msgstr ""
 
-#: comments.php:35
+#: comments.php:34
 #. translators: 1: title.
 msgid "One thought on &ldquo;%1$s&rdquo;"
 msgstr ""
 
-#: comments.php:50 comments.php:68
+#: comments.php:49 comments.php:68
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:52 comments.php:70
+#: comments.php:51 comments.php:70
 msgid "Older Comments"
 msgstr ""
 
-#: comments.php:53 comments.php:71
+#: comments.php:52 comments.php:71
 msgid "Newer Comments"
 msgstr ""
 
@@ -230,8 +230,6 @@ msgstr ""
 
 #: inc/customizer/header/section-main-navigation.php:32
 #: inc/customizer/options/section-image-settings.php:30
-#: inc/customizer/options/section-widget-settings.php:30
-#: inc/customizer/options/section-widget-settings.php:54
 #: inc/customizer/templates/templates-homepage.php:22
 #: inc/dglib/customizer/templates/templates-page-details.php:39
 #: inc/dglib/customizer/templates/templates-post-single.php:39
@@ -240,8 +238,6 @@ msgstr ""
 
 #: inc/customizer/header/section-main-navigation.php:33
 #: inc/customizer/options/section-image-settings.php:31
-#: inc/customizer/options/section-widget-settings.php:31
-#: inc/customizer/options/section-widget-settings.php:55
 #: inc/customizer/templates/templates-homepage.php:23
 #: inc/dglib/core/functions.php:149
 #: inc/dglib/customizer/templates/templates-page-details.php:40
@@ -369,30 +365,6 @@ msgstr ""
 msgid "Boxed Layout"
 msgstr ""
 
-#: inc/customizer/options/section-widget-settings.php:8
-msgid "Widget Settings"
-msgstr ""
-
-#: inc/customizer/options/section-widget-settings.php:26
-msgid "Category Link"
-msgstr ""
-
-#: inc/customizer/options/section-widget-settings.php:27
-msgid ""
-"Enable/Disable option for category link for widget title in block layout "
-"widget."
-msgstr ""
-
-#: inc/customizer/options/section-widget-settings.php:50
-msgid "Category Color"
-msgstr ""
-
-#: inc/customizer/options/section-widget-settings.php:51
-msgid ""
-"Enable/Disable option for category color for widget title in block layout "
-"widget."
-msgstr ""
-
 #: inc/customizer/templates/templates-archive.php:8
 msgid "Archive Settings"
 msgstr ""
@@ -412,7 +384,7 @@ msgstr ""
 #: inc/customizer/templates/templates-page-details.php:31
 #: inc/customizer/templates/templates-post-details.php:32
 #: inc/customizer/templates/templates-search-page.php:31
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:142
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:144
 msgid "Left Sidebar"
 msgstr ""
 
@@ -420,7 +392,7 @@ msgstr ""
 #: inc/customizer/templates/templates-page-details.php:35
 #: inc/customizer/templates/templates-post-details.php:36
 #: inc/customizer/templates/templates-search-page.php:35
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:146
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:148
 msgid "Right Sidebar"
 msgstr ""
 
@@ -428,7 +400,7 @@ msgstr ""
 #: inc/customizer/templates/templates-page-details.php:39
 #: inc/customizer/templates/templates-post-details.php:40
 #: inc/customizer/templates/templates-search-page.php:39
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:150
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:152
 msgid "No Sidebar"
 msgstr ""
 
@@ -436,7 +408,7 @@ msgstr ""
 #: inc/customizer/templates/templates-page-details.php:43
 #: inc/customizer/templates/templates-post-details.php:44
 #: inc/customizer/templates/templates-search-page.php:43
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:154
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:156
 msgid "No Sidebar Center"
 msgstr ""
 
@@ -456,7 +428,8 @@ msgstr ""
 
 #: inc/customizer/templates/templates-archive.php:85
 #: inc/customizer/templates/templates-search-page.php:85
-#: inc/functions/template-functions.php:435
+#: inc/functions/template-functions.php:492
+#: inc/functions/template-functions.php:508
 msgid "Continue Reading"
 msgstr ""
 
@@ -503,11 +476,16 @@ msgid "Show/Hide option for related posts section at single post page."
 msgstr ""
 
 #: inc/customizer/templates/templates-post-details.php:81
+#: inc/hooks/single.php:50
 msgid "Related Posts"
 msgstr ""
 
 #: inc/customizer/templates/templates-post-details.php:90
 msgid "Related Post Section Title"
+msgstr ""
+
+#: inc/customizer/templates/templates-post-details.php:114
+msgid "Related Posts from?"
 msgstr ""
 
 #: inc/customizer/templates/templates-search-page.php:8
@@ -610,8 +588,8 @@ msgid "Columns"
 msgstr ""
 
 #: inc/dglib/core/functions.php:205
+#: inc/dglib/widgets/function-dg-widget-dependencies.php:20
 #: inc/widgets/class-dg-blockposts-widget.php:128
-#: inc/widgets/functions-blogmagazine-widgets.php:28
 msgid "Default"
 msgstr ""
 
@@ -874,80 +852,80 @@ msgstr ""
 msgid "You can enable reaction to show after post details."
 msgstr ""
 
-#: inc/dglib/hooks/ajax.php:20
-#: inc/dglib/walkers/dg-walker-mega-menu-ajax.php:20 inc/hooks/ajax.php:27
+#: inc/dglib/hooks/ajax.php:23
+#: inc/dglib/walkers/dg-walker-mega-menu-ajax.php:22 inc/hooks/ajax.php:29
 msgid "Nonce doesnot exist."
 msgstr ""
 
-#: inc/dglib/hooks/ajax.php:26
-#: inc/dglib/walkers/dg-walker-mega-menu-ajax.php:26 inc/hooks/ajax.php:33
+#: inc/dglib/hooks/ajax.php:29
+#: inc/dglib/walkers/dg-walker-mega-menu-ajax.php:28 inc/hooks/ajax.php:35
 msgid "Nonce doesnot match."
 msgstr ""
 
-#: inc/dglib/hooks/ajax.php:33
+#: inc/dglib/hooks/ajax.php:36
 msgid "Post id not found."
 msgstr ""
 
-#: inc/dglib/hooks/ajax.php:40
+#: inc/dglib/hooks/ajax.php:43
 msgid "Reaction value not found."
 msgstr ""
 
-#: inc/dglib/hooks/ajax.php:47
+#: inc/dglib/hooks/ajax.php:50
 msgid "You are already react on this emoji."
 msgstr ""
 
-#: inc/dglib/hooks/ajax.php:57
+#: inc/dglib/hooks/ajax.php:60
 msgid "Successfully react on emoji."
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:81
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:138
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:83
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:140
 msgid "Default Sidebar"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:87
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:89
 msgid "Left sidebar"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:93
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:95
 msgid "Right sidebar"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:99
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:101
 msgid "No sidebar Full width"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:105
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:107
 msgid "No sidebar Content Centered"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:118
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:120
 msgid "Theme Options"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:133
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:135
 msgid "Sidebar Layout"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:170
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:172
 msgid "Sidebars"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:172
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:174
 msgid "Sidebar Settings"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:173
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:175
 msgid ""
 "If you want to override customizer settings please choose sidebar otherwise "
 "leave it default sidebar."
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:298
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:300
 msgid "Sorry metabox field not found."
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:304
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:306
 msgid "Please put some fields to show on metabox"
 msgstr ""
 
@@ -1193,10 +1171,6 @@ msgstr ""
 msgid "All link text"
 msgstr ""
 
-#: inc/dglib/widgets/class-dg-author-info-widget.php:168
-msgid "Show Social Media"
-msgstr ""
-
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:17
 msgid "A Widget to display social icons."
 msgstr ""
@@ -1311,7 +1285,7 @@ msgstr ""
 msgid "Not found."
 msgstr ""
 
-#: inc/functions/template-functions.php:295
+#: inc/functions/template-functions.php:352
 msgid "Select Category"
 msgstr ""
 
@@ -1666,7 +1640,7 @@ msgstr ""
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#: comments.php:41
+#: comments.php:40
 #. translators: 1: comment count number, 2: title.
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
@@ -1674,7 +1648,7 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/functions/template-functions.php:151
+#: inc/functions/template-functions.php:210
 #. Translators: If there are characters in your language that are not supported
 #. by Roboto Condensed, translate this to 'off'. Do not translate into your own
 #. language.
@@ -1682,14 +1656,14 @@ msgctxt "Roboto Condensed font: on or off"
 msgid "on"
 msgstr ""
 
-#: inc/functions/template-functions.php:159
+#: inc/functions/template-functions.php:218
 #. Translators: If there are characters in your language that are not supported
 #. by Roboto, translate this to 'off'. Do not translate into your own language.
 msgctxt "Roboto font: on or off"
 msgid "on"
 msgstr ""
 
-#: inc/functions/template-functions.php:167
+#: inc/functions/template-functions.php:226
 #. Translators: If there are characters in your language that are not supported
 #. by Titillium Web, translate this to 'off'. Do not translate into your own
 #. language.
