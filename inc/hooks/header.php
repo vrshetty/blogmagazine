@@ -283,7 +283,7 @@ endif;
 if( ! function_exists( 'blogmagazine_ticker_content' ) ) :
 	function blogmagazine_ticker_content() {
 		
-		$blogmagazine_ticker_caption = get_theme_mod( 'blogmagazine_ticker_caption', __( 'Breaking News', 'blogmagazine' ) );
+		$blogmagazine_ticker_caption = get_theme_mod( 'blogmagazine_ticker_caption', esc_html__( 'Breaking News', 'blogmagazine' ) );
 ?>
 		<span class="ticker-caption"><?php echo esc_html( $blogmagazine_ticker_caption ); ?></span>
 		<div class="ticker-content-wrapper">

@@ -17,8 +17,8 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
 
             $widget_options = array(
                 'classname' => 'dglib-autor-info',
-                'description' => esc_html__( 'A widget to display posts and thumbs with a lots of filters.', '__Text_Domain__' ));
-            parent::__construct('dglib-autor-info', esc_html__( 'DG - Author Info', '__Text_Domain__' ), $widget_options);	
+                'description' => esc_html__( 'A widget to display posts and thumbs with a lots of filters.', 'blogmagazine' ));
+            parent::__construct('dglib-autor-info', esc_html__( 'DG - Author Info', 'blogmagazine' ), $widget_options);	
 
         }
 
@@ -34,24 +34,24 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
             $fields = array(
                 'dg_widget_tab'       => array(
                     'dg_widget_field_name'     => 'dg_widget_tab',
-                    'dg_widget_field_title'    => esc_html__( 'General', '__Text_Domain__' ),
+                    'dg_widget_field_title'    => esc_html__( 'General', 'blogmagazine' ),
                     'dg_widget_field_default'  => 'general',
                     'dg_widget_field_type'     => 'tabgroup',
                     'dg_widget_field_options'  => array(
                         'general'=>array(
-                            'dg_widget_field_title'=>esc_html__('General', '__Text_Domain__'),
+                            'dg_widget_field_title'=>esc_html__('General', 'blogmagazine'),
                             'dg_widget_field_options'=> array(
                                 'title'    => array(
                                     'dg_widget_field_name'     => 'title',
                                     'tcy_widget_field_wraper'   => 'title',
-                                    'dg_widget_field_title'    => esc_html__( 'Title', '__Text_Domain__' ),
+                                    'dg_widget_field_title'    => esc_html__( 'Title', 'blogmagazine' ),
                                     'dg_widget_field_default'  => '',
                                     'dg_widget_field_type'     => 'text',
                                 ),
                                 'title_target'    => array(
                                     'dg_widget_field_name'     => 'title_target',
                                     'tcy_widget_field_wraper'   => 'title-target',
-                                    'dg_widget_field_title'    => esc_html__( 'Title Target', '__Text_Domain__' ),
+                                    'dg_widget_field_title'    => esc_html__( 'Title Target', 'blogmagazine' ),
                                     'dg_widget_field_default'  => '_self',
                                     'dg_widget_field_type'     => 'select',
                                     'dg_widget_field_options'  => $dglib_link_target,
@@ -71,14 +71,14 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
                                 'title_link'    => array(
                                     'dg_widget_field_name'     => 'title_link',
                                     'tcy_widget_field_wraper'   => 'title-link',
-                                    'dg_widget_field_title'    => esc_html__( 'Title link', '__Text_Domain__' ),
+                                    'dg_widget_field_title'    => esc_html__( 'Title link', 'blogmagazine' ),
                                     'dg_widget_field_default'  => '',
                                     'dg_widget_field_type'     => 'text',
                                 ),
                                 'author_id'    => array(
                                     'dg_widget_field_name'     => 'author_id',
                                     'tcy_widget_field_wraper'   => 'centurylib-post-type',
-                                    'dg_widget_field_title'    => esc_html__( 'Choose author/user', '__Text_Domain__' ),
+                                    'dg_widget_field_title'    => esc_html__( 'Choose author/user', 'blogmagazine' ),
                                     'dg_widget_field_default'  => 'post',
                                     'dg_widget_field_type'     => 'select',
                                     'dg_widget_field_options'  => $dglib_author_listing,
@@ -86,14 +86,14 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
                                 'author_designation'   => array(
                                     'dg_widget_field_name'     => 'author_designation',
                                     'tcy_widget_field_wraper'   => 'author-designation',
-                                    'dg_widget_field_title'    => esc_html__( 'Author Designation', '__Text_Domain__' ),
-                                    'dg_widget_field_default'  => esc_html__('CEO / Co-Founder', '__Text_Domain__'),
+                                    'dg_widget_field_title'    => esc_html__( 'Author Designation', 'blogmagazine' ),
+                                    'dg_widget_field_default'  => esc_html__('CEO / Co-Founder', 'blogmagazine'),
                                     'dg_widget_field_type'     => 'text',
                                 ),
                                 'show_avatar'    => array(
                                     'dg_widget_field_name'     => 'show_avatar',
                                     'tcy_widget_field_wraper'   => 'show-avatar',
-                                    'dg_widget_field_title'    => esc_html__( 'Show Author Avatar?', '__Text_Domain__' ),
+                                    'dg_widget_field_title'    => esc_html__( 'Show Author Avatar?', 'blogmagazine' ),
                                     'dg_widget_field_default'  => 0,
                                     'dg_widget_field_type'     => 'checkbox',
                                     'tcy_widget_field_relation' => array(
@@ -112,18 +112,18 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
                                 'avatar_size'          => array(
                                     'dg_widget_field_name'     => 'avatar_size',
                                     'tcy_widget_field_wraper'   => 'avatar-size',
-                                    'dg_widget_field_title'    => esc_html__( 'Avatar Size', '__Text_Domain__' ),
+                                    'dg_widget_field_title'    => esc_html__( 'Avatar Size', 'blogmagazine' ),
                                     'dg_widget_field_default'  => 150,
                                     'dg_widget_field_type'     => 'number'
                                 )
                             )
                         ),
                         'layout'=>array(
-                            'dg_widget_field_title'    => esc_html__('Layout', '__Text_Domain__'),
+                            'dg_widget_field_title'    => esc_html__('Layout', 'blogmagazine'),
                             'dg_widget_field_options'          => array(
                                 'show_description'=>array(
                                     'dg_widget_field_name'     => 'show_description',
-                                    'dg_widget_field_title'    => esc_html__( 'Show Author Description?', '__Text_Domain__' ),
+                                    'dg_widget_field_title'    => esc_html__( 'Show Author Description?', 'blogmagazine' ),
                                     'dg_widget_field_default'  => 1,
                                     'dg_widget_field_type'     => 'checkbox',
                                     'tcy_widget_field_relation' => array(
@@ -141,16 +141,16 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
                                 ),
                                 'description_limit'=>array(
                                     'dg_widget_field_name'     => 'description_limit',
-                                    'dg_widget_field_title'    => esc_html__( 'Description Limit', '__Text_Domain__' ),
+                                    'dg_widget_field_title'    => esc_html__( 'Description Limit', 'blogmagazine' ),
                                     'tcy_widget_field_wraper'   => 'description-limit',
                                     'dg_widget_field_default'  => '100',
                                     'dg_widget_field_type'     => 'number',
-                                    'tcy_widget_field_description'=> esc_html__('Specify number of characters to limit author description length', '__Text_Domain__'),
+                                    'tcy_widget_field_description'=> esc_html__('Specify number of characters to limit author description length', 'blogmagazine'),
                                 ),
                                 'author_link_target'=>array(
                                     'dg_widget_field_name'     => 'author_link_target',
                                     'tcy_widget_field_wraper'   => 'view-all-option',
-                                    'dg_widget_field_title'         => esc_html__( 'Author link target', '__Text_Domain__' ),
+                                    'dg_widget_field_title'         => esc_html__( 'Author link target', 'blogmagazine' ),
                                     'dg_widget_field_default'  => 'disable',
                                     'dg_widget_field_type'     => 'select',
                                     'dg_widget_field_options'  => $dglib_link_target,
@@ -158,16 +158,9 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
                                 'all_link_text'=>array(
                                     'dg_widget_field_name'     => 'all_link_text',
                                     'tcy_widget_field_wraper'   => 'all-link-text',
-                                    'dg_widget_field_title'    => esc_html__( 'All link text', '__Text_Domain__' ),
+                                    'dg_widget_field_title'    => esc_html__( 'All link text', 'blogmagazine' ),
                                     'dg_widget_field_default'  => '',
                                     'dg_widget_field_type'     => 'text',
-                                ),
-                                'show_social_media'=>array(
-                                    'dg_widget_field_name'     => 'show_social_media',
-                                    'tcy_widget_field_wraper'   => 'show-social-media',
-                                    'dg_widget_field_title'    => esc_html__( 'Show Social Media', '__Text_Domain__' ),
-                                    'dg_widget_field_default'  => '',
-                                    'dg_widget_field_type'     => 'checkbox',
                                 ),
                             )
                         )
@@ -213,7 +206,6 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
             $description_limit = isset( $instance['description_limit'] ) ? absint( $instance['description_limit'] ) : '';
             $author_link_target = isset( $instance['author_link_target'] ) ? esc_attr( $instance['author_link_target'] ) : '';
             $all_link_text = isset( $instance['all_link_text'] ) ? esc_html( $instance['all_link_text'] ) : '';
-            $show_social_media = isset( $instance['show_social_media'] ) ? absint( $instance['show_social_media'] ) : '';
 
             //Get origional Author Link for author_id
             $author_link = get_author_posts_url( get_the_author_meta( 'ID', $author_id ) );
@@ -237,9 +229,6 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
                 <?php } ?>
                 <div class="card-content">
                     <?php 
-                    if ( $show_social_media ) {
-                        //lekh_social_media();
-                    } 
                     if ( ! empty( $author_designation ) ): 
                         ?><h5 class="category text-gray"><?php echo $author_designation ?></h5><?php 
                     endif; 

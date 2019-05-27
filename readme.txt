@@ -58,8 +58,8 @@ https://github.com/sachinchoolur/lightslider - MIT License
 
 = 1.0.2 - 2019/05/-- =
     * Added: Widget Tab added
+    * Added: Grid Images Added
     * Fixed: Widget Default value issue fixed
-    * 
 
 = 1.0.1 - 2019/04/14 =
     *  All Error Fixed

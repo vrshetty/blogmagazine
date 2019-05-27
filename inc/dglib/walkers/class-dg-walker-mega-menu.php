@@ -108,7 +108,7 @@ class Dglib_Walker_Mega_Menu extends Walker_Nav_Menu{
             $megamenu_html .= '<ul class="dglib-listing-items">';      
             if($megamenu_categories){
                 $megamenu_ajax_data['data']['term_ids'] = $megamenu_categories;
-                $megamenu_html .= '<li class="dglib-term-list-item active-item" data-tab="dglib-megamenu-tab-all"><a data-config=\''.json_encode($megamenu_ajax_data).'\' data-term-ids="'.json_encode($megamenu_categories).'">'.esc_html__('All', '__Text_Domain__').'</a></li>';
+                $megamenu_html .= '<li class="dglib-term-list-item active-item" data-tab="dglib-megamenu-tab-all"><a data-config=\''.json_encode($megamenu_ajax_data).'\' data-term-ids="'.json_encode($megamenu_categories).'">'.esc_html__('All', 'blogmagazine').'</a></li>';
             }
             foreach($megamenu_categories as $index=>$category_id){
                 $category_details = get_term_by( 'term_id', $category_id, 'category' );
@@ -145,7 +145,7 @@ class Dglib_Walker_Mega_Menu extends Walker_Nav_Menu{
             }
             $megamenu_html .= '<figure class="dglib-menu-preloader">';
             $megamenu_html .= '<span class="helper"></span>';
-            $megamenu_html .= '<img src="'.dglib_assets_url('img/preloader/loader3.gif').'" alt="'.esc_html__( 'Preloader', '__Text_Domain__' ).'" title="'.esc_html__('Preloader', '__Text_Domain__' ).'"/>';
+            $megamenu_html .= '<img src="'.dglib_assets_url('img/preloader/loader3.gif').'" alt="'.esc_html__( 'Preloader', 'blogmagazine' ).'" title="'.esc_html__('Preloader', 'blogmagazine' ).'"/>';
             $megamenu_html .= '</figure>';
             $megamenu_html .= '</div>'; // .dglib-megamenu-right-part
             $megamenu_html .= '</div>'; // .dglib-megamenu-container

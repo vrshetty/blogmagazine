@@ -39,10 +39,10 @@
 					<?php
 				}
 			}else{
-				?><span><?php esc_html_e( 'No terms found in this taxonomy', '__Text_Domain__' ); ?></span><?php
+				?><span><?php esc_html_e( 'No terms found in this taxonomy', 'blogmagazine' ); ?></span><?php
 			}
 		}else{
-			?><span><?php esc_html_e( 'Selected taxonomy doesn\'t exist', '__Text_Domain__' ); ?></span><?php
+			?><span><?php esc_html_e( 'Selected taxonomy doesn\'t exist', 'blogmagazine' ); ?></span><?php
 		}
 		if ( isset( $dg_widget_field_description ) ) { 
 			?>

@@ -259,6 +259,10 @@ Comments
 }
 
 .comments-area{
+    border-top: 2px dashed #dedede;
+    margin-top: 28px;
+    border-bottom: 2px dashed #dedede;
+    padding-bottom: 28px;
     h2{
         &.comments-title{
             color: #333;
@@ -278,6 +282,14 @@ Comments
         line-height: 22px;
         font-size: 18px;
     }
+    ol{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        &.children{
+            margin: 0 0 0 15px;
+        }
+    }
 }
 
 .comment-form{
@@ -295,18 +307,6 @@ textarea#comment {
 
 
 /*Comment Lists*/
-
-.comments-area{
-    ol{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        &.children{
-            margin: 0 0 0 15px;
-        }
-    }
-}
-
 .comment-list{
     .comment-body{
         padding: 15px;

@@ -9,27 +9,27 @@ if(!function_exists('dglib_megamenu_field_list')):
 			array(
 				'name' => 'menu_icon',
 				'type' => 'icon',
-				'label'=> esc_html__('Menu Icon', '__Text_Domain__'),
-				'description' => esc_html__('Choose icons for to show in navigation menu.', '__Text_Domain__'),
+				'label'=> esc_html__('Menu Icon', 'blogmagazine'),
+				'description' => esc_html__('Choose icons for to show in navigation menu.', 'blogmagazine'),
 			),
 			array(
 				'name' => 'description_tips',
 				'type' => 'checkbox',
-				'label'=> esc_html__('Description as title tips.', '__Text_Domain__'),
-				'description' => esc_html__('Show description as tool tips.', '__Text_Domain__'),
+				'label'=> esc_html__('Description as title tips.', 'blogmagazine'),
+				'description' => esc_html__('Show description as tool tips.', 'blogmagazine'),
 			),
 			array(
 				'name' => 'enable_megamenu',
 				'type' => 'checkbox',
-				'label'=> esc_html__('Enable Megamenu', '__Text_Domain__'),
-				'description' => esc_html__('Enabel megamneu to show megamenu with the replacement of normal menu.', '__Text_Domain__'),
+				'label'=> esc_html__('Enable Megamenu', 'blogmagazine'),
+				'description' => esc_html__('Enabel megamneu to show megamenu with the replacement of normal menu.', 'blogmagazine'),
 			),
 			array(
 				'name' => 'megamenu_categories',
 				'type' => 'termsmulti',
 				'taxonomy' => 'category',
-				'label'=> esc_html__('Select Categories', '__Text_Domain__'),
-				'description' => esc_html__('Choose multiple categories to show megamenu.', '__Text_Domain__'),
+				'label'=> esc_html__('Select Categories', 'blogmagazine'),
+				'description' => esc_html__('Choose multiple categories to show megamenu.', 'blogmagazine'),
 			),
 			
 		);
@@ -77,16 +77,16 @@ if(!function_exists('dglib_mega_menu_item_form')):
 							<?php if( !empty( $value ) ) { echo '<i class="fa '. esc_attr( $value ).'"></i>'; } ?>
 						</div>
 						<div class="remove-icon">
-							<?php esc_html_e('Remove', '__Text_Domain__'); ?>
+							<?php esc_html_e('Remove', 'blogmagazine'); ?>
 							<span class="dashicons dashicons-no"></span>
 						</div>
 						<div class="icon-toggle">
-							<?php esc_html_e('Icon List','__Text_Domain__'); ?>
+							<?php esc_html_e('Icon List','blogmagazine'); ?>
 							<span class="dashicons dashicons-arrow-down"></span>
 						</div>
 					</div>
 					<div class="icons-list-wrapper hidden">
-						<input class="icon-search widefat" type="text" placeholder="<?php esc_attr_e('Search Icon','__Text_Domain__')?>">
+						<input class="icon-search widefat" type="text" placeholder="<?php esc_attr_e('Search Icon','blogmagazine')?>">
 						<?php
 						$dglib_icons_list = dglib_fa_iconslist();
 						foreach ( $dglib_icons_list as $single_icon ) {
@@ -155,10 +155,10 @@ if(!function_exists('dglib_mega_menu_item_form')):
 									<?php
 								}
 							}else{
-								?><span><?php esc_html_e( 'No terms found in this taxonomy', '__Text_Domain__' ); ?></span><?php
+								?><span><?php esc_html_e( 'No terms found in this taxonomy', 'blogmagazine' ); ?></span><?php
 							}
 						}else{
-							?><span><?php esc_html_e( 'Selected taxonomy doesn\'t exist', '__Text_Domain__' ); ?></span><?php
+							?><span><?php esc_html_e( 'Selected taxonomy doesn\'t exist', 'blogmagazine' ); ?></span><?php
 						}
 						?>
 					</ul>
@@ -171,7 +171,7 @@ if(!function_exists('dglib_mega_menu_item_form')):
 				<?php
 				break;
 				default:
-				?><p class="dg-menu-field-wrapper field-<?php echo esc_attr($name); ?> <?php echo esc_attr($name); ?> <?php echo esc_attr($name); ?>-wide"><?php echo esc_html__('Field ', '__Text_Domain__') . $type . esc_html__( ' not found.', '__Text_Domain__'); ?></p><?php
+				?><p class="dg-menu-field-wrapper field-<?php echo esc_attr($name); ?> <?php echo esc_attr($name); ?> <?php echo esc_attr($name); ?>-wide"><?php echo esc_html__('Field ', 'blogmagazine') . $type . esc_html__( ' not found.', 'blogmagazine'); ?></p><?php
 				break;
 			}
 		}
@@ -192,7 +192,8 @@ if(!function_exists('dglib_update_mega_menu_item')):
 		$megamenu_fields = dglib_megamenu_field_list();
 		$megamenu_options = 'menu-item-dglib-megamenu';
 		$sanitize_value = array();
-		$megamenu_values = (isset($_POST[ $megamenu_options ][ $menu_item_db_id ])) ? $_POST[ $megamenu_options ][ $menu_item_db_id ] : array();
+		$_all_post_vals = wp_unslash( $_POST );
+		$megamenu_values = (isset($_all_post_vals[ $megamenu_options ][ $menu_item_db_id ])) ? $_all_post_vals[ $megamenu_options ][ $menu_item_db_id ] : array();
 		foreach($megamenu_fields as $single_field){
 			$name = (isset($single_field['name'])) ? esc_attr($single_field['name']) : '';
 			$type = (isset($single_field['type'])) ? esc_attr($single_field['type']) : '';

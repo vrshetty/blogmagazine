@@ -285,7 +285,7 @@ function blogmagazine_scripts() {
         wp_enqueue_script( 'jquery-sticky', get_template_directory_uri(). '/assets/library/sticky/jquery.sticky.js', array( 'jquery' ), '20150416', true );
     }
 
-    wp_enqueue_script( 'blogmagazine-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), esc_attr( $blogmagazine_version ), true );
+    wp_enqueue_script( 'blogmagazine-skip-link-focus-fix', get_template_directory_uri() . '/assets/library/_s/js/skip-link-focus-fix.js', array(), esc_attr( $blogmagazine_version ), true );
 
     wp_enqueue_script( 'lightslider', get_template_directory_uri().'/assets/library/lightslider/js/lightslider.min.js', array('jquery'), '1.1.6', true );
 

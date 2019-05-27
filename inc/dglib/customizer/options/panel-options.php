@@ -8,7 +8,7 @@ $wp_customize->add_panel(
 		'priority'       => 70,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__('Setting Options', '__Text_Domain__'),
-		'description'    => esc_html__('Overall setting options goes here.', '__Text_Domain__'),
+		'title'          => esc_html__('Setting Options', 'blogmagazine'),
+		'description'    => esc_html__('Overall setting options goes here.', 'blogmagazine'),
 	)
 );

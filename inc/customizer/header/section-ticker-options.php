@@ -39,7 +39,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
     'blogmagazine_ticker_caption',
     array(
-        'default'    => __( 'Breaking News', 'blogmagazine' ),
+        'default'    => esc_html__( 'Breaking News', 'blogmagazine' ),
         'transport'  => 'postMessage',
         'sanitize_callback' => 'sanitize_text_field'
     )

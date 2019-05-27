@@ -23,14 +23,4 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * Warning: If you add any css code on this file than it's working file but when you update your theme all code will be replaced so please do not write any code here.
  * Need Support please visit my official website https://dinesh-ghimire.com.np
  */
-
-.main-navigation li.dglib-has-megamenu {
-    position: static;
-}
-
-.comments-area{
-	border-top: 2px dashed #dedede;
-	margin-top: 28px;
-	border-bottom: 2px dashed #dedede;
-	padding-bottom: 28px;
-}
+ 

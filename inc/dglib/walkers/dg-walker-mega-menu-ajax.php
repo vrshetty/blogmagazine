@@ -6,34 +6,36 @@ if(!function_exists('dglib_megamenu_posts_callback')):
 
 	function dglib_megamenu_posts_callback(){
 
+		$_all_post_vals = wp_unslash( $_POST );
+
 		$response = array(
 			'message' => false,
-			'post_value' => $_POST,
+			'post_value' => $_all_post_vals,
 		);
 
         // Verify the nonce before proceeding.
-		$megamenu_nonce_value   = isset( $_POST['megamenu_nonce_value'] ) ? esc_html($_POST['megamenu_nonce_value']) : '';
+		$megamenu_nonce_value   = isset( $_all_post_vals['megamenu_nonce_value'] ) ? esc_html($_all_post_vals['megamenu_nonce_value']) : '';
 		$dglib_nonce_megamenu_action = 'dglib_megamenu_posts_nonce';
 
         // Check if nonce is set...
 		if ( ! isset( $megamenu_nonce_value ) ) {
-			$response['message'] = esc_html__( 'Nonce doesnot exist.', '__Text_Domain__' );
+			$response['message'] = esc_html__( 'Nonce doesnot exist.', 'blogmagazine' );
 			wp_send_json($response);
 		}
 
         // Check if nonce is valid...
 		if ( ! wp_verify_nonce( $megamenu_nonce_value, $dglib_nonce_megamenu_action ) ) {
-			$response['message'] = esc_html__( 'Nonce doesnot match.', '__Text_Domain__' );
+			$response['message'] = esc_html__( 'Nonce doesnot match.', 'blogmagazine' );
 			wp_send_json($response);
 		}
 
-		$paged = (isset($_POST['paged']) ) ? absint($_POST['paged']) : 1;
+		$paged = (isset($_all_post_vals['paged']) ) ? absint($_all_post_vals['paged']) : 1;
 
-		$terms = (is_array($_POST['term_ids'])) ? array_map( 'absint', wp_unslash( $_POST['term_ids'] ) ) : absint($_POST['term_ids']);
+		$terms = (is_array($_all_post_vals['term_ids'])) ? array_map( 'absint', wp_unslash( $_all_post_vals['term_ids'] ) ) : absint($_all_post_vals['term_ids']);
 		$args = array(
 			'paged' 	=> $paged,
 			'post_type' => 'post',
-			'posts_per_page' => (isset($_POST['posts_per_page'])) ? absint($_POST['posts_per_page']) : 4,
+			'posts_per_page' => (isset($_all_post_vals['posts_per_page'])) ? absint($_all_post_vals['posts_per_page']) : 4,
 			'tax_query' => array(
 				array(
 					'taxonomy' => 'category',

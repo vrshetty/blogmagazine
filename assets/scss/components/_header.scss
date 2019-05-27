@@ -100,15 +100,14 @@ Header CSS
     .dg-container {
         position: relative;
         &:before{
-            background: rgba(0, 0, 0, 0) url("assets/images/menu-shadow.png") no-repeat scroll center top;
+            left: 50%;
+            top: 100%;
+            opacity: 1;
             content: "";
             height: 38px;
-            left: 50%;
-            margin-left: -480px;
-            opacity: 1;
-            position: absolute;
-            top: 100%;
             width: 960px;
+            position: absolute;
+            margin-left: -480px;
         }
     }
 }
@@ -213,6 +212,9 @@ Header CSS
                 top: -20%;
             }
         }
+    }
+    li.dglib-has-megamenu {
+        position: static;
     }
 }
 

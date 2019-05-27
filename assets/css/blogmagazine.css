@@ -558,11 +558,6 @@ Clearings
 /*  ----------------------------------------------------
 author Widgets
 -------------------------------------------------------- */
-.lekh_author_details .widget_wrap {
-  padding: 0px;
-  border: none;
-  background-color: transparent; }
-
 .card {
   position: relative;
   width: 100%;
@@ -1656,22 +1651,32 @@ Comments
   display: block;
   border-bottom: 1px dashed #dedede; }
 
-.comments-area h2.comments-title {
-  color: #333;
-  display: inline-block;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  margin: 15px 0;
-  padding: 8px 15px; }
-
-.comments-area h3 {
-  margin: 0 0 10px;
-  color: #141414;
-  font-weight: 600;
-  display: inline-block;
-  line-height: 22px;
-  font-size: 18px; }
+.comments-area {
+  border-top: 2px dashed #dedede;
+  margin-top: 28px;
+  border-bottom: 2px dashed #dedede;
+  padding-bottom: 28px; }
+  .comments-area h2.comments-title {
+    color: #333;
+    display: inline-block;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 15px 0;
+    padding: 8px 15px; }
+  .comments-area h3 {
+    margin: 0 0 10px;
+    color: #141414;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 22px;
+    font-size: 18px; }
+  .comments-area ol {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .comments-area ol.children {
+      margin: 0 0 0 15px; }
 
 .comment-form label {
   width: 120px;
@@ -1682,13 +1687,6 @@ textarea#comment {
   height: 150px; }
 
 /*Comment Lists*/
-.comments-area ol {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-  .comments-area ol.children {
-    margin: 0 0 0 15px; }
-
 .comment-list .comment-body {
   padding: 15px;
   margin-bottom: 20px; }
@@ -2033,15 +2031,14 @@ Header CSS
   .blogmagazine-header-menu-wrapper .dg-container {
     position: relative; }
     .blogmagazine-header-menu-wrapper .dg-container:before {
-      background: rgba(0, 0, 0, 0) url("assets/images/menu-shadow.png") no-repeat scroll center top;
+      left: 50%;
+      top: 100%;
+      opacity: 1;
       content: "";
       height: 38px;
-      left: 50%;
-      margin-left: -480px;
-      opacity: 1;
+      width: 960px;
       position: absolute;
-      top: 100%;
-      width: 960px; }
+      margin-left: -480px; }
 
 .blogmagazine-home-icon a {
   color: #fff;
@@ -2116,6 +2113,8 @@ Header CSS
         right: -100%;
         left: auto;
         top: -20%; }
+  .main-navigation li.dglib-has-megamenu {
+    position: static; }
 
 .main-navigation ul.primary-menu .menu-item.menu-item-has-children > a {
   padding-right: 30px; }
@@ -3077,66 +3076,4 @@ scroll to top css
     width: 98%; }
   .blogmagazine_featured_slider .featured-posts .blogmagazine-single-post-wrap {
     width: 98%; } }
-
-/*  ----------------------------------------------------
-author Widgets
--------------------------------------------------------- */
-.lekh_author_details .widget_wrap {
-  padding: 0px;
-  border: none;
-  background-color: transparent; }
-
-.card {
-  position: relative;
-  width: 100%;
-  border-radius: 6px;
-  color: rgba(0, 0, 0, 0.87);
-  background: #fff;
-  overflow: visible;
-  padding: 15px 0 0 0;
-  border: 1px solid #029fb2; }
-
-.card-profile {
-  text-align: center; }
-
-.card-profile .card-avatar {
-  max-width: 130px;
-  max-height: 130px;
-  margin: 0 auto;
-  border-radius: 50%;
-  overflow: hidden;
-  -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
-
-.card-avatar img {
-  margin: 0px;
-  width: 100%; }
-
-.card-profile .card-avatar + .card-content {
-  margin-top: 15px; }
-
-.card-profile .card .card-content {
-  padding: 15px 30px; }
-
-.card-description {
-  color: #616161;
-  font-size: 14px; }
-
-.card-profile .card-title {
-  font-size: 1.3em;
-  line-height: 1.55em;
-  color: #3C4858;
-  text-decoration: none;
-  font-weight: 700; }
-
-.card .card-content {
-  padding: 15px 30px; }
-
-.card-profile .lekh-social-icons-wrapper {
-  padding: 0; }
-  .card-profile .lekh-social-icons-wrapper .social-link .fa {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 1.2em; }
 /*# sourceMappingURL=blogmagazine.css.map */

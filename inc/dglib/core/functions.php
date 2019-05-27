@@ -43,7 +43,7 @@ if(!function_exists('dglib_taxonomies')){
 	 */
 	function dglib_taxonomies( $post_types = 'post' ){
 		
-		$dglib_taxonomies[''] = esc_html__('No Filters', '__Text_Domain__');
+		$dglib_taxonomies[''] = esc_html__('No Filters', 'blogmagazine');
 		$taxonomy_list = get_object_taxonomies($post_types);
 		foreach($taxonomy_list as $index=>$taxonomy_key){
 			$dglib_taxonomies[$taxonomy_key] = ucwords($taxonomy_key);
@@ -63,15 +63,15 @@ if (!function_exists('dglib_get_image_sizes')){
 		global $_wp_additional_image_sizes;
 		$dglib_get_image_sizes = array();
 		if ( true == $disable_image ) {
-			$dglib_get_image_sizes['disable'] = esc_html__( 'No Image', '__Text_Domain__' );
+			$dglib_get_image_sizes['disable'] = esc_html__( 'No Image', 'blogmagazine' );
 		}
 		foreach ( array( 'thumbnail', 'medium', 'large' ) as $key => $_size ) {
 			$dglib_get_image_sizes[ $_size ] = $_size . ' ('. get_option( $_size . '_size_w' ) . 'x' . get_option( $_size . '_size_h' ) . ')';
 		}
-		$dglib_get_image_sizes['full'] = esc_html__( 'full (original)', '__Text_Domain__' );
+		$dglib_get_image_sizes['full'] = esc_html__( 'full (original)', 'blogmagazine' );
 		if ( ! empty( $_wp_additional_image_sizes ) && is_array( $_wp_additional_image_sizes ) ) {
 			foreach ($_wp_additional_image_sizes as $key => $size ) {
-				$croped_resize = ($size['crop']) ? esc_html__('Croped', '__Text_Domain__') : esc_html__('Resize', '__Text_Domain__'); 
+				$croped_resize = ($size['crop']) ? esc_html__('Croped', 'blogmagazine') : esc_html__('Resize', 'blogmagazine'); 
 				$dglib_get_image_sizes[ $key ] = $key . ' - '.$croped_resize;
 			}
 		}
@@ -89,8 +89,8 @@ if (!function_exists('dglib_post_order')){
 	function dglib_post_order(){
 
 		$dglib_post_order = array(
-			'ASC' => esc_html__( 'ASC', '__Text_Domain__' ),
-			'DESC' => esc_html__( 'DESC', '__Text_Domain__' ),
+			'ASC' => esc_html__( 'ASC', 'blogmagazine' ),
+			'DESC' => esc_html__( 'DESC', 'blogmagazine' ),
 		);
 		return $dglib_post_order;
 	}
@@ -105,15 +105,15 @@ if (!function_exists('dglib_post_orderby')){
 	function dglib_post_orderby(){
 
 		$dglib_post_orderby = array(
-			'none' => esc_html__( 'None', '__Text_Domain__' ),
-			'ID' => esc_html__( 'ID', '__Text_Domain__' ),
-			'author' => esc_html__( 'Author', '__Text_Domain__' ),
-			'title' => esc_html__( 'Title', '__Text_Domain__' ),
-			'date' => esc_html__( 'Date', '__Text_Domain__' ),
-			'modified' => esc_html__( 'Modified Date', '__Text_Domain__' ),
-			'rand' => esc_html__( 'Random', '__Text_Domain__' ),
-			'comment_count' => esc_html__( 'Comment Count', '__Text_Domain__' ),
-			'menu_order' => esc_html__( 'Menu Order', '__Text_Domain__' ),
+			'none' => esc_html__( 'None', 'blogmagazine' ),
+			'ID' => esc_html__( 'ID', 'blogmagazine' ),
+			'author' => esc_html__( 'Author', 'blogmagazine' ),
+			'title' => esc_html__( 'Title', 'blogmagazine' ),
+			'date' => esc_html__( 'Date', 'blogmagazine' ),
+			'modified' => esc_html__( 'Modified Date', 'blogmagazine' ),
+			'rand' => esc_html__( 'Random', 'blogmagazine' ),
+			'comment_count' => esc_html__( 'Comment Count', 'blogmagazine' ),
+			'menu_order' => esc_html__( 'Menu Order', 'blogmagazine' ),
 		);
 		return $dglib_post_orderby;
 	}
@@ -128,10 +128,10 @@ if (!function_exists('dglib_no_of_column')) {
 	function dglib_no_of_column(){
 
 		$dglib_no_of_column = array(
-			1 => esc_html__( '1', '__Text_Domain__' ),
-			2 => esc_html__( '2', '__Text_Domain__' ),
-			3 => esc_html__( '3', '__Text_Domain__' ),
-			4 =>  esc_html__( '4', '__Text_Domain__' ),
+			1 => esc_html__( '1', 'blogmagazine' ),
+			2 => esc_html__( '2', 'blogmagazine' ),
+			3 => esc_html__( '3', 'blogmagazine' ),
+			4 =>  esc_html__( '4', 'blogmagazine' ),
 		);
 		return apply_filters( 'dglib_no_of_column', $dglib_no_of_column);
 	}
@@ -146,11 +146,11 @@ if (!function_exists('dglib_link_target')) {
 	function dglib_link_target(){
 
 		$dglib_link_target = array(
-			''			=> esc_html__('Disable', '__Text_Domain__'),
-			'_blank'	=> esc_html__('Open with New Tab', '__Text_Domain__'),
-			'_self'		=> esc_html__('Open with Same Tab', '__Text_Domain__'),
-			/*'_parent'	=> esc_html__('_parent', '__Text_Domain__'),
-			'_top'		=> esc_html__('_top', '__Text_Domain__'),*/
+			''			=> esc_html__('Disable', 'blogmagazine'),
+			'_blank'	=> esc_html__('Open with New Tab', 'blogmagazine'),
+			'_self'		=> esc_html__('Open with Same Tab', 'blogmagazine'),
+			/*'_parent'	=> esc_html__('_parent', 'blogmagazine'),
+			'_top'		=> esc_html__('_top', 'blogmagazine'),*/
 		);
 
 		return $dglib_link_target;
@@ -167,8 +167,8 @@ if (!function_exists('dglib_display_types')) {
 	function dglib_display_types(){
 
 		$dglib_display_types = array(
-			'carousel'=>esc_html__('Carousel', '__Text_Domain__'),
-			'columns'=>esc_html__('Columns', '__Text_Domain__'),
+			'carousel'=>esc_html__('Carousel', 'blogmagazine'),
+			'columns'=>esc_html__('Columns', 'blogmagazine'),
 		);
 		$dglib_display_types = apply_filters( 'dglib_display_types', $dglib_display_types );
 		return $dglib_display_types;
@@ -202,11 +202,11 @@ if (!function_exists('dglib_faicon_sizes')){
 	function dglib_faicon_sizes(){
 
 		$fontawesome_icons_size = array(
-			''		=> esc_html__('Default', '__Text_Domain__'),
-			'fa-2x'	=> esc_html__('fa-2x', '__Text_Domain__'),
-			'fa-3x'	=> esc_html__('fa-3x', '__Text_Domain__'),
-			'fa-4x'	=> esc_html__('fa-4x', '__Text_Domain__'),
-			'fa-5x'	=> esc_html__('fa-5x', '__Text_Domain__'),
+			''		=> esc_html__('Default', 'blogmagazine'),
+			'fa-2x'	=> esc_html__('fa-2x', 'blogmagazine'),
+			'fa-3x'	=> esc_html__('fa-3x', 'blogmagazine'),
+			'fa-4x'	=> esc_html__('fa-4x', 'blogmagazine'),
+			'fa-5x'	=> esc_html__('fa-5x', 'blogmagazine'),
 		);
 
 		return apply_filters( 'dglib_faicon_sizes', $fontawesome_icons_size );
@@ -237,7 +237,7 @@ if(!function_exists('dglib_get_excerpt')):
         $excerpt = substr($content_without_tags, 0, $excerpt_length);
         if($readmore){
             $default_remore = '... <a href="'.get_the_permalink().'">';
-            $default_remore .= esc_html__('Read More', '__Text_Domain__');
+            $default_remore .= esc_html__('Read More', 'blogmagazine');
             $default_remore .= '</a>';
             $readmore_html = apply_filters( 'excerpt_more', $default_remore );
             $excerpt .= $readmore_html;
@@ -278,31 +278,31 @@ if( !function_exists('dglib_reactions_icons') ):
 	function dglib_reactions_icons(){
 		$dglib_reactions_icons = array(
 			'like' => array(
-				'label'=>esc_html__('Like', '__Text_Domain__'),
+				'label'=>esc_html__('Like', 'blogmagazine'),
 				'url'=> dglib_assets_url("img/reactions/like.png"),
 			),
 			'sad' => array(
-				'label'=>esc_html__('Sad', '__Text_Domain__'),
+				'label'=>esc_html__('Sad', 'blogmagazine'),
 				'url'=> dglib_assets_url("img/reactions/sad.png"),
 			),
 			'love' => array(
-				'label'=>esc_html__('Love', '__Text_Domain__'),
+				'label'=>esc_html__('Love', 'blogmagazine'),
 				'url'=> dglib_assets_url("img/reactions/love.png"),
 			),
 			'surprised' => array(
-				'label'=>esc_html__('Surprised', '__Text_Domain__'),
+				'label'=>esc_html__('Surprised', 'blogmagazine'),
 				'url'=> dglib_assets_url("img/reactions/surprised.png"),
 			),
 			'angry' => array(
-				'label'=>esc_html__('Angry', '__Text_Domain__'),
+				'label'=>esc_html__('Angry', 'blogmagazine'),
 				'url'=> dglib_assets_url("img/reactions/angry.png"),
 			),
 			'happy' => array(
-				'label'=>esc_html__('Happy', '__Text_Domain__'),
+				'label'=>esc_html__('Happy', 'blogmagazine'),
 				'url'=> dglib_assets_url("img/reactions/happy.png"),
 			),
 			'crying' => array(
-				'label'=>esc_html__('Crying', '__Text_Domain__'),
+				'label'=>esc_html__('Crying', 'blogmagazine'),
 				'url'=> dglib_assets_url("img/reactions/crying.png"),
 			)
 		);

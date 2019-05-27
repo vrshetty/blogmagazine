@@ -38,7 +38,7 @@ if(!class_exists('Dglib_Term_List_Control') ){
             ?>
             <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
             <select <?php $this->link(); ?>>
-                <option value="0"><?php esc_html_e( 'All', '__Text_Domain__' );?></option>
+                <option value="0"><?php esc_html_e( 'All', 'blogmagazine' );?></option>
                 <?php
                 foreach ( $categories as $cat ) {
                     if ( $cat->count > 0 ) {

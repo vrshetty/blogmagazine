@@ -8,8 +8,8 @@ $wp_customize->add_panel(
 		'priority'       => 30,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__('Header Options', '__Text_Domain__'),
-		'description'    => esc_html__('Header related settings and sections goes here. You can manage header from this panel.', '__Text_Domain__'),
+		'title'          => esc_html__('Header Options', 'blogmagazine'),
+		'description'    => esc_html__('Header related settings and sections goes here. You can manage header from this panel.', 'blogmagazine'),
 	)
 );
 

@@ -6,20 +6,22 @@ if(!function_exists('blogmagazine_block_posts_tabs_callback')):
 
 	function blogmagazine_block_posts_tabs_callback(){
 
-		$block_layout   = isset( $_POST['block_layout'] ) ? esc_attr($_POST['block_layout']) : '';
-		$thumbnail_size   = isset( $_POST['thumbnail_size'] ) ? esc_attr($_POST['thumbnail_size']) : '';
-		$largeimg_size   = isset( $_POST['largeimg_size'] ) ? esc_attr($_POST['largeimg_size']) : '';
-		$excerpt_length   = isset( $_POST['excerpt_length'] ) ? absint($_POST['excerpt_length']) : '';
-		$posts_per_page   = isset( $_POST['posts_per_page'] ) ? absint($_POST['posts_per_page']) : 6;
-		$terms_ids   = isset( $_POST['terms_ids'] ) ? absint($_POST['terms_ids']) : '';
+		$_all_post_vals = wp_unslash( $_POST );
+
+		$block_layout   = isset( $_all_post_vals['block_layout'] ) ? esc_attr($_all_post_vals['block_layout']) : '';
+		$thumbnail_size   = isset( $_all_post_vals['thumbnail_size'] ) ? esc_attr($_all_post_vals['thumbnail_size']) : '';
+		$largeimg_size   = isset( $_all_post_vals['largeimg_size'] ) ? esc_attr($_all_post_vals['largeimg_size']) : '';
+		$excerpt_length   = isset( $_all_post_vals['excerpt_length'] ) ? absint($_all_post_vals['excerpt_length']) : '';
+		$posts_per_page   = isset( $_all_post_vals['posts_per_page'] ) ? absint($_all_post_vals['posts_per_page']) : 6;
+		$terms_ids   = isset( $_all_post_vals['terms_ids'] ) ? absint($_all_post_vals['terms_ids']) : '';
 
 		$response = array(
-			'request' => $_POST,
+			'request' => $_all_post_vals,
 			'is_success' => false,
 			'widget_html' => false,
 		);
         // Verify the nonce before proceeding.
-		$block_posts_nonce   = isset( $_POST['block_posts_nonce'] ) ? esc_html($_POST['block_posts_nonce']) : '';
+		$block_posts_nonce   = isset( $_all_post_vals['block_posts_nonce'] ) ? esc_html($_all_post_vals['block_posts_nonce']) : '';
 		$block_posts_action = 'blogmagazine_block_post_tabs_nonce';
 
         // Check if nonce is set...
