@@ -1,0 +1,4 @@
+[30-May-2019 13:47:06 UTC] PHP Notice:  Undefined index: dglib_theme_settings_metabox_tab in E:\xampp\htdocs\themecentury\themes\wp-content\themes\blogmagazine\inc\dglib\metabox\dg-theme-settings-metabox.php on line 65
+[30-May-2019 13:49:14 UTC] PHP Notice:  Undefined index: dglib_theme_settings_metabox_tab in E:\xampp\htdocs\themecentury\themes\wp-content\themes\blogmagazine\inc\dglib\metabox\dg-theme-settings-metabox.php on line 65
+[30-May-2019 13:52:37 UTC] PHP Notice:  Undefined index: dglib_theme_settings_metabox_tab in E:\xampp\htdocs\themecentury\themes\wp-content\themes\blogmagazine\inc\dglib\metabox\dg-theme-settings-metabox.php on line 65
+[30-May-2019 13:54:50 UTC] PHP Notice:  Undefined index: dglib_theme_settings_metabox_tab in E:\xampp\htdocs\themecentury\themes\wp-content\themes\blogmagazine\inc\dglib\metabox\dg-theme-settings-metabox.php on line 65

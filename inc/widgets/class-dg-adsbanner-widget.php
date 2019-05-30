@@ -46,7 +46,7 @@ class BlogMagazine_Ads_Banner_Widget extends Dglib_Master_Widget{
                                 'dg_widget_field_name'     => 'title_target',
                                 'dg_widget_field_wraper'   => 'title-target',
                                 'dg_widget_field_title'    => esc_html__( 'Link Target', 'blogmagazine' ),
-                                'dg_widget_field_default'  => '_self',
+                                'dg_widget_field_default'  => '',
                                 'dg_widget_field_type'     => 'select',
                                 'dg_widget_field_options'  => dglib_link_target(),
                                 'dg_widget_field_relation' => array(
@@ -123,7 +123,7 @@ class BlogMagazine_Ads_Banner_Widget extends Dglib_Master_Widget{
         $title_link  = isset( $instance['title_link'] ) ? esc_html($instance['title_link']) : '';
         $banner_image  = isset( $instance['banner_image'] ) ? esc_url($instance['banner_image']) : '';
         $banner_url    = isset( $instance['banner_url'] ) ? esc_url($instance['banner_url']) : '';
-        $banner_target = isset( $instance['banner_target'] ) ? '_self' : '_blank';
+        $banner_target = isset( $instance['banner_target'] ) ? esc_attr($instance['banner_target']) : '';
         $banner_rel    = isset( $instance['banner_rel'] ) ? '' : 'nofollow';
 
         echo $before_widget;

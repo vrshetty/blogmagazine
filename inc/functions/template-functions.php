@@ -148,6 +148,13 @@ if( !function_exists( 'blogmagazine_body_classes' ) ):
             $classes[] = 'group-blog';
         }
 
+        /**
+         * option for web site layout 
+         */
+        $website_layout = esc_attr( get_theme_mod( 'blogmagazine_site_layout', 'fullwidth_layout' ) );
+
+        $classes[] = $website_layout;
+
         // Adds a class of hfeed to non-singular pages.
         if ( ! is_singular() ) {
             $classes[] = 'hfeed';

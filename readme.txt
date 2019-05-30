@@ -1,7 +1,7 @@
 === BlogMagazine ===
 
 Contributors:       developerdinesh1
-Donate link: 		https://dinesh-ghimire.com.np/
+Donate link:        https://dinesh-ghimire.com.np/
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.2
 Requires PHP:       5.3
@@ -39,15 +39,11 @@ BlogMagazine theme is translation ready.
 
 == Screenshots ==
 
-1. https://www.pexels.com/photo/barbell-on-the-floor-1552252/ - License CC0 Public Domain
-2. https://www.pexels.com/photo/athletes-field-football-football-players-532805/ - License CC0 Public Domain
-3. https://www.pexels.com/photo/man-with-steel-artificial-arm-sitting-in-front-of-white-table-39349/ - License CC0 Public Domain
-4. https://www.pexels.com/photo/active-adult-athlete-body-416778/ - License CC0 Public Domain
-5. https://www.pexels.com/photo/man-doing-ice-skiing-on-snow-field-in-shallow-focus-photography-848618/ - License CC0 Public Domain
-6. https://www.pexels.com/photo/green-coconut-trees-near-body-of-water-1049298/ - License CC0 Public Domain
-7. https://www.pexels.com/photo/beach-beautiful-bridge-carribean-449627/ - License CC0 Public Domain
-8. https://www.pexels.com/photo/man-standing-on-a-rock-1271619/ - License CC0 Public Domain
-9. https://www.pexels.com/photo/two-person-sitting-by-the-table-with-macbook-pro-on-top-of-table-1305360/ - License CC0 Public Domain
+1. https://pxhere.com/en/photo/1419836 - License CC0 Public Domain
+2. https://pxhere.com/en/photo/732395 - License CC0 Public Domain
+3. https://pxhere.com/en/photo/1082017 - License CC0 Public Domain
+4. https://pxhere.com/en/photo/903193 - License CC0 Public Domain
+5. https://pxhere.com/en/photo/1087225 - License CC0 Public Domain
 
 == Licenses ==
 https://github.com/FortAwesome/Font-Awesome - MIT License
@@ -56,10 +52,13 @@ https://github.com/sachinchoolur/lightslider - MIT License
 
 == Changelog ==
 
-= 1.0.2 - 2019/05/-- =
+= 1.0.2 - 2019/05/28 =
     * Added: Widget Tab added
     * Added: Grid Images Added
     * Fixed: Widget Default value issue fixed
+    * Fixed: Non validated/non sanitize issue fixing assign by  reviewer
+    * Fixed: All Error and worning issues assign by  reviewer
+    * Removed: Removed empty if statements assign by  reviewer
 
 = 1.0.1 - 2019/04/14 =
     *  All Error Fixed
@@ -68,6 +67,14 @@ https://github.com/sachinchoolur/lightslider - MIT License
     * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+    * Added: Widget Tab added
+    * Added: Grid Images Added
+    * Fixed: Widget Default value issue fixed
+    * Fixed: Non validated/non sanitize issue fixing assign by  reviewer
+    * Fixed: All Error and worning issues assign by  reviewer
+    * Removed: Removed empty if statements assign by  reviewer
 
 = 1.0.1 = 
 *  All Error Fixed

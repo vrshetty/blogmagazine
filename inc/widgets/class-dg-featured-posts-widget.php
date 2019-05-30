@@ -49,7 +49,7 @@ class BlogMagazine_Featured_Posts_Widget extends Dglib_Master_Widget{
                                 'dg_widget_field_name'     => 'title_target',
                                 'dg_widget_field_wraper'   => 'title-target',
                                 'dg_widget_field_title'    => esc_html__( 'Link Target', 'blogmagazine' ),
-                                'dg_widget_field_default'  => '_self',
+                                'dg_widget_field_default'  => '',
                                 'dg_widget_field_type'     => 'select',
                                 'dg_widget_field_options'  => dglib_link_target(),
                                 'dg_widget_field_relation' => array(
