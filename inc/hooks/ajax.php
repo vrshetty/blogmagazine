@@ -43,7 +43,7 @@ if(!function_exists('blogmagazine_block_posts_tabs_callback')):
 			'largeimg_size' => $largeimg_size,
 			'excerpt_length' => $excerpt_length,
 		);
-		?><div class="blogmagazine-block-posts-wrapper blgmg-tab-term-<?php echo absint($terms_ids); ?> tab-active"><?php
+		?><div class="blogmagazine-block-posts-wrapper dglib-tab-term-<?php echo absint($terms_ids); ?> tab-active"><?php
 		switch ( $block_layout ){
 			case 'layout2':
 			blogmagazine_block_second_layout_section( $blogmagazine_args );

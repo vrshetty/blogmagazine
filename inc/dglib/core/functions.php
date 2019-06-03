@@ -242,7 +242,8 @@ if(!function_exists('dglib_get_excerpt')):
             $readmore_html = apply_filters( 'excerpt_more', $default_remore );
             $excerpt .= $readmore_html;
         }
-        return $excerpt;
+        $excerpt = trim(preg_replace('/\s\s+/', ' ', $excerpt));
+        return apply_filters( 'get_the_excerpt', $excerpt );
     }
 
 endif;
@@ -310,3 +311,36 @@ if( !function_exists('dglib_reactions_icons') ):
 		return $dglib_reactions_icons;
 	}
 endif;
+
+
+/*
+ * Dglib Array Column
+ */
+if( !function_exists('dglib_array_column') ){
+
+	function dglib_array_column( array $input, $columnKey, $indexKey = null ){
+		$array = array();
+        foreach ($input as $value) {
+            if ( !array_key_exists($columnKey, $value)) {
+                trigger_error("Key \"$columnKey\" does not exist in array");
+                return false;
+            }
+            if (is_null($indexKey)) {
+                $array[] = $value[$columnKey];
+            }
+            else {
+                if ( !array_key_exists($indexKey, $value)) {
+                    trigger_error("Key \"$indexKey\" does not exist in array");
+                    return false;
+                }
+                if ( ! is_scalar($value[$indexKey])) {
+                    trigger_error("Key \"$indexKey\" does not contain scalar value");
+                    return false;
+                }
+                $array[$value[$indexKey]] = $value[$columnKey];
+            }
+        }
+        return $array;
+	}
+
+}

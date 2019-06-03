@@ -92,6 +92,16 @@
  						field.find("input[type='text'][data-name]").each(function(){
  							var defaultValue = $(this).attr('data-default');
  							$(this).val(defaultValue);
+ 							if($(this).hasClass('dg-color-picker')){
+	 							var color_picker_option = {
+	 								change: function(event, ui){
+	 									var theColor = ui.color.toString();
+	 									console.log( 'Color is ' + theColor);
+	 									$(this).val(theColor);
+	 								},
+	 							};
+	 							$(this).wpColorPicker(color_picker_option);
+ 							}
  						});
  						field.find("input[type='radio'][data-name]").each(function(){
  							var radio_id = $(this).attr('id');

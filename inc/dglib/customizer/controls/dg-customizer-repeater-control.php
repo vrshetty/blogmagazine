@@ -132,6 +132,7 @@ if ( ! class_exists( 'Dglib_Customizer_Repeater_Control' )):
 										echo '<input class="dg-color-picker" data-default="' . esc_attr( $default ) . '" data-name="' . esc_attr( $key ) . '" type="text" value="' . esc_url( $new_value ) . '"/>';
 										break;
 									case 'reaction':
+										$reaction_default_val = 'like';
 										?>
 										<div class="dg-imageoption-wrapper">
 											<?php 
@@ -148,8 +149,8 @@ if ( ! class_exists( 'Dglib_Customizer_Repeater_Control' )):
 													class="dglib-imageoption-radio" 
 													id="<?php echo esc_attr($key.'_'.$reaction_slug); ?>" 
 													data-default="<?php esc_attr( $default ); ?>"
-													value="<?php $reaction_slug; ?>" 
-													<?php checked( $new_value, $reaction_slug); ?> 
+													value="<?php echo esc_attr($reaction_slug); ?>" 
+													<?php checked( $reaction_default_val, $reaction_slug); ?> 
 													/> 
 													<label 
 													class="dg-customizer-imageoption-label" 

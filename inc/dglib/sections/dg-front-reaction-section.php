@@ -1,4 +1,5 @@
 <?php 
+
 /*
  * Reactiions Section Frontend
  */
@@ -13,7 +14,8 @@ if(!function_exists('dblib_reaction_icons_callback')):
 		if(!$visitor_reactions_icons_arr){
 			return;
 		}
-		$selected_reaction_icon_names = array_unique(array_column($visitor_reactions_icons_arr, 'reaction_icon_name') );
+
+		$selected_reaction_icon_names = array_unique(dglib_array_column($visitor_reactions_icons_arr, 'reaction_icon_name') );
 		$visitor_reactions_unique = array_intersect_key( $visitor_reactions_icons_arr, $selected_reaction_icon_names );
 		$singular_post_id = get_the_ID();
 		$dglib_reaction_details = array();

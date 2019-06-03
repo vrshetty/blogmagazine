@@ -21,7 +21,7 @@ if ( ! function_exists( 'dglib_sanitize_repeater_data' ) ){
 			}
 			return json_encode( $repeater_json );
 		}
-		return $input;
+		return json_encode(array());
 	}
 }
 

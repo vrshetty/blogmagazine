@@ -5,7 +5,7 @@ Donate link:        https://dinesh-ghimire.com.np/
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.2
 Requires PHP:       5.3
-Version:            1.0.2
+Version:            1.0.3
 Stable tag:         trunk
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
@@ -52,6 +52,14 @@ https://github.com/sachinchoolur/lightslider - MIT License
 
 == Changelog ==
 
+
+= 1.0.3 - 2019/06/04 =
+    * Fixed: Change Header Banner Image
+    * Fixed: Change Pexel image to pxhere image for GPL Issue
+    * Fixed: Screenshot Changed 
+    * Fixed: Reaction on customizer issue fixed
+    * Fixed: Widget Tab JS added multiple dom issue fixed
+
 = 1.0.2 - 2019/05/28 =
     * Added: Widget Tab added
     * Added: Grid Images Added
@@ -67,6 +75,13 @@ https://github.com/sachinchoolur/lightslider - MIT License
     * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+    * Fixed: Change Header Banner Image
+    * Fixed: Change Pexel image to pxhere image for GPL Issue
+    * Fixed: Screenshot Changed 
+    * Fixed: Reaction on customizer issue fixed
+    * Fixed: Widget Tab JS added multiple dom issue fixed
 
 = 1.0.2 =
     * Added: Widget Tab added

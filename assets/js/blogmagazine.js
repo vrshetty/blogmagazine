@@ -117,27 +117,35 @@
             },
 
             Widget_Title_Tab: function(evt){
+
                 evt.preventDefault();
                 var tab_item = $(this);
-                
+                if( tab_item.closest( '.wdgt-tab-term' ).hasClass( 'active-item' ) ){
+                    return;
+                }
+                var widget_title_tabs =  tab_item.closest('.wdgt-title-tabs');
+                if( widget_title_tabs.attr( 'data-loading' ) == 1 ){
+                    return;
+                }
+
                 var tab_content_class = tab_item.data('tab');
                 var widget_title = tab_item.closest('.blogmagazine-block-title');
-                var widget_title_tabs =  tab_item.closest('.wdgt-title-tabs');
                 var block_post_widget = tab_item.closest('.widget');
                 
                 widget_title_tabs.find('.wdgt-tab-term').removeClass('active-item');
                 tab_item.closest('li').addClass('active-item');
-                block_post_widget.find('.blogmagazine-block-posts-wrapper').removeClass('tab-active');
+                block_post_widget.find('.blogmagazine-block-posts-wrapper').removeClass( 'tab-active' );
                 if( block_post_widget.find( '.' + tab_content_class ).length ){
-                    block_post_widget.find( '.' + tab_content_class ).addClass('tab-active');
+                    block_post_widget.find( '.' + tab_content_class ).addClass( 'tab-active' );
                     return;
                 }
-
                 var ajax_args = $(this).data('ajax-args');
                 ajax_args.beforeSend = function(){
+                    widget_title_tabs.attr( 'data-loading', 1 );
                     block_post_widget.find('.blgmg-wdgt-preloader').removeClass('hidden');
                 };
                 ajax_args.success = function(data, status, settings){
+                    widget_title_tabs.attr( 'data-loading', 0 );
                     block_post_widget.find('.blgmg-wdgt-preloader').addClass('hidden');
                     var widget_html = data.widget_html;
                     if(widget_html){
@@ -147,6 +155,7 @@
                     }
                 };
                 ajax_args.fail = function( xhr, textStatus, errorThrown ){
+                    widget_title_tabs.attr( 'data-loading', 0 );
                     console.warn('Sorry faild widget tab ajax call');
                 };
                 $.ajax(ajax_args);                

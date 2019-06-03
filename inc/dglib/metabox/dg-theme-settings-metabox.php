@@ -53,7 +53,6 @@ if(!class_exists('Dglib_Theme_Settings_Metabox')):
             /**
              * Post sidebar
              */
-            
             $dglib_single_sidebar_details = isset( $_all_post_vals['dglib_single_post_sidebar'] ) ? $_all_post_vals['dglib_single_post_sidebar'] : array();
             $dglib_single_post_sidebar = array_map( 'esc_attr', $dglib_single_sidebar_details );
             update_post_meta ( $post_id, 'dglib_single_post_sidebar', $dglib_single_post_sidebar );
@@ -244,7 +243,9 @@ if(!class_exists('Dglib_Theme_Settings_Metabox')):
             </style> 
             <div class="dglib-metabox-theme-settings dg-widget-field-tab-wraper">
                 <div class="nav-tab-wrapper dg-widget-tab-list">
-                    <?php foreach($dglib_metabox_tabs as $dglib_tab_slug => $tabs_details){ 
+                    <?php
+                    $dglib_theme_settings_metabox_tab = ($dglib_theme_settings_metabox_tab) ? $dglib_theme_settings_metabox_tab : 'dglib_single_post_sidebar';
+                    foreach($dglib_metabox_tabs as $dglib_tab_slug => $tabs_details){ 
                         $dg_metabox_field_title = (isset($tabs_details['dg_metabox_field_title'])) ? esc_html($tabs_details['dg_metabox_field_title']) : '';
                         $dg_metabox_field_dashicons = (isset($tabs_details['dg_metabox_field_dashicons'])) ? esc_html($tabs_details['dg_metabox_field_dashicons']) : '';
                         ?>
