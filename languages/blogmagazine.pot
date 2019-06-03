@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
-"POT-Creation-Date: 2019-05-27 06:25:40+00:00\n"
+"POT-Creation-Date: 2019-06-03 19:04:39+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -130,8 +130,8 @@ msgid "(opens in a new tab)"
 msgstr ""
 
 #: inc/customizer/editor/section-custom-javascript.php:33
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:205
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:343
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:206
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:344
 #: inc/dglib/widgets/fields/dg-repeater-field.php:49
 #: inc/dglib/widgets/fields/dg-repeater-field.php:86
 msgid "Close"
@@ -255,8 +255,8 @@ msgstr ""
 
 #: inc/customizer/header/section-main-navigation.php:79
 #: inc/dglib/customizer/controls/dg-customizer-icons-control.php:38
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:174
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:309
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:175
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:310
 #: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:89
 #: inc/dglib/widgets/fields/dg-icon-field.php:19
 msgid "Search Icon"
@@ -384,7 +384,7 @@ msgstr ""
 #: inc/customizer/templates/templates-page-details.php:31
 #: inc/customizer/templates/templates-post-details.php:32
 #: inc/customizer/templates/templates-search-page.php:31
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:144
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:143
 msgid "Left Sidebar"
 msgstr ""
 
@@ -392,7 +392,7 @@ msgstr ""
 #: inc/customizer/templates/templates-page-details.php:35
 #: inc/customizer/templates/templates-post-details.php:36
 #: inc/customizer/templates/templates-search-page.php:35
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:148
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:147
 msgid "Right Sidebar"
 msgstr ""
 
@@ -400,7 +400,7 @@ msgstr ""
 #: inc/customizer/templates/templates-page-details.php:39
 #: inc/customizer/templates/templates-post-details.php:40
 #: inc/customizer/templates/templates-search-page.php:39
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:152
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:151
 msgid "No Sidebar"
 msgstr ""
 
@@ -408,7 +408,7 @@ msgstr ""
 #: inc/customizer/templates/templates-page-details.php:43
 #: inc/customizer/templates/templates-post-details.php:44
 #: inc/customizer/templates/templates-search-page.php:43
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:156
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:155
 msgid "No Sidebar Center"
 msgstr ""
 
@@ -428,8 +428,8 @@ msgstr ""
 
 #: inc/customizer/templates/templates-archive.php:85
 #: inc/customizer/templates/templates-search-page.php:85
-#: inc/functions/template-functions.php:492
-#: inc/functions/template-functions.php:508
+#: inc/functions/template-functions.php:499
+#: inc/functions/template-functions.php:515
 msgid "Continue Reading"
 msgstr ""
 
@@ -613,31 +613,31 @@ msgstr ""
 msgid "Read More"
 msgstr ""
 
-#: inc/dglib/core/functions.php:281
+#: inc/dglib/core/functions.php:282
 msgid "Like"
 msgstr ""
 
-#: inc/dglib/core/functions.php:285
+#: inc/dglib/core/functions.php:286
 msgid "Sad"
 msgstr ""
 
-#: inc/dglib/core/functions.php:289
+#: inc/dglib/core/functions.php:290
 msgid "Love"
 msgstr ""
 
-#: inc/dglib/core/functions.php:293
+#: inc/dglib/core/functions.php:294
 msgid "Surprised"
 msgstr ""
 
-#: inc/dglib/core/functions.php:297
+#: inc/dglib/core/functions.php:298
 msgid "Angry"
 msgstr ""
 
-#: inc/dglib/core/functions.php:301
+#: inc/dglib/core/functions.php:302
 msgid "Happy"
 msgstr ""
 
-#: inc/dglib/core/functions.php:305
+#: inc/dglib/core/functions.php:306
 msgid "Crying"
 msgstr ""
 
@@ -652,8 +652,8 @@ msgid ""
 msgstr ""
 
 #: inc/dglib/customizer/controls/dg-customizer-icons-control.php:34
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:170
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:305
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:171
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:306
 #: inc/dglib/customizer/sections/section-social-icons.php:46
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:94
 #: inc/dglib/widgets/fields/dg-icon-field.php:15
@@ -664,28 +664,28 @@ msgstr ""
 msgid "Change Icon"
 msgstr ""
 
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:190
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:329
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:191
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:330
 msgid "Field type "
 msgstr ""
 
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:190
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:329
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:191
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:330
 #: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:174
 msgid " not found."
 msgstr ""
 
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:201
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:340
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:202
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:341
 msgid "Delete"
 msgstr ""
 
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:203
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:341
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:204
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:342
 msgid "|"
 msgstr ""
 
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:305
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:306
 #: inc/dglib/widgets/fields/dg-icon-field.php:15
 msgid "Edit Icon"
 msgstr ""
@@ -878,54 +878,54 @@ msgstr ""
 msgid "Successfully react on emoji."
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:83
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:140
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:82
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:139
 msgid "Default Sidebar"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:89
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:88
 msgid "Left sidebar"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:95
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:94
 msgid "Right sidebar"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:101
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:100
 msgid "No sidebar Full width"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:107
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:106
 msgid "No sidebar Content Centered"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:120
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:119
 msgid "Theme Options"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:135
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:134
 msgid "Sidebar Layout"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:172
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:171
 msgid "Sidebars"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:174
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:173
 msgid "Sidebar Settings"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:175
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:174
 msgid ""
 "If you want to override customizer settings please choose sidebar otherwise "
 "leave it default sidebar."
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:300
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:301
 msgid "Sorry metabox field not found."
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:306
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:307
 msgid "Please put some fields to show on metabox"
 msgstr ""
 
@@ -1285,7 +1285,7 @@ msgstr ""
 msgid "Not found."
 msgstr ""
 
-#: inc/functions/template-functions.php:352
+#: inc/functions/template-functions.php:359
 msgid "Select Category"
 msgstr ""
 
@@ -1648,7 +1648,7 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/functions/template-functions.php:210
+#: inc/functions/template-functions.php:217
 #. Translators: If there are characters in your language that are not supported
 #. by Roboto Condensed, translate this to 'off'. Do not translate into your own
 #. language.
@@ -1656,14 +1656,14 @@ msgctxt "Roboto Condensed font: on or off"
 msgid "on"
 msgstr ""
 
-#: inc/functions/template-functions.php:218
+#: inc/functions/template-functions.php:225
 #. Translators: If there are characters in your language that are not supported
 #. by Roboto, translate this to 'off'. Do not translate into your own language.
 msgctxt "Roboto font: on or off"
 msgid "on"
 msgstr ""
 
-#: inc/functions/template-functions.php:226
+#: inc/functions/template-functions.php:233
 #. Translators: If there are characters in your language that are not supported
 #. by Titillium Web, translate this to 'off'. Do not translate into your own
 #. language.
