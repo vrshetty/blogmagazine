@@ -102,7 +102,7 @@ class Dglib_Social_Icons_Widget extends Dglib_Master_Widget{
                                     'social_media_link' => array(
                                         'dg_widget_field_name'     => 'social_media_link',
                                         'dg_widget_field_title'    => esc_html__( 'Social Media Link', 'blogmagazine' ),
-                                        'dg_widget_field_default'  => 'https://facebook.com',
+                                        'dg_widget_field_default'  => '',
                                         'dg_widget_field_type'     => 'url',
                                     ),
                                     'social_media_color' => array(
