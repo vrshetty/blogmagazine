@@ -5,7 +5,7 @@ Donate link:        https://dinesh-ghimire.com.np/
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.2
 Requires PHP:       5.3
-Version:            1.0.3
+Version:            1.0.4
 Stable tag:         trunk
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
@@ -52,6 +52,10 @@ https://github.com/sachinchoolur/lightslider - MIT License
 
 == Changelog ==
 
+= 1.0.4 - 2019/06/05 =
+    * Fixed: Screenshot Site description changed
+    * Added: Block Posts widget Pagination hook added
+    * Removed: Social Icon url default value removed
 
 = 1.0.3 - 2019/06/04 =
     * Fixed: Change Header Banner Image
@@ -75,6 +79,11 @@ https://github.com/sachinchoolur/lightslider - MIT License
     * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.4 =
+    * Fixed: Screenshot Site description changed
+    * Added: Block Posts widget Pagination hook added
+    * Removed: Social Icon url default value removed
 
 = 1.0.3 =
     * Fixed: Change Header Banner Image
