@@ -21,6 +21,7 @@ if( !function_exists('dglib_customize_register') ):
         require_once dglib_file_directory('customizer/footer/panel-footer.php'); // priority - 60
         require_once dglib_file_directory('customizer/colors/panel-colors.php'); // priority - 70
         require_once dglib_file_directory('customizer/options/panel-options.php'); // priority - 80
+        require_once dglib_file_directory('customizer/editor/panel-code-editor.php'); // priority - 200
         
     }
 

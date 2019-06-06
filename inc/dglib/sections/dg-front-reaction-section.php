@@ -1,5 +1,4 @@
 <?php 
-
 /*
  * Reactiions Section Frontend
  */
@@ -14,7 +13,6 @@ if(!function_exists('dblib_reaction_icons_callback')):
 		if(!$visitor_reactions_icons_arr){
 			return;
 		}
-
 		$selected_reaction_icon_names = array_unique(dglib_array_column($visitor_reactions_icons_arr, 'reaction_icon_name') );
 		$visitor_reactions_unique = array_intersect_key( $visitor_reactions_icons_arr, $selected_reaction_icon_names );
 		$singular_post_id = get_the_ID();
@@ -53,7 +51,8 @@ if(!function_exists('dblib_reaction_icons_callback')):
 									<span class="dblib-reaction-count"><?php 
 									switch ($display_reaction_value){
 										case 'percentage':
-										echo ($dglib_reaction_details[$reaction_icon_name]) ? round(( $dglib_reaction_details[$reaction_icon_name]/array_sum($dglib_reaction_details)  * 100 )) . '%' : $dglib_reaction_details[$reaction_icon_name] . '%';
+										$reaction_percentage = ($dglib_reaction_details[$reaction_icon_name]) ? round(( $dglib_reaction_details[$reaction_icon_name]/array_sum($dglib_reaction_details)  * 100 )) . '%' : $dglib_reaction_details[$reaction_icon_name] . '%';
+										echo esc_html($reaction_percentage);
 										break;
 										default:
 										echo absint($dglib_reaction_details[$reaction_icon_name]); 
@@ -62,7 +61,7 @@ if(!function_exists('dblib_reaction_icons_callback')):
 									?></span>
 									<figure class="dblib-reaction-image-wrap">
 										<?php if($reaction_icon_name): ?>
-											<img src="<?php echo dglib_directory_uri('assets/img/reactions/'.$reaction_icon_name.'.png') ?>" alt="<?php echo esc_attr($reaction_icon_title); ?>" title="<?php echo esc_attr($reaction_icon_title); ?>"/>
+											<img src="<?php echo esc_url(dglib_directory_uri('assets/img/reactions/'.$reaction_icon_name.'.png') ); ?>" alt="<?php echo esc_attr($reaction_icon_title); ?>" title="<?php echo esc_attr($reaction_icon_title); ?>"/>
 										<?php endif; ?>
 									</figure>
 									<em class="dglib-reaction-label"><?php echo esc_html($reaction_icon_title); ?></em>

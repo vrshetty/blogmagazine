@@ -773,9 +773,6 @@ author Widgets
   .blogmagazine_block_posts .layout4 .blogmagazine-alt-grid-post:nth-child(2n+2) .blogmagazine-post-thumb {
     display: table-footer-group; }
 
-.blogmagazine_block_posts .layout4 .blogmagazine-block-posts-wrapper {
-  display: block; }
-
 .blogmagazine_block_posts .layout2 .blogmagazine-primary-block-wrap,
 .blogmagazine_block_posts .layout2 .blogmagazine-secondary-block-wrap {
   margin-left: -3%;

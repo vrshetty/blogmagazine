@@ -25,6 +25,20 @@ if ( ! function_exists( 'dglib_sanitize_repeater_data' ) ){
 	}
 }
 
+if(!function_exists('dglib_sanitize_javascript')){
+	/**
+	 * Function to sanitize javascript
+	 * @param $javascript_code
+	 * @return sanitize $javascript_code
+	 */
+	function dglib_sanitize_javascript( $javascript_code ){
+
+		return $javascript_code;
+
+	}
+
+}
+
 /*
  * Sanitize Checkbox Data
  */

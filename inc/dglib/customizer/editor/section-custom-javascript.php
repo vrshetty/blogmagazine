@@ -47,6 +47,7 @@ $wp_customize->add_setting(
 	'custom_javascript_code',
 	array(
 		'type' => 'option',
+		'sanitize_callback' => 'dglib_sanitize_javascript',
 	)
 );
 $wp_customize->add_control(

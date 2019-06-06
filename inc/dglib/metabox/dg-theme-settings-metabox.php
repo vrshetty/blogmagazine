@@ -53,6 +53,7 @@ if(!class_exists('Dglib_Theme_Settings_Metabox')):
             /**
              * Post sidebar
              */
+            
             $dglib_single_sidebar_details = isset( $_all_post_vals['dglib_single_post_sidebar'] ) ? $_all_post_vals['dglib_single_post_sidebar'] : array();
             $dglib_single_post_sidebar = array_map( 'esc_attr', $dglib_single_sidebar_details );
             update_post_meta ( $post_id, 'dglib_single_post_sidebar', $dglib_single_post_sidebar );
@@ -243,7 +244,7 @@ if(!class_exists('Dglib_Theme_Settings_Metabox')):
             </style> 
             <div class="dglib-metabox-theme-settings dg-widget-field-tab-wraper">
                 <div class="nav-tab-wrapper dg-widget-tab-list">
-                    <?php
+                    <?php 
                     $dglib_theme_settings_metabox_tab = ($dglib_theme_settings_metabox_tab) ? $dglib_theme_settings_metabox_tab : 'dglib_single_post_sidebar';
                     foreach($dglib_metabox_tabs as $dglib_tab_slug => $tabs_details){ 
                         $dg_metabox_field_title = (isset($tabs_details['dg_metabox_field_title'])) ? esc_html($tabs_details['dg_metabox_field_title']) : '';
@@ -259,7 +260,7 @@ if(!class_exists('Dglib_Theme_Settings_Metabox')):
                         $dg_metabox_field_description = (isset($tabs_details['dg_metabox_field_description'])) ? esc_html($tabs_details['dg_metabox_field_description']) : '';
                         $dglib_tab_fields = (isset($dglib_metabox_fields[$dglib_tab_slug] ) ) ? $dglib_metabox_fields[$dglib_tab_slug] : array();
                         ?>
-                        <div data-value="<?php echo $dglib_theme_settings_metabox_tab.':'.$dglib_tab_slug; ?>" class="dg-tab-contents <?php echo ( $dglib_theme_settings_metabox_tab==$dglib_tab_slug ) ? 'dg-tab-active' : ''; ?>" id="dglib_theme_option_content_<?php echo esc_attr($dglib_tab_slug); ?>">
+                        <div data-value="<?php echo esc_attr($dglib_theme_settings_metabox_tab.':'.$dglib_tab_slug); ?>" class="dg-tab-contents <?php echo ( $dglib_theme_settings_metabox_tab==$dglib_tab_slug ) ? 'dg-tab-active' : ''; ?>" id="dglib_theme_option_content_<?php echo esc_attr($dglib_tab_slug); ?>">
                             <div class="dglib-tab-content-header">
                                 <h3><?php echo esc_html($dg_metabox_field_heading); ?></h3> 
                                 <p><?php echo esc_html($dg_metabox_field_description); ?></p>

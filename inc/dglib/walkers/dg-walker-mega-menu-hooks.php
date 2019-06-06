@@ -147,10 +147,10 @@ if(!function_exists('dglib_mega_menu_item_form')):
 										id="<?php echo esc_attr( $id.'_'.$taxonomy.'_'.$tcy_term_id ); ?>" 
 										name="<?php echo esc_attr( $field_name ); ?>" 
 										type="checkbox" 
-										value="<?php echo $tcy_term_id; ?>" 
+										value="<?php echo esc_attr($tcy_term_id); ?>" 
 										<?php checked(in_array($tcy_term_id, (array)$value)); ?> 
 										/>
-										<label for="<?php echo esc_attr( $id.'_'.$taxonomy.'_'.$tcy_term_id ); ?>"><?php echo esc_html( $tcy_term_name ).' ('.$single_term->count.')'; ?></label>
+										<label for="<?php echo esc_attr( $id.'_'.$taxonomy.'_'.$tcy_term_id ); ?>"><?php echo esc_html( $tcy_term_name .' ('.$single_term->count.')' ); ?></label>
 									</li>
 									<?php
 								}
@@ -171,7 +171,7 @@ if(!function_exists('dglib_mega_menu_item_form')):
 				<?php
 				break;
 				default:
-				?><p class="dg-menu-field-wrapper field-<?php echo esc_attr($name); ?> <?php echo esc_attr($name); ?> <?php echo esc_attr($name); ?>-wide"><?php echo esc_html__('Field ', 'blogmagazine') . $type . esc_html__( ' not found.', 'blogmagazine'); ?></p><?php
+				?><p class="dg-menu-field-wrapper field-<?php echo esc_attr($name); ?> <?php echo esc_attr($name); ?> <?php echo esc_attr($name); ?>-wide"><?php echo esc_html__('Field ', 'blogmagazine') . esc_html($type) . esc_html__( ' not found.', 'blogmagazine'); ?></p><?php
 				break;
 			}
 		}

@@ -16,7 +16,6 @@ if(!function_exists('dglib_assets_url')){
 
 }
 
-
 if(!function_exists('dglib_posttypes')){
 	/**
 	 * Function to get public post types
@@ -231,6 +230,7 @@ if (!function_exists('dglib_is_json')){
 if(!function_exists('dglib_get_excerpt')):
 
     function dglib_get_excerpt($excerpt_length=150, $readmore=true){
+    	
         $full_content = get_the_content();
         $content_without_shortcode = strip_shortcodes($full_content);
         $content_without_tags = strip_tags($content_without_shortcode);
@@ -242,8 +242,10 @@ if(!function_exists('dglib_get_excerpt')):
             $readmore_html = apply_filters( 'excerpt_more', $default_remore );
             $excerpt .= $readmore_html;
         }
+        
         $excerpt = trim(preg_replace('/\s\s+/', ' ', $excerpt));
         return apply_filters( 'get_the_excerpt', $excerpt );
+
     }
 
 endif;
@@ -311,7 +313,6 @@ if( !function_exists('dglib_reactions_icons') ):
 		return $dglib_reactions_icons;
 	}
 endif;
-
 
 /*
  * Dglib Array Column

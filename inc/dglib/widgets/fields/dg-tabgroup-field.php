@@ -14,7 +14,7 @@ $current_widget_slug = $centurywidget->id_base.'_'.$centurywidget->number.'_';
 		foreach($dg_widget_field_options as $tab_key=>$tab_details){
 			$current_tab_id = $current_widget_slug.$tab_key;
 			?>
-			<label for="field_<?php echo esc_attr($current_tab_id); ?>" data-id="#content_<?php echo esc_attr($current_tab_id); ?>" class="nav-tab <?php echo ($tab_key == $dg_widget_field_value) ? 'nav-tab-active' : ''; ?>"><?php echo sanitize_text_field($tab_details['dg_widget_field_title']); ?><input id="field_<?php echo esc_attr($current_tab_id); ?>" type="radio" name="<?php echo $centurywidget->get_field_name($dg_widget_field_name); ?>" value="<?php echo esc_attr($tab_key); ?>" <?php checked($dg_widget_field_value, $tab_key); ?> class="dg-hidden"/></label>
+			<label for="field_<?php echo esc_attr($current_tab_id); ?>" data-id="#content_<?php echo esc_attr($current_tab_id); ?>" class="nav-tab <?php echo ($tab_key == $dg_widget_field_value) ? 'nav-tab-active' : ''; ?>"><?php echo esc_html($tab_details['dg_widget_field_title']); ?><input id="field_<?php echo esc_attr($current_tab_id); ?>" type="radio" name="<?php echo esc_attr($centurywidget->get_field_name($dg_widget_field_name) ); ?>" value="<?php echo esc_attr($tab_key); ?>" <?php checked($dg_widget_field_value, $tab_key); ?> class="dg-hidden"/></label>
 		<?php } ?>
 	</h5>
 	<div class="dg-tab-content-wraper">

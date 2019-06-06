@@ -90,7 +90,7 @@ $dg_repeater_main_key = $dg_widget_field_name;
 		</script>
 
 		<input class="dg-total-repeater-counter" type="hidden" value="<?php echo esc_attr( $repeater_count ) ?>">
-		<span class="button dg-add-repeater" id="<?php echo esc_attr( $coder_repeater_depth ); ?>"><?php echo $dg_repeater_addnew_label; ?></span><br/>
+		<span class="button dg-add-repeater" id="<?php echo esc_attr( $coder_repeater_depth ); ?>"><?php echo esc_html($dg_repeater_addnew_label); ?></span><br/>
 
 	</div>
 	<?php if ( isset( $dg_widget_field_description ) ) { ?>

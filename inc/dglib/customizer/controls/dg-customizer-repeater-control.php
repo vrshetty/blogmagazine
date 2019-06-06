@@ -86,7 +86,7 @@ if ( ! class_exists( 'Dglib_Customizer_Repeater_Control' )):
 						foreach ( $repeater_fields as $key => $field_single ) {
 							$class = isset( $field_single['class'] ) ? $field_single['class'] : '';
 							?>
-                            <div class="single-field type-<?php echo esc_attr( $field_single['type'] ) . ' ' . $class; ?>">
+                            <div class="single-field type-<?php echo esc_attr( $field_single['type'] ) . ' ' . esc_attr($class); ?>">
 								<?php
 								$label       = isset( $field_single['label'] ) ? $field_single['label'] : '';
 								$description = isset( $field_single['description'] ) ? $field_single['description'] : '';
@@ -149,7 +149,7 @@ if ( ! class_exists( 'Dglib_Customizer_Repeater_Control' )):
 													class="dglib-imageoption-radio" 
 													id="<?php echo esc_attr($key.'_'.$reaction_slug); ?>" 
 													data-default="<?php esc_attr( $default ); ?>"
-													value="<?php echo esc_attr($reaction_slug); ?>" 
+													value="<?php $reaction_slug; ?>" 
 													<?php checked( $reaction_default_val, $reaction_slug); ?> 
 													/> 
 													<label 
@@ -222,7 +222,7 @@ if ( ! class_exists( 'Dglib_Customizer_Repeater_Control' )):
 							foreach ( $repeater_fields as $key => $field_single ) {
 								$class = isset( $field_single['class'] ) ? $field_single['class'] : '';
 								?>
-                                <div class="single-field type-<?php echo esc_attr( $field_single['type'] ) . ' ' . $class; ?>">
+                                <div class="single-field type-<?php echo esc_attr( $field_single['type'] ) . ' ' . esc_attr($class); ?>">
 									<?php
 									$label       = isset( $field_single['label'] ) ? $field_single['label'] : '';
 									$description = isset( $field_single['description'] ) ? $field_single['description'] : '';

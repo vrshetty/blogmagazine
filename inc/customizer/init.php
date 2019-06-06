@@ -16,8 +16,7 @@ if( !function_exists( 'blogmagazine_customizer' ) ):
         require_once blogmagazine_file_directory( 'inc/customizer/colors/panel-colors.php' );
         require_once blogmagazine_file_directory( '/inc/customizer/sections/panel-sections.php' );
         require_once blogmagazine_file_directory( 'inc/customizer/options/panel-options.php' );
-        require_once blogmagazine_file_directory( 'inc/customizer/editor/panel-code-editor.php' );
-           
+          
     }
 
 endif;

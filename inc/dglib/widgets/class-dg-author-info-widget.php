@@ -230,7 +230,7 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
                 <div class="card-content">
                     <?php 
                     if ( ! empty( $author_designation ) ): 
-                        ?><h5 class="category text-gray"><?php echo $author_designation ?></h5><?php 
+                        ?><h5 class="category text-gray"><?php echo esc_html( $author_designation ) ?></h5><?php 
                     endif; 
                     ?>
                     <h4 class="card-title"><?php echo get_the_author_meta( 'display_name', $author_id ); ?></h4>
@@ -241,8 +241,8 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
                             $description = get_the_author_meta( 'description', $author_id ); 
                             echo wpautop( $this->trim_chars( $description, $description_limit ) );
                             if ( $author_link_target && $all_link_text ) : 
-                                ?><a href="<?php echo $author_link; ?>"
-                                 class="button secondary radius "><?php echo $all_link_text; ?></a><?php 
+                                ?><a href="<?php echo esc_url( $author_link ); ?>"
+                                 class="button secondary radius "><?php echo esc_html( $all_link_text ); ?></a><?php 
                              endif;
                              ?>
                          </div>

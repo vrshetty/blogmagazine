@@ -28,13 +28,13 @@
 					?>
 					<li>
 						<input 
-						id="<?php echo esc_attr( $centurywidget->get_field_id($dg_widget_field_name) ).'_'.$dg_widget_taxonomy_type.'_'.$teg_term_id; ?>" 
+						id="<?php echo esc_attr( $centurywidget->get_field_id($dg_widget_field_name) .'_'.$dg_widget_taxonomy_type.'_'.$teg_term_id ); ?>" 
 						name="<?php echo esc_attr( $centurywidget->get_field_name($dg_widget_field_name).'[]' ); ?>" 
 						type="checkbox" 
-						value="<?php echo $teg_term_id; ?>" 
+						value="<?php echo esc_attr( $teg_term_id ); ?>" 
 						<?php checked(in_array($teg_term_id, (array)$dg_widget_field_value)); ?> 
 						/>
-						<label for="<?php echo esc_attr( $centurywidget->get_field_id($dg_widget_field_name) ).'_'.$dg_widget_taxonomy_type.'_'.$teg_term_id; ?>"><?php echo esc_html( $teg_term_name ).' ('.$single_term->count.')'; ?></label>
+						<label for="<?php echo esc_attr( $centurywidget->get_field_id($dg_widget_field_name) .'_'.$dg_widget_taxonomy_type.'_'.$teg_term_id ); ?>"><?php echo esc_html( $teg_term_name .' ('.$single_term->count.')' ); ?></label>
 					</li>
 					<?php
 				}

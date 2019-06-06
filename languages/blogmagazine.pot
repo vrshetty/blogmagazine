@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
-"POT-Creation-Date: 2019-06-05 14:10:13+00:00\n"
+"POT-Creation-Date: 2019-06-06 17:50:12+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -81,65 +81,6 @@ msgstr ""
 
 #: inc/customizer/colors/section-theme-color.php:42
 msgid "Header Text Color"
-msgstr ""
-
-#: inc/customizer/editor/panel-code-editor.php:11
-msgid "Additional Code"
-msgstr ""
-
-#: inc/customizer/editor/panel-code-editor.php:12
-msgid "You can add new css and js from this panel."
-msgstr ""
-
-#: inc/customizer/editor/section-custom-javascript.php:6
-msgid ""
-"Add your own JS code here to customize the appearance and layout of your "
-"site."
-msgstr ""
-
-#: inc/customizer/editor/section-custom-javascript.php:9
-msgid "When using a keyboard to navigate:"
-msgstr ""
-
-#: inc/customizer/editor/section-custom-javascript.php:11
-msgid "In the editing area, the Tab key enters a tab character."
-msgstr ""
-
-#: inc/customizer/editor/section-custom-javascript.php:12
-msgid "To move away from this area, press the Esc key followed by the Tab key."
-msgstr ""
-
-#: inc/customizer/editor/section-custom-javascript.php:13
-msgid ""
-"Screen reader users: when in forms mode, you may need to press the escape "
-"key twice."
-msgstr ""
-
-#: inc/customizer/editor/section-custom-javascript.php:20
-#. translators: 1: link to user profile, 2: additional link attributes, 3:
-#. accessibility text
-msgid ""
-"The edit field automatically highlights code syntax. You can disable this "
-"in your <a href=\"%1$s\" %2$s>user profile%3$s</a> to work in plain text "
-"mode."
-msgstr ""
-
-#: inc/customizer/editor/section-custom-javascript.php:26
-#. translators: accessibility text
-msgid "(opens in a new tab)"
-msgstr ""
-
-#: inc/customizer/editor/section-custom-javascript.php:33
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:206
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:344
-#: inc/dglib/widgets/fields/dg-repeater-field.php:49
-#: inc/dglib/widgets/fields/dg-repeater-field.php:86
-msgid "Close"
-msgstr ""
-
-#: inc/customizer/editor/section-custom-javascript.php:39
-#: inc/customizer/editor/section-custom-javascript.php:57
-msgid "Additional JS"
 msgstr ""
 
 #: inc/customizer/footer/section-footer-info.php:10
@@ -384,7 +325,7 @@ msgstr ""
 #: inc/customizer/templates/templates-page-details.php:31
 #: inc/customizer/templates/templates-post-details.php:32
 #: inc/customizer/templates/templates-search-page.php:31
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:143
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:144
 msgid "Left Sidebar"
 msgstr ""
 
@@ -392,7 +333,7 @@ msgstr ""
 #: inc/customizer/templates/templates-page-details.php:35
 #: inc/customizer/templates/templates-post-details.php:36
 #: inc/customizer/templates/templates-search-page.php:35
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:147
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:148
 msgid "Right Sidebar"
 msgstr ""
 
@@ -400,7 +341,7 @@ msgstr ""
 #: inc/customizer/templates/templates-page-details.php:39
 #: inc/customizer/templates/templates-post-details.php:40
 #: inc/customizer/templates/templates-search-page.php:39
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:151
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:152
 msgid "No Sidebar"
 msgstr ""
 
@@ -408,7 +349,7 @@ msgstr ""
 #: inc/customizer/templates/templates-page-details.php:43
 #: inc/customizer/templates/templates-post-details.php:44
 #: inc/customizer/templates/templates-search-page.php:43
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:155
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:156
 msgid "No Sidebar Center"
 msgstr ""
 
@@ -609,35 +550,35 @@ msgstr ""
 msgid "fa-5x"
 msgstr ""
 
-#: inc/dglib/core/functions.php:240 inc/functions/template-tags.php:250
+#: inc/dglib/core/functions.php:241 inc/functions/template-tags.php:258
 msgid "Read More"
 msgstr ""
 
-#: inc/dglib/core/functions.php:282
+#: inc/dglib/core/functions.php:285
 msgid "Like"
 msgstr ""
 
-#: inc/dglib/core/functions.php:286
+#: inc/dglib/core/functions.php:289
 msgid "Sad"
 msgstr ""
 
-#: inc/dglib/core/functions.php:290
+#: inc/dglib/core/functions.php:293
 msgid "Love"
 msgstr ""
 
-#: inc/dglib/core/functions.php:294
+#: inc/dglib/core/functions.php:297
 msgid "Surprised"
 msgstr ""
 
-#: inc/dglib/core/functions.php:298
+#: inc/dglib/core/functions.php:301
 msgid "Angry"
 msgstr ""
 
-#: inc/dglib/core/functions.php:302
+#: inc/dglib/core/functions.php:305
 msgid "Happy"
 msgstr ""
 
-#: inc/dglib/core/functions.php:306
+#: inc/dglib/core/functions.php:309
 msgid "Crying"
 msgstr ""
 
@@ -685,6 +626,14 @@ msgstr ""
 msgid "|"
 msgstr ""
 
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:206
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:344
+#: inc/dglib/customizer/editor/section-custom-javascript.php:33
+#: inc/dglib/widgets/fields/dg-repeater-field.php:49
+#: inc/dglib/widgets/fields/dg-repeater-field.php:86
+msgid "Close"
+msgstr ""
+
 #: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:306
 #: inc/dglib/widgets/fields/dg-icon-field.php:15
 msgid "Edit Icon"
@@ -693,6 +642,57 @@ msgstr ""
 #: inc/dglib/customizer/controls/dg-customizer-termslist-control.php:41
 #: inc/dglib/walkers/class-dg-walker-mega-menu.php:111
 msgid "All"
+msgstr ""
+
+#: inc/dglib/customizer/editor/panel-code-editor.php:11
+msgid "Additional Code"
+msgstr ""
+
+#: inc/dglib/customizer/editor/panel-code-editor.php:12
+msgid "You can add new css and js from this panel."
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:6
+msgid ""
+"Add your own JS code here to customize the appearance and layout of your "
+"site."
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:9
+msgid "When using a keyboard to navigate:"
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:11
+msgid "In the editing area, the Tab key enters a tab character."
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:12
+msgid "To move away from this area, press the Esc key followed by the Tab key."
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:13
+msgid ""
+"Screen reader users: when in forms mode, you may need to press the escape "
+"key twice."
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:20
+#. translators: 1: link to user profile, 2: additional link attributes, 3:
+#. accessibility text
+msgid ""
+"The edit field automatically highlights code syntax. You can disable this "
+"in your <a href=\"%1$s\" %2$s>user profile%3$s</a> to work in plain text "
+"mode."
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:26
+#. translators: accessibility text
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:39
+#: inc/dglib/customizer/editor/section-custom-javascript.php:57
+msgid "Additional JS"
 msgstr ""
 
 #: inc/dglib/customizer/footer/panel-footer.php:11
@@ -878,54 +878,54 @@ msgstr ""
 msgid "Successfully react on emoji."
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:82
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:139
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:83
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:140
 msgid "Default Sidebar"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:88
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:89
 msgid "Left sidebar"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:94
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:95
 msgid "Right sidebar"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:100
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:101
 msgid "No sidebar Full width"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:106
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:107
 msgid "No sidebar Content Centered"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:119
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:120
 msgid "Theme Options"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:134
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:135
 msgid "Sidebar Layout"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:171
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:172
 msgid "Sidebars"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:173
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:174
 msgid "Sidebar Settings"
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:174
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:175
 msgid ""
 "If you want to override customizer settings please choose sidebar otherwise "
 "leave it default sidebar."
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:301
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:302
 msgid "Sorry metabox field not found."
 msgstr ""
 
-#: inc/dglib/metabox/dg-theme-settings-metabox.php:307
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:308
 msgid "Please put some fields to show on metabox"
 msgstr ""
 
@@ -966,7 +966,7 @@ msgid "Choose multiple categories to show megamenu."
 msgstr ""
 
 #: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:80
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:194
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:196
 #: inc/dglib/widgets/fields/dg-repeater-field.php:48
 #: inc/dglib/widgets/fields/dg-repeater-field.php:85
 msgid "Remove"
@@ -1005,78 +1005,78 @@ msgstr ""
 msgid "sub item"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:92
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:94
 msgid "Move up"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:105
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:107
 msgid "Move down"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:111
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:113
 msgid "Edit menu item"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:111
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:113
 msgid "Edit"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:120
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:122
 msgid "URL"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:127
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:129
 msgid "Navigation Label"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:133
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:135
 msgid "Title Attribute"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:140
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:142
 msgid "Open link in a new tab"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:145
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:147
 msgid "CSS Classes (optional)"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:151
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:153
 msgid "Link Relationship (XFN)"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:157
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:159
 msgid "Description"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:159
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:161
 msgid ""
 "The description will be displayed in the menu if the current theme supports "
 "it."
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:164
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:166
 msgid "Move"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:165
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:167
 msgid "Up one"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:166
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:168
 msgid "Down one"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:169
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:171
 msgid "To the top"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:177
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:179
 #. translators: %s: original title
 msgid "Original: %s"
 msgstr ""
 
-#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:206
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:208
 msgid "Cancel"
 msgstr ""
 
@@ -1147,7 +1147,7 @@ msgstr ""
 #: inc/dglib/widgets/class-dg-author-info-widget.php:122
 #: inc/widgets/class-dg-blockposts-widget.php:141
 #: inc/widgets/class-dg-carousel-widget.php:95
-#: inc/widgets/class-dg-featured-posts-widget.php:86
+#: inc/widgets/class-dg-featured-posts-widget.php:102
 msgid "Layout"
 msgstr ""
 
@@ -1289,17 +1289,17 @@ msgstr ""
 msgid "Select Category"
 msgstr ""
 
-#: inc/functions/template-tags.php:84
+#: inc/functions/template-tags.php:92
 #. translators: %s: post title
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#: inc/functions/template-tags.php:112
+#: inc/functions/template-tags.php:120
 #. translators: 1: list of tags.
 msgid "Tagged %1$s"
 msgstr ""
 
-#: inc/functions/template-tags.php:120
+#: inc/functions/template-tags.php:128
 #: template-parts/single-details/content-page.php:32
 #. translators: %s: Name of current post. Only visible to screen readers
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
@@ -1394,7 +1394,7 @@ msgid "Default Tab Label"
 msgstr ""
 
 #: inc/widgets/class-dg-blockposts-widget.php:133
-#: inc/widgets/class-dg-featured-posts-widget.php:98
+#: inc/widgets/class-dg-featured-posts-widget.php:114
 msgid "Description Length"
 msgstr ""
 
@@ -1451,7 +1451,7 @@ msgid "Block Categories"
 msgstr ""
 
 #: inc/widgets/class-dg-carousel-widget.php:86
-#: inc/widgets/class-dg-featured-posts-widget.php:90
+#: inc/widgets/class-dg-featured-posts-widget.php:106
 msgid "Image Size"
 msgstr ""
 
@@ -1467,7 +1467,15 @@ msgstr ""
 msgid "DG: Featured Posts"
 msgstr ""
 
-#: inc/widgets/class-dg-featured-posts-widget.php:100
+#: inc/widgets/class-dg-featured-posts-widget.php:85
+msgid "Show Author"
+msgstr ""
+
+#: inc/widgets/class-dg-featured-posts-widget.php:93
+msgid "Show Post Date"
+msgstr ""
+
+#: inc/widgets/class-dg-featured-posts-widget.php:116
 msgid ""
 "Choose excerpt length in character. default length description length is "
 "150. you can set zero if you want to hide description."
@@ -1671,19 +1679,19 @@ msgctxt "Titillium Web font: on or off"
 msgid "on"
 msgstr ""
 
-#: inc/functions/template-tags.php:32 inc/functions/template-tags.php:67
+#: inc/functions/template-tags.php:32 inc/functions/template-tags.php:75
 #. translators: %s: post date.
 msgctxt "post date"
 msgid " %s"
 msgstr ""
 
-#: inc/functions/template-tags.php:38 inc/functions/template-tags.php:73
+#: inc/functions/template-tags.php:38 inc/functions/template-tags.php:81
 #. translators: %s: post author.
 msgctxt "post author"
 msgid " %s"
 msgstr ""
 
-#: inc/functions/template-tags.php:109
+#: inc/functions/template-tags.php:117
 #. translators: used between list items, there is a space after the comma
 msgctxt "list item separator"
 msgid " "

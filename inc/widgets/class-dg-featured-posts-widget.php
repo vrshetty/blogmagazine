@@ -79,6 +79,22 @@ class BlogMagazine_Featured_Posts_Widget extends Dglib_Master_Widget{
                                 'dg_widget_taxonomy_type' => 'category',
                                 'dg_widget_field_type'   => 'multitermlist',
                             ),
+                            'show_author' => array(
+                                'dg_widget_field_name'          => 'show_author',
+                                'dg_widget_field_wraper'        => 'show-author',
+                                'dg_widget_field_title'         => esc_html__( 
+                                    'Show Author', 'blogmagazine' ),
+                                'dg_widget_field_default'       => 0,
+                                'dg_widget_field_type'          => 'checkbox',
+                            ),
+                            'show_postdate' => array(
+                                'dg_widget_field_name'          => 'show_postdate',
+                                'dg_widget_field_wraper'        => 'show-postdate',
+                                'dg_widget_field_title'         => esc_html__( 
+                                    'Show Post Date', 'blogmagazine' ),
+                                'dg_widget_field_default'       => 0,
+                                'dg_widget_field_type'          => 'checkbox',
+                            ),
                         ),
                         
                     ),
@@ -128,6 +144,9 @@ class BlogMagazine_Featured_Posts_Widget extends Dglib_Master_Widget{
         $title_target = isset( $instance['title_target'] ) ? esc_attr($instance['title_target']) : '';
         $terms_ids  = isset( $instance['terms_ids'] ) ? $instance['terms_ids'] : '';
 
+        $show_postdate  = isset( $instance['show_postdate'] ) ? absint($instance['show_postdate']) : 0;
+        $show_author  = isset( $instance['show_author'] ) ? absint($instance['show_author']) : 0;
+
         /*
          * Layout tabs
          */
@@ -174,7 +193,9 @@ class BlogMagazine_Featured_Posts_Widget extends Dglib_Master_Widget{
                                     </div><!-- .blogmagazine-post-thumb -->
                                     <div class="blogmagazine-post-content">
                                         <h3 class="blogmagazine-post-title small-size"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                        <div class="blogmagazine-post-meta"><?php blogmagazine_posted_on(); ?></div>
+                                        <?php if( $show_postdate || $show_author ): ?>
+                                            <div class="blogmagazine-post-meta"><?php blogmagazine_posted_on( $show_postdate, $show_author ); ?></div>
+                                        <?php endif; ?>
                                     </div><!-- .blogmagazine-post-content -->
                                     <?php if($excerpt_length>0){ ?>
                                         <div class="blogmagazine-post-description">

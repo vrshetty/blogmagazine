@@ -53,3 +53,18 @@ if(!function_exists('dglib_front_enqueue_scripts') ):
 
 endif;
 add_action('wp_enqueue_scripts', 'dglib_front_enqueue_scripts');
+
+if(!function_exists('dglib_additional_javascript')):
+	function dglib_additional_javascript(){
+		$custom_javascript = get_option( 'custom_javascript_code', '' );
+		?>
+		<script type="text/javascript">
+			(function ($) {
+				"use strict";
+				<?php echo $custom_javascript . "\n"; ?>
+			})(jQuery);
+		</script>
+		<?php
+	}
+endif;
+add_action( 'wp_footer', 'dglib_additional_javascript', 20 );

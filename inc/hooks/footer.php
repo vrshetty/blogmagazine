@@ -177,17 +177,3 @@ add_action( 'blogmagazine_footer', 'blogmagazine_bottom_footer_end', 30 );
 add_action( 'blogmagazine_footer', 'blogmagazine_footer_end', 35 );
 add_action( 'blogmagazine_footer', 'blogmagazine_go_top', 40 );
 
-if(!function_exists('blogmagazine_additional_javascript')):
-	function blogmagazine_additional_javascript(){
-		$custom_javascript = get_option( 'custom_javascript_code', '' );
-		?>
-		<script type="text/javascript">
-			(function ($) {
-				"use strict";
-				<?php echo $custom_javascript . "\n"; ?>
-			})(jQuery);
-		</script>
-		<?php
-	}
-endif;
-add_action( 'wp_footer', 'blogmagazine_additional_javascript', 20 );

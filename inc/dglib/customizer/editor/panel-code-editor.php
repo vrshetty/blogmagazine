@@ -12,5 +12,5 @@ $wp_customize->add_panel(
 		'description'    => esc_html__('You can add new css and js from this panel.', 'blogmagazine'),
 	)
 );
-require_once blogmagazine_file_directory( 'inc/customizer/editor/section-custom-css.php' );
-require_once blogmagazine_file_directory( 'inc/customizer/editor/section-custom-javascript.php' );
+require_once dglib_file_directory( 'customizer/editor/section-custom-css.php' );
+require_once dglib_file_directory( 'customizer/editor/section-custom-javascript.php' );

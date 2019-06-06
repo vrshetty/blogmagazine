@@ -18,13 +18,13 @@
 				?>
 				<li>
 					<input 
-					id="<?php echo esc_attr( $centurywidget->get_field_id($dg_widget_field_name) ).'_'.$athm_option_name; ?>" 
+					id="<?php echo esc_attr( $centurywidget->get_field_id($dg_widget_field_name) .'_'.$athm_option_name ); ?>" 
 					name="<?php echo esc_attr( $centurywidget->get_field_name($dg_widget_field_name).'[]' ); ?>" 
 					type="checkbox" 
-					value="<?php echo $athm_option_name; ?>" 
+					value="<?php echo esc_attr( $athm_option_name ); ?>" 
 					<?php checked(in_array($athm_option_name, (array)$dg_widget_field_value)); ?> 
 					/>
-					<label for="<?php echo esc_attr( $centurywidget->get_field_id($dg_widget_field_name) ).'_'.$athm_option_name; ?>"><?php echo esc_html( $athm_option_title ); ?></label>
+					<label for="<?php echo esc_attr( $centurywidget->get_field_id($dg_widget_field_name) .'_'.$athm_option_name ); ?>"><?php echo esc_html( $athm_option_title ); ?></label>
 				</li>
 				<?php
 			}

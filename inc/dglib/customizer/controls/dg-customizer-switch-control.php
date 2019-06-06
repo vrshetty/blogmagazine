@@ -54,7 +54,7 @@ class Dglib_Customize_Switch_Control extends WP_Customize_Control {
                     $is_checked = ($key==$checked_value) ? true : false;
                 }
                 ?>
-                <fieldset class="dg-customizer-switch-single"><input name="<?php echo esc_attr($this->id); ?>" class="dg-switch-item" id="<?php echo $this->id.'_'.$key; ?>" <?php checked($is_checked); ?> type="<?php echo esc_attr($switch_type); ?>" value="<?php echo esc_attr($key); ?>"/><label for="<?php echo $this->id.'_'.$key; ?>" ><?php echo esc_html( $value ); ?></label></fieldset>
+                <fieldset class="dg-customizer-switch-single"><input name="<?php echo esc_attr($this->id); ?>" class="dg-switch-item" id="<?php echo esc_attr($this->id.'_'.$key); ?>" <?php checked($is_checked); ?> type="<?php echo esc_attr($switch_type); ?>" value="<?php echo esc_attr($key); ?>"/><label for="<?php echo esc_attr($this->id.'_'.$key); ?>" ><?php echo esc_html( $value ); ?></label></fieldset>
                 <?php
             }
             ?>
