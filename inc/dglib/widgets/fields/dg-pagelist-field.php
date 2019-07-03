@@ -18,7 +18,7 @@
 		'name'                  => esc_attr( $centurywidget->get_field_name( $dg_widget_field_name ) ),
 		'id'                    => esc_attr( $centurywidget->get_field_id( $dg_widget_field_name ) ),
 		'class'                 => 'widefat',
-		'show_option_none'      => esc_html__('Select Page','__Text_Domain__'),
+		'show_option_none'      => esc_html__('Select Page','blogmagazine'),
 		'option_none_value'     => 0 // string
 	);
 	wp_dropdown_pages( $args );

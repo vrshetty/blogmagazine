@@ -17,7 +17,7 @@ if( ! function_exists( 'dglib_widget_title_callback' ) ) :
 		$after_title = (isset($title_args['after_title'])) ? $title_args['after_title'] : '';
 		$slider_nav = (isset($title_args['slider_nav'])) ? $title_args['slider_nav'] : '';
 		$title_terms = (isset($title_args['title_terms'])) ? $title_args['title_terms'] : '';
-		$default_tablabel = (isset($title_args['default_tablabel'])) ? $title_args['default_tablabel'] : esc_html__('Default', '__Text_Domain__');
+		$default_tablabel = (isset($title_args['default_tablabel'])) ? $title_args['default_tablabel'] : esc_html__('Default', 'blogmagazine');
 		$tab_taxonomy = (isset($title_args['tab_taxonomy'])) ? $title_args['tab_taxonomy'] : 'category';
 		$tab_ajax_data = (isset($title_args['tab_ajax_data'])) ? $title_args['tab_ajax_data'] : array();
 

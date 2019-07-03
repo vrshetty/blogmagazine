@@ -19,7 +19,7 @@ if ( ! class_exists( 'Dglib_Master_Widget' ) ) {
             $fields = array(
                 'title'    => array(
                     'dg_widget_field_name'          => 'title',
-                    'dg_widget_field_title'         => esc_html__( 'Title', '__Text_Domain__' ),
+                    'dg_widget_field_title'         => esc_html__( 'Title', 'blogmagazine' ),
                     'dg_widget_field_default'       => '',
                     'dg_widget_field_type'    => 'text',
                 ),
@@ -164,7 +164,7 @@ if ( ! class_exists( 'Dglib_Master_Widget' ) ) {
          */
         public function widget($args, $instance) {
 
-            esc_html_e('Blank widget created', '__Text_Domain__');
+            esc_html_e('Blank widget created', 'blogmagazine');
             
         }
 

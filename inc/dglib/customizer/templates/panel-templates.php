@@ -11,8 +11,8 @@ $wp_customize->add_panel(
 		'priority'       => 40,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__('Template Options', '__Text_Domain__'),
-		'description'    => esc_html__('Templates related settings and sections goes here. You can manage different templates like page, post, 404page etc from this panel.', '__Text_Domain__'),
+		'title'          => esc_html__('Template Options', 'blogmagazine'),
+		'description'    => esc_html__('Templates related settings and sections goes here. You can manage different templates like page, post, 404page etc from this panel.', 'blogmagazine'),
 	)
 );
 

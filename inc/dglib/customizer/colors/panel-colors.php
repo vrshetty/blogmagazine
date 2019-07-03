@@ -11,8 +11,8 @@ $wp_customize->add_panel(
 		'priority'       => 70,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__('Color Options', '__Text_Domain__'),
-		'description'    => esc_html__('Colors related settings and sections goes here. You can manage color from this panel.', '__Text_Domain__'),
+		'title'          => esc_html__('Color Options', 'blogmagazine'),
+		'description'    => esc_html__('Colors related settings and sections goes here. You can manage color from this panel.', 'blogmagazine'),
 	)
 );
 require_once dglib_file_directory( 'customizer/colors/section-global-colors.php' );

@@ -9,7 +9,7 @@ $wp_customize->add_section(
 	'footer_bottom_section',
 	array(
 		'priority'      => 30,
-		'title'         => esc_html__( 'Footer Bottom', '__Text_Domain__' ),
+		'title'         => esc_html__( 'Footer Bottom', 'blogmagazine' ),
 		'panel'         => 'site_footer_options',
 	)
 );
@@ -22,7 +22,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting(
     'footer_copyright_text', array(
         'sanitize_callback' => 'sanitize_text_field',
-        'default'           => esc_html__( 'Copyright © 2019. All rights reserved.', '__Text_Domain__'),
+        'default'           => esc_html__( 'Copyright © 2019. All rights reserved.', 'blogmagazine'),
     )
 );
 $wp_customize->add_control(
@@ -30,8 +30,8 @@ $wp_customize->add_control(
     array(
         'type'=>'text',
         'priority' => 10,
-        'label' => esc_html__('Copyright Text', '__Text_Domain__'),
+        'label' => esc_html__('Copyright Text', 'blogmagazine'),
         'section' => 'footer_bottom_section',
-        'description'=> esc_html__('Write your own copyright text here to display bottom of the footer.', '__Text_Domain__'),
+        'description'=> esc_html__('Write your own copyright text here to display bottom of the footer.', 'blogmagazine'),
     )
 );

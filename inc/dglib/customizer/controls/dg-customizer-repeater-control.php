@@ -167,11 +167,11 @@ if ( ! class_exists( 'Dglib_Customizer_Repeater_Control' )):
                                         <span class="dg-customize-icons">
                                             <span class="dg-icon-preview"></span>
                                             <span class="dg-icon-toggle">
-                                                <?php esc_html_e('Add Icon','__Text_Domain__'); ?>
+                                                <?php esc_html_e('Add Icon','blogmagazine'); ?>
                                                 <span class="dashicons dashicons-arrow-down"></span>
                                             </span>
                                             <span class="dg-icons-list-wrapper hidden">
-                                                <input class="icon-search" type="text" placeholder="<?php esc_attr_e('Search Icon','__Text_Domain__'); ?>">
+                                                <input class="icon-search" type="text" placeholder="<?php esc_attr_e('Search Icon','blogmagazine'); ?>">
                                                 <?php
                                                 $fa_icon_list_array = dglib_fa_iconslist();
                                                 foreach ( $fa_icon_list_array as $single_icon ) {
@@ -187,7 +187,7 @@ if ( ! class_exists( 'Dglib_Customizer_Repeater_Control' )):
 										break;
 									default:
 										?>
-										<h5><?php echo esc_html__('Field type ', '__Text_Domain__') . esc_attr( $field_single['type'] ) . esc_html__(' not found.', '__Text_Domain__'); ?></h5>
+										<h5><?php echo esc_html__('Field type ', 'blogmagazine') . esc_attr( $field_single['type'] ) . esc_html__(' not found.', 'blogmagazine'); ?></h5>
 										<?php
 										break;
 								}
@@ -198,11 +198,11 @@ if ( ! class_exists( 'Dglib_Customizer_Repeater_Control' )):
 						?>
                         <div class="clearfix repeater-footer">
                             <a class="repeater-field-remove" href="#remove">
-								<?php esc_html_e( 'Delete', '__Text_Domain__' ) ?>
+								<?php esc_html_e( 'Delete', 'blogmagazine' ) ?>
                             </a>
-                            <?php esc_html_e( '|', '__Text_Domain__' ) ?>
+                            <?php esc_html_e( '|', 'blogmagazine' ) ?>
                             <a class="repeater-field-close" href="#close">
-								<?php esc_html_e( 'Close', '__Text_Domain__' ) ?>
+								<?php esc_html_e( 'Close', 'blogmagazine' ) ?>
                             </a>
                         </div>
                     </div>
@@ -302,11 +302,11 @@ if ( ! class_exists( 'Dglib_Customizer_Repeater_Control' )):
                                                     <?php if( !empty( $new_value ) ) { echo '<i class="fa '. esc_attr( $new_value ) .'"></i>'; } ?>
                                                 </span>
                                                 <span class="dg-icon-toggle">
-                                                    <?php echo ( empty( $new_value )? esc_html__('Add Icon','__Text_Domain__'): esc_html__('Edit Icon','__Text_Domain__') ); ?>
+                                                    <?php echo ( empty( $new_value )? esc_html__('Add Icon','blogmagazine'): esc_html__('Edit Icon','blogmagazine') ); ?>
                                                     <span class="dashicons dashicons-arrow-down"></span>
                                                 </span>
                                                 <span class="dg-icons-list-wrapper hidden">
-                                                    <input class="icon-search" type="text" placeholder="<?php esc_attr_e('Search Icon','__Text_Domain__')?>">
+                                                    <input class="icon-search" type="text" placeholder="<?php esc_attr_e('Search Icon','blogmagazine')?>">
                                                     <?php
                                                     $fa_icon_list_array = dglib_fa_iconslist();
                                                     foreach ( $fa_icon_list_array as $single_icon ) {
@@ -326,7 +326,7 @@ if ( ! class_exists( 'Dglib_Customizer_Repeater_Control' )):
 											break;
 										default:
 											?>
-											<h5><?php echo esc_html__('Field type ', '__Text_Domain__') . esc_attr( $field_single['type'] ) . esc_html__(' not found.', '__Text_Domain__'); ?></h5>
+											<h5><?php echo esc_html__('Field type ', 'blogmagazine') . esc_attr( $field_single['type'] ) . esc_html__(' not found.', 'blogmagazine'); ?></h5>
 											<?php
 											break;
 									}
@@ -337,10 +337,10 @@ if ( ! class_exists( 'Dglib_Customizer_Repeater_Control' )):
 							?>
                             <div class="clearfix repeater-footer">
                                 <a class="repeater-field-remove" href="#remove">
-									<?php esc_html_e( 'Delete', '__Text_Domain__' ) ?>
-                                </a><?php esc_html_e( '|', '__Text_Domain__' ) ?>
+									<?php esc_html_e( 'Delete', 'blogmagazine' ) ?>
+                                </a><?php esc_html_e( '|', 'blogmagazine' ) ?>
                                 <a class="repeater-field-close" href="#close">
-									<?php esc_html_e( 'Close', '__Text_Domain__' ) ?>
+									<?php esc_html_e( 'Close', 'blogmagazine' ) ?>
                                 </a>
                             </div>
                         </div>

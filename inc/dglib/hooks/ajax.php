@@ -20,34 +20,34 @@ if(!function_exists('dglib_reaction_submit_data_callback')):
 
         // Check if nonce is set...
 		if ( ! isset( $dglib_reaction_nonce ) ) {
-			$response['message'] = esc_html__( 'Nonce doesnot exist.', '__Text_Domain__' );
+			$response['message'] = esc_html__( 'Nonce doesnot exist.', 'blogmagazine' );
 			wp_send_json($response);
 		}
 
         // Check if nonce is valid...
 		if ( ! wp_verify_nonce( $dglib_reaction_nonce, $dglib_nonce_reaction_action ) ) {
-			$response['message'] = esc_html__( 'Nonce doesnot match.', '__Text_Domain__' );
+			$response['message'] = esc_html__( 'Nonce doesnot match.', 'blogmagazine' );
 			wp_send_json($response);
 		}
 
 		$singular_post_id   = isset( $_post_values['singular_post_id'] ) ? absint($_post_values['singular_post_id']) : 0;
 		// Check if singular post id is exist...
 		if( !$singular_post_id ){
-			$response['message'] = esc_html__( 'Post id not found.', '__Text_Domain__' );
+			$response['message'] = esc_html__( 'Post id not found.', 'blogmagazine' );
 			wp_send_json($response);
 		}
 
 		$reaction_icon_name   = isset( $_post_values['reaction_icon_name'] ) ? esc_attr($_post_values['reaction_icon_name']) : '';
 		// Check if reaction name is exist...
 		if( !$reaction_icon_name ){
-			$response['message'] = esc_html__( 'Reaction value not found.', '__Text_Domain__' );
+			$response['message'] = esc_html__( 'Reaction value not found.', 'blogmagazine' );
 			wp_send_json($response);
 		}
 
 		$reaction_prev_icon   = isset( $_post_values['reaction_prev_icon'] ) ? esc_attr($_post_values['reaction_prev_icon']) : '';
 		// Check if same reaction is already submitted...
 		if($reaction_icon_name==$reaction_prev_icon){
-			$response['message'] = esc_html__( 'You are already react on this emoji.', '__Text_Domain__' );
+			$response['message'] = esc_html__( 'You are already react on this emoji.', 'blogmagazine' );
 			wp_send_json($response);
 		}
 
@@ -57,7 +57,7 @@ if(!function_exists('dglib_reaction_submit_data_callback')):
 		$current_update = update_post_meta( $singular_post_id, 'dglib_reaction_'.$reaction_icon_name.'_values', $new_current_raction_val );
 		$response['current_update'] = $current_update;
 		if($current_update){
-			$response['message'] = esc_html__('Successfully react on emoji.', '__Text_Domain__');
+			$response['message'] = esc_html__('Successfully react on emoji.', 'blogmagazine');
 		}
 		if($reaction_prev_icon){
 			// Update Previous post reaction

@@ -1,11 +1,11 @@
 <?php
 /**
- * Blank Theme functions and definitions.
+ * blogmagazine functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package WordPress
- * @package Blank Theme
+ * @package dineshghimire
+ * @package blogmagazine
  */
 
 if (defined('WP_DEBUG_LOG') && WP_DEBUG_LOG) {
@@ -14,7 +14,7 @@ if (defined('WP_DEBUG_LOG') && WP_DEBUG_LOG) {
 
 /**
  *
- * @since Blank 1.0.0
+ * @since 1.0.0
  *
  * @param string $file_path, path from the theme
  * @return string full path of file inside theme
@@ -37,6 +37,6 @@ if( !function_exists('blogmagazine_file_directory') ){
 }
 
 /**
- * Blank Theme Initialize
+ * blogmagazine Initialize
  */
 require_once blogmagazine_file_directory( 'inc/init.php' );

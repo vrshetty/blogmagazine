@@ -8,10 +8,10 @@
 $wp_customize->add_section(
     'visitor_reaction_section', 
     array(
-        'title' => esc_html__('Visitor Reactions', '__Text_Domain__'),
+        'title' => esc_html__('Visitor Reactions', 'blogmagazine'),
         'panel' => 'site_additional_sections',
         'priority' => 20,
-        'description' => esc_html__('Set reaction format and display visitor reactions in perentage and number.', '__Text_Domain__'),
+        'description' => esc_html__('Set reaction format and display visitor reactions in perentage and number.', 'blogmagazine'),
     )
 );
 
@@ -22,7 +22,7 @@ $wp_customize->add_section(
  */
 $wp_customize->add_setting(
     'visitor_reaction_heading', array(
-        'default' => esc_html__('Share your feeling about this article.', '__Text_Domain__'),
+        'default' => esc_html__('Share your feeling about this article.', 'blogmagazine'),
         'sanitize_callback' => 'esc_html',
     )
 );
@@ -31,7 +31,7 @@ $wp_customize->add_control(
         $wp_customize,
         'visitor_reaction_heading',
         array(
-            'label'    => esc_html__( 'Reactions Heading', '__Text_Domain__' ),
+            'label'    => esc_html__( 'Reactions Heading', 'blogmagazine' ),
             'section'  => 'visitor_reaction_section',
             'settings' => 'visitor_reaction_heading',
             'type'     => 'text',
@@ -56,15 +56,15 @@ $wp_customize->add_control(
         $wp_customize,
         'display_reaction_value',
         array(
-            'label'    => esc_html__( 'Display Reactions Type', '__Text_Domain__' ),
-            'description' => esc_html__('Choose display reaction type.', '__Text_Domain__'),
+            'label'    => esc_html__( 'Display Reactions Type', 'blogmagazine' ),
+            'description' => esc_html__('Choose display reaction type.', 'blogmagazine'),
             'section'  => 'visitor_reaction_section',
             'settings' => 'display_reaction_value',
             'type'     => 'select',
             'priority' => 10,
             'choices'  => array(
-                'percentage' => esc_html__( 'Percentage', '__Text_Domain__' ),
-                'total_number' => esc_html__( 'Total Values', '__Text_Domain__' ),
+                'percentage' => esc_html__( 'Percentage', 'blogmagazine' ),
+                'total_number' => esc_html__( 'Total Values', 'blogmagazine' ),
             ),
         )
     )
@@ -87,23 +87,23 @@ $wp_customize->add_control(
         $wp_customize, 
         'dglib_reaction_icons', 
         array(
-            'label' => esc_html__('Visitor reaction icons.', '__Text_Domain__'),
+            'label' => esc_html__('Visitor reaction icons.', 'blogmagazine'),
             'section' => 'visitor_reaction_section',
             'settings' => 'dglib_reaction_icons',
             'priority' => 20,
-            'add_row_label' => esc_html__('Add Reaction', '__Text_Domain__'),
-            'wraper_item_label' => esc_html__('Reaction Details', '__Text_Domain__'),
+            'add_row_label' => esc_html__('Add Reaction', 'blogmagazine'),
+            'wraper_item_label' => esc_html__('Reaction Details', 'blogmagazine'),
         ), 
         array(
             'reaction_icon_name' => array(
                 'type' => 'reaction',
-                'label' => esc_html__('Reaction Icon', '__Text_Domain__'),
-                'description' => esc_html__('Choose reaction icon.', '__Text_Domain__')
+                'label' => esc_html__('Reaction Icon', 'blogmagazine'),
+                'description' => esc_html__('Choose reaction icon.', 'blogmagazine')
             ),
             'reaction_icon_title' => array(
                 'type' => 'text',
-                'label' => esc_html__('Reaction Title', '__Text_Domain__'),
-                'description' => esc_html__('Enter reaction title here.', '__Text_Domain__')
+                'label' => esc_html__('Reaction Title', 'blogmagazine'),
+                'description' => esc_html__('Enter reaction title here.', 'blogmagazine')
             ),
 
         )

@@ -80,37 +80,37 @@ if(!class_exists('Dglib_Theme_Settings_Metabox')):
                 'default-sidebar' => array(
                     'id'        => 'post-default-sidebar',
                     'value'     => 'default_sidebar',
-                    'label'     => esc_html__( 'Default Sidebar', '__Text_Domain__' ),
+                    'label'     => esc_html__( 'Default Sidebar', 'blogmagazine' ),
                     'thumbnail' => get_template_directory_uri() . '/inc/dglib/assets/img/sidebars/default-sidebar.png'
                 ),
                 'left-sidebar' => array(
                     'id'        => 'post-right-sidebar',
                     'value'     => 'left_sidebar',
-                    'label'     => esc_html__( 'Left sidebar', '__Text_Domain__' ),
+                    'label'     => esc_html__( 'Left sidebar', 'blogmagazine' ),
                     'thumbnail' => get_template_directory_uri() . '/inc/dglib/assets/img/sidebars/left-sidebar.png'
                 ),
                 'right-sidebar' => array(
                     'id'        => 'post-left-sidebar',
                     'value'     => 'right_sidebar',
-                    'label'     => esc_html__( 'Right sidebar', '__Text_Domain__' ),
+                    'label'     => esc_html__( 'Right sidebar', 'blogmagazine' ),
                     'thumbnail' => get_template_directory_uri() . '/inc/dglib/assets/img/sidebars/right-sidebar.png'
                 ),
                 'no-sidebar' => array(
                     'id'        => 'post-no-sidebar',
                     'value'     => 'no_sidebar',
-                    'label'     => esc_html__( 'No sidebar Full width', '__Text_Domain__' ),
+                    'label'     => esc_html__( 'No sidebar Full width', 'blogmagazine' ),
                     'thumbnail' => get_template_directory_uri() . '/inc/dglib/assets/img/sidebars/no-sidebar.png'
                 ),
                 'no-sidebar-center' => array(
                     'id'        => 'post-no-sidebar-center',
                     'value'     => 'no_sidebar_center',
-                    'label'     => esc_html__( 'No sidebar Content Centered', '__Text_Domain__' ),
+                    'label'     => esc_html__( 'No sidebar Content Centered', 'blogmagazine' ),
                     'thumbnail' => get_template_directory_uri() . '/inc/dglib/assets/img/sidebars/no-sidebar-center.png'
                 ),
                 'both-sidebar' => array(
                     'id'        => 'post-both-sidebar',
                     'value'     => 'both_sidebar',
-                    'label'     => esc_html__( 'Both Sidebar', '__Text_Domain__' ),
+                    'label'     => esc_html__( 'Both Sidebar', 'blogmagazine' ),
                     'thumbnail' => get_template_directory_uri() . '/inc/dglib/assets/img/sidebars/both-sidebar.png'
                 ),
             );
@@ -123,7 +123,7 @@ if(!class_exists('Dglib_Theme_Settings_Metabox')):
 
             add_meta_box(
                 'dglib_sidebar_layout_meta',
-                esc_html__( 'Theme Options', '__Text_Domain__' ),
+                esc_html__( 'Theme Options', 'blogmagazine' ),
                 array($this, 'metabox_callback'),
                 array('post', 'page'),
                 'normal',
@@ -138,32 +138,32 @@ if(!class_exists('Dglib_Theme_Settings_Metabox')):
                 'dglib_single_post_sidebar'       => array(
                     'sidebar_layout' => array(
                         'dg_metabox_field_name'     => 'sidebar_layout',
-                        'dg_metabox_field_title'    => esc_html__( 'Sidebar Layout', '__Text_Domain__' ),
+                        'dg_metabox_field_title'    => esc_html__( 'Sidebar Layout', 'blogmagazine' ),
                         'dg_metabox_field_default'  => 'general',
                         'dg_metabox_field_type'     => 'imageoptions',
                         'dg_metabox_field_options'  => array(
                             'default_sidebar' => array(
-                                'label' => esc_html__( 'Default Sidebar', '__Text_Domain__' ),
+                                'label' => esc_html__( 'Default Sidebar', 'blogmagazine' ),
                                 'url'   => '%s/inc/dglib/assets/img/sidebars/default-sidebar.png'
                             ),
                             'left_sidebar' => array(
-                                'label' => esc_html__( 'Left Sidebar', '__Text_Domain__' ),
+                                'label' => esc_html__( 'Left Sidebar', 'blogmagazine' ),
                                 'url'   => '%s/inc/dglib/assets/img/sidebars/left-sidebar.png'
                             ),
                             'right_sidebar' => array(
-                                'label' => esc_html__( 'Right Sidebar', '__Text_Domain__' ),
+                                'label' => esc_html__( 'Right Sidebar', 'blogmagazine' ),
                                 'url'   => '%s/inc/dglib/assets/img/sidebars/right-sidebar.png'
                             ),
                             'no_sidebar' => array(
-                                'label' => esc_html__( 'No Sidebar', '__Text_Domain__' ),
+                                'label' => esc_html__( 'No Sidebar', 'blogmagazine' ),
                                 'url'   => '%s/inc/dglib/assets/img/sidebars/no-sidebar.png'
                             ),
                             'no_sidebar_center' => array(
-                                'label' => esc_html__( 'No Sidebar Center', '__Text_Domain__' ),
+                                'label' => esc_html__( 'No Sidebar Center', 'blogmagazine' ),
                                 'url'   => '%s/inc/dglib/assets/img/sidebars/no-sidebar-center.png'
                             ),
                             'both_sidebar' => array(
-                                'label' => esc_html__( 'Both Sidebar', '__Text_Domain__' ),
+                                'label' => esc_html__( 'Both Sidebar', 'blogmagazine' ),
                                 'url'   => '%s/inc/dglib/assets/img/sidebars/both-sidebar.png'
                             )
                         )
@@ -179,10 +179,10 @@ if(!class_exists('Dglib_Theme_Settings_Metabox')):
 
             $metabox_tabs = array(
                 'dglib_single_post_sidebar'       => array(
-                    'dg_metabox_field_title'    => esc_html__( 'Sidebars', '__Text_Domain__' ),
+                    'dg_metabox_field_title'    => esc_html__( 'Sidebars', 'blogmagazine' ),
                     'dg_metabox_field_dashicons'=>  'dashicons-exerpt-view',
-                    'dg_metabox_field_heading'=>  esc_html__( 'Sidebar Settings', '__Text_Domain__' ),
-                    'dg_metabox_field_description'    =>  esc_html__( 'If you want to override customizer settings please choose sidebar otherwise leave it default sidebar.', '__Text_Domain__' ),
+                    'dg_metabox_field_heading'=>  esc_html__( 'Sidebar Settings', 'blogmagazine' ),
+                    'dg_metabox_field_description'    =>  esc_html__( 'If you want to override customizer settings please choose sidebar otherwise leave it default sidebar.', 'blogmagazine' ),
                 ),
             );
             return $metabox_tabs;
@@ -309,13 +309,13 @@ if(!class_exists('Dglib_Theme_Settings_Metabox')):
                                                 <?php
                                                 break;
                                             default:
-                                                ?><p><?php esc_html_e('Sorry metabox field not found.', '__Text_Domain__'); ?></p><?php
+                                                ?><p><?php esc_html_e('Sorry metabox field not found.', 'blogmagazine'); ?></p><?php
                                                 break;
                                         }
                                         ?></div><?php
                                     }
                                 }else{
-                                    ?><p><?php esc_html_e('Please put some fields to show on metabox', '__Text_Domain__'); ?></p><?php
+                                    ?><p><?php esc_html_e('Please put some fields to show on metabox', 'blogmagazine'); ?></p><?php
                                 }
                                 ?>
                             </div><!-- .meta-options-wrap  --> 

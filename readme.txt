@@ -52,6 +52,12 @@ https://github.com/sachinchoolur/lightslider - MIT License
 
 == Changelog ==
 
+= 1.0.6 - 2019/07/04 =
+    * Modify: Updated minimal features on dglib
+    * Fixed: All issues listed by poena
+    * Added: Multiple switch box added on templates
+    * Added: Additional Sections added
+
 = 1.0.5 - 2019/06/06 =
     * Fixed: All possible escaping issue fixed
     * Added: Featured post added author date and name show field
@@ -83,6 +89,12 @@ https://github.com/sachinchoolur/lightslider - MIT License
     * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.6 =
+    * Modify: Updated minimal features on dglib
+    * Fixed: All issues listed
+    * Added: Multiple switch box added on templates
+    * Added: Additional Sections added
 
 = 1.0.5 =
     * Fixed: All possible escaping issue fixed

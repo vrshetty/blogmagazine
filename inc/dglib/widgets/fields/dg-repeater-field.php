@@ -6,8 +6,8 @@
  * @version 1.0.0
  * @description Repeater field for widget
  */
-$dg_repeater_row_title = isset($widget_field['dg_repeater_row_title']) ? $widget_field['dg_repeater_row_title'] : esc_html__('Row', '__Text_Domain__');
-$dg_repeater_addnew_label = isset($widget_field['dg_repeater_addnew_label']) ? $widget_field['dg_repeater_addnew_label'] : esc_html__('Add row', '__Text_Domain__');
+$dg_repeater_row_title = isset($widget_field['dg_repeater_row_title']) ? $widget_field['dg_repeater_row_title'] : esc_html__('Row', 'blogmagazine');
+$dg_repeater_addnew_label = isset($widget_field['dg_repeater_addnew_label']) ? $widget_field['dg_repeater_addnew_label'] : esc_html__('Add row', 'blogmagazine');
 $dg_widget_field_options = isset($widget_field['dg_widget_field_options']) ? $widget_field['dg_widget_field_options'] : array();
 $coder_repeater_depth = 'coderRepeaterDepth_'.'0';
 $dg_repeater_main_key = $dg_widget_field_name;
@@ -45,8 +45,8 @@ $dg_repeater_main_key = $dg_widget_field_name;
 						}
 						?>
 						<div class="dg-repeater-control-actions">
-							<button type="button" class="button-link button-link-delete dg-repeater-remove"><?php esc_html_e('Remove','__Text_Domain__');?></button> |
-							<button type="button" class="button-link dg-repeater-close"><?php esc_html_e('Close','__Text_Domain__');?></button>
+							<button type="button" class="button-link button-link-delete dg-repeater-remove"><?php esc_html_e('Remove','blogmagazine');?></button> |
+							<button type="button" class="button-link dg-repeater-close"><?php esc_html_e('Close','blogmagazine');?></button>
 						</div>
 					</div>
 				</div>
@@ -82,8 +82,8 @@ $dg_repeater_main_key = $dg_widget_field_name;
 					}
 					?>
 					<div class="dg-repeater-control-actions">
-						<button type="button" class="button-link button-link-delete dg-repeater-remove"><?php esc_html_e('Remove','__Text_Domain__');?></button> |
-						<button type="button" class="button-link dg-repeater-close"><?php esc_html_e('Close','__Text_Domain__');?></button>
+						<button type="button" class="button-link button-link-delete dg-repeater-remove"><?php esc_html_e('Remove','blogmagazine');?></button> |
+						<button type="button" class="button-link dg-repeater-close"><?php esc_html_e('Close','blogmagazine');?></button>
 					</div>
 				</div>
 			</div>

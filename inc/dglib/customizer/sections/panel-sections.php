@@ -7,8 +7,8 @@ $wp_customize->add_panel(
 	array(
 		'priority'       => 50,
 		'capability'     => 'edit_theme_options',
-		'title'          => esc_html__('Additional Sections', '__Text_Domain__'),
-		'description'    => esc_html__('Overall section settings goes here.', '__Text_Domain__')
+		'title'          => esc_html__('Additional Sections', 'blogmagazine'),
+		'description'    => esc_html__('Overall section settings goes here.', 'blogmagazine')
 	)
 );
 

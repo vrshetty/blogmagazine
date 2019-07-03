@@ -19,13 +19,13 @@ if(!function_exists('dglib_megamenu_posts_callback')):
 
         // Check if nonce is set...
 		if ( ! isset( $megamenu_nonce_value ) ) {
-			$response['message'] = esc_html__( 'Nonce doesnot exist.', '__Text_Domain__' );
+			$response['message'] = esc_html__( 'Nonce doesnot exist.', 'blogmagazine' );
 			wp_send_json($response);
 		}
 
         // Check if nonce is valid...
 		if ( ! wp_verify_nonce( $megamenu_nonce_value, $dglib_nonce_megamenu_action ) ) {
-			$response['message'] = esc_html__( 'Nonce doesnot match.', '__Text_Domain__' );
+			$response['message'] = esc_html__( 'Nonce doesnot match.', 'blogmagazine' );
 			wp_send_json($response);
 		}
 
