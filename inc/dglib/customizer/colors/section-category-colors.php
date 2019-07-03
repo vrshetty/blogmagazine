@@ -9,7 +9,7 @@ $wp_customize->add_section(
 	'dglib_categories_color_options',
 	array(
 		'priority'      => 20,
-		'title'         => esc_html__( 'Category Colors', 'blogmagazine' ),
+		'title'         => esc_html__( 'Category Colors', '__Text_Domain__' ),
 		'panel'         => 'site_color_options',
 	)
 );
@@ -34,7 +34,7 @@ foreach ( $categories as $category_list ) {
 			$wp_customize, 
 			'dglib_category_color_'.esc_html( strtolower( $category_list->slug ) ),
 			array(
-				'label'    => sprintf( esc_html__( ' %s Button Background', 'blogmagazine' ), esc_html( $category_list->name ) ),
+				'label'    => sprintf( esc_html__( ' %s Button Background', '__Text_Domain__' ), esc_html( $category_list->name ) ),
 				'section'  => 'dglib_categories_color_options',
 				'priority' => $priority
 			)

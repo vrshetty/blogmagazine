@@ -465,17 +465,22 @@ function blogmagazine_get_sidebar_name() {
     if(is_404()){
         $sidebar_name = get_theme_mod( 'dglib_default_notfound_sidebar', $default_sidebar );
     }
+
     if(is_page()){
-        $page_sidebar_name = get_theme_mod( 'dglib_default_page_sidebar', $default_sidebar );
-        $metabox_sidebar_details = get_post_meta( get_the_ID(), 'dglib_single_post_sidebar', true );
-        $metabox_sidebar_name = (isset($metabox_sidebar_details['sidebar_layout'])) ? esc_attr($metabox_sidebar_details['sidebar_layout']) : '';
-        $sidebar_name = ( $metabox_sidebar_name && $metabox_sidebar_name !='default_sidebar' ) ? $metabox_sidebar_name : $page_sidebar_name;       
+        $sidebar_name = get_theme_mod( 'dglib_default_page_sidebar', $default_sidebar );
     }
+
     if(is_single()){
-        $single_sidebar_name = get_theme_mod( 'dglib_default_post_sidebar', $default_sidebar );
+        $sidebar_name = get_theme_mod( 'dglib_default_post_sidebar', $default_sidebar );
+    }
+
+
+    // Metabox For page and posts
+    if( is_page() || is_single() ){
         $metabox_sidebar_details = get_post_meta( get_the_ID(), 'dglib_single_post_sidebar', true );
         $metabox_sidebar_name = (isset($metabox_sidebar_details['sidebar_layout'])) ? esc_attr($metabox_sidebar_details['sidebar_layout']) : '';
-        $sidebar_name = ( $metabox_sidebar_name && $metabox_sidebar_name !='default_sidebar' ) ? $metabox_sidebar_name : $single_sidebar_name;  
+
+        $sidebar_name = ( $metabox_sidebar_name && $metabox_sidebar_name !='default_sidebar' ) ? $metabox_sidebar_name : $sidebar_name; 
     }
 
     return $sidebar_name;

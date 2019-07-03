@@ -1390,11 +1390,11 @@ author Widgets
  * @since 1.0.0
  */
 .widget_search .search-field {
-  width: 75%;
+  width: 70%;
   float: left; }
 
 .widget_search .search-submit {
-  width: 22%;
+  width: 30%;
   color: #fff;
   height: 36px;
   border-color: #029FB2;
@@ -2024,8 +2024,16 @@ Header CSS
       margin: 0 0 0 10px; }
 
 .site-header .site-branding {
-  float: left;
-  margin: 12px 0; }
+  width: 100%; }
+  @media (min-width: 979px) {
+    .site-header .site-branding {
+      float: left;
+      max-width: 35%; } }
+  .site-header .site-branding .custom-logo {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100px; }
 
 .site-header .blogmagazine-header-ads-area {
   float: right; }
@@ -2066,7 +2074,7 @@ Header CSS
   color: #fff;
   display: block;
   float: left;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 48px;
   padding: 0 12px;
   position: relative; }
@@ -2259,11 +2267,12 @@ Header CSS
     border-right: 10px solid transparent; }
 
 .menu-toggle {
-  color: #333;
+  color: #fff;
   display: none;
   float: left;
   font-size: 20px;
-  padding: 2px 15px; }
+  line-height: 48px;
+  padding: 0px 12px; }
 
 .sub-toggle {
   display: none; }
@@ -2948,8 +2957,7 @@ scroll to top css
     float: none;
     width: 98%; }
   .menu-toggle {
-    display: block;
-    color: #ffffff !important; }
+    display: block; }
   #site-navigation {
     background: #029FB2 none repeat scroll 0 0;
     display: none;

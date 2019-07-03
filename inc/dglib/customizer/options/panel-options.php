@@ -11,8 +11,8 @@ $wp_customize->add_panel(
 		'priority'       => 70,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__('Theme Options', 'blogmagazine'),
-		'description'    => esc_html__('Remaining all setting options goes here.', 'blogmagazine'),
+		'title'          => esc_html__('Theme Options', '__Text_Domain__'),
+		'description'    => esc_html__('Remaining all setting options goes here.', '__Text_Domain__'),
 	)
 );
 

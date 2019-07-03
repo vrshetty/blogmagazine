@@ -8,8 +8,8 @@ $wp_customize->add_panel(
 		'priority'       => 200,
 		'capability'     => 'edit_theme_options',
 		//'theme_supports' => '',
-		'title'          => esc_html__('Additional Code', 'blogmagazine'),
-		'description'    => esc_html__('You can add new css and js from this panel.', 'blogmagazine'),
+		'title'          => esc_html__('Additional Code', '__Text_Domain__'),
+		'description'    => esc_html__('You can add new css and js from this panel.', '__Text_Domain__'),
 	)
 );
 require_once dglib_file_directory( 'customizer/editor/section-custom-css.php' );

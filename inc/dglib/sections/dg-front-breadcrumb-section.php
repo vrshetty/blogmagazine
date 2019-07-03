@@ -26,7 +26,6 @@ if( !function_exists( 'dglib_breadcrumbs_section_callback' ) ):
         if( is_404() ){
             $enable_breadcrumbs = get_theme_mod( 'dglib_enable_breadcrumbs_notfound', 'enable' );
         }
-        
         if($enable_breadcrumbs == 'disable' ){
             return;
         }

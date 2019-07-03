@@ -41,7 +41,7 @@ $dg_widget_field_value = (array)$dg_widget_field_value;
 					endforeach;
 				else:
 					?>
-					<p><?php esc_html_e('Sorry no field are added on accordion.', 'blogmagazine'); ?></p>
+					<p><?php esc_html_e('Sorry no field are added on accordion.', '__Text_Domain__'); ?></p>
 					<?php
 				endif;
 					?>
@@ -52,7 +52,7 @@ $dg_widget_field_value = (array)$dg_widget_field_value;
 
 	}else{
 		?>
-			<p><?php esc_html_e('There is no accordion on this accordion group', 'blogmagazine'); ?></p>
+			<p><?php esc_html_e('There is no accordion on this accordion group', '__Text_Domain__'); ?></p>
 		<?php
 	}
 	?>

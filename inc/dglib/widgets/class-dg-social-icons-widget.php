@@ -14,8 +14,8 @@ class Dglib_Social_Icons_Widget extends Dglib_Master_Widget{
 
 		$widget_options = array(
 			'classname' => 'dglib-social-icons',
-			'description' => esc_html__( 'A Widget to display social icons.', 'blogmagazine' ));
-		parent::__construct('dglib-social-icons', esc_html__( 'DG - Social Icons', 'blogmagazine' ), $widget_options);	
+			'description' => esc_html__( 'A Widget to display social icons.', '__Text_Domain__' ));
+		parent::__construct('dglib-social-icons', esc_html__( 'DG - Social Icons', '__Text_Domain__' ), $widget_options);	
 
 	}
 
@@ -30,24 +30,24 @@ class Dglib_Social_Icons_Widget extends Dglib_Master_Widget{
         $fields = array(
             'dg_widget_tab'       => array(
                 'dg_widget_field_name'     => 'dg_widget_tab',
-                'dg_widget_field_title'    => esc_html__( 'General', 'blogmagazine' ),
+                'dg_widget_field_title'    => esc_html__( 'General', '__Text_Domain__' ),
                 'dg_widget_field_default'  => 'general',
                 'dg_widget_field_type'     => 'tabgroup',
                 'dg_widget_field_options'  => array(
                     'general'=>array(
-                        'dg_widget_field_title'=>esc_html__('General', 'blogmagazine'),
+                        'dg_widget_field_title'=>esc_html__('General', '__Text_Domain__'),
                         'dg_widget_field_options'=> array(
                             'title'    => array(
                                 'dg_widget_field_name'     => 'title',
                                 'dg_widget_field_wraper'   => 'title',
-                                'dg_widget_field_title'    => esc_html__( 'Title', 'blogmagazine' ),
+                                'dg_widget_field_title'    => esc_html__( 'Title', '__Text_Domain__' ),
                                 'dg_widget_field_default'  => '',
                                 'dg_widget_field_type'     => 'text',
                             ),
                             'title_target'    => array(
                                 'dg_widget_field_name'     => 'title_target',
                                 'dg_widget_field_wraper'   => 'title-target',
-                                'dg_widget_field_title'    => esc_html__( 'Link Target', 'blogmagazine' ),
+                                'dg_widget_field_title'    => esc_html__( 'Link Target', '__Text_Domain__' ),
                                 'dg_widget_field_default'  => '_self',
                                 'dg_widget_field_type'     => 'select',
                                 'dg_widget_field_options'  => $dglib_link_target,
@@ -67,47 +67,47 @@ class Dglib_Social_Icons_Widget extends Dglib_Master_Widget{
                             'title_link'    => array(
                                 'dg_widget_field_name'     => 'title_link',
                                 'dg_widget_field_wraper'   => 'title-link',
-                                'dg_widget_field_title'    => esc_html__( 'Title link', 'blogmagazine' ),
+                                'dg_widget_field_title'    => esc_html__( 'Title link', '__Text_Domain__' ),
                                 'dg_widget_field_default'  => '',
                                 'dg_widget_field_type'     => 'text',
                             ),
                             'social_icon_size'        => array(
                                 'dg_widget_field_name'         => 'social_icon_size',
-                                'dg_widget_field_title'        => esc_html__( 'Icons Size', 'blogmagazine' ),
+                                'dg_widget_field_title'        => esc_html__( 'Icons Size', '__Text_Domain__' ),
                                 'dg_widget_field_default'      => '',
                                 'dg_widget_field_type'         => 'select',
                                 'dg_widget_field_options'      => dglib_faicon_sizes(),
                             ),
                             'social_media_target'        => array(
                                 'dg_widget_field_name'         => 'social_media_target',
-                                'dg_widget_field_title'        => esc_html__( 'Social icon open with', 'blogmagazine' ),
+                                'dg_widget_field_title'        => esc_html__( 'Social icon open with', '__Text_Domain__' ),
                                 'dg_widget_field_default'      => '_blank',
                                 'dg_widget_field_type'         => 'select',
                                 'dg_widget_field_options'      => $dglib_link_target,
                             ),
                             'social_icon_list'         => array(
                                 'dg_widget_field_name'     => 'social_icon_list',
-                                'dg_widget_field_title'    => esc_html__( 'Social Icon List', 'blogmagazine' ),
+                                'dg_widget_field_title'    => esc_html__( 'Social Icon List', '__Text_Domain__' ),
                                 'dg_widget_field_type'     => 'repeater',
-                                'dg_widget_description'    => esc_html__('To add social icon click to add icon.', 'blogmagazine'),
-                                'dg_repeater_row_title'    => esc_html__('Social Icon', 'blogmagazine'),
-                                'dg_repeater_addnew_label' => esc_html__('Add Icon', 'blogmagazine'),
+                                'dg_widget_description'    => esc_html__('To add social icon click to add icon.', '__Text_Domain__'),
+                                'dg_repeater_row_title'    => esc_html__('Social Icon', '__Text_Domain__'),
+                                'dg_repeater_addnew_label' => esc_html__('Add Icon', '__Text_Domain__'),
                                 'dg_widget_field_options'  => array(
                                     'social_media_icon'  => array(
                                         'dg_widget_field_name'     => 'social_media_icon',
-                                        'dg_widget_field_title'    => esc_html__( 'Social Media Icon', 'blogmagazine' ),
+                                        'dg_widget_field_title'    => esc_html__( 'Social Media Icon', '__Text_Domain__' ),
                                         'dg_widget_field_default'  => 'fa-facebook',
                                         'dg_widget_field_type'     => 'icon',
                                     ),
                                     'social_media_link' => array(
                                         'dg_widget_field_name'     => 'social_media_link',
-                                        'dg_widget_field_title'    => esc_html__( 'Social Media Link', 'blogmagazine' ),
+                                        'dg_widget_field_title'    => esc_html__( 'Social Media Link', '__Text_Domain__' ),
                                         'dg_widget_field_default'  => '',
                                         'dg_widget_field_type'     => 'url',
                                     ),
                                     'social_media_color' => array(
                                         'dg_widget_field_name'     => 'social_media_color',
-                                        'dg_widget_field_title'    => esc_html__( 'Social Icon Color', 'blogmagazine' ),
+                                        'dg_widget_field_title'    => esc_html__( 'Social Icon Color', '__Text_Domain__' ),
                                         'dg_widget_field_default'  => '#00a0d2',
                                         'dg_widget_field_type'     => 'color',
                                     ),
@@ -164,7 +164,7 @@ class Dglib_Social_Icons_Widget extends Dglib_Master_Widget{
                 $social_media_icon = (isset($social_media_details['social_media_icon'])) ? esc_attr($social_media_details['social_media_icon']) : '';
                 $social_media_color = (isset($social_media_details['social_media_color'])) ? esc_attr($social_media_details['social_media_color']) : '';
                 ?><a 
-                title="<?php esc_html_e('Lekh Social Media Icons', 'blogmagazine'); ?>" 
+                title="<?php esc_html_e('Lekh Social Media Icons', '__Text_Domain__'); ?>" 
                 target="<?php echo esc_attr($social_media_target); ?>" 
                 <?php if($social_media_target){ ?>
                 href="<?php echo esc_attr($social_media_link); ?>" 
