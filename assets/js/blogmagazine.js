@@ -1,0 +1,307 @@
+/**
+ * Main JavaScript file for the BlogMagazine theme.
+ *
+ * @package    dineshghimire
+ * @subpackage blogmagazine
+ * @author     Dinesh Ghimire <developer.dinesh1@gmail.com>
+ * @license    https://www.gnu.org/licenses/gpl-3.0.txt
+ * @link       https://dinesh-ghimire.com.np
+ * @since      1.0.0
+ */
+ 
+(function($){
+
+    "use strict";
+    var winObj = $(window);
+    var docObj = $(document);
+    var BLOGMAGAZINE = {
+
+        Snipits: {
+
+            AppendHTML: function(){
+                //responsive sub menu toggle
+                $('#site-navigation .menu-item-has-children').append('<span class="sub-toggle"> <i class="fa fa-angle-right"></i> </span>');
+            },
+
+            Sliders: function(){
+
+                /**
+                 * Ticker script
+                 */
+                var newsticker_args = {
+                    item: 1,
+                    loop: true,
+                    auto: true,
+                    speed: 2000,
+                    pause: 6000,
+                    pager: false,
+                    controls: true,
+                    vertical: true,
+                    enableDrag: false,
+                    enableTouch: false,
+                    verticalHeight: 35,
+                    adaptiveHeight:true,
+                    prevHtml: '<i class="fa fa-angle-left"></i>',
+                    nextHtml: '<i class="fa fa-angle-right"></i>',
+                };
+                $('.blogmagazine-newsticker').each(function(){
+                    $(this).lightSlider(newsticker_args);
+                });
+
+                /**
+                 * Slider script
+                 */
+                var blogmagazine_mainslider_args = {
+                    item: 1,
+                    auto: true,
+                    loop: true,
+                    speed: 2000,
+                    pause: 6000,
+                    pager: false,
+                    slideMargin: 0,
+                    enableDrag: false,
+                    enableTouch: false,
+                    adaptiveHeight:true,
+                    prevHtml: '<i class="fa fa-angle-left"></i>',
+                    nextHtml: '<i class="fa fa-angle-right"></i>',
+                };
+                $('.blogmagazine-featured-main-slider').each(function() {
+                    $(this).lightSlider(blogmagazine_mainslider_args);
+                });
+
+                /**
+                 * Block carousel layout
+                 */
+                $('.blogmagazine-block-carousel').each(function(){
+
+                    var blogmagazine_args = {
+                        auto: true,
+                        loop: true,
+                        speed: 2000,
+                        pause: 6000,
+                        pager: false,
+                        controls: false,
+                        pauseOnHover: true,
+                        adaptiveHeight:true,
+                        prevHtml: '<i class="fa fa-angle-left"></i>',
+                        nextHtml: '<i class="fa fa-angle-right"></i>',
+                        item: 4,
+                        responsive: [{
+                            breakpoint: 840,
+                            settings: {
+                                item: 2,
+                                slideMove: 1,
+                                slideMargin: 6,
+                            }
+                        },{
+                            breakpoint: 480,
+                            settings: {
+                                item: 1,
+                                slideMove: 1,
+                            }
+                        }]
+                    };
+                    if($(this).closest('.sidebar-right, .sidebar-left').length){
+                        blogmagazine_args.item = 1;
+                    }
+                    var blogmagazine_slider_obj = $(this).lightSlider(blogmagazine_args);
+                    var carousel_controls = blogmagazine_slider_obj.closest('.widget').find('.blogmagazine-carousel-control');
+                    carousel_controls.on('click', function(evt){
+                        if( $(this).hasClass('blogmagazine-nav-prev') ){
+                            blogmagazine_slider_obj.goToPrevSlide();
+                        }else{
+                            blogmagazine_slider_obj.goToNextSlide();
+                        }
+                    });
+                });
+            },
+
+            Widget_Title_Tab: function(evt){
+
+                evt.preventDefault();
+                var tab_item = $(this);
+                if( tab_item.closest( '.wdgt-tab-term' ).hasClass( 'active-item' ) ){
+                    return;
+                }
+                var widget_title_tabs =  tab_item.closest('.wdgt-title-tabs');
+                if( widget_title_tabs.attr( 'data-loading' ) == 1 ){
+                    return;
+                }
+
+                var tab_content_class = tab_item.data('tab');
+                var widget_title = tab_item.closest('.blogmagazine-block-title');
+                var block_post_widget = tab_item.closest('.widget');
+                
+                widget_title_tabs.find('.wdgt-tab-term').removeClass('active-item');
+                tab_item.closest('li').addClass('active-item');
+                block_post_widget.find('.blogmagazine-block-posts-wrapper').removeClass( 'tab-active' );
+                if( block_post_widget.find( '.' + tab_content_class ).length ){
+                    block_post_widget.find( '.' + tab_content_class ).addClass( 'tab-active' );
+                    return;
+                }
+                var ajax_args = $(this).data('ajax-args');
+                ajax_args.beforeSend = function(){
+                    widget_title_tabs.attr( 'data-loading', 1 );
+                    block_post_widget.find('.blgmg-wdgt-preloader').removeClass('hidden');
+                };
+                ajax_args.success = function(data, status, settings){
+                    widget_title_tabs.attr( 'data-loading', 0 );
+                    block_post_widget.find('.blgmg-wdgt-preloader').addClass('hidden');
+                    var widget_html = data.widget_html;
+                    if(widget_html){
+                        block_post_widget.find('.dglib-tab-alldata').after(widget_html);
+                    }else{
+                        console.warn('Sorry faild to retrive widget html data on ajax call');    
+                    }
+                };
+                ajax_args.fail = function( xhr, textStatus, errorThrown ){
+                    widget_title_tabs.attr( 'data-loading', 0 );
+                    console.warn('Sorry faild widget tab ajax call');
+                };
+                $.ajax(ajax_args);                
+
+            },
+
+            StickyMenu: function(){
+
+                if(typeof $().sticky != 'function'){
+                    return;
+                }
+                var wpAdminBar = jQuery('#wpadminbar');
+                if (wpAdminBar.length){
+                    jQuery("#blogmagazine-menu-wrap").sticky({topSpacing:wpAdminBar.height()});
+                }else{
+                    jQuery("#blogmagazine-menu-wrap").sticky({topSpacing:0});
+                }
+
+            },
+
+            DisplayScrollTop: function(){
+                if (winObj.scrollTop() > 1000) {
+                    $('#blogmagazine-scrollup').fadeIn('slow');
+                } else {
+                    $('#blogmagazine-scrollup').fadeOut('slow');
+                }
+            },
+
+            SubmenuToggle: function(){
+                $(this).parent('.menu-item-has-children').children('ul.sub-menu').first().slideToggle('1000');
+                $(this).children('.fa-angle-right').first().toggleClass('fa-angle-down');
+            },
+
+            SearchToggle: function(){
+                $('.search-form-main').toggleClass('active-search');
+                $('.search-form-main .search-field').focus();
+            },
+
+            NavigationToggle: function(){
+                $('#site-navigation').slideToggle('slow');
+            },
+
+            TabbedWidget: function(evt){
+
+                if($(this).closest('li').hasClass('active-item')){
+                    evt.preventDefault();
+                    return;
+                }
+                
+                var tabbed_content_id = $(this).attr( 'href' );
+                var tabbed_wrapper = $(this).closest('.blogmagazine-default-tabbed-wrapper');
+
+                tabbed_wrapper.find( 'li' ).removeClass( 'active-item' );
+                $(this).closest('li').addClass( 'active-item' );
+
+                tabbed_wrapper.find('.blogmagazine-tabbed-section').removeClass('active');
+                $(tabbed_content_id).addClass('active');
+
+                evt.preventDefault();
+
+            },
+
+            ScrollUp: function(){
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 600);
+                return false;
+            },
+
+        },
+    
+        Events: function(){
+            
+            var __this = BLOGMAGAZINE;
+            var snipits = __this.Snipits;
+
+            var dgwidt_title_tab = snipits.Widget_Title_Tab;
+            docObj.on( 'click', '.dgwidgt-title-tab', dgwidt_title_tab );
+
+            var blogmag_scroll_up = snipits.ScrollUp;
+            docObj.on( 'click', '#blogmagazine-scrollup', blogmag_scroll_up );
+
+            //Search toggle
+            var blgm_search_toggle = snipits.SearchToggle;
+            docObj.on( 'click', '.blogmagazine-header-search-wrapper .search-main', blgm_search_toggle );
+
+            //responsive menu toggle
+            var navigation_toggle = snipits.NavigationToggle;
+            docObj.on( 'click', '.blogmagazine-header-menu-wrapper .menu-toggle', navigation_toggle );
+
+            //responsive menu toggle
+            var submenu_toggle = snipits.SubmenuToggle;
+            docObj.on( 'click', '#site-navigation .sub-toggle', submenu_toggle );
+
+            var tabbed_widget = snipits.TabbedWidget;
+            docObj.on( 'click', '.blogmagazine-widget-tab a', tabbed_widget );
+
+        },
+    
+        Ready: function(){
+
+            var __this = BLOGMAGAZINE;
+            var snipits = __this.Snipits;
+
+            snipits.AppendHTML();
+            snipits.StickyMenu();
+            snipits.Sliders();
+
+            __this.Events();
+
+        },
+
+        Load: function(){
+
+        },
+
+        Resize: function(){
+
+        },
+
+        Scroll: function(){
+            
+            var __this = BLOGMAGAZINE;
+            var snipits = __this.Snipits;
+
+            snipits.DisplayScrollTop();
+
+        },
+
+        Init: function(){
+
+            var __this = BLOGMAGAZINE;
+            var docready = __this.Ready;
+            var winload = __this.Load;
+            var winresize = __this.Resize;
+            var winscroll = __this.Scroll;
+
+            docObj.ready(docready);
+            winObj.load(winload);
+            winObj.resize(winresize);
+            winObj.scroll(winscroll);
+
+        }
+    
+    };
+
+    BLOGMAGAZINE.Init();
+
+})(jQuery);

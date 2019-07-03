@@ -1,0 +1,121 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.2
+ */
+.blogmagazine_default_tabbed{
+	.blogmagazine-post-thumb {
+	    float: left;
+	    width: 30%;
+	}
+	.blogmagazine-post-content{
+		float: right;
+		width: 66%;
+	}
+	.blogmagazine-single-post{
+		border-bottom: 1px solid #e1e1e1;
+	    margin-bottom: 12px;
+	    padding-bottom: 12px;
+	    &:last-child{
+	    	border-bottom: none;
+		    margin-bottom: 0;
+		    padding-bottom: 0;
+	    }
+	}
+	.tabbed-comments{
+		ul{
+			li{
+				border-bottom: 1px solid #e1e1e1;
+				margin-bottom: 12px;
+				padding-bottom: 12px;
+				&:last-child{
+			    	border-bottom: none;
+				    margin-bottom: 0;
+				    padding-bottom: 0;
+			    }
+			}
+		}
+	}
+	.blogmagazine-post-meta{
+		span{
+			font-size: 12px;
+			a{
+				font-size: 12px;
+			}
+		}
+	}
+	.widget-tabs{
+		margin: 0;
+		list-style: none;
+		li{
+			background: #029fb2 none repeat scroll 0 0;
+			display: inline-block;
+			margin-right: -4px;
+			padding: 5px 0;
+			text-align: center;
+			width: 50%;
+			position: relative;
+			a{
+				color: #fff;
+				font-weight: 600;
+				text-transform: uppercase;
+				display: block;
+			}
+		}
+	}
+}
+
+.blogmagazine_default_tabbed{
+	.widget-tabs{
+		li{
+			&.active-item, &:hover{
+				background: #028A9A;
+				transition: all 0.5s ease;
+				&:before{
+				    bottom: 0;
+				    content: "";
+				    height: 0;
+				    left: 50%;
+				    width: 0;
+				    position: absolute;
+				    transform: translateX(-50%);
+				    border-bottom: 5px solid #fff;
+				    border-left: 5px solid transparent;
+				    border-right: 5px solid transparent;
+				}
+			}
+		}
+	}
+}
+
+
+.blogmagazine_default_tabbed{
+	.blogmagazine-tabbed-section{
+		display:none;
+	    margin-top: 0;
+	    padding: 20px;
+	    border-top: none;
+	    border: 1px solid #e1e1e1;
+	    &.active{
+	    	display:block;
+	    }
+	}
+	.tabbed-comments{
+		ul{
+			margin: 0;
+			list-style: none;
+			.blogmagazine-comment-avatar{
+			    float: left;
+			    width: 25%;
+			    img{
+			    width: 100%;
+			    }
+			}
+			.blogmagazine-comment-desc-wrap {
+			    float: right;
+			    width: 71%;
+			}
+		}
+	}
+}
+	

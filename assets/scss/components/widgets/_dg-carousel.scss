@@ -1,0 +1,20 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+.blogmagazine-block-carousel{
+	margin:0;
+	list-style:none;
+	li{
+		display:none;
+		&:first-child{
+			display:block;
+		}
+	}
+	&.lightSlider{
+		li{
+			display:block;
+		}
+	}
+}

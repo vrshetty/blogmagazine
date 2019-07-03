@@ -1,0 +1,67 @@
+/*--------------------------------------------------------------
+Sidebar layout css 
+--------------------------------------------------------------*/
+
+#primary{
+    float: left;
+    width: 70%;
+}
+
+.sidebar-main{
+    float: right;
+    width: 27%;
+    &.sidebar-left{
+        float:left;
+    }
+    &.sidebar-right{
+        float:right;
+    }
+}
+
+body{
+    &.left-sidebar{
+        #primary{
+            float: right;
+        }
+    }
+    &.right-sidebar{
+        #primary{
+            float: left;
+        }
+    }
+    &.no-sidebar{
+        #primary{
+            float: none;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .sidebar-main{
+            display: none;
+        }
+    }
+    &.both-sidebar{
+        #primary{
+            width:100%;
+            padding:0;
+            margin:0;
+            @media(min-width:992px){
+                width: 60%;
+                float: right;
+                padding: 0 15px;
+                margin: 0 20% 0 -80%;
+            }
+        }
+        .sidebar-main{
+            width:100%;
+            @media(min-width:992px){
+                width:20%;
+            }
+        }
+    }
+    &.no-sidebar-center{
+        #primary{
+            float: none;
+            margin: 0 auto;
+        }
+    }
+}

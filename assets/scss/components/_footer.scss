@@ -1,0 +1,115 @@
+
+/*--------------------------------------------------------------
+Footer CSS
+--------------------------------------------------------------*/
+
+.site-footer{
+    margin-top: 40px;
+}
+
+.blogmagazine-top-footer{
+    color:#fff;
+    padding-top: 30px;
+    background-color: #100f15;
+    .dg-footer-widget-wrapper{
+        padding:0 15px;
+    }
+    .widget{
+        a{
+            color: #cfcfcf;
+            &:before{
+                color: #cfcfcf;
+            }
+            &:hover{
+                color: #029fb2;
+                &:before{
+                    color: #029fb2;
+                }
+            }
+        }
+        li{
+            &:before{
+                color: #cfcfcf;
+            }
+            &:hover{
+                &:before{
+                    color: #029fb2;
+                }
+            }
+        }
+
+    }
+    .widget-title{
+        margin: 0 0 20px;
+        text-align: left;
+        padding: 6px 0;
+        color:inherit;
+        font-size:20px;
+        text-transform: uppercase;
+    }
+    .dg-footer-widget{
+        float: left;
+        padding:0 15px;
+    }
+    &.footer_column_1{
+        .dg-footer-widget{
+            width:100%;
+        }
+    }
+    &.footer_column_2{
+        .dg-footer-widget{
+            width:50%;
+        }
+    }
+    &.footer_column_3{
+        .dg-footer-widget{
+            width:33.33%;
+        }
+    }
+    &.footer_column_4{
+        .dg-footer-widget{
+            width: 25%;
+        }
+    }
+}
+
+
+.bottom-footer {
+    color: #bfbfbf;
+    font-size: 12px;
+    padding: 10px 0;
+    background-color: #0a0a0c;
+}
+
+.site-info {
+    float: left;
+}
+/*footer */
+.footer-navigation{
+    ul{
+        margin:0;
+        float:right;
+        list-style:none;
+        &.sub-menu{
+            display:none;
+        }
+        li{
+            vertical-align: top;
+            display: inline-block;
+            a{
+                color: #cfcfcf;
+                margin-left: 10px;
+                padding-left: 10px;
+                border-left: 2px solid #7f7f7f;
+                &:hover{
+                    color: #029fb2;
+                }
+            }
+            &:first-child{
+                a{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

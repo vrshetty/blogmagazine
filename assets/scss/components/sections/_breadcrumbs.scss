@@ -1,0 +1,15 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+
+.dglib-breadcrumbs-wrapper{
+	.layout2{
+		li.trail-item{
+			& > a, & > span{
+				line-height:30px;
+			}
+		}
+	}
+}

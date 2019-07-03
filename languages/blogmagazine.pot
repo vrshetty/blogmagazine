@@ -1,0 +1,2049 @@
+# Copyright (C) 2019
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
+"POT-Creation-Date: 2019-07-03 16:51:01+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Dinesh Ghimire <developer.dinesh1@gmail.com>\n"
+"Language-Team: LANGUAGE <developer.dinesh1@gmail.com>\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: inc/dglib/core/functions.php:131
+msgid "1"
+msgstr ""
+
+#: inc/dglib/core/functions.php:132
+msgid "2"
+msgstr ""
+
+#: inc/dglib/core/functions.php:133
+msgid "3"
+msgstr ""
+
+#: inc/dglib/core/functions.php:134
+msgid "4"
+msgstr ""
+
+#: 404.php:32
+msgid "404"
+msgstr ""
+
+#: 404.php:23
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:24
+msgid "It looks like nothing was found at this location."
+msgstr ""
+
+#: 404.php:32
+msgid "error"
+msgstr ""
+
+#: comments.php:34
+#. translators: 1: title.
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:49 comments.php:68
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:51 comments.php:70
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:52 comments.php:71
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:79
+msgid "Comments are closed."
+msgstr ""
+
+#: inc/customizer/colors/section-category-color.php:8
+msgid "Categories Color"
+msgstr ""
+
+#: inc/customizer/colors/section-category-color.php:34
+#: inc/dglib/customizer/colors/section-category-colors.php:37
+msgid " %s Button Background"
+msgstr ""
+
+#: inc/customizer/colors/section-theme-color.php:8
+#: inc/customizer/colors/section-theme-color.php:23
+msgid "Theme Color"
+msgstr ""
+
+#: inc/customizer/colors/section-theme-color.php:42
+msgid "Site title color"
+msgstr ""
+
+#: inc/customizer/footer/section-footer-main.php:11
+msgid "Widget Area"
+msgstr ""
+
+#: inc/customizer/footer/section-footer-main.php:30
+msgid "Footer Widget Section"
+msgstr ""
+
+#: inc/customizer/footer/section-footer-main.php:31
+msgid "Show/Hide option for footer widget area section."
+msgstr ""
+
+#: inc/customizer/footer/section-footer-main.php:34
+#: inc/customizer/header/section-main-navigation.php:58
+#: inc/customizer/header/section-main-navigation.php:83
+#: inc/customizer/header/section-main-navigation.php:108
+#: inc/customizer/header/section-ticker-options.php:30
+#: inc/customizer/header/section-top-header.php:32
+#: inc/customizer/header/section-top-header.php:57
+#: inc/customizer/header/section-top-header.php:83
+#: inc/dglib/customizer/templates/templates-archive-page.php:158
+#: inc/dglib/customizer/templates/templates-archive-page.php:187
+#: inc/dglib/customizer/templates/templates-blog-page.php:158
+#: inc/dglib/customizer/templates/templates-blog-page.php:187
+#: inc/dglib/customizer/templates/templates-page-details.php:114
+#: inc/dglib/customizer/templates/templates-post-single.php:114
+#: inc/dglib/customizer/templates/templates-post-single.php:143
+#: inc/dglib/customizer/templates/templates-post-single.php:172
+#: inc/dglib/customizer/templates/templates-post-single.php:201
+#: inc/dglib/customizer/templates/templates-post-single.php:231
+#: inc/dglib/customizer/templates/templates-post-single.php:260
+#: inc/dglib/customizer/templates/templates-post-single.php:289
+#: inc/dglib/customizer/templates/templates-post-single.php:350
+#: inc/dglib/customizer/templates/templates-search-page.php:161
+#: inc/dglib/customizer/templates/templates-search-page.php:190
+msgid "Show"
+msgstr ""
+
+#: inc/customizer/footer/section-footer-main.php:35
+#: inc/customizer/header/section-main-navigation.php:59
+#: inc/customizer/header/section-main-navigation.php:84
+#: inc/customizer/header/section-main-navigation.php:109
+#: inc/customizer/header/section-ticker-options.php:31
+#: inc/customizer/header/section-top-header.php:33
+#: inc/customizer/header/section-top-header.php:58
+#: inc/customizer/header/section-top-header.php:84
+#: inc/dglib/customizer/templates/templates-archive-page.php:159
+#: inc/dglib/customizer/templates/templates-archive-page.php:188
+#: inc/dglib/customizer/templates/templates-blog-page.php:159
+#: inc/dglib/customizer/templates/templates-blog-page.php:188
+#: inc/dglib/customizer/templates/templates-page-details.php:115
+#: inc/dglib/customizer/templates/templates-post-single.php:115
+#: inc/dglib/customizer/templates/templates-post-single.php:144
+#: inc/dglib/customizer/templates/templates-post-single.php:173
+#: inc/dglib/customizer/templates/templates-post-single.php:202
+#: inc/dglib/customizer/templates/templates-post-single.php:232
+#: inc/dglib/customizer/templates/templates-post-single.php:261
+#: inc/dglib/customizer/templates/templates-post-single.php:290
+#: inc/dglib/customizer/templates/templates-post-single.php:351
+#: inc/dglib/customizer/templates/templates-search-page.php:162
+#: inc/dglib/customizer/templates/templates-search-page.php:191
+msgid "Hide"
+msgstr ""
+
+#: inc/customizer/footer/section-footer-main.php:55
+msgid "Footer Widget Layout"
+msgstr ""
+
+#: inc/customizer/footer/section-footer-main.php:56
+#: inc/customizer/templates/templates-archive.php:19
+#: inc/customizer/templates/templates-blog-page.php:18
+#: inc/customizer/templates/templates-search-page.php:15
+msgid "Choose layout from available layouts"
+msgstr ""
+
+#: inc/customizer/footer/section-footer-main.php:60
+msgid "Columns Four"
+msgstr ""
+
+#: inc/customizer/footer/section-footer-main.php:64
+msgid "Columns Three"
+msgstr ""
+
+#: inc/customizer/footer/section-footer-main.php:68
+msgid "Columns Two"
+msgstr ""
+
+#: inc/customizer/footer/section-footer-main.php:72
+msgid "Column One"
+msgstr ""
+
+#: inc/customizer/header/section-main-navigation.php:8
+msgid "Main Navigation"
+msgstr ""
+
+#: inc/customizer/header/section-main-navigation.php:28
+msgid "Sticky Menu"
+msgstr ""
+
+#: inc/customizer/header/section-main-navigation.php:29
+msgid "Enable/Disable option for sticky menu."
+msgstr ""
+
+#: inc/customizer/header/section-main-navigation.php:32
+#: inc/customizer/options/section-image-settings.php:30
+#: inc/customizer/templates/templates-homepage.php:22
+#: inc/dglib/customizer/templates/templates-404-page.php:39
+#: inc/dglib/customizer/templates/templates-archive-page.php:38
+#: inc/dglib/customizer/templates/templates-blog-page.php:38
+#: inc/dglib/customizer/templates/templates-page-details.php:38
+#: inc/dglib/customizer/templates/templates-page-details.php:144
+#: inc/dglib/customizer/templates/templates-post-single.php:38
+#: inc/dglib/customizer/templates/templates-post-single.php:318
+#: inc/dglib/customizer/templates/templates-search-page.php:39
+msgid "Enable"
+msgstr ""
+
+#: inc/customizer/header/section-main-navigation.php:33
+#: inc/customizer/options/section-image-settings.php:31
+#: inc/customizer/templates/templates-homepage.php:23
+#: inc/dglib/core/functions.php:149
+#: inc/dglib/customizer/templates/templates-404-page.php:40
+#: inc/dglib/customizer/templates/templates-archive-page.php:39
+#: inc/dglib/customizer/templates/templates-blog-page.php:39
+#: inc/dglib/customizer/templates/templates-page-details.php:39
+#: inc/dglib/customizer/templates/templates-page-details.php:145
+#: inc/dglib/customizer/templates/templates-post-single.php:39
+#: inc/dglib/customizer/templates/templates-post-single.php:319
+#: inc/dglib/customizer/templates/templates-search-page.php:40
+msgid "Disable"
+msgstr ""
+
+#: inc/customizer/header/section-main-navigation.php:54
+msgid "Home Icon"
+msgstr ""
+
+#: inc/customizer/header/section-main-navigation.php:55
+msgid "Show/Hide option for home icon at primary menu."
+msgstr ""
+
+#: inc/customizer/header/section-main-navigation.php:79
+#: inc/dglib/customizer/controls/dg-customizer-icons-control.php:38
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:174
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:309
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:89
+#: inc/dglib/widgets/fields/dg-icon-field.php:19
+msgid "Search Icon"
+msgstr ""
+
+#: inc/customizer/header/section-main-navigation.php:80
+msgid "Show/Hide option for search icon at primary menu."
+msgstr ""
+
+#: inc/customizer/header/section-main-navigation.php:104
+msgid "Random Post Icon"
+msgstr ""
+
+#: inc/customizer/header/section-main-navigation.php:105
+msgid "Show/Hide option for random post icon at primary menu."
+msgstr ""
+
+#: inc/customizer/header/section-ticker-options.php:8
+msgid "Ticker Section"
+msgstr ""
+
+#: inc/customizer/header/section-ticker-options.php:26
+msgid "Ticker Option"
+msgstr ""
+
+#: inc/customizer/header/section-ticker-options.php:27
+msgid "Show/Hide option for news ticker section."
+msgstr ""
+
+#: inc/customizer/header/section-ticker-options.php:42 inc/hooks/header.php:286
+msgid "Breaking News"
+msgstr ""
+
+#: inc/customizer/header/section-ticker-options.php:51
+msgid "Ticker Caption"
+msgstr ""
+
+#: inc/customizer/header/section-top-header.php:8
+msgid "Top Header"
+msgstr ""
+
+#: inc/customizer/header/section-top-header.php:28
+msgid "Top Header Section"
+msgstr ""
+
+#: inc/customizer/header/section-top-header.php:29
+msgid "Show/Hide option for top header section."
+msgstr ""
+
+#: inc/customizer/header/section-top-header.php:53
+msgid "Current Date"
+msgstr ""
+
+#: inc/customizer/header/section-top-header.php:54
+msgid "Show/Hide option for current date at top header section."
+msgstr ""
+
+#: inc/customizer/header/section-top-header.php:79
+#: inc/dglib/customizer/sections/section-social-icons.php:11
+msgid "Social Icons"
+msgstr ""
+
+#: inc/customizer/header/section-top-header.php:80
+msgid "Show/Hide option for social media icons at top header section."
+msgstr ""
+
+#: inc/customizer/options/section-image-settings.php:8
+msgid "Image Settings"
+msgstr ""
+
+#: inc/customizer/options/section-image-settings.php:26
+msgid "Image src set option"
+msgstr ""
+
+#: inc/customizer/options/section-image-settings.php:27
+msgid "Enable/Disable option for image src set."
+msgstr ""
+
+#: inc/customizer/options/section-website-layout.php:11
+msgid "Website Layout"
+msgstr ""
+
+#: inc/customizer/options/section-website-layout.php:12
+msgid "Choose a site to display your website more effectively."
+msgstr ""
+
+#: inc/customizer/options/section-website-layout.php:29
+msgid "Site Layout"
+msgstr ""
+
+#: inc/customizer/options/section-website-layout.php:32
+msgid "FullWidth Layout"
+msgstr ""
+
+#: inc/customizer/options/section-website-layout.php:33
+msgid "Boxed Layout"
+msgstr ""
+
+#: inc/customizer/templates/templates-archive.php:18
+msgid "Archive Layouts"
+msgstr ""
+
+#: inc/customizer/templates/templates-archive.php:23
+#: inc/customizer/templates/templates-blog-page.php:22
+#: inc/customizer/templates/templates-search-page.php:19
+msgid "Classic"
+msgstr ""
+
+#: inc/customizer/templates/templates-archive.php:27
+#: inc/customizer/templates/templates-blog-page.php:26
+#: inc/customizer/templates/templates-search-page.php:23
+msgid "Grid"
+msgstr ""
+
+#: inc/customizer/templates/templates-blog-page.php:17
+msgid "Blog Layouts"
+msgstr ""
+
+#: inc/customizer/templates/templates-homepage.php:16
+msgid "Static homepage as Magazine Layout"
+msgstr ""
+
+#: inc/customizer/templates/templates-homepage.php:25
+msgid "Enable static homepage as magazine layout."
+msgstr ""
+
+#: inc/customizer/templates/templates-search-page.php:14
+msgid "Search Layouts"
+msgstr ""
+
+#: inc/dglib/core/functions.php:46
+msgid "No Filters"
+msgstr ""
+
+#: inc/dglib/core/functions.php:66
+msgid "No Image"
+msgstr ""
+
+#: inc/dglib/core/functions.php:71
+msgid "full (original)"
+msgstr ""
+
+#: inc/dglib/core/functions.php:74
+msgid "Croped"
+msgstr ""
+
+#: inc/dglib/core/functions.php:74
+msgid "Resize"
+msgstr ""
+
+#: inc/dglib/core/functions.php:92
+msgid "ASC"
+msgstr ""
+
+#: inc/dglib/core/functions.php:93
+msgid "DESC"
+msgstr ""
+
+#: inc/dglib/core/functions.php:108
+#: inc/widgets/class-dg-blockposts-widget.php:87
+msgid "None"
+msgstr ""
+
+#: inc/dglib/core/functions.php:109
+msgid "ID"
+msgstr ""
+
+#: inc/dglib/core/functions.php:110
+msgid "Author"
+msgstr ""
+
+#: inc/dglib/core/functions.php:111
+#: inc/dglib/widgets/class-dg-author-info-widget.php:47
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:43
+#: inc/dglib/widgets/fields/dg-master-widget.php:22
+#: inc/widgets/class-dg-blockposts-widget.php:43
+#: inc/widgets/class-dg-featured-posts-widget.php:44
+#: inc/widgets/class-dg-recent-posts-widget.php:42
+msgid "Title"
+msgstr ""
+
+#: inc/dglib/core/functions.php:112
+msgid "Date"
+msgstr ""
+
+#: inc/dglib/core/functions.php:113
+msgid "Modified Date"
+msgstr ""
+
+#: inc/dglib/core/functions.php:114
+msgid "Random"
+msgstr ""
+
+#: inc/dglib/core/functions.php:115
+msgid "Comment Count"
+msgstr ""
+
+#: inc/dglib/core/functions.php:116
+msgid "Menu Order"
+msgstr ""
+
+#: inc/dglib/core/functions.php:150
+msgid "Open with New Tab"
+msgstr ""
+
+#: inc/dglib/core/functions.php:151
+msgid "Open with Same Tab"
+msgstr ""
+
+#: inc/dglib/core/functions.php:170
+msgid "Carousel"
+msgstr ""
+
+#: inc/dglib/core/functions.php:171
+msgid "Columns"
+msgstr ""
+
+#: inc/dglib/core/functions.php:205
+#: inc/dglib/widgets/function-dg-widget-dependencies.php:20
+#: inc/widgets/class-dg-blockposts-widget.php:128
+msgid "Default"
+msgstr ""
+
+#: inc/dglib/core/functions.php:206
+msgid "fa-2x"
+msgstr ""
+
+#: inc/dglib/core/functions.php:207
+msgid "fa-3x"
+msgstr ""
+
+#: inc/dglib/core/functions.php:208
+msgid "fa-4x"
+msgstr ""
+
+#: inc/dglib/core/functions.php:209
+msgid "fa-5x"
+msgstr ""
+
+#: inc/dglib/core/functions.php:244 inc/functions/template-tags.php:244
+msgid "Read More"
+msgstr ""
+
+#: inc/dglib/core/functions.php:290
+msgid "Like"
+msgstr ""
+
+#: inc/dglib/core/functions.php:294
+msgid "Sad"
+msgstr ""
+
+#: inc/dglib/core/functions.php:298
+msgid "Love"
+msgstr ""
+
+#: inc/dglib/core/functions.php:302
+msgid "Surprised"
+msgstr ""
+
+#: inc/dglib/core/functions.php:306
+msgid "Angry"
+msgstr ""
+
+#: inc/dglib/core/functions.php:310
+msgid "Happy"
+msgstr ""
+
+#: inc/dglib/core/functions.php:314
+msgid "Crying"
+msgstr ""
+
+#: inc/dglib/customizer/colors/panel-colors.php:14
+msgid "Color Options"
+msgstr ""
+
+#: inc/dglib/customizer/colors/panel-colors.php:15
+msgid ""
+"Colors related settings and sections goes here. You can manage color from "
+"this panel."
+msgstr ""
+
+#: inc/dglib/customizer/colors/section-category-colors.php:12
+msgid "Category Colors"
+msgstr ""
+
+#: inc/dglib/customizer/colors/section-global-colors.php:11
+msgid "Global Colors"
+msgstr ""
+
+#: inc/dglib/customizer/controls/dg-customizer-icons-control.php:34
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:170
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:305
+#: inc/dglib/customizer/sections/section-social-icons.php:46
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:94
+#: inc/dglib/widgets/fields/dg-icon-field.php:15
+msgid "Add Icon"
+msgstr ""
+
+#: inc/dglib/customizer/controls/dg-customizer-icons-control.php:34
+msgid "Change Icon"
+msgstr ""
+
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:190
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:329
+msgid "Field type "
+msgstr ""
+
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:190
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:329
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:174
+msgid " not found."
+msgstr ""
+
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:201
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:340
+msgid "Delete"
+msgstr ""
+
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:203
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:341
+msgid "|"
+msgstr ""
+
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:205
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:343
+#: inc/dglib/customizer/editor/section-custom-javascript.php:33
+#: inc/dglib/widgets/fields/dg-repeater-field.php:49
+#: inc/dglib/widgets/fields/dg-repeater-field.php:86
+msgid "Close"
+msgstr ""
+
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:305
+#: inc/dglib/widgets/fields/dg-icon-field.php:15
+msgid "Edit Icon"
+msgstr ""
+
+#: inc/dglib/customizer/controls/dg-customizer-termslist-control.php:41
+#: inc/dglib/walkers/class-dg-walker-mega-menu.php:111
+msgid "All"
+msgstr ""
+
+#: inc/dglib/customizer/editor/panel-code-editor.php:11
+msgid "Additional Code"
+msgstr ""
+
+#: inc/dglib/customizer/editor/panel-code-editor.php:12
+msgid "You can add new css and js from this panel."
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:6
+msgid ""
+"Add your own JS code here to customize the appearance and layout of your "
+"site."
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:9
+msgid "When using a keyboard to navigate:"
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:11
+msgid "In the editing area, the Tab key enters a tab character."
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:12
+msgid "To move away from this area, press the Esc key followed by the Tab key."
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:13
+msgid ""
+"Screen reader users: when in forms mode, you may need to press the escape "
+"key twice."
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:20
+#. translators: 1: link to user profile, 2: additional link attributes, 3:
+#. accessibility text
+msgid ""
+"The edit field automatically highlights code syntax. You can disable this "
+"in your <a href=\"%1$s\" %2$s>user profile%3$s</a> to work in plain text "
+"mode."
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:26
+#. translators: accessibility text
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: inc/dglib/customizer/editor/section-custom-javascript.php:39
+#: inc/dglib/customizer/editor/section-custom-javascript.php:58
+msgid "Additional JS"
+msgstr ""
+
+#: inc/dglib/customizer/footer/panel-footer.php:11
+msgid "Footer Options"
+msgstr ""
+
+#: inc/dglib/customizer/footer/panel-footer.php:12
+msgid ""
+"Footer related settings and sections goes here. You can manage footer from "
+"this panel."
+msgstr ""
+
+#: inc/dglib/customizer/footer/section-bottom-footer.php:12
+msgid "Footer Bottom"
+msgstr ""
+
+#: inc/dglib/customizer/footer/section-bottom-footer.php:25
+msgid "Copyright © 2019. All rights reserved."
+msgstr ""
+
+#: inc/dglib/customizer/footer/section-bottom-footer.php:33
+msgid "Copyright Text"
+msgstr ""
+
+#: inc/dglib/customizer/footer/section-bottom-footer.php:35
+msgid "Write your own copyright text here to display bottom of the footer."
+msgstr ""
+
+#: inc/dglib/customizer/header/panel-header.php:11
+msgid "Header Options"
+msgstr ""
+
+#: inc/dglib/customizer/header/panel-header.php:12
+msgid ""
+"Header related settings and sections goes here. You can manage header from "
+"this panel."
+msgstr ""
+
+#: inc/dglib/customizer/options/panel-options.php:14
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:120
+msgid "Theme Options"
+msgstr ""
+
+#: inc/dglib/customizer/options/panel-options.php:15
+msgid "Remaining all setting options goes here."
+msgstr ""
+
+#: inc/dglib/customizer/sections/panel-sections.php:10
+msgid "Additional Sections"
+msgstr ""
+
+#: inc/dglib/customizer/sections/panel-sections.php:11
+msgid "Overall section settings goes here."
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-breadcrumbs.php:10
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-breadcrumbs.php:33
+msgid "Breadcrumbs Layout"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-breadcrumbs.php:38
+msgid "Layout One"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-breadcrumbs.php:39
+msgid "Layout Two"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-breadcrumbs.php:41
+msgid "You can choose breadcrumbs layout to show website."
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-breadcrumbs.php:64
+msgid "Breadcrumbs Background"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-social-icons.php:14
+msgid "Social media icons to display sidebar and widget from here."
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-social-icons.php:42
+msgid "Social Media Icons"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-social-icons.php:47
+#: inc/dglib/customizer/sections/section-social-icons.php:54
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:98
+msgid "Social Media Icon"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-social-icons.php:48
+msgid "Social media icons for sharing article page and posts."
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-social-icons.php:55
+msgid "Choose social media icon."
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-social-icons.php:59
+msgid "Social Icon Url"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-social-icons.php:60
+msgid "Enter social media url."
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-social-icons.php:65
+msgid "Social Icon Background"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-social-icons.php:66
+msgid "Choose social media icon background color."
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:11
+msgid "Visitor Reactions"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:14
+msgid "Set reaction format and display visitor reactions in perentage and number."
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:25
+msgid "Share your feeling about this article."
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:34
+msgid "Reactions Heading"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:59
+msgid "Display Reactions Type"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:60
+msgid "Choose display reaction type."
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:66
+msgid "Percentage"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:67
+msgid "Total Values"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:90
+msgid "Visitor reaction icons."
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:94
+msgid "Add Reaction"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:95
+msgid "Reaction Details"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:100
+msgid "Reaction Icon"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:101
+msgid "Choose reaction icon."
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:105
+msgid "Reaction Title"
+msgstr ""
+
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:106
+msgid "Enter reaction title here."
+msgstr ""
+
+#: inc/dglib/customizer/templates/panel-templates.php:14
+msgid "Template Options"
+msgstr ""
+
+#: inc/dglib/customizer/templates/panel-templates.php:15
+msgid ""
+"Templates related settings and sections goes here. You can manage different "
+"templates like page, post, 404page etc from this panel."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:11
+msgid "404 Options"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:33
+#: inc/dglib/customizer/templates/templates-archive-page.php:33
+#: inc/dglib/customizer/templates/templates-blog-page.php:33
+#: inc/dglib/customizer/templates/templates-page-details.php:33
+#: inc/dglib/customizer/templates/templates-post-single.php:33
+#: inc/dglib/customizer/templates/templates-search-page.php:33
+msgid "Enable Breadcrumbs?"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:42
+msgid "You can enable breadcrumbs to show before notfound page."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:64
+#: inc/dglib/customizer/templates/templates-archive-page.php:63
+#: inc/dglib/customizer/templates/templates-blog-page.php:63
+#: inc/dglib/customizer/templates/templates-page-details.php:63
+#: inc/dglib/customizer/templates/templates-post-single.php:63
+#: inc/dglib/customizer/templates/templates-search-page.php:64
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:135
+msgid "Sidebar Layout"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:65
+#: inc/dglib/customizer/templates/templates-archive-page.php:64
+#: inc/dglib/customizer/templates/templates-blog-page.php:64
+#: inc/dglib/customizer/templates/templates-page-details.php:64
+#: inc/dglib/customizer/templates/templates-post-single.php:64
+#: inc/dglib/customizer/templates/templates-search-page.php:65
+msgid "Choose sidebar from available layouts"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:69
+#: inc/dglib/customizer/templates/templates-archive-page.php:68
+#: inc/dglib/customizer/templates/templates-blog-page.php:68
+#: inc/dglib/customizer/templates/templates-page-details.php:68
+#: inc/dglib/customizer/templates/templates-post-single.php:68
+#: inc/dglib/customizer/templates/templates-search-page.php:69
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:144
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:73
+#: inc/dglib/customizer/templates/templates-archive-page.php:72
+#: inc/dglib/customizer/templates/templates-blog-page.php:72
+#: inc/dglib/customizer/templates/templates-page-details.php:72
+#: inc/dglib/customizer/templates/templates-post-single.php:72
+#: inc/dglib/customizer/templates/templates-search-page.php:73
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:148
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:77
+#: inc/dglib/customizer/templates/templates-archive-page.php:76
+#: inc/dglib/customizer/templates/templates-blog-page.php:76
+#: inc/dglib/customizer/templates/templates-page-details.php:76
+#: inc/dglib/customizer/templates/templates-post-single.php:76
+#: inc/dglib/customizer/templates/templates-search-page.php:77
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:152
+msgid "No Sidebar"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:81
+#: inc/dglib/customizer/templates/templates-archive-page.php:80
+#: inc/dglib/customizer/templates/templates-blog-page.php:80
+#: inc/dglib/customizer/templates/templates-page-details.php:80
+#: inc/dglib/customizer/templates/templates-post-single.php:80
+#: inc/dglib/customizer/templates/templates-search-page.php:81
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:156
+msgid "No Sidebar Center"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:85
+#: inc/dglib/customizer/templates/templates-archive-page.php:84
+#: inc/dglib/customizer/templates/templates-blog-page.php:84
+#: inc/dglib/customizer/templates/templates-page-details.php:84
+#: inc/dglib/customizer/templates/templates-post-single.php:84
+#: inc/dglib/customizer/templates/templates-search-page.php:85
+msgid "Both Sidebar"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:102
+msgid "Oops! That page can’t be found."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:110
+msgid "404 Page Title"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:113
+msgid "Please enter title to display on 404 page."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:125
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:133
+msgid "404 Page Description"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-404-page.php:136
+msgid "Please enter description to display on 404 page."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-archive-page.php:11
+msgid "Archive Options"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-archive-page.php:41
+msgid "You can enable breadcrumbs to show before archive page."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-archive-page.php:101
+#: inc/dglib/customizer/templates/templates-blog-page.php:101
+#: inc/dglib/customizer/templates/templates-search-page.php:102
+#: template-parts/layouts/classic.php:25 template-parts/layouts/grid.php:40
+#: template-parts/post-format/content.php:25
+msgid "Read More..."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-archive-page.php:109
+#: inc/dglib/customizer/templates/templates-blog-page.php:109
+#: inc/dglib/customizer/templates/templates-search-page.php:110
+msgid "Readmore Text"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-archive-page.php:111
+msgid "If you can show featured image on archive page check on show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-archive-page.php:131
+#: inc/dglib/customizer/templates/templates-blog-page.php:131
+#: inc/dglib/customizer/templates/templates-search-page.php:133
+#: inc/widgets/class-dg-blockposts-widget.php:133
+#: inc/widgets/class-dg-featured-posts-widget.php:114
+msgid "Description Length"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-archive-page.php:133
+msgid "Please choose no of character to display description length in archive page."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-archive-page.php:153
+#: inc/dglib/customizer/templates/templates-blog-page.php:153
+#: inc/dglib/customizer/templates/templates-search-page.php:156
+msgid "Show date on posts?"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-archive-page.php:161
+msgid "If you can show post date on archive page please check show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-archive-page.php:182
+#: inc/dglib/customizer/templates/templates-blog-page.php:182
+#: inc/dglib/customizer/templates/templates-search-page.php:185
+msgid "Show author name on posts?"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-archive-page.php:190
+msgid "If you can show author name on archive page please check show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-blog-page.php:11
+msgid "Blog/Home Page"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-blog-page.php:41
+msgid "You can enable breadcrumbs to show before blog page."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-blog-page.php:111
+msgid "If you can show featured image on blog page check on show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-blog-page.php:133
+msgid "Please choose no of character to display description length in blog page."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-blog-page.php:161
+msgid "If you can show post date on blog page please check show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-blog-page.php:190
+msgid "If you can show author name on blog page please check show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-page-details.php:11
+msgid "Page Options"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-page-details.php:41
+msgid "You can enable breadcrumbs to show before page details."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-page-details.php:109
+#: inc/dglib/customizer/templates/templates-post-single.php:109
+msgid "Show Featured Image?"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-page-details.php:117
+#: inc/dglib/customizer/templates/templates-post-single.php:117
+msgid "If you can show featured image on single page check on show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-page-details.php:139
+#: inc/dglib/customizer/templates/templates-post-single.php:313
+msgid "Enable Reactions"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-page-details.php:147
+msgid "You can enable reaction to show after page details."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:11
+msgid "Post Options"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:41
+msgid "You can enable breadcrumbs to show before post details."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:138
+msgid "Show Categories?"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:146
+msgid ""
+"If you can show categories list of related post on post details please "
+"check show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:167
+msgid "Show date on post?"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:175
+msgid "If you can show post date on post details please check show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:196
+msgid "Show author name on post?"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:204
+msgid "If you can show author name on post details please check show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:226
+msgid "Show tags name on post?"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:234
+msgid "If you can show tags name on post details please check show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:255
+msgid "Show before and after post link on post?"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:263
+msgid ""
+"If you can show before and after post link on post details please check "
+"show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:284
+msgid "Show author info on post?"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:292
+msgid "If you can show author info on post details please check show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:321
+msgid "You can enable reaction to show after post details."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:346
+msgid "Related Post Option"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:347
+msgid "Show/Hide option for related posts section at single post page."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:360
+#: inc/hooks/single.php:74
+msgid "Related Posts"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:368
+msgid "Related Post Title"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-post-single.php:385
+msgid "Related Posts from?"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-search-page.php:11
+msgid "Search Page"
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-search-page.php:42
+msgid "You can enable breadcrumbs to show before search page."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-search-page.php:113
+msgid "If you can show featured image on search page check on show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-search-page.php:136
+msgid "Please choose no of character to display description length in search page."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-search-page.php:164
+msgid "If you can show post date on search page please check show button."
+msgstr ""
+
+#: inc/dglib/customizer/templates/templates-search-page.php:193
+msgid "If you can show author name on search page please check show button."
+msgstr ""
+
+#: inc/dglib/hooks/ajax.php:23
+#: inc/dglib/walkers/dg-walker-mega-menu-ajax.php:22 inc/hooks/ajax.php:29
+msgid "Nonce doesnot exist."
+msgstr ""
+
+#: inc/dglib/hooks/ajax.php:29
+#: inc/dglib/walkers/dg-walker-mega-menu-ajax.php:28 inc/hooks/ajax.php:35
+msgid "Nonce doesnot match."
+msgstr ""
+
+#: inc/dglib/hooks/ajax.php:36
+msgid "Post id not found."
+msgstr ""
+
+#: inc/dglib/hooks/ajax.php:43
+msgid "Reaction value not found."
+msgstr ""
+
+#: inc/dglib/hooks/ajax.php:50
+msgid "You are already react on this emoji."
+msgstr ""
+
+#: inc/dglib/hooks/ajax.php:60
+msgid "Successfully react on emoji."
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:251
+msgid "Browse:"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:253
+msgid "Home"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:254
+msgid "404 Not Found"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:255
+msgid "Archives"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:257
+#. Translators: %s is the search query. The HTML entities are opening and
+#. closing curly quotes.
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:259
+#. Translators: %s is the page number.
+msgid "Page %s"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:261
+#. Translators: Minute archive title. %s is the minute time format.
+msgid "Minute %s"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:263
+#. Translators: Weekly archive title. %s is the week date format.
+msgid "Week %s"
+msgstr ""
+
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:83
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:140
+msgid "Default Sidebar"
+msgstr ""
+
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:89
+msgid "Left sidebar"
+msgstr ""
+
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:95
+msgid "Right sidebar"
+msgstr ""
+
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:101
+msgid "No sidebar Full width"
+msgstr ""
+
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:107
+msgid "No sidebar Content Centered"
+msgstr ""
+
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:172
+msgid "Sidebars"
+msgstr ""
+
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:174
+msgid "Sidebar Settings"
+msgstr ""
+
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:175
+msgid ""
+"If you want to override customizer settings please choose sidebar otherwise "
+"leave it default sidebar."
+msgstr ""
+
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:302
+msgid "Sorry metabox field not found."
+msgstr ""
+
+#: inc/dglib/metabox/dg-theme-settings-metabox.php:308
+msgid "Please put some fields to show on metabox"
+msgstr ""
+
+#: inc/dglib/walkers/class-dg-walker-mega-menu.php:148
+msgid "Preloader"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:12
+msgid "Menu Icon"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:13
+msgid "Choose icons for to show in navigation menu."
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:18
+msgid "Description as title tips."
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:19
+msgid "Show description as tool tips."
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:24
+msgid "Enable Megamenu"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:25
+msgid "Enabel megamneu to show megamenu with the replacement of normal menu."
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:31
+msgid "Select Categories"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:32
+msgid "Choose multiple categories to show megamenu."
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:80
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:196
+#: inc/dglib/widgets/fields/dg-repeater-field.php:48
+#: inc/dglib/widgets/fields/dg-repeater-field.php:85
+msgid "Remove"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:84
+msgid "Icon List"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:158
+#: inc/dglib/widgets/fields/dg-multitermlist-field.php:42
+#: inc/dglib/widgets/fields/dg-termlist-field.php:36
+msgid "No terms found in this taxonomy"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:161
+#: inc/dglib/widgets/fields/dg-multitermlist-field.php:45
+msgid "Selected taxonomy doesn't exist"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:174
+msgid "Field "
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:59
+#. translators: %s: title of menu item which is invalid
+msgid "%s (Invalid)"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:63
+#. translators: %s: title of menu item in draft status
+msgid "%s (Pending)"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:77
+msgid "sub item"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:94
+msgid "Move up"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:107
+msgid "Move down"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:113
+msgid "Edit menu item"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:113
+msgid "Edit"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:122
+msgid "URL"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:129
+msgid "Navigation Label"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:135
+msgid "Title Attribute"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:142
+msgid "Open link in a new tab"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:147
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:153
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:159
+msgid "Description"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:161
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:166
+msgid "Move"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:167
+msgid "Up one"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:168
+msgid "Down one"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:171
+msgid "To the top"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:179
+#. translators: %s: original title
+msgid "Original: %s"
+msgstr ""
+
+#: inc/dglib/walkers/dg-walker-nav-menu-edit.php:208
+msgid "Cancel"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:20
+msgid "A widget to display posts and thumbs with a lots of filters."
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:21
+msgid "DG - Author Info"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:37
+#: inc/dglib/widgets/class-dg-author-info-widget.php:42
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:33
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:38
+#: inc/widgets/class-dg-adsbanner-widget.php:33
+#: inc/widgets/class-dg-adsbanner-widget.php:38
+#: inc/widgets/class-dg-blockposts-widget.php:34
+#: inc/widgets/class-dg-blockposts-widget.php:39
+#: inc/widgets/class-dg-carousel-widget.php:38
+#: inc/widgets/class-dg-carousel-widget.php:43
+#: inc/widgets/class-dg-featured-posts-widget.php:35
+#: inc/widgets/class-dg-featured-posts-widget.php:40
+#: inc/widgets/class-dg-featured-slider-widget.php:33
+#: inc/widgets/class-dg-featured-slider-widget.php:38
+#: inc/widgets/class-dg-recent-posts-widget.php:33
+#: inc/widgets/class-dg-recent-posts-widget.php:38
+#: inc/widgets/class-dg-tabbed-widget.php:33
+#: inc/widgets/class-dg-tabbed-widget.php:38
+msgid "General"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:54
+msgid "Title Target"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:74
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:70
+#: inc/widgets/class-dg-adsbanner-widget.php:68
+#: inc/widgets/class-dg-blockposts-widget.php:70
+#: inc/widgets/class-dg-carousel-widget.php:74
+#: inc/widgets/class-dg-featured-posts-widget.php:71
+#: inc/widgets/class-dg-featured-slider-widget.php:69
+#: inc/widgets/class-dg-recent-posts-widget.php:68
+msgid "Title link"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:81
+msgid "Choose author/user"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:89
+msgid "Author Designation"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:90
+msgid "CEO / Co-Founder"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:96
+msgid "Show Author Avatar?"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:115
+msgid "Avatar Size"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:122
+#: inc/widgets/class-dg-blockposts-widget.php:141
+#: inc/widgets/class-dg-carousel-widget.php:95
+#: inc/widgets/class-dg-featured-posts-widget.php:102
+msgid "Layout"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:126
+msgid "Show Author Description?"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:144
+msgid "Description Limit"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:148
+msgid "Specify number of characters to limit author description length"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:153
+msgid "Author link target"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-author-info-widget.php:161
+msgid "All link text"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:17
+msgid "A Widget to display social icons."
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:18
+msgid "DG - Social Icons"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:50
+#: inc/widgets/class-dg-adsbanner-widget.php:48
+#: inc/widgets/class-dg-blockposts-widget.php:50
+#: inc/widgets/class-dg-carousel-widget.php:54
+#: inc/widgets/class-dg-featured-posts-widget.php:51
+#: inc/widgets/class-dg-featured-slider-widget.php:49
+#: inc/widgets/class-dg-recent-posts-widget.php:48
+msgid "Link Target"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:76
+msgid "Icons Size"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:83
+msgid "Social icon open with"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:90
+msgid "Social Icon List"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:92
+msgid "To add social icon click to add icon."
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:93
+msgid "Social Icon"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:104
+msgid "Social Media Link"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:110
+msgid "Social Icon Color"
+msgstr ""
+
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:167
+msgid "Lekh Social Media Icons"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-accordion-field.php:44
+msgid "Sorry no field are added on accordion."
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-accordion-field.php:55
+msgid "There is no accordion on this accordion group"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-master-widget.php:167
+msgid "Blank widget created"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-pagelist-field.php:21
+msgid "Select Page"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-repeater-field.php:9
+msgid "Row"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-repeater-field.php:10
+msgid "Add row"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-tabgroup-field.php:41
+msgid "No fields are added on "
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-tabgroup-field.php:41
+msgid " tab"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-termlist-field.php:18
+msgid "Show All"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-upload-field.php:13
+msgid "Image preview"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-upload-field.php:16
+msgid "Choose file"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-upload-field.php:17
+msgid "Upload Image"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-upload-field.php:17
+msgid "Select Image"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-upload-field.php:18
+msgid "Remove Image"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-widget-fields.php:23
+msgid "Field type"
+msgstr ""
+
+#: inc/dglib/widgets/fields/dg-widget-fields.php:23
+msgid "Not found."
+msgstr ""
+
+#: inc/functions/template-functions.php:371
+msgid "Select Category"
+msgstr ""
+
+#: inc/functions/template-tags.php:74
+#. translators: %s: post title
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/functions/template-tags.php:102
+#. translators: 1: list of tags.
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/functions/template-tags.php:114
+#: template-parts/single-details/content-page.php:43
+#. translators: %s: Name of current post. Only visible to screen readers
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/hooks/footer.php:95
+msgid "BlogMagazine"
+msgstr ""
+
+#: inc/hooks/footer.php:103
+#. translators: 1: Theme name, 2: Theme author.
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: inc/hooks/setup.php:60
+msgid "Top Menu"
+msgstr ""
+
+#: inc/hooks/setup.php:61
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/hooks/setup.php:62
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/widgets/class-dg-adsbanner-widget.php:19
+msgid "You can place a banner as an advertisement with links."
+msgstr ""
+
+#: inc/widgets/class-dg-adsbanner-widget.php:21
+msgid "DG: Banner Ads"
+msgstr ""
+
+#: inc/widgets/class-dg-adsbanner-widget.php:42
+msgid "Banner title"
+msgstr ""
+
+#: inc/widgets/class-dg-adsbanner-widget.php:74
+msgid "Select banner image"
+msgstr ""
+
+#: inc/widgets/class-dg-adsbanner-widget.php:79
+msgid "Banner Link"
+msgstr ""
+
+#: inc/widgets/class-dg-adsbanner-widget.php:85
+msgid "Open in new tab"
+msgstr ""
+
+#: inc/widgets/class-dg-adsbanner-widget.php:90
+msgid "Rel attribute for link"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:20
+msgid "Displays block posts from selected category in different layouts."
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:22
+msgid "DG: Block Posts"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:44
+#: inc/widgets/class-dg-carousel-widget.php:48
+#: inc/widgets/class-dg-featured-posts-widget.php:45
+#: inc/widgets/class-dg-featured-slider-widget.php:43
+msgid "Enter your block title. (Optional - Leave blank to hide the title.)"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:76
+msgid "Block Category"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:83
+msgid "Tab Category List"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:88
+msgid "Block Category List"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:89
+msgid "Others Category List"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:119
+msgid "Tab Categories"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:127
+msgid "Default Tab Label"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:136
+msgid "Enter the short description length in character."
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:145
+msgid "Block Layouts"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:149
+msgid "Layout 1"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:150
+msgid "Layout 2"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:151
+msgid "Layout 3"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:152
+msgid "Layout 4"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:157
+msgid "Large Image Size"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:165
+#: inc/widgets/class-dg-recent-posts-widget.php:80
+#: inc/widgets/class-dg-tabbed-widget.php:66
+msgid "Thumbnail Image Size"
+msgstr ""
+
+#: inc/widgets/class-dg-carousel-widget.php:20
+msgid "Displays posts from selected categories in carousel layouts."
+msgstr ""
+
+#: inc/widgets/class-dg-carousel-widget.php:23
+msgid "DG: Carousel"
+msgstr ""
+
+#: inc/widgets/class-dg-carousel-widget.php:47
+#: inc/widgets/class-dg-featured-slider-widget.php:42
+msgid "Block title"
+msgstr ""
+
+#: inc/widgets/class-dg-carousel-widget.php:80
+#: inc/widgets/class-dg-featured-posts-widget.php:77
+msgid "Block Categories"
+msgstr ""
+
+#: inc/widgets/class-dg-carousel-widget.php:86
+#: inc/widgets/class-dg-featured-posts-widget.php:106
+msgid "Image Size"
+msgstr ""
+
+#: inc/widgets/class-dg-carousel-widget.php:99
+msgid "Carousel Layouts"
+msgstr ""
+
+#: inc/widgets/class-dg-featured-posts-widget.php:19
+msgid "Displays featured posts from selected categories in different layouts."
+msgstr ""
+
+#: inc/widgets/class-dg-featured-posts-widget.php:21
+msgid "DG: Featured Posts"
+msgstr ""
+
+#: inc/widgets/class-dg-featured-posts-widget.php:85
+msgid "Show Author"
+msgstr ""
+
+#: inc/widgets/class-dg-featured-posts-widget.php:93
+msgid "Show Post Date"
+msgstr ""
+
+#: inc/widgets/class-dg-featured-posts-widget.php:116
+msgid ""
+"Choose excerpt length in character. default length description length is "
+"150. you can set zero if you want to hide description."
+msgstr ""
+
+#: inc/widgets/class-dg-featured-slider-widget.php:19
+msgid ""
+"Displays posts from selected categories in the slider with the featured "
+"section."
+msgstr ""
+
+#: inc/widgets/class-dg-featured-slider-widget.php:21
+msgid "DG: Featured Slider"
+msgstr ""
+
+#: inc/widgets/class-dg-featured-slider-widget.php:75
+msgid "Slider Categories"
+msgstr ""
+
+#: inc/widgets/class-dg-featured-slider-widget.php:81
+msgid "Featured Post Categories"
+msgstr ""
+
+#: inc/widgets/class-dg-recent-posts-widget.php:19
+msgid "A widget shows recent posts with thumbnail."
+msgstr ""
+
+#: inc/widgets/class-dg-recent-posts-widget.php:21
+msgid "DG: Recent Posts"
+msgstr ""
+
+#: inc/widgets/class-dg-recent-posts-widget.php:74
+msgid "No. of Posts"
+msgstr ""
+
+#: inc/widgets/class-dg-tabbed-widget.php:19
+msgid "A widget shows recent posts and comment in tabbed layout."
+msgstr ""
+
+#: inc/widgets/class-dg-tabbed-widget.php:21
+msgid "DG: Default Tabbed"
+msgstr ""
+
+#: inc/widgets/class-dg-tabbed-widget.php:42
+msgid "Latest Tab title"
+msgstr ""
+
+#: inc/widgets/class-dg-tabbed-widget.php:43
+#: inc/widgets/class-dg-tabbed-widget.php:105
+msgid "Latest"
+msgstr ""
+
+#: inc/widgets/class-dg-tabbed-widget.php:48
+msgid "Comments Tab title"
+msgstr ""
+
+#: inc/widgets/class-dg-tabbed-widget.php:49
+#: inc/widgets/class-dg-tabbed-widget.php:106
+msgid "Comments"
+msgstr ""
+
+#: inc/widgets/class-dg-tabbed-widget.php:54
+msgid "No of posts"
+msgstr ""
+
+#: inc/widgets/class-dg-tabbed-widget.php:60
+msgid "No of comments"
+msgstr ""
+
+#: inc/widgets/class-dg-tabbed-widget.php:74
+msgid "Avatar Image Size"
+msgstr ""
+
+#: inc/widgets/class-dg-tabbed-widget.php:81
+msgid "Comment Length"
+msgstr ""
+
+#: inc/widgets/class-dg-tabbed-widget.php:161
+msgid "&nbsp;commented on"
+msgstr ""
+
+#: inc/widgets/init.php:12
+msgid "Sidebar Right"
+msgstr ""
+
+#: inc/widgets/init.php:14
+msgid "Add widgets here to appear in your right sidebar."
+msgstr ""
+
+#: inc/widgets/init.php:22
+msgid "Sidebar Left"
+msgstr ""
+
+#: inc/widgets/init.php:24
+msgid "Add widgets here to appear in your left sidebar."
+msgstr ""
+
+#: inc/widgets/init.php:32
+msgid "Header Ads"
+msgstr ""
+
+#: inc/widgets/init.php:34
+msgid "Add banner widgets here."
+msgstr ""
+
+#: inc/widgets/init.php:42
+msgid "Home Top Section"
+msgstr ""
+
+#: inc/widgets/init.php:44 inc/widgets/init.php:54 inc/widgets/init.php:64
+#: inc/widgets/init.php:74
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/widgets/init.php:52
+msgid "Home Middle Section"
+msgstr ""
+
+#: inc/widgets/init.php:62
+msgid "Home Middle Aside"
+msgstr ""
+
+#: inc/widgets/init.php:72
+msgid "Home Bottom Section"
+msgstr ""
+
+#: inc/widgets/init.php:82
+msgid "Footer Widget Area %d"
+msgstr ""
+
+#: inc/widgets/init.php:84
+msgid "Add widgets here to appear in your footer."
+msgstr ""
+
+#: search.php:30
+#. translators: %s: search query.
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/post-format/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/post-format/content-none.php:26
+#. translators: 1: link to WP admin new post page.
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/post-format/content-none.php:39
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/post-format/content-none.php:45
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/single-details/content-page.php:31
+#: template-parts/single-details/content-single.php:65
+#: template-parts/single-details/content.php:40
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/single-details/content-single.php:54
+#: template-parts/single-details/content.php:30
+#. translators: %s: Name of current post. Only visible to screen readers
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: comments.php:40
+#. translators: 1: comment count number, 2: title.
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:252
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:707
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:725
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:743
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:760
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:789
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:819
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:846
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:1209
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:761
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:820
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:1212
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:762
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:1215
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: inc/dglib/library/breadcrumbs/breadcrumbs.php:790
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: inc/functions/template-functions.php:229
+#. Translators: If there are characters in your language that are not supported
+#. by Roboto Condensed, translate this to 'off'. Do not translate into your own
+#. language.
+msgctxt "Roboto Condensed font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/functions/template-functions.php:237
+#. Translators: If there are characters in your language that are not supported
+#. by Roboto, translate this to 'off'. Do not translate into your own language.
+msgctxt "Roboto font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/functions/template-functions.php:245
+#. Translators: If there are characters in your language that are not supported
+#. by Titillium Web, translate this to 'off'. Do not translate into your own
+#. language.
+msgctxt "Titillium Web font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/functions/template-tags.php:32
+#. translators: %s: post date.
+msgctxt "post date"
+msgid " %s"
+msgstr ""
+
+#: inc/functions/template-tags.php:38
+#. translators: %s: post author.
+msgctxt "post author"
+msgid " %s"
+msgstr ""
+
+#: inc/functions/template-tags.php:99
+#. translators: used between list items, there is a space after the comma
+msgctxt "list item separator"
+msgid " "
+msgstr ""

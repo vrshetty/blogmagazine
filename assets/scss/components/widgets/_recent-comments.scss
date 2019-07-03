@@ -1,0 +1,37 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+.widget_recent_comments{
+	li{
+		display:inline;
+	    &:before{
+		    left: 0;
+		    top: 0.5em;
+		    color: #9f9f9f;
+		    content: "\f086";
+		    font-size: 14px;
+		    position: absolute;
+		    font-family: "FontAwesome";
+		    transition: color 0.3s ease;
+	    }
+	}
+	li{
+		display:block;
+		color: #5f5f5f;
+	    font-size: 14px;
+	    line-height: 1.5em;
+	    position: relative;
+	    padding: 0.5em 0 0.5em 18px; 
+	    transition: color 0.3s ease;
+	    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		ul{
+			padding-left:15px;
+		}
+	}
+	ul{
+		margin: 0;
+		list-style:none;
+	}
+}
