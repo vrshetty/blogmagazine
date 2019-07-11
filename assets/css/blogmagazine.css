@@ -768,12 +768,42 @@ author Widgets
   padding: 11px 15px 15px;
   border: 1px solid #f2f2f2; }
 
+.blogmagazine_block_posts .layout4 .blogmagazine-post-content,
+.blogmagazine_block_posts .layout4 .blogmagazine-post-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background-color: #dedede; }
+
+.blogmagazine_block_posts .layout4 .blogmagazine-post-thumb img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.blogmagazine_block_posts .layout4 .blogmagazine-post-thumb a {
+  display: block;
+  height: 100%; }
+
+.blogmagazine_block_posts .layout4 .blogmagazine-post-content {
+  top: 50%;
+  background-color: #f2f2f2; }
+
 .blogmagazine_block_posts .layout4 .blogmagazine-alt-grid-post {
   width: 33.33%;
   float: left;
-  display: table; }
+  display: table;
+  display: block;
+  position: relative;
+  padding-top: 66.66%; }
   .blogmagazine_block_posts .layout4 .blogmagazine-alt-grid-post:nth-child(2n+2) .blogmagazine-post-thumb {
-    display: table-footer-group; }
+    top: initial;
+    bottom: 0; }
+  .blogmagazine_block_posts .layout4 .blogmagazine-alt-grid-post:nth-child(2n+2) .blogmagazine-post-content {
+    top: 0;
+    bottom: 50%; }
 
 .blogmagazine_block_posts .layout2 .blogmagazine-primary-block-wrap,
 .blogmagazine_block_posts .layout2 .blogmagazine-secondary-block-wrap {
