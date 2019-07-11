@@ -7,88 +7,107 @@
  * @since 1.0.0
  */
 /*-----------------------------------------------------------------------------------------------------------------------*/
+
 /**
- * Top header start
+ * header media
  *
  * @since 1.0.0
  */
-if( ! function_exists( 'blogmagazine_top_header_start' ) ) :
-	function blogmagazine_top_header_start() {
-		echo '<div class="blogmagazine-top-header-wrap">';
-		echo '<div class="dg-container">';
+if( ! function_exists( 'blogmagazine_media_header_callback' ) ) :
+	
+	function blogmagazine_media_header_callback() {
+	
+		get_template_part( 'template-parts/header/header', 'media' );
+
 	}
+
 endif;
 
-/**
- * Top header left section
- *
- * @since 1.0.0
- */
-if( ! function_exists( 'blogmagazine_top_left_section' ) ) :
-	function blogmagazine_top_left_section() {
-		$blogmagazine_date_option = get_theme_mod( 'blogmagazine_top_date_option', 'show' );
-?>
-		<div class="blogmagazine-top-left-section-wrapper">
-			<?php
-				if( $blogmagazine_date_option == 'show' ) {
-					echo '<div class="date-section">'. esc_html( date_i18n('l, F d, Y') ) .'</div>';
-				}
-			?>
-
-			<?php if ( has_nav_menu( 'blogmagazine_top_menu' ) ) { ?>
-				<nav id="top-navigation" class="top-navigation" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'blogmagazine_top_menu', 'fallback_cb' => false, 'menu_id' => 'top-menu' ) );
-					?>
-				</nav><!-- #site-navigation -->
-			<?php } ?>
-		</div><!-- .blogmagazine-top-left-section-wrapper -->
-<?php
-	}
-endif;
-
-/**
- * Top header right section
- *
- * @since 1.0.0
- */
-if( ! function_exists( 'blogmagazine_top_right_section' ) ) :
-	function blogmagazine_top_right_section() {
-?>
-		<div class="blogmagazine-top-right-section-wrapper">
-			<?php
-				$blogmagazine_top_social_option = get_theme_mod( 'blogmagazine_top_social_option', 'show' );
-				if( $blogmagazine_top_social_option == 'show' ) {
-					blogmagazine_social_media();
-				}
-			?>
-		</div><!-- .blogmagazine-top-right-section-wrapper -->
-<?php
-	}
-endif;
-
-/**
- * Top header end
- *
- * @since 1.0.0
- */
-if( ! function_exists( 'blogmagazine_top_header_end' ) ) :
-	function blogmagazine_top_header_end() {
-		echo '</div><!-- .dg-container -->';
-		echo '</div><!-- .blogmagazine-top-header-wrap -->';
-	}
-endif;
-
-/**
- * Managed functions for top header hook
- *
- * @since 1.0.0
- */
-add_action( 'blogmagazine_top_header', 'blogmagazine_top_header_start', 5 );
-add_action( 'blogmagazine_top_header', 'blogmagazine_top_left_section', 10 );
-add_action( 'blogmagazine_top_header', 'blogmagazine_top_right_section', 15 );
-add_action( 'blogmagazine_top_header', 'blogmagazine_top_header_end', 20 );
+add_action( 'blogmagazine_header_media', 'blogmagazine_media_header_callback', 10 );
 
 /*-----------------------------------------------------------------------------------------------------------------------*/
+
+/**
+ * Top header callback
+ *
+ * @since 1.0.0
+ */
+if( ! function_exists( 'blogmagazine_header_top_callback' ) ) :
+	
+	function blogmagazine_header_top_callback() {
+		
+		get_template_part( 'template-parts/header/header', 'media' );
+
+	}
+
+endif;
+
+add_action( 'blogmagazine_top_header', 'blogmagazine_header_top_callback', 10 );
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+/**
+ * Header Branding Callback
+ *
+ * @since 1.0.0
+ */
+if( ! function_exists( 'blogmagazine_branding_header_callback' ) ) :
+	
+	function blogmagazine_branding_header_callback() {
+		
+		get_template_part( 'template-parts/header/header', 'branding' );
+
+	}
+
+endif;
+
+add_action( 'blogmagazine_header_branding', 'blogmagazine_branding_header_callback', 10 );
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+/**
+ * Header Navigation Callback
+ *
+ * @since 1.0.0
+ */
+if( ! function_exists( 'blogmagazine_navigation_header_callback' ) ) :
+	
+	function blogmagazine_navigation_header_callback() {
+		
+		get_template_part( 'template-parts/header/primary', 'navigation' );
+
+	}
+
+endif;
+
+add_action( 'blogmagazine_header_navigation', 'blogmagazine_navigation_header_callback', 10 );
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+/**
+ * Header Navigation Callback
+ *
+ * @since 1.0.0
+ */
+if( ! function_exists( 'blogmagazine_ticker_header_callback' ) ) :
+	
+	function blogmagazine_ticker_header_callback() {
+
+		$blogmagazine_ticker_option = get_theme_mod( 'blogmagazine_ticker_option', 'show' );
+		if( $blogmagazine_ticker_option == 'show' && is_front_page() ) {
+
+			get_template_part( 'template-parts/header/header', 'ticker' );
+
+		}
+
+	}
+
+endif;
+
+add_action( 'blogmagazine_header_ticker', 'blogmagazine_ticker_header_callback', 10 );
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
 /**
  * header section start
  *
@@ -97,6 +116,18 @@ add_action( 'blogmagazine_top_header', 'blogmagazine_top_header_end', 20 );
 if( ! function_exists( 'blogmagazine_header_section_start' ) ) :
 	function blogmagazine_header_section_start() {
 		echo '<header id="masthead" class="site-header" role="banner">';
+		$blogmagazine_top_header_option = get_theme_mod( 'blogmagazine_top_header_option', 'show' );
+		if( $blogmagazine_top_header_option == 'show' ) {
+			
+			/**
+		     * blogmagazine_top_header hook
+		     *
+		     * @hooked - blogmagazine_header_top_callback - 10
+		     *
+		     * @since 1.0.0
+		     */
+		    do_action( 'blogmagazine_top_header' );
+		}
 	}
 endif;
 
@@ -244,6 +275,20 @@ endif;
  */
 if( ! function_exists( 'blogmagazine_header_section_end' ) ) :
 	function blogmagazine_header_section_end() {
+		$blogmagazine_ticker_option = get_theme_mod( 'blogmagazine_ticker_option', 'show' );
+		if( $blogmagazine_ticker_option == 'show' && is_front_page() ) {
+
+			/**
+		     * blogmagazine_top_header hook
+		     *
+		     * @hooked - blogmagazine_ticker_section_start - 5
+		     * @hooked - blogmagazine_ticker_content - 10
+		     * @hooked - blogmagazine_ticker_section_end - 15
+		     *
+		     * @since 1.0.0
+		     */
+		    do_action( 'blogmagazine_ticker_section' );
+		}
 		echo '</header><!-- .site-header -->';
 	}
 endif;

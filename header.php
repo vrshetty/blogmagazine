@@ -30,27 +30,16 @@
      * @since 1.0.0
      */
     do_action( 'blogmagazine_before_page' );
+
+    
+    /*get_template_part( 'template-parts/header/top', 'header' );
+    get_template_part( 'template-parts/header/header', 'branding' );
+    get_template_part( 'template-parts/header/primary', 'navigation' );
+    get_template_part( 'template-parts/header/header', 'ticker' );*/
 ?>
 
 <div id="page" class="site">
 	<?php
-
-		$blogmagazine_top_header_option = get_theme_mod( 'blogmagazine_top_header_option', 'show' );
-		if( $blogmagazine_top_header_option == 'show' ) {
-			
-			/**
-		     * blogmagazine_top_header hook
-		     *
-		     * @hooked - blogmagazine_top_header_start - 5
-		     * @hooked - blogmagazine_top_left_section - 10
-		     * @hooked - blogmagazine_top_right_section - 15
-		     * @hooked - blogmagazine_top_header_end - 20
-		     *
-		     * @since 1.0.0
-		     */
-		    do_action( 'blogmagazine_top_header' );
-		}
-
 		/**
 	     * blogmagazine_header_section hook
 	     *
@@ -65,22 +54,6 @@
 	     * @since 1.0.0
 	     */
 	    do_action( 'blogmagazine_header_section' );
-	    
-		$blogmagazine_ticker_option = get_theme_mod( 'blogmagazine_ticker_option', 'show' );
-		if( $blogmagazine_ticker_option == 'show' && is_front_page() ) {
-
-			/**
-		     * blogmagazine_top_header hook
-		     *
-		     * @hooked - blogmagazine_ticker_section_start - 5
-		     * @hooked - blogmagazine_ticker_content - 10
-		     * @hooked - blogmagazine_ticker_section_end - 15
-		     *
-		     * @since 1.0.0
-		     */
-		    do_action( 'blogmagazine_ticker_section' );
-		}
 	?>
-
 	<div id="content" class="site-content">
 		<div class="dg-container">

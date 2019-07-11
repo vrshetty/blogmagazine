@@ -115,6 +115,20 @@ function blogmagazine_setup() {
 		) 
 	);
 
+	$defaults = array(
+		'width'                  => 0,
+		'height'                 => 0,
+		'audio'					=> true,
+		'video'					 => true,
+		'flex-height'            => true,
+		'flex-width'             => true,
+		'uploads'                => true,
+		'random-default'         => false,
+		'header-text'            => true,
+		'default-text-color'     => '#f00',
+	);
+	add_theme_support( 'custom-header', $defaults );
+
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -173,6 +187,9 @@ if(!function_exists('blogmagazine_admin_enqueue_scripts') ):
 	function blogmagazine_admin_enqueue_scripts(){
 
 		wp_enqueue_style( 'blogmagazine-admin-styles', get_template_directory_uri().'/assets/css/admin-styles.min.css', array(), '1.0.0');
+
+		// This theme styles the visual editor to resemble the theme style,
+        add_editor_style( 'assets/css/editor-style.min.css' );
 
 	}
 

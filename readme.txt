@@ -52,9 +52,14 @@ https://github.com/sachinchoolur/lightslider - MIT License
 
 == Changelog ==
 
+= 1.0.7 - 2019/07/11 =
+    * Fixed: Alternative grid issue fixed
+    * Added: Hook added for more flexibility to developers
+    * 
+
 = 1.0.6 - 2019/07/04 =
     * Modify: Updated minimal features on dglib
-    * Fixed: All issues listed by poena
+    * Fixed: All issues fixed listed by poena
     * Added: Multiple switch box added on templates
     * Added: Additional Sections added
 
@@ -92,7 +97,7 @@ https://github.com/sachinchoolur/lightslider - MIT License
 
 = 1.0.6 =
     * Modify: Updated minimal features on dglib
-    * Fixed: All issues listed
+    * Fixed: All issues fixed listed by poena
     * Added: Multiple switch box added on templates
     * Added: Additional Sections added
 
