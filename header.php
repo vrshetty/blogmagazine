@@ -31,11 +31,6 @@
      */
     do_action( 'blogmagazine_before_page' );
 
-    
-    /*get_template_part( 'template-parts/header/top', 'header' );
-    get_template_part( 'template-parts/header/header', 'branding' );
-    get_template_part( 'template-parts/header/primary', 'navigation' );
-    get_template_part( 'template-parts/header/header', 'ticker' );*/
 ?>
 
 <div id="page" class="site">
@@ -43,13 +38,7 @@
 		/**
 	     * blogmagazine_header_section hook
 	     *
-	     * @hooked - blogmagazine_header_section_start - 5
-	     * @hooked - blogmagazine_header_logo_ads_section_start - 10
-	     * @hooked - blogmagazine_site_branding_section - 15
-	     * @hooked - blogmagazine_header_ads_section - 20
-	     * @hooked - blogmagazine_header_logo_ads_section_end - 25
-	     * @hooked - blogmagazine_primary_menu_section - 30
-	     * @hooked - blogmagazine_header_section_end - 35
+	     * @hooked - blogmagazine_section_header_callback - 10
 	     *
 	     * @since 1.0.0
 	     */
