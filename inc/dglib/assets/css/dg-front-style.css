@@ -359,11 +359,11 @@
 .dglib-breadcrumbs-wrapper ul.trail-items li.trail-item:nth-of-type(1) {
   margin-left: 0; }
 
-.dblib-reaction-wrapper {
+.dglib-reaction-wrapper {
   padding: 40px;
   background-color: #f4f8fb; }
 
-.dblib-reaction-header {
+.dglib-reaction-header {
   text-align: center; }
 
 .dglib-reaction-list {
@@ -384,7 +384,7 @@
 .reaction-item-wrapper {
   padding-bottom: 30px; }
 
-.dblib-reaction-image-wrap {
+.dglib-reaction-image-wrap {
   width: 100px;
   height: 100px;
   display: block;
@@ -396,7 +396,7 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #dedede; }
-  .dblib-reaction-image-wrap img {
+  .dglib-reaction-image-wrap img {
     margin: 0;
     width: 100%;
     height: auto;
@@ -405,13 +405,13 @@
     -o-transition: width 0.5s, margin 0.5s;
     -moz-transition: width 0.5s, margin 0.5s;
     transition: width 0.5s, margin 0.5s; }
-  .dblib-reaction-image-wrap:hover, .dblib-reaction-image-wrap.active {
+  .dglib-reaction-image-wrap:hover, .dglib-reaction-image-wrap.active {
     background-color: #289dcc; }
-    .dblib-reaction-image-wrap:hover img, .dblib-reaction-image-wrap.active img {
+    .dglib-reaction-image-wrap:hover img, .dglib-reaction-image-wrap.active img {
       margin: -5px;
       width: 120%; }
 
-.dblib-reaction-count {
+.dglib-reaction-count {
   width: 100%;
   color: #fff;
   height: 30px;

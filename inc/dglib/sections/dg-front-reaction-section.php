@@ -2,9 +2,9 @@
 /*
  * Reactiions Section Frontend
  */
-if(!function_exists('dblib_reaction_icons_callback')):
+if(!function_exists('dglib_reaction_icons_callback')):
 
-	function dblib_reaction_icons_callback(){
+	function dglib_reaction_icons_callback(){
 
 		$enable_reaction = 'disable';
 		if( is_single() ){
@@ -34,9 +34,9 @@ if(!function_exists('dblib_reaction_icons_callback')):
 			$dglib_reaction_details[$icon_name] = absint(get_post_meta( $singular_post_id, 'dglib_reaction_'.$icon_name.'_values', true ) );
 		}
 		?>
-		<section id="reactionblock" class="dblib-reaction-wrapper" >
+		<section id="reactionblock" class="dglib-reaction-wrapper" >
 			<div class="dglib-section-container">
-				<h2 class='dblib-reaction-header'><?php echo esc_html($visitor_reaction_heading); ?></h2>
+				<h2 class='dglib-reaction-header'><?php echo esc_html($visitor_reaction_heading); ?></h2>
 				<?php if($visitor_reactions_unique): ?>
 					<ul class="dglib-reaction-list">
 						<?php
@@ -61,7 +61,7 @@ if(!function_exists('dblib_reaction_icons_callback')):
 							?>
 							<li class="dglib-reaction-single-item" data-reaction-config='<?php echo esc_attr(json_encode($reaction_args) ); ?>' title="<?php echo esc_attr($reaction_icon_title); ?>">
 								<div class="reaction-item-wrapper">
-									<span class="dblib-reaction-count"><?php 
+									<span class="dglib-reaction-count"><?php 
 									switch ($display_reaction_value){
 										case 'percentage':
 										$reaction_percentage = ($dglib_reaction_details[$reaction_icon_name]) ? round(( $dglib_reaction_details[$reaction_icon_name]/array_sum($dglib_reaction_details)  * 100 )) . '%' : $dglib_reaction_details[$reaction_icon_name] . '%';
@@ -72,7 +72,7 @@ if(!function_exists('dblib_reaction_icons_callback')):
 										break;
 									}
 									?></span>
-									<figure class="dblib-reaction-image-wrap">
+									<figure class="dglib-reaction-image-wrap">
 										<?php if($reaction_icon_name): ?>
 											<img src="<?php echo esc_url(dglib_directory_uri('assets/img/reactions/'.$reaction_icon_name.'.png') ); ?>" alt="<?php echo esc_attr($reaction_icon_title); ?>" title="<?php echo esc_attr($reaction_icon_title); ?>"/>
 										<?php endif; ?>
@@ -90,4 +90,4 @@ if(!function_exists('dblib_reaction_icons_callback')):
 	}
 
 endif;
-add_action('dblib_reaction_section_icons', 'dblib_reaction_icons_callback', 10 );
+add_action('dglib_reaction_section_icons', 'dglib_reaction_icons_callback', 10 );

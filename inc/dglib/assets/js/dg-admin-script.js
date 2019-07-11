@@ -302,23 +302,23 @@
 
             CustomizerIcons: function(){
                 var single_icon = $(this),
-                    dblib_customize_icons = single_icon.closest( '.dg-icons-wrapper' ),
+                    dglib_customize_icons = single_icon.closest( '.dg-icons-wrapper' ),
                     icon_display_value = single_icon.children('i').attr('class'),
                     icon_split_value = icon_display_value.split(' '),
                     icon_value = icon_split_value[1];
 
                 single_icon.siblings().removeClass('selected');
                 single_icon.addClass('selected');
-                dblib_customize_icons.find('.dg-icon-value').val( icon_value );
-                dblib_customize_icons.find('.dg-icon-preview').html('<i class="' + icon_display_value + '"></i>');
-                dblib_customize_icons.find('.dg-icon-value').trigger('change');
+                dglib_customize_icons.find('.dg-icon-value').val( icon_value );
+                dglib_customize_icons.find('.dg-icon-preview').html('<i class="' + icon_display_value + '"></i>');
+                dglib_customize_icons.find('.dg-icon-value').trigger('change');
             },
 
             IconToggle: function(){
                 var icon_toggle = $(this),
-                    dblib_customize_icons = icon_toggle.closest( '.dg-icons-wrapper' ),
-                    icons_list_wrapper = dblib_customize_icons.find( '.icons-list-wrapper' ),
-                    dashicons = dblib_customize_icons.find( '.dashicons' );
+                    dglib_customize_icons = icon_toggle.closest( '.dg-icons-wrapper' ),
+                    icons_list_wrapper = dglib_customize_icons.find( '.icons-list-wrapper' ),
+                    dashicons = dglib_customize_icons.find( '.dashicons' );
                 if ( icons_list_wrapper.is(':hidden') ) {
                     icons_list_wrapper.slideDown();
                     dashicons.removeClass('dashicons-arrow-down');
@@ -342,8 +342,8 @@
             IconSearch: function(){
                 var text = $(this),
                 value = this.value,
-                dblib_customize_icons = text.closest( '.dg-icons-wrapper' ),
-                icons_list_wrapper = dblib_customize_icons.find( '.icons-list-wrapper' );
+                dglib_customize_icons = text.closest( '.dg-icons-wrapper' ),
+                icons_list_wrapper = dglib_customize_icons.find( '.icons-list-wrapper' );
                 icons_list_wrapper.find('i').each(function () {
                     if ($(this).attr('class').search(value) > -1) {
                         $(this).parent('.single-icon').show();

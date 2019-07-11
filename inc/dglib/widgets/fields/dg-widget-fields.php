@@ -15,12 +15,16 @@ function dg_widgets_show_widget_field( $centurywidget = '', $widget_field = '', 
 	$dg_widget_relation_json = wp_json_encode( $dg_widget_field_relation);
 	$dg_widget_relation_class = ($dg_widget_field_relation) ? 'dg_widget_field_relation' : '';
 	
-	$widget_fild_path = dglib_file_directory('widgets/fields/dg-'.$dg_widget_field_type.'-field.php');
-	if( file_exists($widget_fild_path) ){
-		require $widget_fild_path;
+	$dg_widget_custom_field_path = isset($dg_widget_custom_field_path) ? $dg_widget_custom_field_path : '';
+	$dglib_field_path = dglib_file_directory('widgets/fields/dg-'.$dg_widget_field_type.'-field.php');
+
+	$widget_field_path = ($dg_widget_custom_field_path) ? $dg_widget_custom_field_path : $dglib_field_path;
+
+	if( file_exists($widget_field_path) ){
+		require $widget_field_path;
 	}else{
 		?>
-		<p><?php echo esc_html__('Field type', 'blogmagazine').' '.esc_attr($dg_widget_field_type).' '.esc_html__('Not found.', 'blogmagazine'); ?></p>
+		<p><?php echo esc_html__('File ', 'blogmagazine').' '.esc_attr($widget_field_path).' '.esc_html__(' Not found.', 'blogmagazine'); ?></p>
 		<?php
 	}
 

@@ -7,9 +7,9 @@
  * @since 1.0.0
  */
 
-if(!function_exists('blogmagazine_body_sidebar_id')):
+if(!function_exists('blogmagazine_sidebar_layout_name')):
 
-    function blogmagazine_body_sidebar_id( ) {
+    function blogmagazine_sidebar_layout_name( ) {
 
         $sidebar_id = 'right_sidebar';
 
@@ -36,14 +36,16 @@ if(!function_exists('blogmagazine_body_sidebar_id')):
 
         if( is_singular() && $post_type == 'page' ){
             $sidebar_id        = get_theme_mod( 'dglib_default_page_sidebar', 'right_sidebar' );
-        }      
+        }
+
+        $sidebar_id = apply_filters( 'blogmagazine_sidebar_layout_name', $sidebar_id );      
        
         if(is_singular()){
 
             $sidebar_metabox = get_post_meta( get_the_ID(), 'dglib_single_post_sidebar', true );
             $sidebar_layout = (isset($sidebar_metabox['sidebar_layout'])) ? $sidebar_metabox['sidebar_layout'] : '';
             $sidebar_id = ( $sidebar_layout && $sidebar_layout != 'default_sidebar' ) ? $sidebar_layout : $sidebar_id;
-        }
+        }       
 
         return $sidebar_id;
 
@@ -52,102 +54,6 @@ if(!function_exists('blogmagazine_body_sidebar_id')):
 
 endif;
 
-/**
- * Adds custom classes to the array of body classes.
- *
- * @param array $classes Classes for the body element.
- * @return array
- */
-function blogmagazine_body_classes_old( $classes ) {
-
-    global $post;
-
-    /**
-     * Sidebar option for post/page/archive
-     *
-     * @since 1.0.0
-     */
-    if( 'post' === get_post_type() ) {
-        $sidebar_meta_option = get_post_meta( $post->ID, 'np_single_post_sidebar', true );
-    }
-
-    if( 'page' === get_post_type() ) {
-        $sidebar_meta_option = get_post_meta( $post->ID, '  ', true );
-    }
-     
-    if( is_home() ) {
-        $home_id = get_option( 'page_for_posts' );
-        $sidebar_meta_option = get_post_meta( $home_id, 'np_single_post_sidebar', true );
-    }
-    
-    if( empty( $sidebar_meta_option ) || is_archive() || is_search() ) {
-        $sidebar_meta_option = 'default_sidebar';
-    }
-    $archive_sidebar        = get_theme_mod( 'dglib_default_archive_sidebar', 'right_sidebar' );
-    $post_default_sidebar   = get_theme_mod( 'dglib_default_post_sidebar', 'right_sidebar' );        
-    $page_default_sidebar   = get_theme_mod( 'dglib_default_page_sidebar', 'right_sidebar' );
-    
-    if( $sidebar_meta_option == 'default_sidebar' ) {
-        if( is_single() ) {
-            if( $post_default_sidebar == 'right_sidebar' ) {
-                $classes[] = 'right-sidebar';
-            } elseif( $post_default_sidebar == 'left_sidebar' ) {
-                $classes[] = 'left-sidebar';
-            } elseif( $post_default_sidebar == 'no_sidebar' ) {
-                $classes[] = 'no-sidebar';
-            } elseif( $post_default_sidebar == 'no_sidebar_center' ) {
-                $classes[] = 'no-sidebar-center';
-            }
-        } elseif( is_page() && !is_page_template( 'templates/home-template.php' ) ) {
-            if( $page_default_sidebar == 'right_sidebar' ) {
-                $classes[] = 'right-sidebar';
-            } elseif( $page_default_sidebar == 'left_sidebar' ) {
-                $classes[] = 'left-sidebar';
-            } elseif( $page_default_sidebar == 'no_sidebar' ) {
-                $classes[] = 'no-sidebar';
-            } elseif( $page_default_sidebar == 'no_sidebar_center' ) {
-                $classes[] = 'no-sidebar-center';
-            }
-        } elseif( $archive_sidebar == 'right_sidebar' ) {
-            $classes[] = 'right-sidebar';
-        } elseif( $archive_sidebar == 'left_sidebar' ) {
-            $classes[] = 'left-sidebar';
-        } elseif( $archive_sidebar == 'no_sidebar' ) {
-            $classes[] = 'no-sidebar';
-        } elseif( $archive_sidebar == 'no_sidebar_center' ) {
-            $classes[] = 'no-sidebar-center';
-        }
-    } elseif( $sidebar_meta_option == 'right_sidebar' ) {
-        $classes[] = 'right-sidebar';
-    } elseif( $sidebar_meta_option == 'left_sidebar' ) {
-        $classes[] = 'left-sidebar';
-    } elseif( $sidebar_meta_option == 'no_sidebar' ) {
-        $classes[] = 'no-sidebar';
-    } elseif( $sidebar_meta_option == 'no_sidebar_center' ) {
-        $classes[] = 'no-sidebar-center';
-    }
-
-    /**
-     * option for web site layout 
-     */
-    $blogmagazine_website_layout = esc_attr( get_theme_mod( 'blogmagazine_site_layout', 'fullwidth_layout' ) );
-    
-    if( !empty( $blogmagazine_website_layout ) ) {
-        $classes[] = $blogmagazine_website_layout;
-    }
-
-    /**
-     * Class for archive
-     */
-    if( is_archive() ) {
-        $blogmagazine_archive_layout = get_theme_mod( 'blogmagazine_archive_layout', 'classic' );
-        if( !empty( $blogmagazine_archive_layout ) ) {
-            $classes[] = 'archive-'.$blogmagazine_archive_layout;
-        }
-    }
-
-    return $classes;
-}
 if( !function_exists( 'blogmagazine_body_classes' ) ):
     
     function blogmagazine_body_classes( $classes ) {
@@ -168,7 +74,7 @@ if( !function_exists( 'blogmagazine_body_classes' ) ):
             $classes[] = 'hfeed';
         }
 
-        $sidebar_id = blogmagazine_body_sidebar_id();
+        $sidebar_id = blogmagazine_sidebar_layout_name();
         
         $sidebar_class = 'right-sidebar';
         
@@ -200,6 +106,8 @@ if( !function_exists( 'blogmagazine_body_classes' ) ):
 
         }
 
+        $sidebar_class = apply_filters( 'blogmagazine_body_sidebar_class', $sidebar_class );
+
         $classes[] = $sidebar_class;
 
         return $classes;
@@ -209,6 +117,44 @@ if( !function_exists( 'blogmagazine_body_classes' ) ):
 endif;
 
 add_filter( 'body_class', 'blogmagazine_body_classes' );
+
+/**
+ * Function to get sidebar name in array
+ *
+ * @since 1.0.0
+ */
+if(!function_exists('blogmagazine_sidebar_name_array') ){
+
+    function blogmagazine_sidebar_name_array(){
+        $sidebar_name = blogmagazine_sidebar_layout_name();
+        $blogmagazine_sidebars = array();
+        switch ($sidebar_name){
+            case 'left_sidebar':
+                $blogmagazine_sidebars[] = 'sidebar-left';
+                break;
+            case 'right_sidebar':
+                $blogmagazine_sidebars[] = 'sidebar-right';
+                break;
+            case 'both_sidebar':
+                $blogmagazine_sidebars[] = 'sidebar-left';
+                $blogmagazine_sidebars[] = 'sidebar-right';
+                break;
+            case 'no_sidebar':
+            case 'no_sidebar_center':
+                $blogmagazine_sidebars = array();
+                break;
+            default:
+                $blogmagazine_sidebars[] = 'sidebar-right';
+                break;
+        }
+
+        $blogmagazine_sidebars = apply_filters( 'blogmagazine_sidebar_name_list', $blogmagazine_sidebars );
+
+        return $blogmagazine_sidebars;
+    }
+
+}
+
 
 /*-----------------------------------------------------------------------------------------------------------------------*/
 /**
@@ -439,86 +385,3 @@ if( ! function_exists( 'blogmagazine_hover_color' ) ) :
         return $return;
     }
 endif;
-
-
-/*---------------------------------------------------------------------------------------------------------------*/
-/**
- * Function define about page/post/archive sidebar
- *
- * @since 1.0.0
- */
-if( ! function_exists( 'blogmagazine_get_sidebar_name' ) ):
-
-function blogmagazine_get_sidebar_name() {
-
-    $default_sidebar = 'right_sidebar';
-    $sidebar_name = $default_sidebar;
-    if(is_home()){
-        $sidebar_name = get_theme_mod( 'dglib_default_index_sidebar', $default_sidebar );
-    }
-    if(is_archive()){
-        $sidebar_name = get_theme_mod( 'dglib_default_archive_sidebar', $default_sidebar );
-    }
-    if(is_search()){
-        $sidebar_name = get_theme_mod( 'dglib_default_search_sidebar', $default_sidebar );
-    }
-    if(is_404()){
-        $sidebar_name = get_theme_mod( 'dglib_default_notfound_sidebar', $default_sidebar );
-    }
-
-    if(is_page()){
-        $sidebar_name = get_theme_mod( 'dglib_default_page_sidebar', $default_sidebar );
-    }
-
-    if(is_single()){
-        $sidebar_name = get_theme_mod( 'dglib_default_post_sidebar', $default_sidebar );
-    }
-
-
-    // Metabox For page and posts
-    if( is_page() || is_single() ){
-        $metabox_sidebar_details = get_post_meta( get_the_ID(), 'dglib_single_post_sidebar', true );
-        $metabox_sidebar_name = (isset($metabox_sidebar_details['sidebar_layout'])) ? esc_attr($metabox_sidebar_details['sidebar_layout']) : '';
-
-        $sidebar_name = ( $metabox_sidebar_name && $metabox_sidebar_name !='default_sidebar' ) ? $metabox_sidebar_name : $sidebar_name; 
-    }
-
-    return $sidebar_name;
-
-}
-endif;
-
-/**
- * Function to get sidebar name in array
- *
- * @since 1.0.0
- */
-if(!function_exists('blogmagazine_sidebar_name_arrray') ){
-
-    function blogmagazine_sidebar_name_array(){
-        $sidebar_name = blogmagazine_get_sidebar_name();
-        $blogmagazine_sidebars = array();
-        switch ($sidebar_name){
-            case 'left_sidebar':
-                $blogmagazine_sidebars[] = 'sidebar-left';
-                break;
-            case 'right_sidebar':
-                $blogmagazine_sidebars[] = 'sidebar-right';
-                break;
-            case 'both_sidebar':
-                $blogmagazine_sidebars[] = 'sidebar-left';
-                $blogmagazine_sidebars[] = 'sidebar-right';
-                break;
-            case 'no_sidebar':
-            case 'no_sidebar_center':
-                $blogmagazine_sidebars = array();
-                break;
-            default:
-                $blogmagazine_sidebars[] = 'sidebar-right';
-                break;
-        }
-
-        return $blogmagazine_sidebars;
-    }
-
-}

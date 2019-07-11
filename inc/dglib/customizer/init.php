@@ -22,6 +22,15 @@ if( !function_exists('dglib_customize_register') ):
         require_once dglib_file_directory('customizer/colors/panel-colors.php'); // priority - 70
         require_once dglib_file_directory('customizer/options/panel-options.php'); // priority - 80
         require_once dglib_file_directory('customizer/editor/panel-code-editor.php'); // priority - 200
+
+        /*
+         * @hook dglib_customize_register
+         * @since 1.0.0
+         * 
+         * @description This hooks is defined register customizer panel, sections and field. We need to call this hooks insted of customizer_register for themes and plugins
+         *
+         */
+        do_action( 'dglib_customize_register', $wp_customize );
         
     }
 

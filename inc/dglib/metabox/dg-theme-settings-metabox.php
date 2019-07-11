@@ -277,12 +277,12 @@ if(!class_exists('Dglib_Theme_Settings_Metabox')):
                             </div><!-- .content-header --> 
                             <div class="dglib-tab-content-fields">
                                 <?php if($dglib_tab_fields){
-                                    foreach($dglib_tab_fields as $dglib_field_slug=>$dblib_field_details){
-                                        $dg_metabox_field_name = (isset($dblib_field_details['dg_metabox_field_name'])) ? esc_attr($dblib_field_details['dg_metabox_field_name']) : '';
-                                        $dg_metabox_field_title = (isset($dblib_field_details['dg_metabox_field_title'])) ? esc_attr($dblib_field_details['dg_metabox_field_title']) : '';
-                                        $dg_metabox_field_default = (isset($dblib_field_details['dg_metabox_field_default'])) ? esc_attr($dblib_field_details['dg_metabox_field_default']) : '';
-                                        $dg_metabox_field_type = (isset($dblib_field_details['dg_metabox_field_type'])) ? esc_attr($dblib_field_details['dg_metabox_field_type']) : '';
-                                        $dg_metabox_field_options = (isset($dblib_field_details['dg_metabox_field_options'])) ? $dblib_field_details['dg_metabox_field_options'] : array();
+                                    foreach($dglib_tab_fields as $dglib_field_slug=>$dglib_field_details){
+                                        $dg_metabox_field_name = (isset($dglib_field_details['dg_metabox_field_name'])) ? esc_attr($dglib_field_details['dg_metabox_field_name']) : '';
+                                        $dg_metabox_field_title = (isset($dglib_field_details['dg_metabox_field_title'])) ? esc_attr($dglib_field_details['dg_metabox_field_title']) : '';
+                                        $dg_metabox_field_default = (isset($dglib_field_details['dg_metabox_field_default'])) ? esc_attr($dglib_field_details['dg_metabox_field_default']) : '';
+                                        $dg_metabox_field_type = (isset($dglib_field_details['dg_metabox_field_type'])) ? esc_attr($dglib_field_details['dg_metabox_field_type']) : '';
+                                        $dg_metabox_field_options = (isset($dglib_field_details['dg_metabox_field_options'])) ? $dglib_field_details['dg_metabox_field_options'] : array();
                                         $dglib_metabox_field_name = $dglib_tab_slug.'['.$dglib_field_slug.']';
                                         $dglib_metabox_field_id = 'id_'.$dglib_tab_slug.'_'.$dglib_field_slug;
                                         ?><div class="dglib-metabox-field-single"><?php

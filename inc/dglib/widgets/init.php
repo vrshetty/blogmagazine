@@ -19,6 +19,8 @@ if(!function_exists('dglib_widget_initialize')):
         register_widget( 'Dglib_Social_Icons_Widget' );
         register_widget( 'Dglib_Author_Info_Widget' );
 
+        do_action( 'dglib_widgets_init' );
+
     }
 
 endif;

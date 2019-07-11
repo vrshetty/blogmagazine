@@ -57,7 +57,7 @@
                 var reaction_single_item = reaction_icon_image.closest('.dglib-reaction-single-item');
                 var ajax_args = reaction_single_item.data('reaction-config');
                 ajax_args.beforeSend = function(){
-                    reaction_single_item.find('.dblib-reaction-image-wrap').removeClass('active');
+                    reaction_single_item.find('.dglib-reaction-image-wrap').removeClass('active');
                     reaction_icon_image.addClass('active');
                 };
                 ajax_args.success = function(data, status, settings){
@@ -77,7 +77,7 @@
             var snipits = __this.Snipits;
 
             var reaction_values = snipits.Reaction_Values;
-            dglib_document.on('click', '.dblib-reaction-image-wrap', reaction_values);
+            dglib_document.on('click', '.dglib-reaction-image-wrap', reaction_values);
 
             var megamenu_terms_posts = snipits.MegaMenuPosts;
             dglib_document.on('hover', '.dglib-term-list-item', megamenu_terms_posts);

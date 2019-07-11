@@ -21,4 +21,4 @@ if( !function_exists( 'blogmagazine_customizer' ) ):
 
 endif;
 
-add_action( 'customize_register', 'blogmagazine_customizer' );
+add_action( 'dglib_customize_register', 'blogmagazine_customizer', 10, 1 );

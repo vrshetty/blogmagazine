@@ -2,7 +2,7 @@
 /**
  * Panel: Colors
  * @package dineshghimire
- * @subpackage dblib
+ * @subpackage dglib
  * @since 1.0.0
  */
 $wp_customize->add_panel(

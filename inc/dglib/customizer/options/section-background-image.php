@@ -2,7 +2,7 @@
 /**
  * Background Image
  * @package dineshghimire
- * @subpackage dblib
+ * @subpackage dglib
  * @since 1.0.0
  */
 $background_image = $wp_customize->get_section( 'background_image' );

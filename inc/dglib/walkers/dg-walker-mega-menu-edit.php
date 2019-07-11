@@ -3,7 +3,7 @@
  * Navigation Menu API: Walker_Nav_Menu_Edit class
  *
  * @package dineshghimire
- * @subpackage dblib
+ * @subpackage dglib
  * @since 1.0.0
  */
 

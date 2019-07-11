@@ -1,5 +1,6 @@
 <?php
 /**
+ *
  * The template for displaying all single posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
@@ -42,13 +43,13 @@ do_action( 'dglib_breadcrumbs_section_template' );
 			do_action( 'blogmagazine_author_info_section' );
 
 			/**
-		     * dblib_reaction_section_icons hook
+		     * dglib_reaction_section_icons hook
 		     *
 		     * @hooked -  - 10
 		     *
 		     * @since 1.0.6
 		     */
-			do_action('dblib_reaction_section_icons');
+			do_action('dglib_reaction_section_icons');
 
 			/**
 		     * blogmagazine_related_posts hook
