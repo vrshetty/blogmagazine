@@ -110,10 +110,10 @@ class BlogMagazine_Recent_Posts_Widget extends Dglib_Master_Widget{
         $posts_per_page   = isset( $instance['posts_per_page'] ) ? absint($instance['posts_per_page']) : 0;
         $thumbnail_size   = isset( $instance['thumbnail_size'] ) ? absint($instance['thumbnail_size']) : 'blogmagazine-thumb-136x102';
 
-        $args = array(
+        $recent_args = array(
             'posts_per_page' => $posts_per_page
         );
-        $blogmagazine_query = new WP_Query( $args );
+        $blogmagazine_query = new WP_Query( $recent_args );
 
         dglib_before_widget($args);
 

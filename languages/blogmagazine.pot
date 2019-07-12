@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
-"POT-Creation-Date: 2019-07-12 04:37:59+00:00\n"
+"POT-Creation-Date: 2019-07-12 11:58:03+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,19 +13,19 @@ msgstr ""
 "Language-Team: LANGUAGE <developer.dinesh1@gmail.com>\n"
 "X-Generator: grunt-wp-i18n 1.0.3\n"
 
-#: inc/dglib/core/functions.php:131
+#: inc/dglib/core/functions.php:129
 msgid "1"
 msgstr ""
 
-#: inc/dglib/core/functions.php:132
+#: inc/dglib/core/functions.php:130
 msgid "2"
 msgstr ""
 
-#: inc/dglib/core/functions.php:133
+#: inc/dglib/core/functions.php:131
 msgid "3"
 msgstr ""
 
-#: inc/dglib/core/functions.php:134
+#: inc/dglib/core/functions.php:132
 msgid "4"
 msgstr ""
 
@@ -204,7 +204,7 @@ msgstr ""
 #: inc/customizer/header/section-main-navigation.php:33
 #: inc/customizer/options/section-image-settings.php:31
 #: inc/customizer/templates/templates-homepage.php:23
-#: inc/dglib/core/functions.php:149
+#: inc/dglib/core/functions.php:147
 #: inc/dglib/customizer/templates/templates-404-page.php:40
 #: inc/dglib/customizer/templates/templates-archive-page.php:39
 #: inc/dglib/customizer/templates/templates-blog-page.php:39
@@ -226,8 +226,8 @@ msgstr ""
 
 #: inc/customizer/header/section-main-navigation.php:79
 #: inc/dglib/customizer/controls/dg-customizer-icons-control.php:38
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:174
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:309
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:175
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:314
 #: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:89
 #: inc/dglib/widgets/fields/dg-icon-field.php:19
 msgid "Search Icon"
@@ -243,6 +243,14 @@ msgstr ""
 
 #: inc/customizer/header/section-main-navigation.php:105
 msgid "Show/Hide option for random post icon at primary menu."
+msgstr ""
+
+#: inc/customizer/header/section-main-navigation.php:129
+msgid "Choose Random Post Icon"
+msgstr ""
+
+#: inc/customizer/header/section-main-navigation.php:130
+msgid "Icon option for random post at primary menu."
 msgstr ""
 
 #: inc/customizer/header/section-ticker-options.php:8
@@ -363,48 +371,48 @@ msgstr ""
 msgid "Search Layouts"
 msgstr ""
 
-#: inc/dglib/core/functions.php:46
+#: inc/dglib/core/functions.php:44
 msgid "No Filters"
 msgstr ""
 
-#: inc/dglib/core/functions.php:66
+#: inc/dglib/core/functions.php:64
 msgid "No Image"
 msgstr ""
 
-#: inc/dglib/core/functions.php:71
+#: inc/dglib/core/functions.php:69
 msgid "full (original)"
 msgstr ""
 
-#: inc/dglib/core/functions.php:74
+#: inc/dglib/core/functions.php:72
 msgid "Croped"
 msgstr ""
 
-#: inc/dglib/core/functions.php:74
+#: inc/dglib/core/functions.php:72
 msgid "Resize"
 msgstr ""
 
-#: inc/dglib/core/functions.php:92
+#: inc/dglib/core/functions.php:90
 msgid "ASC"
 msgstr ""
 
-#: inc/dglib/core/functions.php:93
+#: inc/dglib/core/functions.php:91
 msgid "DESC"
 msgstr ""
 
-#: inc/dglib/core/functions.php:108
+#: inc/dglib/core/functions.php:106
 #: inc/widgets/class-dg-blockposts-widget.php:89
 msgid "None"
 msgstr ""
 
-#: inc/dglib/core/functions.php:109
+#: inc/dglib/core/functions.php:107
 msgid "ID"
 msgstr ""
 
-#: inc/dglib/core/functions.php:110
+#: inc/dglib/core/functions.php:108
 msgid "Author"
 msgstr ""
 
-#: inc/dglib/core/functions.php:111
+#: inc/dglib/core/functions.php:109
 #: inc/dglib/widgets/class-dg-author-info-widget.php:47
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:43
 #: inc/dglib/widgets/fields/dg-master-widget.php:22
@@ -414,93 +422,93 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: inc/dglib/core/functions.php:112
+#: inc/dglib/core/functions.php:110
 msgid "Date"
 msgstr ""
 
-#: inc/dglib/core/functions.php:113
+#: inc/dglib/core/functions.php:111
 msgid "Modified Date"
 msgstr ""
 
-#: inc/dglib/core/functions.php:114
+#: inc/dglib/core/functions.php:112
 msgid "Random"
 msgstr ""
 
-#: inc/dglib/core/functions.php:115
+#: inc/dglib/core/functions.php:113
 msgid "Comment Count"
 msgstr ""
 
-#: inc/dglib/core/functions.php:116
+#: inc/dglib/core/functions.php:114
 msgid "Menu Order"
 msgstr ""
 
-#: inc/dglib/core/functions.php:150
+#: inc/dglib/core/functions.php:148
 msgid "Open with New Tab"
 msgstr ""
 
-#: inc/dglib/core/functions.php:151
+#: inc/dglib/core/functions.php:149
 msgid "Open with Same Tab"
 msgstr ""
 
-#: inc/dglib/core/functions.php:170
+#: inc/dglib/core/functions.php:168
 msgid "Carousel"
 msgstr ""
 
-#: inc/dglib/core/functions.php:171
+#: inc/dglib/core/functions.php:169
 msgid "Columns"
 msgstr ""
 
-#: inc/dglib/core/functions.php:205
+#: inc/dglib/core/functions.php:203
 #: inc/dglib/widgets/function-dg-widget-dependencies.php:20
 #: inc/widgets/class-dg-blockposts-widget.php:130
 msgid "Default"
 msgstr ""
 
-#: inc/dglib/core/functions.php:206
+#: inc/dglib/core/functions.php:204
 msgid "fa-2x"
 msgstr ""
 
-#: inc/dglib/core/functions.php:207
+#: inc/dglib/core/functions.php:205
 msgid "fa-3x"
 msgstr ""
 
-#: inc/dglib/core/functions.php:208
+#: inc/dglib/core/functions.php:206
 msgid "fa-4x"
 msgstr ""
 
-#: inc/dglib/core/functions.php:209
+#: inc/dglib/core/functions.php:207
 msgid "fa-5x"
 msgstr ""
 
-#: inc/dglib/core/functions.php:245 inc/functions/template-tags.php:244
+#: inc/dglib/core/functions.php:243 inc/functions/template-tags.php:259
 msgid "Read More"
 msgstr ""
 
-#: inc/dglib/core/functions.php:291
+#: inc/dglib/core/functions.php:289
 msgid "Like"
 msgstr ""
 
-#: inc/dglib/core/functions.php:295
+#: inc/dglib/core/functions.php:293
 msgid "Sad"
 msgstr ""
 
-#: inc/dglib/core/functions.php:299
+#: inc/dglib/core/functions.php:297
 msgid "Love"
 msgstr ""
 
-#: inc/dglib/core/functions.php:303
+#: inc/dglib/core/functions.php:301
 msgid "Surprised"
 msgstr ""
 
-#: inc/dglib/core/functions.php:307
+#: inc/dglib/core/functions.php:305
 msgid "Angry"
 msgstr ""
 
-#: inc/dglib/core/functions.php:311
+#: inc/dglib/core/functions.php:309
 msgid "Happy"
 msgstr ""
 
-#: inc/dglib/core/functions.php:315
+#: inc/dglib/core/functions.php:313
 msgid "Crying"
 msgstr ""
 
@@ -523,8 +531,8 @@ msgid "Global Colors"
 msgstr ""
 
 #: inc/dglib/customizer/controls/dg-customizer-icons-control.php:34
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:170
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:305
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:171
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:310
 #: inc/dglib/customizer/sections/section-social-icons.php:46
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:94
 #: inc/dglib/widgets/fields/dg-icon-field.php:15
@@ -535,36 +543,36 @@ msgstr ""
 msgid "Change Icon"
 msgstr ""
 
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:190
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:329
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:195
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:334
 msgid "Field type "
 msgstr ""
 
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:190
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:329
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:195
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:334
 #: inc/dglib/walkers/dg-walker-mega-menu-hooks.php:174
 msgid " not found."
 msgstr ""
 
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:201
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:340
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:206
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:345
 msgid "Delete"
 msgstr ""
 
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:203
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:341
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:208
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:346
 msgid "|"
 msgstr ""
 
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:205
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:343
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:210
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:348
 #: inc/dglib/customizer/editor/section-custom-javascript.php:33
 #: inc/dglib/widgets/fields/dg-repeater-field.php:49
 #: inc/dglib/widgets/fields/dg-repeater-field.php:86
 msgid "Close"
 msgstr ""
 
-#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:305
+#: inc/dglib/customizer/controls/dg-customizer-repeater-control.php:310
 #: inc/dglib/widgets/fields/dg-icon-field.php:15
 msgid "Edit Icon"
 msgstr ""
@@ -640,7 +648,7 @@ msgid "Footer Bottom"
 msgstr ""
 
 #: inc/dglib/customizer/footer/section-bottom-footer.php:25
-msgid "Copyright © 2019. All rights reserved."
+msgid "Copyright 2019. All rights reserved."
 msgstr ""
 
 #: inc/dglib/customizer/footer/section-bottom-footer.php:33
@@ -898,7 +906,7 @@ msgid "Both Sidebar"
 msgstr ""
 
 #: inc/dglib/customizer/templates/templates-404-page.php:102
-msgid "Oops! That page can’t be found."
+msgid "Oops! That page cant be found."
 msgstr ""
 
 #: inc/dglib/customizer/templates/templates-404-page.php:110
@@ -1533,7 +1541,7 @@ msgstr ""
 msgid "Social Icon Color"
 msgstr ""
 
-#: inc/dglib/widgets/class-dg-social-icons-widget.php:167
+#: inc/dglib/widgets/class-dg-social-icons-widget.php:173
 msgid "Lekh Social Media Icons"
 msgstr ""
 
@@ -1601,21 +1609,27 @@ msgstr ""
 msgid " Not found."
 msgstr ""
 
-#: inc/functions/template-functions.php:317
+#: inc/functions/template-functions.php:318
 msgid "Select Category"
 msgstr ""
 
-#: inc/functions/template-tags.php:74
+#: inc/functions/template-tags.php:49 inc/functions/template-tags.php:55
+#. translators: %s: post date.
+#. translators: %s: post author.
+msgid " %s"
+msgstr ""
+
+#: inc/functions/template-tags.php:89
 #. translators: %s: post title
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#: inc/functions/template-tags.php:102
+#: inc/functions/template-tags.php:117
 #. translators: 1: list of tags.
 msgid "Tagged %1$s"
 msgstr ""
 
-#: inc/functions/template-tags.php:114
+#: inc/functions/template-tags.php:129
 #: template-parts/single-details/content-page.php:43
 #. translators: %s: Name of current post. Only visible to screen readers
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
@@ -2035,22 +2049,4 @@ msgstr ""
 #. language.
 msgctxt "Titillium Web font: on or off"
 msgid "on"
-msgstr ""
-
-#: inc/functions/template-tags.php:32
-#. translators: %s: post date.
-msgctxt "post date"
-msgid " %s"
-msgstr ""
-
-#: inc/functions/template-tags.php:38
-#. translators: %s: post author.
-msgctxt "post author"
-msgid " %s"
-msgstr ""
-
-#: inc/functions/template-tags.php:99
-#. translators: used between list items, there is a space after the comma
-msgctxt "list item separator"
-msgid " "
 msgstr ""

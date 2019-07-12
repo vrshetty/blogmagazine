@@ -12,8 +12,8 @@ if(!function_exists('blogmagazine_register_sidebar') ):
             'name' => esc_html__('Sidebar Right', 'blogmagazine'),
             'id' => 'sidebar-right',
             'description' => esc_html__('Add widgets here to appear in your right sidebar.', 'blogmagazine'),
-            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-            'after_widget' => '</aside>',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
             'before_title' => '<h3 class="blogmagazine-block-title"><span class="title-wrapper">',
             'after_title' => '</span></h3>',
         ));
@@ -22,8 +22,8 @@ if(!function_exists('blogmagazine_register_sidebar') ):
             'name' => esc_html__('Sidebar Left', 'blogmagazine'),
             'id' => 'sidebar-left',
             'description' => esc_html__('Add widgets here to appear in your left sidebar.', 'blogmagazine'),
-            'before_widget' => '<section id="%1$s" class="widget %2$s">',
-            'after_widget' => '</section>',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
             'before_title' => '<h2 class="blogmagazine-block-title"><span class="title-wrapper">',
             'after_title' => '</span></h2>',
         ));
@@ -32,8 +32,8 @@ if(!function_exists('blogmagazine_register_sidebar') ):
             'name'          => esc_html__( 'Header Ads', 'blogmagazine' ),
             'id'            => 'blogmagazine_header_ads_area',
             'description'   => esc_html__( 'Add banner widgets here.', 'blogmagazine' ),
-            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</aside>',
+            'before_widget' => '<section id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</section>',
             'before_title'  => '<h2 class="widget-title"><span class="title-wrapper">',
             'after_title'   => '</span></h2>',
         ) );
@@ -62,8 +62,8 @@ if(!function_exists('blogmagazine_register_sidebar') ):
             'name'          => esc_html__( 'Home Middle Aside', 'blogmagazine' ),
             'id'            => 'blogmagazine_home_middle_aside_area',
             'description'   => esc_html__( 'Add widgets here.', 'blogmagazine' ),
-            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</aside>',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
             'before_title'  => '<h3 class="blogmagazine-block-title"><span class="title-wrapper">',
             'after_title'   => '</span></h3>',
         ) );

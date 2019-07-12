@@ -276,10 +276,11 @@ if( !function_exists( 'blogmagazine_social_media' ) ):
         if( ! empty( $get_decode_social_media ) ) {
             echo '<div class="blogmagazine-social-icons-wrapper">';
             foreach ( $get_decode_social_media as $single_icon ) {
-                $icon_class = $single_icon->icon_class;
-                $icon_url = $single_icon->icon_url;
+                $icon_class = (isset($single_icon->icon_class)) ? $single_icon->icon_class : '';
+                $icon_url = (isset($single_icon->icon_url)) ? $single_icon->icon_url : '';
+                $icon_background = (isset($single_icon->icon_background)) ? $single_icon->icon_background : '';
                 if( !empty( $icon_url ) ) {
-                    echo '<span class="social-link"><a href="'. esc_url( $icon_url ) .'" target="_blank"><i class="fa '. esc_attr( $icon_class ) .'"></i></a></span>';
+                    echo '<span class="social-link"><a href="'. esc_url( $icon_url ) .'" target="_blank" style="background-color: '.esc_attr($icon_background).';"><i class="fa '. esc_attr( $icon_class ) .'"></i></a></span>';
                 }
             }
             echo '</div><!-- .blogmagazine-social-icons-wrapper -->';

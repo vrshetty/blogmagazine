@@ -52,9 +52,11 @@ https://github.com/sachinchoolur/lightslider - MIT License
 
 == Changelog ==
 
-= 1.0.7 - 2019/07/11 =
-    * Fixed: Alternative grid issue fixed
+= 1.0.7 - 2019/07/12 =
     * Added: Hook added for more flexibility to developers
+    * Fixed: Alternative grid Design Optimized
+    * Fixed: Social Icon issue Fixed on repeater
+    * Updated: dglib updated latest github commit
     * 
 
 = 1.0.6 - 2019/07/04 =

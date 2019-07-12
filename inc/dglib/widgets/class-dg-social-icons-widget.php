@@ -185,7 +185,7 @@ class Dglib_Social_Icons_Widget extends Dglib_Master_Widget{
         <!-- End  social-icons -->
         <?php	
         /* After widget (defined by themes). */
-        dglib_before_widget($args);
+        dglib_after_widget($args);
 
     }
 

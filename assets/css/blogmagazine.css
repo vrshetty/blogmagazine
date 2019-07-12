@@ -487,6 +487,152 @@ Clearings
     clear: both;
     display: block; }
 
+/*--------------------------------------------------------------
+Media
+--------------------------------------------------------------*/
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+.wp-caption {
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  max-width: 100%; }
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 1.2% auto 0;
+  max-width: 98%; }
+
+.wp-caption-text {
+  text-align: center; }
+
+.wp-caption .wp-caption-text {
+  margin: 10px 0; }
+
+.site-main .gallery {
+  margin-bottom: 1.5em; }
+
+.site-main .gallery a img {
+  border: none;
+  height: auto;
+  max-width: 90%; }
+
+.site-main .gallery dd,
+.site-main .gallery figcaption {
+  margin: 0; }
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+/*--------------------------------------------------------------
+Galleries
+--------------------------------------------------------------*/
+.gallery {
+  margin-bottom: 1.5em; }
+  .gallery img {
+    width: 100%; }
+  .gallery .gallery-item {
+    float: left;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    vertical-align: top; }
+  .gallery .gallery-caption {
+    bottom: 0;
+    color: #fff;
+    padding: 5px;
+    display: block;
+    position: absolute;
+    line-height: 1.4em;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .gallery.gallery-columns-2 .gallery-item {
+    width: 50%; }
+  .gallery.gallery-columns-3 .gallery-item {
+    width: 33.33%; }
+  .gallery.gallery-columns-4 .gallery-item {
+    width: 25%; }
+  .gallery.gallery-columns-5 .gallery-item {
+    width: 20%; }
+  .gallery.gallery-columns-6 .gallery-item {
+    width: 16.66%; }
+  .gallery.gallery-columns-7 .gallery-item {
+    width: 14.28%; }
+  .gallery.gallery-columns-8 .gallery-item {
+    width: 12.5%; }
+  .gallery.gallery-columns-9 .gallery-item {
+    width: 11.11%; }
+  .gallery:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.site-main .gallery a img {
+  max-width: none;
+  width: 100%; }
+
+/*--------------------------------------------------------------
+Grid CSS
+--------------------------------------------------------------*/
+.mt-column-wrapper {
+  margin-left: -2%; }
+
+.mt-column-1 {
+  float: left;
+  width: 98%;
+  margin-left: 2%; }
+
+.mt-column-2 {
+  float: left;
+  width: 48%;
+  margin-left: 2%; }
+
+.mt-column-3 {
+  float: left;
+  width: 31.33%;
+  margin-left: 2%; }
+
+.mt-column-4 {
+  float: left;
+  width: 23%;
+  margin-left: 2%; }
+
+/*--------------------------------------------------------------
+COMMON CSS
+--------------------------------------------------------------*/
+body {
+  font-weight: 400;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8; }
+
+.boxed_layout #page {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  width: 1200px;
+  background: #ffffff; }
+
+body.fullwidth-layout #page {
+  background: #fff none repeat scroll 0 0; }
+
+.dg-container {
+  width: 1170px;
+  margin: 0 auto; }
+
+.hide {
+  display: none; }
+
 /*
  * @package dineshghimire
  * @subpackage blogmagazine
@@ -1579,6 +1725,11 @@ author Widgets
  * @subpackage blogmagazine
  * @since 1.0.0
  */
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
 .sidebar-main .blogmagazine_featured_posts .blogmagazine-single-post-wrap {
   float: none;
   width: 100%;
@@ -1597,6 +1748,19 @@ author Widgets
   width: 100%; }
   .sidebar-main .blogmagazine_featured_slider .featured-posts .post-cats-list, .sidebar-main .blogmagazine_featured_slider .featured-posts .blogmagazine-post-meta {
     display: none; }
+
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.7
+ */
+.blogmagazine-home-bottom-section {
+  clear: both; }
 
 /*--------------------------------------------------------------
 Posts and pages
@@ -1819,150 +1983,6 @@ Infinite scroll
   display: none; }
 
 /*--------------------------------------------------------------
-Media
---------------------------------------------------------------*/
-.page-content img.wp-smiley,
-.entry-content img.wp-smiley,
-.comment-content img.wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
-
-.wp-caption {
-  border: 1px solid #ccc;
-  margin-bottom: 15px;
-  max-width: 100%; }
-
-.wp-caption img[class*="wp-image-"] {
-  display: block;
-  margin: 1.2% auto 0;
-  max-width: 98%; }
-
-.wp-caption-text {
-  text-align: center; }
-
-.wp-caption .wp-caption-text {
-  margin: 10px 0; }
-
-.site-main .gallery {
-  margin-bottom: 1.5em; }
-
-.site-main .gallery a img {
-  border: none;
-  height: auto;
-  max-width: 90%; }
-
-.site-main .gallery dd,
-.site-main .gallery figcaption {
-  margin: 0; }
-
-/* Make sure embeds and iframes fit their containers */
-embed,
-iframe,
-object {
-  max-width: 100%; }
-
-/*--------------------------------------------------------------
-Galleries
---------------------------------------------------------------*/
-.gallery {
-  margin-bottom: 1.5em;
-  margin-left: -2%; }
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%;
-  margin-bottom: 3%;
-  margin-left: 2%; }
-
-.site-main .gallery a img {
-  max-width: none;
-  width: 100%; }
-
-.gallery-columns-2 .gallery-item {
-  max-width: 47%; }
-
-.gallery-columns-3 .gallery-item {
-  max-width: 31.33%; }
-
-.gallery-columns-4 .gallery-item {
-  max-width: 23%; }
-
-.gallery-columns-5 .gallery-item {
-  max-width: 18%; }
-
-.gallery-columns-6 .gallery-item {
-  max-width: 14.66%; }
-
-.gallery-columns-7 .gallery-item {
-  max-width: 12.28%; }
-
-.gallery-columns-8 .gallery-item {
-  max-width: 10.5%; }
-
-.gallery-columns-9 .gallery-item {
-  max-width: 9.11%; }
-
-.gallery-caption {
-  display: block; }
-
-/*--------------------------------------------------------------
-Grid CSS
---------------------------------------------------------------*/
-.mt-column-wrapper {
-  margin-left: -2%; }
-
-.mt-column-1 {
-  float: left;
-  width: 98%;
-  margin-left: 2%; }
-
-.mt-column-2 {
-  float: left;
-  width: 48%;
-  margin-left: 2%; }
-
-.mt-column-3 {
-  float: left;
-  width: 31.33%;
-  margin-left: 2%; }
-
-.mt-column-4 {
-  float: left;
-  width: 23%;
-  margin-left: 2%; }
-
-/*--------------------------------------------------------------
-COMMON CSS
---------------------------------------------------------------*/
-body {
-  font-weight: 400;
-  overflow: hidden;
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.8; }
-
-.boxed_layout #page {
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  width: 1200px;
-  background: #ffffff; }
-
-body.fullwidth-layout #page {
-  background: #fff none repeat scroll 0 0; }
-
-.dg-container {
-  width: 1170px;
-  margin: 0 auto; }
-
-.hide {
-  display: none; }
-
-/*--------------------------------------------------------------
 Sidebar layout css 
 --------------------------------------------------------------*/
 #primary {
@@ -2019,15 +2039,17 @@ Header CSS
  * Top Header CSS
  */
 .blogmagazine-top-header-wrap {
-  background: #029fb2 none repeat scroll 0 0;
   color: #fff;
-  padding: 8px 0; }
+  line-height: 1em;
+  background-color: #029fb2; }
 
 .blogmagazine-top-left-section-wrapper {
   float: left;
   font-size: 12px; }
   .blogmagazine-top-left-section-wrapper .date-section {
     float: left;
+    padding: 8px 0;
+    line-height: 1.6em;
     margin-right: 10px; }
     .blogmagazine-top-left-section-wrapper .date-section:before {
       content: "\f017";
@@ -2054,14 +2076,13 @@ Header CSS
   float: right; }
   .blogmagazine-top-right-section-wrapper .social-link {
     display: block;
-    float: left;
-    margin-top: -5px; }
+    float: left; }
     .blogmagazine-top-right-section-wrapper .social-link a {
       color: #fff;
-      display: inline-block;
+      padding: 0 10px;
       font-size: 14px;
-      line-height: 14px;
-      margin: 0 0 0 10px; }
+      line-height: 35px;
+      display: inline-block; }
 
 .site-header .site-branding {
   width: 100%; }
