@@ -279,7 +279,7 @@ if( !function_exists( 'blogmagazine_social_media' ) ):
                 $icon_class = $single_icon->icon_class;
                 $icon_url = $single_icon->icon_url;
                 if( !empty( $icon_url ) ) {
-                    echo '<span class="social-link"><a href="'. esc_url( $icon_url ) .'" target="_blank"><i class="'. esc_attr( $icon_class ) .'"></i></a></span>';
+                    echo '<span class="social-link"><a href="'. esc_url( $icon_url ) .'" target="_blank"><i class="fa '. esc_attr( $icon_class ) .'"></i></a></span>';
                 }
             }
             echo '</div><!-- .blogmagazine-social-icons-wrapper -->';

@@ -46,8 +46,9 @@
 					$random_query = new WP_Query($args);
 					if($random_query->have_posts()):
 						$random_query->the_post();
+						$random_icon_class = get_theme_mod( 'blogmagazine_random_post_icon', 'fa-random' );
 						?>
-						<a class="menu-random-news other-menu-icon" href="<?php the_permalink(); ?>"><i class="fa fa-random"></i></a>
+						<a class="menu-random-news other-menu-icon" href="<?php the_permalink(); ?>"><i class="fa <?php echo esc_attr($random_icon_class); ?>"></i></a>
 						<?php
 					endif;
 				}

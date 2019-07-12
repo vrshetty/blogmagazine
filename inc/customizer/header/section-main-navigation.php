@@ -108,7 +108,28 @@ $wp_customize->add_control(
                 'show'  => esc_html__( 'Show', 'blogmagazine' ),
                 'hide'  => esc_html__( 'Hide', 'blogmagazine' )
             ),
-            'priority'  => 30,
+            'priority'  => 40,
+        )
+    )
+);
+
+$wp_customize->add_setting(
+    'blogmagazine_random_post_icon',
+    array(
+        'default' => 'fa-random',
+        'sanitize_callback' => 'esc_attr',
+    )
+);
+$wp_customize->add_control( 
+    new Dglib_Customize_Icons_Control(
+        $wp_customize,
+        'blogmagazine_random_post_icon',
+        array(
+            'type'      => 'switch',
+            'label'     => esc_html__( 'Choose Random Post Icon', 'blogmagazine' ),
+            'description'   => esc_html__( 'Icon option for random post at primary menu.', 'blogmagazine' ),
+            'section'   => 'blogmagazine_header_navigation',
+            'priority'  => 50,
         )
     )
 );
