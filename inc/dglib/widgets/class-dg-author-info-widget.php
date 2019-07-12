@@ -182,11 +182,8 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
             /*
              * Args Values
              */
-            $before_widget = isset( $args['before_widget'] ) ? $args['before_widget'] : '';
-            $after_widget  = isset( $args['after_widget'] ) ? $args['after_widget'] : '';
             $before_title = isset( $args['before_title'] ) ? $args['before_title'] : '';
             $after_title  = isset( $args['after_title'] ) ? $args['after_title'] : '';
-
 
             /*
              * Instance General Tab Value
@@ -209,15 +206,15 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
 
             //Get origional Author Link for author_id
             $author_link = get_author_posts_url( get_the_author_meta( 'ID', $author_id ) );
-            echo $args['before_widget'];
-                $title_args = array(
-                    'title' => $title,
-                    'title_target'=> $title_target,
-                    'title_link' => $title_link,
-                    'before_title'=>$before_title,
-                    'after_title'=>$after_title
-                );
-                do_action('dglib_widget_title', $title_args);
+            dglib_before_widget($args);
+            $title_args = array(
+                'title' => $title,
+                'title_target'=> $title_target,
+                'title_link' => $title_link,
+                'before_title'=>$before_title,
+                'after_title'=>$after_title
+            );
+            do_action('dglib_widget_title', $title_args);
             ?>
             <div class="card card-profile">
                 <?php if ( $show_avatar ) { ?>
@@ -252,7 +249,7 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
                  </div>
              </div>
              <?php 
-             echo $args['after_widget']; 
+             dglib_after_widget($args);
          }
 
         /**

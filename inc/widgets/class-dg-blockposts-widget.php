@@ -216,9 +216,7 @@ if(!class_exists( 'BlogMagazine_BlockPosts_Widget' ) ):
             $thumbnail_size = isset( $instance['thumbnail_size'] ) ? esc_attr($instance['thumbnail_size']) : 'thumbnail';
             $largeimg_size = isset( $instance['largeimg_size'] ) ? esc_attr($instance['largeimg_size']) : 'full';
 
-            
-
-            echo $before_widget;
+            dglib_before_widget($args);
 
             $title_args = array(
                 'title' => $title,
@@ -279,7 +277,7 @@ if(!class_exists( 'BlogMagazine_BlockPosts_Widget' ) ):
                 </figure>
             </div><!--- .blogmagazine-block-wrapper -->
             <?php
-            echo $after_widget;
+            dglib_after_widget($args);
         }
     }
 endif;

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
-"POT-Creation-Date: 2019-07-03 20:44:18+00:00\n"
+"POT-Creation-Date: 2019-07-12 04:37:59+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -257,12 +257,17 @@ msgstr ""
 msgid "Show/Hide option for news ticker section."
 msgstr ""
 
-#: inc/customizer/header/section-ticker-options.php:42 inc/hooks/header.php:286
+#: inc/customizer/header/section-ticker-options.php:42
+#: template-parts/header/header-ticker.php:16
 msgid "Breaking News"
 msgstr ""
 
 #: inc/customizer/header/section-ticker-options.php:51
 msgid "Ticker Caption"
+msgstr ""
+
+#: inc/customizer/header/section-ticker-options.php:78
+msgid "Ticker Category"
 msgstr ""
 
 #: inc/customizer/header/section-top-header.php:8
@@ -387,7 +392,7 @@ msgid "DESC"
 msgstr ""
 
 #: inc/dglib/core/functions.php:108
-#: inc/widgets/class-dg-blockposts-widget.php:87
+#: inc/widgets/class-dg-blockposts-widget.php:89
 msgid "None"
 msgstr ""
 
@@ -403,7 +408,7 @@ msgstr ""
 #: inc/dglib/widgets/class-dg-author-info-widget.php:47
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:43
 #: inc/dglib/widgets/fields/dg-master-widget.php:22
-#: inc/widgets/class-dg-blockposts-widget.php:43
+#: inc/widgets/class-dg-blockposts-widget.php:45
 #: inc/widgets/class-dg-featured-posts-widget.php:44
 #: inc/widgets/class-dg-recent-posts-widget.php:42
 msgid "Title"
@@ -447,7 +452,7 @@ msgstr ""
 
 #: inc/dglib/core/functions.php:205
 #: inc/dglib/widgets/function-dg-widget-dependencies.php:20
-#: inc/widgets/class-dg-blockposts-widget.php:128
+#: inc/widgets/class-dg-blockposts-widget.php:130
 msgid "Default"
 msgstr ""
 
@@ -945,7 +950,7 @@ msgstr ""
 #: inc/dglib/customizer/templates/templates-archive-page.php:131
 #: inc/dglib/customizer/templates/templates-blog-page.php:131
 #: inc/dglib/customizer/templates/templates-search-page.php:133
-#: inc/widgets/class-dg-blockposts-widget.php:133
+#: inc/widgets/class-dg-blockposts-widget.php:135
 #: inc/widgets/class-dg-featured-posts-widget.php:114
 msgid "Description Length"
 msgstr ""
@@ -1405,8 +1410,8 @@ msgstr ""
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:38
 #: inc/widgets/class-dg-adsbanner-widget.php:33
 #: inc/widgets/class-dg-adsbanner-widget.php:38
-#: inc/widgets/class-dg-blockposts-widget.php:34
-#: inc/widgets/class-dg-blockposts-widget.php:39
+#: inc/widgets/class-dg-blockposts-widget.php:36
+#: inc/widgets/class-dg-blockposts-widget.php:41
 #: inc/widgets/class-dg-carousel-widget.php:38
 #: inc/widgets/class-dg-carousel-widget.php:43
 #: inc/widgets/class-dg-featured-posts-widget.php:35
@@ -1427,7 +1432,7 @@ msgstr ""
 #: inc/dglib/widgets/class-dg-author-info-widget.php:74
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:70
 #: inc/widgets/class-dg-adsbanner-widget.php:68
-#: inc/widgets/class-dg-blockposts-widget.php:70
+#: inc/widgets/class-dg-blockposts-widget.php:72
 #: inc/widgets/class-dg-carousel-widget.php:74
 #: inc/widgets/class-dg-featured-posts-widget.php:71
 #: inc/widgets/class-dg-featured-slider-widget.php:69
@@ -1456,7 +1461,7 @@ msgid "Avatar Size"
 msgstr ""
 
 #: inc/dglib/widgets/class-dg-author-info-widget.php:122
-#: inc/widgets/class-dg-blockposts-widget.php:141
+#: inc/widgets/class-dg-blockposts-widget.php:143
 #: inc/widgets/class-dg-carousel-widget.php:95
 #: inc/widgets/class-dg-featured-posts-widget.php:102
 msgid "Layout"
@@ -1492,7 +1497,7 @@ msgstr ""
 
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:50
 #: inc/widgets/class-dg-adsbanner-widget.php:48
-#: inc/widgets/class-dg-blockposts-widget.php:50
+#: inc/widgets/class-dg-blockposts-widget.php:52
 #: inc/widgets/class-dg-carousel-widget.php:54
 #: inc/widgets/class-dg-featured-posts-widget.php:51
 #: inc/widgets/class-dg-featured-slider-widget.php:49
@@ -1588,15 +1593,15 @@ msgstr ""
 msgid "Remove Image"
 msgstr ""
 
-#: inc/dglib/widgets/fields/dg-widget-fields.php:23
-msgid "Field type"
+#: inc/dglib/widgets/fields/dg-widget-fields.php:27
+msgid "File "
 msgstr ""
 
-#: inc/dglib/widgets/fields/dg-widget-fields.php:23
-msgid "Not found."
+#: inc/dglib/widgets/fields/dg-widget-fields.php:27
+msgid " Not found."
 msgstr ""
 
-#: inc/functions/template-functions.php:371
+#: inc/functions/template-functions.php:317
 msgid "Select Category"
 msgstr ""
 
@@ -1665,74 +1670,74 @@ msgstr ""
 msgid "Rel attribute for link"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:20
+#: inc/widgets/class-dg-blockposts-widget.php:22
 msgid "Displays block posts from selected category in different layouts."
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:22
+#: inc/widgets/class-dg-blockposts-widget.php:24
 msgid "DG: Block Posts"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:44
+#: inc/widgets/class-dg-blockposts-widget.php:46
 #: inc/widgets/class-dg-carousel-widget.php:48
 #: inc/widgets/class-dg-featured-posts-widget.php:45
 #: inc/widgets/class-dg-featured-slider-widget.php:43
 msgid "Enter your block title. (Optional - Leave blank to hide the title.)"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:76
+#: inc/widgets/class-dg-blockposts-widget.php:78
 msgid "Block Category"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:83
+#: inc/widgets/class-dg-blockposts-widget.php:85
 msgid "Tab Category List"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:88
+#: inc/widgets/class-dg-blockposts-widget.php:90
 msgid "Block Category List"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:89
+#: inc/widgets/class-dg-blockposts-widget.php:91
 msgid "Others Category List"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:119
+#: inc/widgets/class-dg-blockposts-widget.php:121
 msgid "Tab Categories"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:127
+#: inc/widgets/class-dg-blockposts-widget.php:129
 msgid "Default Tab Label"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:136
+#: inc/widgets/class-dg-blockposts-widget.php:138
 msgid "Enter the short description length in character."
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:145
+#: inc/widgets/class-dg-blockposts-widget.php:147
 msgid "Block Layouts"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:149
+#: inc/widgets/class-dg-blockposts-widget.php:151
 msgid "Layout 1"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:150
+#: inc/widgets/class-dg-blockposts-widget.php:152
 msgid "Layout 2"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:151
+#: inc/widgets/class-dg-blockposts-widget.php:153
 msgid "Layout 3"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:152
+#: inc/widgets/class-dg-blockposts-widget.php:154
 msgid "Layout 4"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:157
+#: inc/widgets/class-dg-blockposts-widget.php:159
 msgid "Large Image Size"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:165
+#: inc/widgets/class-dg-blockposts-widget.php:167
 #: inc/widgets/class-dg-recent-posts-widget.php:80
 #: inc/widgets/class-dg-tabbed-widget.php:66
 msgid "Thumbnail Image Size"
@@ -2009,7 +2014,7 @@ msgctxt "weekly archives date format"
 msgid "W"
 msgstr ""
 
-#: inc/functions/template-functions.php:229
+#: inc/functions/template-functions.php:175
 #. Translators: If there are characters in your language that are not supported
 #. by Roboto Condensed, translate this to 'off'. Do not translate into your own
 #. language.
@@ -2017,14 +2022,14 @@ msgctxt "Roboto Condensed font: on or off"
 msgid "on"
 msgstr ""
 
-#: inc/functions/template-functions.php:237
+#: inc/functions/template-functions.php:183
 #. Translators: If there are characters in your language that are not supported
 #. by Roboto, translate this to 'off'. Do not translate into your own language.
 msgctxt "Roboto font: on or off"
 msgid "on"
 msgstr ""
 
-#: inc/functions/template-functions.php:245
+#: inc/functions/template-functions.php:191
 #. Translators: If there are characters in your language that are not supported
 #. by Titillium Web, translate this to 'off'. Do not translate into your own
 #. language.

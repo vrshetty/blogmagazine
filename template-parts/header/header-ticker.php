@@ -14,15 +14,24 @@
 		<div class="blogmagazine-ticker-block dg-clearfix">
 			<?php 
 			$blogmagazine_ticker_caption = get_theme_mod( 'blogmagazine_ticker_caption', esc_html__( 'Breaking News', 'blogmagazine' ) );
-			$blogmagazine_ticker_cat_id = apply_filters( 'blogmagazine_ticker_cat_id', null ); 
+			$category_id = get_theme_mod( 'blogmagazine_ticker_cat_id', null );
 			?>
 			<span class="ticker-caption"><?php echo esc_html( $blogmagazine_ticker_caption ); ?></span>
 			<div class="ticker-content-wrapper">
 				<?php
 				$ticker_args = array(
-					'cat' => $blogmagazine_ticker_cat_id,
-					'posts_per_page' => '5'
+					'post_type'	=> 'post',
+					'posts_per_page' => 5,
 				);
+				if($category_id){
+					$ticker_args['tax_query'] = array(
+						array(
+							'taxonomy'	=> 'category',
+							'field'		=> 'term_id',
+							'terms'		=>$category_id
+						),
+					);
+				}
 				$ticker_query = new WP_Query( $ticker_args );
 				if( $ticker_query->have_posts() ) {
 					echo '<ul class="blogmagazine-newsticker">';

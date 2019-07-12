@@ -110,7 +110,7 @@ class BlogMagazine_Tabbed_Widget extends Dglib_Master_Widget{
         $thumbnail_size   = isset( $instance['thumbnail_size'] ) ? esc_attr($instance['thumbnail_size']) : 'blogmagazine-thumb-136x102';
         $avatar_size   = isset( $instance['avatar_size'] ) ? absint($instance['avatar_size']) : 150;
         $comments_length   = isset( $instance['comments_length'] ) ? absint($instance['comments_length']) : 50;
-        echo $before_widget;
+        dglib_before_widget($args);
         ?>
         <div class="blogmagazine-default-tabbed-wrapper dg-clearfix" id="blogmagazine-tabbed-widget">
 
@@ -170,7 +170,9 @@ class BlogMagazine_Tabbed_Widget extends Dglib_Master_Widget{
 
         </div><!-- .blogmagazine-default-tabbed-wrapper -->
         <?php
-        echo $after_widget;
+    
+        dglib_after_widget($args);
+    
     }
 
 }

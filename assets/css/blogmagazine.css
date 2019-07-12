@@ -490,6 +490,132 @@ Clearings
 /*
  * @package dineshghimire
  * @subpackage blogmagazine
+ * @version 1.0.6
+ */
+/*--------------------------------------------------------------
+Comments
+--------------------------------------------------------------*/
+.comment-content a {
+  word-wrap: break-word; }
+
+.bypostauthor {
+  display: block;
+  border-bottom: 1px dashed #dedede; }
+
+.comments-area {
+  border-top: 2px dashed #dedede;
+  margin-top: 28px;
+  border-bottom: 2px dashed #dedede;
+  padding-bottom: 28px; }
+  .comments-area h2.comments-title {
+    color: #333;
+    display: inline-block;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 15px 0;
+    padding: 8px 15px; }
+  .comments-area h3 {
+    margin: 0 0 10px;
+    color: #141414;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 22px;
+    font-size: 18px; }
+  .comments-area ol {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .comments-area ol.children {
+      margin: 0 0 0 15px; }
+
+.comment-form label {
+  width: 100%;
+  display: block; }
+
+.comment-form input[type="radio"] ~ label, .comment-form input[type="checkbox"] ~ label {
+  width: auto;
+  display: inline;
+  padding-left: 5px; }
+
+textarea#comment {
+  width: 100%;
+  height: 150px; }
+
+/*Comment Lists*/
+.comment-list .comment-body {
+  padding: 15px;
+  margin-bottom: 20px; }
+
+.comment-author img {
+  max-width: 70px;
+  margin-right: 15px;
+  vertical-align: text-top; }
+
+.comment-metadata {
+  margin-top: -10px;
+  padding-left: 57px; }
+
+.comment-content {
+  margin-top: 10px; }
+
+.comment-author .fn {
+  font-style: normal;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: bold; }
+  .comment-author .fn .url {
+    color: #333;
+    padding: 0 5px; }
+    .comment-author .fn .url:hover {
+      color: #029fb2; }
+
+.comment-author .says {
+  display: none; }
+
+.commentmetadata {
+  float: right;
+  font-weight: normal;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300; }
+  .commentmetadata a {
+    color: #666; }
+  .commentmetadata .comment-edit-link {
+    color: #01AEFD; }
+  .commentmetadata + .clear {
+    margin-bottom: 20px; }
+
+.reply .comment-reply-link {
+  background: none repeat scroll 0 0 #029fb2;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 1;
+  padding: 2px 10px; }
+
+.comment-respond {
+  padding: 20px;
+  color: #141414;
+  margin-top: 40px;
+  background-color: #f2f2f24d; }
+
+.comment-form .form-submit {
+  margin-bottom: 0; }
+
+#cancel-comment-reply-link {
+  font-style: italic;
+  color: #029fb2; }
+  #cancel-comment-reply-link:before {
+    font-family: FontAwesome;
+    content: "\f057";
+    margin: 0 5px 0 20px;
+    font-style: normal;
+    color: #029fb2; }
+
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
  * @since 1.0.0
  */
 /*
@@ -1672,122 +1798,6 @@ Asides
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none; }
-
-/*--------------------------------------------------------------
-Comments
---------------------------------------------------------------*/
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block;
-  border-bottom: 1px dashed #dedede; }
-
-.comments-area {
-  border-top: 2px dashed #dedede;
-  margin-top: 28px;
-  border-bottom: 2px dashed #dedede;
-  padding-bottom: 28px; }
-  .comments-area h2.comments-title {
-    color: #333;
-    display: inline-block;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    margin: 15px 0;
-    padding: 8px 15px; }
-  .comments-area h3 {
-    margin: 0 0 10px;
-    color: #141414;
-    font-weight: 600;
-    display: inline-block;
-    line-height: 22px;
-    font-size: 18px; }
-  .comments-area ol {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    .comments-area ol.children {
-      margin: 0 0 0 15px; }
-
-.comment-form label {
-  width: 120px;
-  display: block; }
-
-textarea#comment {
-  width: 100%;
-  height: 150px; }
-
-/*Comment Lists*/
-.comment-list .comment-body {
-  padding: 15px;
-  margin-bottom: 20px; }
-
-.comment-author img {
-  max-width: 70px;
-  margin-right: 15px;
-  vertical-align: text-top; }
-
-.comment-metadata {
-  margin-top: -10px;
-  padding-left: 57px; }
-
-.comment-content {
-  margin-top: 10px; }
-
-.comment-author .fn {
-  font-style: normal;
-  font-size: 16px;
-  text-transform: capitalize;
-  font-weight: bold; }
-  .comment-author .fn .url {
-    color: #333;
-    padding: 0 5px; }
-    .comment-author .fn .url:hover {
-      color: #029fb2; }
-
-.comment-author .says {
-  display: none; }
-
-.commentmetadata {
-  float: right;
-  font-weight: normal;
-  font-size: 12px;
-  font-style: italic;
-  font-weight: 300; }
-  .commentmetadata a {
-    color: #666; }
-  .commentmetadata .comment-edit-link {
-    color: #01AEFD; }
-  .commentmetadata + .clear {
-    margin-bottom: 20px; }
-
-.reply .comment-reply-link {
-  background: none repeat scroll 0 0 #029fb2;
-  border-radius: 3px;
-  color: #FFFFFF;
-  font-size: 13px;
-  line-height: 1;
-  padding: 2px 10px; }
-
-.comment-respond {
-  padding: 20px;
-  color: #141414;
-  margin-top: 40px;
-  background-color: #f2f2f24d; }
-
-.comment-form .form-submit {
-  margin-bottom: 0; }
-
-#cancel-comment-reply-link {
-  font-style: italic;
-  color: #029fb2; }
-  #cancel-comment-reply-link:before {
-    font-family: FontAwesome;
-    content: "\f057";
-    margin: 0 5px 0 20px;
-    font-style: normal;
-    color: #029fb2; }
 
 .logged-in-as a {
   color: #029fb2; }

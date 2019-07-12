@@ -113,7 +113,8 @@ class BlogMagazine_Featured_Slider_Widget extends Dglib_Master_Widget{
         $slider_term_ids    = empty( $instance['slider_term_ids'] ) ? '' : $instance['slider_term_ids'];
         $featured_term_ids  = empty( $instance['featured_term_ids'] ) ? '' : $instance['featured_term_ids'];
 
-        echo $before_widget;
+        dglib_before_widget($args);
+
         ?>
         <div class="blogmagazine-block-wrapper dg-clearfix">
             <?php 
@@ -230,7 +231,9 @@ class BlogMagazine_Featured_Slider_Widget extends Dglib_Master_Widget{
             </div><!-- .featured-posts -->
         </div><!--- .blogmagazine-block-wrapper -->
         <?php
-        echo $after_widget;
+
+        dglib_after_widget($args);
+    
     }
 
 }

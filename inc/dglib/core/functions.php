@@ -10,7 +10,7 @@ if(!function_exists('dglib_assets_url')){
 	function dglib_assets_url($filename){
 
 		$absolute_path = get_template_directory_uri().'/inc/dglib/assets/'.$filename;
-		return $absolute_path;
+		return esc_url($absolute_path);
 
 	}
 
@@ -32,8 +32,6 @@ if(!function_exists('dglib_posttypes')){
 	}
 
 }
-
-
 
 if(!function_exists('dglib_taxonomies')){
 	/**
@@ -330,7 +328,6 @@ if( !function_exists('dglib_array_column') ){
 		$array_col = array();
         foreach ($input as $value) {
             if ( !array_key_exists($columnKey, $value)) {
-                trigger_error("Key \"$columnKey\" does not exist in array");
                 return false;
             }
             if (is_null($indexKey)) {
@@ -338,11 +335,9 @@ if( !function_exists('dglib_array_column') ){
             }
             else {
                 if ( !array_key_exists($indexKey, $value)) {
-                    trigger_error("Key \"$indexKey\" does not exist in array");
                     return false;
                 }
                 if ( ! is_scalar($value[$indexKey])) {
-                    trigger_error("Key \"$indexKey\" does not contain scalar value");
                     return false;
                 }
                 $array_col[$value[$indexKey]] = $value[$columnKey];
@@ -368,5 +363,49 @@ if( !function_exists('dglib_taxonomy_list') ):
 		return $taxonomy_list;
 
 	}
+
+endif;
+
+
+/*
+ * Before Widget
+ */
+if(!function_exists('dglib_before_widget')):
+
+    function dglib_before_widget($args){
+
+    	$before_widget = (isset($args['before_widget'])) ? $args['before_widget'] : '';
+
+    	echo $before_widget;
+    	
+        /*$allowed_html = array(
+            'section' => array(
+                'id' => array(),
+                'class' => array()
+            ),
+            'aside' => array(
+                'id' => array(),
+                'class' => array()
+            ),
+        );*/
+
+        //echo wp_kses( $before_widget, $allowed_html );
+
+    }
+
+endif;
+
+/*
+ * Before Widget
+ */
+if(!function_exists('dglib_after_widget')):
+
+    function dglib_after_widget($args){
+
+    	$after_widget = (isset($args['after_widget'])) ? $args['after_widget'] : '';
+
+        echo $after_widget;
+
+    }
 
 endif;

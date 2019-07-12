@@ -126,7 +126,7 @@ class BlogMagazine_Ads_Banner_Widget extends Dglib_Master_Widget{
         $banner_target = isset( $instance['banner_target'] ) ? esc_attr($instance['banner_target']) : '';
         $banner_rel    = isset( $instance['banner_rel'] ) ? '' : 'nofollow';
 
-        echo $before_widget;
+        dglib_before_widget($args);
 
         if( !empty( $banner_image ) ) {
             ?>
@@ -151,9 +151,11 @@ class BlogMagazine_Ads_Banner_Widget extends Dglib_Master_Widget{
                 }
                 ?>
             </div><!-- .blogmagazine-ads-wrapper -->
-    <?php
+            <?php
         }
-        echo $after_widget;
+
+        dglib_after_widget($args);
+        
     }
 
 }

@@ -153,7 +153,8 @@ class BlogMagazine_Featured_Posts_Widget extends Dglib_Master_Widget{
         $thumbnail_size = isset( $instance['thumbnail_size'] ) ? esc_attr($instance['thumbnail_size']) : 'full';
         $excerpt_length = isset( $instance['excerpt_length'] ) ? absint($instance['excerpt_length']) : 0;
 
-        echo $before_widget;
+        dglib_before_widget($args);
+
         ?>
         <div class="blogmagazine-block-wrapper featured-posts dg-clearfix">
             <?php 
@@ -212,7 +213,9 @@ class BlogMagazine_Featured_Posts_Widget extends Dglib_Master_Widget{
             </div><!-- .blogmagazine-featured-posts-wrapper -->
         </div><!--- .blogmagazine-block-wrapper -->
         <?php
-        echo $after_widget;
+
+        dglib_after_widget($args);
+
     }
 
 }

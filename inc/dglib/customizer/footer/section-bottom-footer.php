@@ -22,7 +22,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting(
     'footer_copyright_text', array(
         'sanitize_callback' => 'sanitize_text_field',
-        'default'           => esc_html__( 'Copyright © 2019. All rights reserved.', 'blogmagazine'),
+        'default'           => esc_html__( 'Copyright 2019. All rights reserved.', 'blogmagazine'),
     )
 );
 $wp_customize->add_control(

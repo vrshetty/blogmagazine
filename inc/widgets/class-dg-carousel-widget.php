@@ -146,7 +146,7 @@ class BlogMagazine_Carousel_widget extends Dglib_Master_Widget{
                 'posts_per_page' => absint( $blogmagazine_post_count )
             ),
         );
-        echo $before_widget;
+        dglib_before_widget($args);
         ?>
         <div class="blogmagazine-block-wrapper carousel-posts dg-clearfix <?php echo esc_attr( $block_layout ); ?>">
             <div class="blogmagazine-block-title-nav-wrap">
@@ -173,7 +173,8 @@ class BlogMagazine_Carousel_widget extends Dglib_Master_Widget{
             </div><!-- .blogmagazine-block-posts-wrapper -->
         </div><!--- .blogmagazine-block-wrapper -->
         <?php
-        echo $after_widget;
+        
+        dglib_after_widget($args);
     
     }
 

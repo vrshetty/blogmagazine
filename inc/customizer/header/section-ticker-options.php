@@ -60,3 +60,24 @@ $wp_customize->selective_refresh->add_partial(
         'render_callback' => 'blogmagazine_customize_partial_ticker_caption',
     )
 );
+
+
+$wp_customize->add_setting(
+    'blogmagazine_ticker_cat_id',
+    array(
+        'default'    => '0',
+        'sanitize_callback' => 'absint'
+    )
+);
+$wp_customize->add_control(
+    new Dglib_Term_List_Control(
+        $wp_customize,
+        'blogmagazine_ticker_cat_id',
+        array(
+            'type'      => 'termlist',
+            'label'     => esc_html__( 'Ticker Category', 'blogmagazine' ),
+            'section'   => 'blogmagazine_ticker_section',
+            'priority'  => 20
+        )
+    )
+);

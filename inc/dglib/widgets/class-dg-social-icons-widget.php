@@ -131,6 +131,15 @@ class Dglib_Social_Icons_Widget extends Dglib_Master_Widget{
 	 */	
 	function widget( $args, $instance ) {
 
+        /*
+         * Args Values
+         */
+        $before_title = isset( $args['before_title'] ) ? $args['before_title'] : '';
+        $after_title  = isset( $args['after_title'] ) ? $args['after_title'] : '';
+
+        /*
+         * Instance Values
+         */
         $title = isset( $instance['title'] ) ? esc_attr($instance['title']) : '';
         $title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
         $title_link = isset( $instance['title_link'] ) ? esc_url($instance['title_link']) : '';
@@ -142,19 +151,16 @@ class Dglib_Social_Icons_Widget extends Dglib_Master_Widget{
 		/* Before widget (defined by themes).
 		 * Display the widget title if one was input (before and after defined by themes). 
 		 */
-		echo $args['before_widget'];
+		dglib_before_widget($args);
 
-		if ( ! empty( $title ) ) {
-			echo $args['before_title']; 
-            if($title_target){
-                ?><a href="<?php echo esc_url($title_link); ?>" target="<?php echo esc_attr($title_target); ?>"><?php 
-            }
-            echo esc_html( $title );
-            if($title_target){
-                ?></a><?php 
-            }
-            echo $args['after_title'];
-		} 
+        $title_args = array(
+            'title' => $title,
+            'title_target'=> $title_target,
+            'title_link' => $title_link,
+            'before_title'=>$before_title,
+            'after_title'=>$after_title
+        );
+        do_action('dglib_widget_title', $title_args);
 		?>
 		<div class="social-icons">
             <?php
@@ -179,7 +185,7 @@ class Dglib_Social_Icons_Widget extends Dglib_Master_Widget{
         <!-- End  social-icons -->
         <?php	
         /* After widget (defined by themes). */
-        echo $args['after_widget'];
+        dglib_before_widget($args);
 
     }
 

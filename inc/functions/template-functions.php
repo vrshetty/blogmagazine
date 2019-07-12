@@ -385,3 +385,4 @@ if( ! function_exists( 'blogmagazine_hover_color' ) ) :
         return $return;
     }
 endif;
+

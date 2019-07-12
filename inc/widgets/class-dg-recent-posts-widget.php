@@ -115,7 +115,8 @@ class BlogMagazine_Recent_Posts_Widget extends Dglib_Master_Widget{
         );
         $blogmagazine_query = new WP_Query( $args );
 
-        echo $before_widget;
+        dglib_before_widget($args);
+
         ?>
         <div class="blogmagazine-recent-posts-wrapper">
             <?php
@@ -154,6 +155,9 @@ class BlogMagazine_Recent_Posts_Widget extends Dglib_Master_Widget{
             ?>
         </div><!-- .blogmagazine-recent-posts-wrapper -->
         <?php
-        echo $after_widget;
+    
+        dglib_after_widget($args);
+
     }
+
 }

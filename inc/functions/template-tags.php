@@ -27,28 +27,43 @@ function blogmagazine_posted_on( $show_date=true, $show_author=true ) {
 		esc_html( get_the_modified_date() )
 	);
 
+	$allowed_html = array(
+		'a' 	=> array(
+			'href'		=> array(),
+			'title'		=> array(),
+		),
+		'br' 	=> array(),
+		'em' 	=> array(),
+		'strong'=> array(),
+		'time'	=> array(
+			'class'		=> array(),
+			'datetime'		=> array(),
+		),
+		'span'=>array(
+			'class'		=> array(),
+		),
+	);
+
 	$posted_on = sprintf(
 		/* translators: %s: post date. */
-		esc_html_x( ' %s', 'post date', 'blogmagazine' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		esc_html__( ' %s', 'blogmagazine' ),
+		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . wp_kses($time_string, $allowed_html) . '</a>'
 	);
 
 	$byline = sprintf(
 		/* translators: %s: post author. */
-		esc_html_x( ' %s', 'post author', 'blogmagazine' ),
+		esc_html__( ' %s', 'blogmagazine' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
 	if($show_date){
-		echo '<span class="posted-on">' . $posted_on . '</span>';
+		echo '<span class="posted-on">' . wp_kses($posted_on, $allowed_html) . '</span>';
 	}
 
 	if($show_author){
-		echo '<span class="byline"> ' . $byline . '</span>';
+		echo '<span class="byline"> ' . wp_kses($byline, $allowed_html) . '</span>';
 	}
 	
-	//echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
-
 }
 endif;
 
@@ -96,7 +111,7 @@ function blogmagazine_entry_footer( $show_tag = true, $edit_link=true ) {
 
 	if ( is_single() && $show_tag ) {
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html_x( ' ', 'list item separator', 'blogmagazine' ) );
+		$tags_list = get_the_tag_list( '', ' ' );
 		if ( $tags_list ) {
 			/* translators: 1: list of tags. */
 			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'blogmagazine' ) . '</span>', $tags_list ); // WPCS: XSS OK.
