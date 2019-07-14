@@ -91,7 +91,7 @@ if(!function_exists('blogmagazine_register_sidebar') ):
     }
 
 endif;
-add_action('widgets_init', 'blogmagazine_register_sidebar');
+add_action('dglib_widgets_init', 'blogmagazine_register_sidebar', 20);
 
 if(!function_exists('blogmagazine_register_widgets')):
 
@@ -117,4 +117,4 @@ if(!function_exists('blogmagazine_register_widgets')):
     }
 
 endif;
-add_action('widgets_init', 'blogmagazine_register_widgets');
+add_action('dglib_widgets_init', 'blogmagazine_register_widgets', 30);

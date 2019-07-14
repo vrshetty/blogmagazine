@@ -532,50 +532,6 @@ iframe,
 object {
   max-width: 100%; }
 
-/*--------------------------------------------------------------
-Galleries
---------------------------------------------------------------*/
-.gallery {
-  margin-bottom: 1.5em; }
-  .gallery img {
-    width: 100%; }
-  .gallery .gallery-item {
-    float: left;
-    width: 100%;
-    display: block;
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    vertical-align: top; }
-  .gallery .gallery-caption {
-    bottom: 0;
-    color: #fff;
-    padding: 5px;
-    display: block;
-    position: absolute;
-    line-height: 1.4em;
-    background-color: rgba(0, 0, 0, 0.5); }
-  .gallery.gallery-columns-2 .gallery-item {
-    width: 50%; }
-  .gallery.gallery-columns-3 .gallery-item {
-    width: 33.33%; }
-  .gallery.gallery-columns-4 .gallery-item {
-    width: 25%; }
-  .gallery.gallery-columns-5 .gallery-item {
-    width: 20%; }
-  .gallery.gallery-columns-6 .gallery-item {
-    width: 16.66%; }
-  .gallery.gallery-columns-7 .gallery-item {
-    width: 14.28%; }
-  .gallery.gallery-columns-8 .gallery-item {
-    width: 12.5%; }
-  .gallery.gallery-columns-9 .gallery-item {
-    width: 11.11%; }
-  .gallery:after {
-    content: "";
-    display: block;
-    clear: both; }
-
 .site-main .gallery a img {
   max-width: none;
   width: 100%; }
@@ -758,6 +714,48 @@ textarea#comment {
     margin: 0 5px 0 20px;
     font-style: normal;
     color: #029fb2; }
+
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+.wp-block-gallery {
+  margin: 0 0 15px; }
+  .wp-block-gallery .blocks-gallery-image,
+  .wp-block-gallery .blocks-gallery-item {
+    overflow: hidden; }
+    .wp-block-gallery .blocks-gallery-image figcaption,
+    .wp-block-gallery .blocks-gallery-item figcaption {
+      padding: 5px;
+      line-height: 1.6em;
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: -webkit-transform 0.5s;
+      -o-transition: -o-transform 0.5s;
+      -moz-transition: transform 0.5s, -moz-transform 0.5s;
+      transition: transform 0.5s;
+      transition: transform 0.5s, -webkit-transform 0.5s, -moz-transform 0.5s, -o-transform 0.5s;
+      background: rgba(0, 0, 0, 0.5);
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+          -ms-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%); }
+    .wp-block-gallery .blocks-gallery-image:hover figcaption,
+    .wp-block-gallery .blocks-gallery-item:hover figcaption {
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0); }
+  @media (min-width: 600px) {
+    .wp-block-gallery.columns-3 .blocks-gallery-item {
+      margin: 0; } }
 
 /*
  * @package dineshghimire
@@ -1148,6 +1146,8 @@ author Widgets
       display: block; }
   .blogmagazine-block-carousel.lightSlider li {
     display: block; }
+  .blogmagazine-block-carousel .blogmagazine-single-post {
+    position: relative; }
 
 /*
  * @package dineshghimire
@@ -1448,6 +1448,52 @@ author Widgets
   float: left;
   margin-left: 4%;
   width: 66%; }
+
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+.gallery {
+  margin-bottom: 1.5em; }
+  .gallery img {
+    width: 100%; }
+  .gallery .gallery-item {
+    float: left;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    vertical-align: top; }
+  .gallery .gallery-caption {
+    bottom: 0;
+    color: #fff;
+    padding: 5px;
+    display: block;
+    position: absolute;
+    line-height: 1.4em;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .gallery.gallery-columns-2 .gallery-item {
+    width: 50%; }
+  .gallery.gallery-columns-3 .gallery-item {
+    width: 33.33%; }
+  .gallery.gallery-columns-4 .gallery-item {
+    width: 25%; }
+  .gallery.gallery-columns-5 .gallery-item {
+    width: 20%; }
+  .gallery.gallery-columns-6 .gallery-item {
+    width: 16.66%; }
+  .gallery.gallery-columns-7 .gallery-item {
+    width: 14.28%; }
+  .gallery.gallery-columns-8 .gallery-item {
+    width: 12.5%; }
+  .gallery.gallery-columns-9 .gallery-item {
+    width: 11.11%; }
+  .gallery:after {
+    content: "";
+    display: block;
+    clear: both; }
 
 /*
  * @package dineshghimire
@@ -2075,14 +2121,14 @@ Header CSS
 .blogmagazine-top-right-section-wrapper {
   float: right; }
   .blogmagazine-top-right-section-wrapper .social-link {
-    display: block;
-    float: left; }
+    float: left;
+    display: block; }
     .blogmagazine-top-right-section-wrapper .social-link a {
       color: #fff;
+      display: block;
       padding: 0 10px;
       font-size: 14px;
-      line-height: 35px;
-      display: inline-block; }
+      line-height: 35px; }
 
 .site-header .site-branding {
   width: 100%; }
@@ -2483,10 +2529,22 @@ Footer CSS
     width: 100%; }
   .blogmagazine-top-footer.footer_column_2 .dg-footer-widget {
     width: 50%; }
+    @media (max-width: 600px) {
+      .blogmagazine-top-footer.footer_column_2 .dg-footer-widget {
+        width: 100%; } }
   .blogmagazine-top-footer.footer_column_3 .dg-footer-widget {
     width: 33.33%; }
+    @media (max-width: 600px) {
+      .blogmagazine-top-footer.footer_column_3 .dg-footer-widget {
+        width: 100%; } }
   .blogmagazine-top-footer.footer_column_4 .dg-footer-widget {
     width: 25%; }
+    @media (min-width: 600px) and (max-width: 1023px) {
+      .blogmagazine-top-footer.footer_column_4 .dg-footer-widget {
+        width: 50%; } }
+    @media (max-width: 600px) {
+      .blogmagazine-top-footer.footer_column_4 .dg-footer-widget {
+        width: 100%; } }
 
 .bottom-footer {
   color: #bfbfbf;

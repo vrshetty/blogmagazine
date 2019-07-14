@@ -1,0 +1,75 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+
+.gallery{
+    margin-bottom: 1.5em;
+    img{
+        width:100%;
+    }
+    .gallery-item{
+        float:left;
+        width: 100%;
+        display: block;
+        cursor:pointer;
+        position:relative;
+        text-align: center;
+        vertical-align: top;
+    }
+    .gallery-caption{
+        bottom: 0;
+        color: #fff;
+        padding: 5px;
+        display: block;
+        position: absolute;
+        line-height: 1.4em;
+        background-color: rgba(0,0,0,0.5);
+    }
+    &.gallery-columns-2{
+        .gallery-item{
+            width:50%;
+        }
+    }
+    &.gallery-columns-3{
+        .gallery-item{
+            width:33.33%;
+        }
+    }
+    &.gallery-columns-4{
+        .gallery-item{
+            width:25%;
+        }
+    }
+    &.gallery-columns-5{
+        .gallery-item{
+            width:20%;
+        }
+    }
+    &.gallery-columns-6{
+        .gallery-item{
+            width:16.66%;
+        }
+    }
+    &.gallery-columns-7{
+        .gallery-item{
+            width:14.28%;
+        }
+    }
+    &.gallery-columns-8{
+        .gallery-item{
+            width:12.5%;
+        }
+    }
+    &.gallery-columns-9{
+        .gallery-item{
+            width:11.11%;
+        }
+    }
+    &:after{
+        content:"";
+        display:block;
+        clear:both;
+    }
+}

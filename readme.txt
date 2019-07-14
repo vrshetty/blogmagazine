@@ -57,7 +57,7 @@ https://github.com/sachinchoolur/lightslider - MIT License
     * Fixed: Alternative grid Design Optimized
     * Fixed: Social Icon issue Fixed on repeater
     * Updated: dglib updated latest github commit
-    * 
+    * Updated: Gallery Design Optimized
 
 = 1.0.6 - 2019/07/04 =
     * Modify: Updated minimal features on dglib

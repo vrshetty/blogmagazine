@@ -1,0 +1,32 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+
+.wp-block-gallery{
+	margin:0 0 15px;
+	.blocks-gallery-image,
+	.blocks-gallery-item{
+		overflow:hidden;
+		figcaption{
+			padding:5px;
+			line-height:1.6em;
+			transition: transform 0.5s;
+			background:rgba(0,0,0,0.5);
+			transform: translateY(100%);
+		}
+		&:hover{
+			figcaption{
+				transform: translateY(0);
+			}
+		}
+	}
+	&.columns-3{
+		.blocks-gallery-item{
+			@media(min-width:600px){
+				margin:0;
+			}
+		}
+	}
+}

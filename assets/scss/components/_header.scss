@@ -51,14 +51,14 @@ Header CSS
 .blogmagazine-top-right-section-wrapper{
     float: right;
     .social-link{
-        display: block;
         float: left;
+        display: block;
         a{
             color: #fff;
+            display: block;
             padding: 0 10px;
             font-size: 14px;
             line-height: 35px;
-            display: inline-block;
         }
     }
 }
