@@ -85,7 +85,7 @@ module.exports = function (grunt) {
         rtlcss: {
             generate: {
                 options: {
-                    map: false,
+                    map: true,
                     //map: {inline:false},
                 },
                 expand: true,
@@ -98,10 +98,13 @@ module.exports = function (grunt) {
 
         // Minify all .css files.
         cssmin: {
+            options:{
+                sourceMap: true,
+            },
             minify: {
                 expand: true,
                 cwd: '<%= dirs.css %>/',
-                src: ['*.css', '!*.min.css'],
+                src: ['*.css', '!*.min.css', '!*.min-rtl.css'],
                 dest: '<%= dirs.css %>/',
                 ext: '.min.css'
             }
@@ -122,7 +125,7 @@ module.exports = function (grunt) {
                     '<%= dirs.scss %>/**/*.scss'
 
                 ],
-                tasks: ['sass', 'postcss', 'cssmin', /*'rtlcss'*/],
+                tasks: ['sass', 'postcss', 'cssmin', 'rtlcss'],
             },
             js: {
                 files: [
@@ -264,7 +267,7 @@ module.exports = function (grunt) {
                     ],
                 },
                 options: {
-                    //watchTask: ['sass', 'postcss', 'cssmin'],
+                    //watchTask: ['sass', 'postcss', 'cssmin', ''],
                     /*server:{
                         baseDir: "./assets/css",
                     },*/
@@ -294,36 +297,36 @@ module.exports = function (grunt) {
 
     // Register tasks
     grunt.registerTask('default', [
-        'browserSync',
+        //'browserSync',
         'watch',
         //'jshint',
         //'uglify',
         //'css'
     ]);
 
-    grunt.registerTask('js', [
+    /*grunt.registerTask('js', [
         //'jshint',
         'uglify:assets'
 
-    ]);
+    ]);*/
 
-    grunt.registerTask('css', [
+    /*grunt.registerTask('css', [
         'sass',
         'postcss',
         'cssmin',
-        /*'rtlcss',*/
+        'rtlcss',
         //'concat'
-    ]);
+    ]);*/
 
-    grunt.registerTask('dev', [
+    /*grunt.registerTask('dev', [
         'default',
         'makepot'
-    ]);
+    ]);*/
 
-    grunt.registerTask('zip', [
-        //'dev',
-        'compress'
-    ]);
+    /*grunt.registerTask('zip', [
+        'dev',
+        //'compress'
+    ]);*/
 
     /*grunt.registerTask('watch', [
         'watch',

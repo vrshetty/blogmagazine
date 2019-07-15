@@ -44,17 +44,9 @@ function blogmagazine_posted_on( $show_date=true, $show_author=true ) {
 		),
 	);
 
-	$posted_on = sprintf(
-		/* translators: %s: post date. */
-		esc_html__( ' %s', 'blogmagazine' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . wp_kses($time_string, $allowed_html) . '</a>'
-	);
+	$posted_on = ' <a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . wp_kses($time_string, $allowed_html) . '</a>';
 
-	$byline = sprintf(
-		/* translators: %s: post author. */
-		esc_html__( ' %s', 'blogmagazine' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-	);
+	$byline = '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>';
 
 	if($show_date){
 		echo '<span class="posted-on">' . wp_kses($posted_on, $allowed_html) . '</span>';

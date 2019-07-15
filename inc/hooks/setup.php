@@ -143,6 +143,44 @@ add_action( 'after_setup_theme', 'blogmagazine_setup' );
 
 /*-----------------------------------------------------------------------------------------------------------------------*/
 /**
+ * Enqueue scripts and styles.
+ *
+ * @since 1.0.0
+ */
+function blogmagazine_scripts() {
+    
+    global $blogmagazine_version;
+
+    wp_enqueue_style( 'blogmagazine-fonts', blogmagazine_fonts_url(), array(), null );
+
+    wp_enqueue_style( 'font-awesome', get_template_directory_uri().'/assets/library/font-awesome/css/font-awesome.min.css', array(), '4.7.0' );
+
+    wp_enqueue_style( 'lightslider-style', get_template_directory_uri().'/assets/library/lightslider/css/lightslider.min.css', array(), '1.1.6' );
+   
+    wp_enqueue_style( 'blogmagazine-main-style', get_template_directory_uri().'/assets/css/blogmagazine.min.css', array(), '1.0.0' );
+    wp_style_add_data( 'blogmagazine-main-style', 'rtl', 'replace' );
+
+    wp_enqueue_style( 'blogmagazine-style', get_stylesheet_uri(), array(), esc_attr( $blogmagazine_version ) );
+
+    $menu_sticky_option = get_theme_mod( 'blogmagazine_menu_sticky_option', 'show' );
+    if ( $menu_sticky_option == 'show' ) {
+        wp_enqueue_script( 'jquery-sticky', get_template_directory_uri(). '/assets/library/sticky/jquery.sticky.js', array( 'jquery' ), '20150416', true );
+    }
+
+    wp_enqueue_script( 'blogmagazine-skip-link-focus-fix', get_template_directory_uri() . '/assets/library/_s/js/skip-link-focus-fix.js', array(), esc_attr( $blogmagazine_version ), true );
+
+    wp_enqueue_script( 'lightslider', get_template_directory_uri().'/assets/library/lightslider/js/lightslider.min.js', array('jquery'), '1.1.6', true );
+
+    wp_enqueue_script( 'blogmagazine-main', get_template_directory_uri().'/assets/js/blogmagazine.min.js', array('jquery'), esc_attr( $blogmagazine_version ), true );
+
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'blogmagazine_scripts' );
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
@@ -181,12 +219,12 @@ add_action( 'wp_head', 'blogmagazine_pingback_header' );
 /*
  * Admin Enqueue Scripts and Styles
  */
-
 if(!function_exists('blogmagazine_admin_enqueue_scripts') ):
 
 	function blogmagazine_admin_enqueue_scripts(){
 
 		wp_enqueue_style( 'blogmagazine-admin-styles', get_template_directory_uri().'/assets/css/admin-styles.min.css', array(), '1.0.0');
+		wp_style_add_data( 'blogmagazine-admin-styles', 'rtl', 'replace' );
 
 		// This theme styles the visual editor to resemble the theme style,
         add_editor_style( 'assets/css/editor-style.min.css' );
@@ -196,3 +234,26 @@ if(!function_exists('blogmagazine_admin_enqueue_scripts') ):
 endif;
 
 add_action('admin_enqueue_scripts', 'blogmagazine_admin_enqueue_scripts');
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+/**
+ * Enqueue scripts and styles for only admin
+ *
+ * @since 1.0.0
+ */
+
+
+function blogmagazine_admin_scripts( $hook ) {
+
+    global $blogmagazine_version;
+
+    if( 'widgets.php' != $hook && 'customize.php' != $hook && 'edit.php' != $hook && 'post.php' != $hook && 'post-new.php' != $hook ) {
+        return;
+    }
+
+    wp_enqueue_script( 'jquery-ui-button' );
+    
+}
+
+add_action( 'admin_enqueue_scripts', 'blogmagazine_admin_scripts' );

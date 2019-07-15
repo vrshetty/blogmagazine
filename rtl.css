@@ -1,0 +1,23 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.7
+ */
+
+/*
+ * All rtl related css generated from grunt and this rtl css is just for issue fixing for rtl mode.
+ */
+.blogmagazine_featured_slider .slider-posts{
+	direction: ltr;
+}
+
+.blogmagazine-featured-main-slider{
+	direction: rtl;
+}
+
+.blogmagazine-ticker-block .lSAction > a{
+	float:left;
+}
+.blogmagazine-ticker-block .vertical .lSAction > a.lSPrev{
+	margin:0 5px 0 0;
+}
