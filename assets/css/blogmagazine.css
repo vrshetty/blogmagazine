@@ -928,6 +928,11 @@ author Widgets
  * @subpackage blogmagazine
  * @since 1.0.0
  */
+.blogmagazine_block_posts .no-thumb {
+  display: block;
+  padding-top: 100%;
+  background-color: #f2f2f2; }
+
 .blogmagazine_block_posts .blogmagazine-block-posts-wrapper {
   display: none; }
   .blogmagazine_block_posts .blogmagazine-block-posts-wrapper:after {
@@ -937,160 +942,64 @@ author Widgets
   .blogmagazine_block_posts .blogmagazine-block-posts-wrapper.tab-active {
     display: block; }
 
-.blogmagazine_block_posts .layout3 .blogmagazine-primary-block-wrap {
-  position: relative; }
-  .blogmagazine_block_posts .layout3 .blogmagazine-primary-block-wrap .blogmagazine-single-post .blogmagazine-post-content {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-    position: absolute;
-    background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) -moz- oldlinear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0; }
-
-.blogmagazine_block_posts .layout3 .no-thumb {
-  padding-top: 50%;
-  display: block;
-  border: 1px solid #f0f0f0; }
-
-.blogmagazine_block_posts .layout4 .no-thumb {
-  display: block;
-  padding-top: 100%;
-  background-color: #f2f2f2; }
-
-.blogmagazine_block_posts .layout4 .blogmagazine-post-thumb {
-  height: 50%; }
-
-.blogmagazine_block_posts .layout4 .blogmagazine-post-excerpt {
-  line-height: 27px;
-  margin-top: 10px; }
-
-.blogmagazine_block_posts .layout4 .blogmagazine-post-content {
-  height: 50%;
-  overflow: hidden;
-  padding: 11px 15px 15px;
-  border: 1px solid #f2f2f2; }
-
-.blogmagazine_block_posts .layout4 .blogmagazine-post-content,
-.blogmagazine_block_posts .layout4 .blogmagazine-post-thumb {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50%;
-  background-color: #dedede; }
-
-.blogmagazine_block_posts .layout4 .blogmagazine-post-thumb img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover; }
-
-.blogmagazine_block_posts .layout4 .blogmagazine-post-thumb a {
-  display: block;
-  height: 100%; }
-
-.blogmagazine_block_posts .layout4 .blogmagazine-post-content {
-  top: 50%;
-  background-color: #f2f2f2; }
-
-.blogmagazine_block_posts .layout4 .blogmagazine-alt-grid-post {
-  width: 33.33%;
-  float: left;
-  display: table;
-  display: block;
-  position: relative;
-  padding-top: 66.66%; }
-  .blogmagazine_block_posts .layout4 .blogmagazine-alt-grid-post:nth-child(2n+2) .blogmagazine-post-thumb {
-    top: initial;
-    bottom: 0; }
-  .blogmagazine_block_posts .layout4 .blogmagazine-alt-grid-post:nth-child(2n+2) .blogmagazine-post-content {
-    top: 0;
-    bottom: 50%; }
-
-.blogmagazine_block_posts .layout2 .blogmagazine-primary-block-wrap,
-.blogmagazine_block_posts .layout2 .blogmagazine-secondary-block-wrap {
-  margin-left: -3%;
-  width: 103%; }
-
-.blogmagazine_block_posts .layout2 .blogmagazine-primary-block-wrap {
-  margin-bottom: 10px; }
-
-.blogmagazine_block_posts .layout2 .blogmagazine-primary-block-wrap .blogmagazine-single-post,
-.blogmagazine_block_posts .layout2 .blogmagazine-secondary-block-wrap .blogmagazine-single-post {
-  display: inline-block;
-  float: none;
-  margin-left: 3%;
-  margin-right: -4px;
-  vertical-align: top;
-  width: 47%; }
-
-.blogmagazine_block_posts .layout2 .blogmagazine-secondary-block-wrap .blogmagazine-single-post:nth-child(4) {
-  border-bottom: 1px solid #e1e1e1;
-  padding-bottom: 12px; }
-
-.blogmagazine_block_posts .layout3 .blogmagazine-primary-block-wrap {
-  width: 100%; }
-
-.blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap {
-  margin-top: 20px;
-  width: 102%; }
-
-.blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap {
-  margin-left: -2%; }
-
-.blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap .blogmagazine-single-post {
-  border: medium none;
-  float: left;
-  margin-bottom: 0;
-  margin-left: 2%;
-  padding: 0;
-  width: 31.33%; }
-
-.blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap .blogmagazine-single-post .blogmagazine-post-thumb,
-.blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap .blogmagazine-single-post .blogmagazine-post-content {
-  float: none;
-  width: 100%; }
-
-.blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap .blogmagazine-single-post .blogmagazine-post-content {
-  margin-top: 10px; }
-
-.blgmg-wdgt-preloader {
-  min-height: 500px;
-  text-align: center; }
-  .blgmg-wdgt-preloader .helper {
-    height: 500px;
-    display: inline-block;
-    vertical-align: middle; }
-  .blgmg-wdgt-preloader.hidden {
-    display: none; }
-
-.blogmagazine_block_posts .layout3 .blogmagazine-primary-block-wrap .blogmagazine-single-post .blogmagazine-post-title a {
-  color: #fff;
-  font-size: 20px;
-  text-transform: capitalize; }
-  .blogmagazine_block_posts .layout3 .blogmagazine-primary-block-wrap .blogmagazine-single-post .blogmagazine-post-title a:hover {
-    color: #029fb2; }
-
 .blogmagazine_block_posts .blogmagazine-primary-block-wrap {
+  width: 55%;
   float: left;
-  width: 48%; }
+  padding-right: 15px; }
   @media (max-width: 600px) {
     .blogmagazine_block_posts .blogmagazine-primary-block-wrap {
       width: 100%;
-      float: none; } }
+      float: none;
+      padding-right: 0px; } }
 
 .blogmagazine_block_posts .blogmagazine-secondary-block-wrap {
   float: right;
-  width: 49%; }
+  width: 45%; }
   @media (max-width: 600px) {
     .blogmagazine_block_posts .blogmagazine-secondary-block-wrap {
       float: none;
       margin-top: 20px;
       width: 100%; } }
+  .blogmagazine_block_posts .blogmagazine-secondary-block-wrap .blogmagazine-post-thumb {
+    float: left;
+    width: 30%; }
+  .blogmagazine_block_posts .blogmagazine-secondary-block-wrap .blogmagazine-post-content {
+    float: right;
+    width: 66%; }
+  .blogmagazine_block_posts .blogmagazine-secondary-block-wrap .blogmagazine-single-post {
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 12px;
+    padding-bottom: 12px; }
+    .blogmagazine_block_posts .blogmagazine-secondary-block-wrap .blogmagazine-single-post:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+  .blogmagazine_block_posts .blogmagazine-secondary-block-wrap .blogmagazine-post-meta span {
+    font-size: 12px; }
+    .blogmagazine_block_posts .blogmagazine-secondary-block-wrap .blogmagazine-post-meta span a {
+      font-size: 12px; }
+
+.blogmagazine_block_posts .layout2 .blogmagazine-primary-block-wrap,
+.blogmagazine_block_posts .layout2 .blogmagazine-secondary-block-wrap {
+  width: 100%;
+  padding: 0px; }
+  .blogmagazine_block_posts .layout2 .blogmagazine-primary-block-wrap .blogmagazine-single-post,
+  .blogmagazine_block_posts .layout2 .blogmagazine-secondary-block-wrap .blogmagazine-single-post {
+    width: 50%;
+    float: left;
+    display: block;
+    padding-bottom: 12px; }
+    .blogmagazine_block_posts .layout2 .blogmagazine-primary-block-wrap .blogmagazine-single-post:nth-child(2n+1),
+    .blogmagazine_block_posts .layout2 .blogmagazine-secondary-block-wrap .blogmagazine-single-post:nth-child(2n+1) {
+      clear: both;
+      padding-right: 7.5px; }
+    .blogmagazine_block_posts .layout2 .blogmagazine-primary-block-wrap .blogmagazine-single-post:nth-child(2n+2),
+    .blogmagazine_block_posts .layout2 .blogmagazine-secondary-block-wrap .blogmagazine-single-post:nth-child(2n+2) {
+      padding-left: 7.5px; }
+
+.blogmagazine_block_posts .layout2 .blogmagazine-secondary-block-wrap .blogmagazine-single-post:nth-child(4) {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 12px; }
 
 @media (max-width: 600px) {
   .blogmagazine_block_posts .layout2 .blogmagazine-primary-block-wrap .blogmagazine-single-post {
@@ -1105,6 +1014,47 @@ author Widgets
   .blogmagazine_block_posts .layout2 .blogmagazine-secondary-block-wrap .blogmagazine-single-post {
     float: none;
     width: 97%; } }
+
+.blogmagazine_block_posts .layout3 .no-thumb {
+  padding-top: 80%; }
+
+.blogmagazine_block_posts .layout3 .blogmagazine-primary-block-wrap {
+  width: 100%;
+  position: relative; }
+  .blogmagazine_block_posts .layout3 .blogmagazine-primary-block-wrap .blogmagazine-single-post .blogmagazine-post-content {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -moz- oldlinear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0; }
+
+.blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap {
+  margin-top: 20px;
+  width: 102%;
+  margin-left: -2%; }
+  .blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap .blogmagazine-single-post {
+    border: medium none;
+    float: left;
+    margin-bottom: 0;
+    margin-left: 2%;
+    padding: 0;
+    width: 31.33%;
+    margin-top: 10px; }
+    .blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap .blogmagazine-single-post .blogmagazine-post-thumb, .blogmagazine_block_posts .layout3 .blogmagazine-secondary-block-wrap .blogmagazine-single-post .blogmagazine-post-content {
+      float: none;
+      width: 100%; }
+
+.blogmagazine_block_posts .layout3 .blogmagazine-primary-block-wrap .blogmagazine-single-post .blogmagazine-post-title a {
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize; }
+  .blogmagazine_block_posts .layout3 .blogmagazine-primary-block-wrap .blogmagazine-single-post .blogmagazine-post-title a:hover {
+    color: #029fb2; }
 
 .blogmagazine_block_posts .layout3 .blogmagazine-primary-block-wrap span {
   color: #cfcfcf; }
@@ -1124,46 +1074,89 @@ author Widgets
   margin: 5px 0;
   line-height: 26px; }
 
-@media (max-width: 600px) {
-  .blogmagazine_block_posts .layout4 .blogmagazine-block-posts-wrapper .blogmagazine-alt-grid-post {
-    width: 100%;
-    display: block;
-    margin-bottom: 2%; } }
+.blogmagazine_block_posts .layout4 .no-thumb {
+  display: block;
+  padding-top: 100%;
+  background-color: #f2f2f2; }
 
-@media (max-width: 600px) {
-  .blogmagazine_block_posts .layout4 .blogmagazine-block-posts-wrapper .blogmagazine-alt-grid-post img {
-    width: 100%; } }
+.blogmagazine_block_posts .layout4 .blogmagazine-post-excerpt {
+  line-height: 27px;
+  margin-top: 10px; }
 
-@media (max-width: 600px) {
-  .blogmagazine_block_posts .layout4 .blogmagazine-block-posts-wrapper .blogmagazine-alt-grid-post .blogmagazine-post-content {
-    height: auto;
-    margin-bottom: 20px; } }
+.blogmagazine_block_posts .layout4 .blogmagazine-post-content,
+.blogmagazine_block_posts .layout4 .blogmagazine-post-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .blogmagazine_block_posts .layout4 .blogmagazine-post-content,
+    .blogmagazine_block_posts .layout4 .blogmagazine-post-thumb {
+      height: auto;
+      position: static; } }
+  @media (max-width: 600px) {
+    .blogmagazine_block_posts .layout4 .blogmagazine-post-content,
+    .blogmagazine_block_posts .layout4 .blogmagazine-post-thumb {
+      height: auto;
+      position: static; } }
 
-@media (max-width: 600px) {
-  .blogmagazine_block_posts .layout4 .blogmagazine-block-posts-wrapper .blogmagazine-alt-grid-post:last-child .blogmagazine-post-content {
-    margin-bottom: 0; } }
+.blogmagazine_block_posts .layout4 .blogmagazine-post-thumb img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
-.blogmagazine-secondary-block-wrap .blogmagazine-post-thumb {
+.blogmagazine_block_posts .layout4 .blogmagazine-post-thumb a {
+  display: block;
+  height: 100%; }
+
+.blogmagazine_block_posts .layout4 .blogmagazine-post-content {
+  top: 50%;
+  overflow: hidden;
+  padding: 11px 15px 15px;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f278; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .blogmagazine_block_posts .layout4 .blogmagazine-post-content {
+      margin-bottom: 15px; } }
+  @media (max-width: 600px) {
+    .blogmagazine_block_posts .layout4 .blogmagazine-post-content {
+      margin-bottom: 15px; } }
+
+.blogmagazine_block_posts .layout4 .blogmagazine-alt-grid-post {
+  width: 33.33%;
   float: left;
-  width: 30%; }
+  display: table;
+  display: block;
+  position: relative;
+  padding-top: 66.66%; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .blogmagazine_block_posts .layout4 .blogmagazine-alt-grid-post {
+      width: 100%;
+      padding-top: 0px;
+      display: block; } }
+  @media (max-width: 600px) {
+    .blogmagazine_block_posts .layout4 .blogmagazine-alt-grid-post {
+      width: 100%;
+      padding-top: 0px;
+      display: block; } }
+  .blogmagazine_block_posts .layout4 .blogmagazine-alt-grid-post:nth-child(2n+2) .blogmagazine-post-thumb {
+    top: initial;
+    bottom: 0; }
+  .blogmagazine_block_posts .layout4 .blogmagazine-alt-grid-post:nth-child(2n+2) .blogmagazine-post-content {
+    top: 0;
+    bottom: 50%; }
 
-.blogmagazine-secondary-block-wrap .blogmagazine-post-content {
-  float: right;
-  width: 66%; }
-
-.blogmagazine-secondary-block-wrap .blogmagazine-single-post {
-  border-bottom: 1px solid #e1e1e1;
-  margin-bottom: 12px;
-  padding-bottom: 12px; }
-  .blogmagazine-secondary-block-wrap .blogmagazine-single-post:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0; }
-
-.blogmagazine-secondary-block-wrap .blogmagazine-post-meta span {
-  font-size: 12px; }
-  .blogmagazine-secondary-block-wrap .blogmagazine-post-meta span a {
-    font-size: 12px; }
+.blgmg-wdgt-preloader {
+  min-height: 500px;
+  text-align: center; }
+  .blgmg-wdgt-preloader .helper {
+    height: 500px;
+    display: inline-block;
+    vertical-align: middle; }
+  .blgmg-wdgt-preloader.hidden {
+    display: none; }
 
 /*
  * @package dineshghimire
@@ -1944,7 +1937,8 @@ author Widgets
   @media (max-width: 768px) {
     .blogmagazine-home-middle-section .middle-primary {
       float: none;
-      width: 100%; } }
+      width: 100%;
+      padding-right: 0px; } }
 
 .blogmagazine-home-middle-section .middle-aside {
   float: right;
@@ -2794,53 +2788,53 @@ Ticker CSS
 /*--------------------------------------------------------------
 Footer CSS
 --------------------------------------------------------------*/
-.blogmagazine-top-footer {
+.blogmagazine-middle-footer {
   color: #fff;
   padding-top: 30px;
   background-color: #100f15; }
-  .blogmagazine-top-footer .dg-footer-widget-wrapper {
+  .blogmagazine-middle-footer .dg-footer-widget-wrapper {
     padding: 0 15px; }
-  .blogmagazine-top-footer .widget a {
+  .blogmagazine-middle-footer .widget a {
     color: #cfcfcf; }
-    .blogmagazine-top-footer .widget a:before {
+    .blogmagazine-middle-footer .widget a:before {
       color: #cfcfcf; }
-    .blogmagazine-top-footer .widget a:hover {
+    .blogmagazine-middle-footer .widget a:hover {
       color: #029fb2; }
-      .blogmagazine-top-footer .widget a:hover:before {
+      .blogmagazine-middle-footer .widget a:hover:before {
         color: #029fb2; }
-  .blogmagazine-top-footer .widget li:before {
+  .blogmagazine-middle-footer .widget li:before {
     color: #cfcfcf; }
-  .blogmagazine-top-footer .widget li:hover:before {
+  .blogmagazine-middle-footer .widget li:hover:before {
     color: #029fb2; }
-  .blogmagazine-top-footer .widget-title {
+  .blogmagazine-middle-footer .widget-title {
     margin: 0 0 20px;
     text-align: left;
     padding: 6px 0;
     color: inherit;
     font-size: 20px;
     text-transform: uppercase; }
-  .blogmagazine-top-footer .dg-footer-widget {
+  .blogmagazine-middle-footer .dg-footer-widget {
     float: left;
     padding: 0 15px; }
-  .blogmagazine-top-footer.footer_column_1 .dg-footer-widget {
+  .blogmagazine-middle-footer.footer_column_1 .dg-footer-widget {
     width: 100%; }
-  .blogmagazine-top-footer.footer_column_2 .dg-footer-widget {
+  .blogmagazine-middle-footer.footer_column_2 .dg-footer-widget {
     width: 50%; }
     @media (max-width: 600px) {
-      .blogmagazine-top-footer.footer_column_2 .dg-footer-widget {
+      .blogmagazine-middle-footer.footer_column_2 .dg-footer-widget {
         width: 100%; } }
-  .blogmagazine-top-footer.footer_column_3 .dg-footer-widget {
+  .blogmagazine-middle-footer.footer_column_3 .dg-footer-widget {
     width: 33.33%; }
     @media (max-width: 600px) {
-      .blogmagazine-top-footer.footer_column_3 .dg-footer-widget {
+      .blogmagazine-middle-footer.footer_column_3 .dg-footer-widget {
         width: 100%; } }
-  .blogmagazine-top-footer.footer_column_4 .dg-footer-widget {
+  .blogmagazine-middle-footer.footer_column_4 .dg-footer-widget {
     width: 25%; }
     @media (min-width: 600px) and (max-width: 1023px) {
-      .blogmagazine-top-footer.footer_column_4 .dg-footer-widget {
+      .blogmagazine-middle-footer.footer_column_4 .dg-footer-widget {
         width: 50%; } }
     @media (max-width: 600px) {
-      .blogmagazine-top-footer.footer_column_4 .dg-footer-widget {
+      .blogmagazine-middle-footer.footer_column_4 .dg-footer-widget {
         width: 100%; } }
 
 .bottom-footer {
@@ -3231,7 +3225,7 @@ article.hentry h1.entry-title {
       padding: 0 2%;
       width: 100%; } }
 
-#top-footer.footer_column_one .dg-footer-widget, #top-footer.footer_column_two .dg-footer-widget, #top-footer.footer_column_three .dg-footer-widget, #top-footer.footer_column_four .dg-footer-widget {
+#middle-footer.footer_column_one .dg-footer-widget, #middle-footer.footer_column_two .dg-footer-widget, #middle-footer.footer_column_three .dg-footer-widget, #middle-footer.footer_column_four .dg-footer-widget {
   float: none;
   width: 98%; }
 

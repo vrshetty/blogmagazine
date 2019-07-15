@@ -40,7 +40,7 @@ class BlogMagazine_Recent_Posts_Widget extends Dglib_Master_Widget{
                             'title' => array(
                                 'dg_widget_field_name'         => 'title',
                                 'dg_widget_field_title'        => esc_html__( 'Title', 'blogmagazine' ),
-                                'dg_widget_field_default'  => esc_html_('Recent Posts', 'blogmagazine'),
+                                'dg_widget_field_default'  => esc_html__('Recent Posts', 'blogmagazine'),
                                 'dg_widget_field_type'   => 'text'
                             ),
                             'title_target'    => array(

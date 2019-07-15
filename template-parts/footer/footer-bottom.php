@@ -18,11 +18,16 @@
 				echo esc_html( $footer_copyright_text );
 				?>
 			</span>
-			<span class="sep"> | </span>
-			<?php
-			$blogmagazine_author_url = 'https://dinesh-ghimire.com.np/';
-			/* translators: 1: Theme name, 2: Theme author. */
-			printf( esc_html__( 'Theme: %1$s by %2$s.', 'blogmagazine' ), 'BlogMagazine', '<a href="'. esc_url( $blogmagazine_author_url ).'" rel="designer" target="_blank">Dinesh Ghimire</a>' );
+			<?php 
+			$remove_footer_link  = apply_filters( 'blogmagazine_remove_footer_link', false );
+			if(!$remove_footer_link){
+				?>
+				<span class="sep"> | </span>
+				<?php
+				$blogmagazine_author_url = 'https://dinesh-ghimire.com.np/';
+				/* translators: 1: Theme name, 2: Theme author. */
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'blogmagazine' ), 'BlogMagazine', '<a href="'. esc_url( $blogmagazine_author_url ).'" rel="designer" target="_blank">Dinesh Ghimire</a>' );
+			}
 			?>
 		</div><!-- .site-info -->
 		<nav id="footer-navigation" class="footer-navigation" role="navigation">

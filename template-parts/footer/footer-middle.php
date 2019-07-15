@@ -17,7 +17,7 @@ if( !is_active_sidebar( 'blogmagazine-footer' ) && !is_active_sidebar( 'blogmaga
 }
 $blogmagazine_footer_layout = absint(get_theme_mod( 'footer_widget_layout', 4 ));
 ?>
-<div id="top-footer" class="blogmagazine-top-footer footer-widgets-wrapper footer_column_<?php echo esc_attr( $blogmagazine_footer_layout ); ?> dg-clearfix">
+<div id="middle-footer" class="blogmagazine-middle-footer footer-widgets-wrapper footer_column_<?php echo esc_attr( $blogmagazine_footer_layout ); ?> dg-clearfix">
 	<div class="dg-container">
 		<div class="footer-widgets-area  dg-clearfix">
 			<div class="dg-footer-widget-wrapper dg-column-wrapper dg-clearfix">

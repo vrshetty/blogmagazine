@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
-"POT-Creation-Date: 2019-07-15 08:13:24+00:00\n"
+"POT-Creation-Date: 2019-07-15 11:59:08+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -85,7 +85,7 @@ msgid "Site title color"
 msgstr ""
 
 #: inc/customizer/footer/section-footer-main.php:11
-msgid "Widget Area"
+msgid "Footer Main"
 msgstr ""
 
 #: inc/customizer/footer/section-footer-main.php:30
@@ -400,7 +400,7 @@ msgid "DESC"
 msgstr ""
 
 #: inc/dglib/core/functions.php:106
-#: inc/widgets/class-dg-blockposts-widget.php:89
+#: inc/widgets/class-dg-blockposts-widget.php:90
 msgid "None"
 msgstr ""
 
@@ -450,7 +450,7 @@ msgstr ""
 msgid "Open with Same Tab"
 msgstr ""
 
-#: inc/dglib/core/functions.php:168
+#: inc/dglib/core/functions.php:168 inc/widgets/class-dg-carousel-widget.php:48
 msgid "Carousel"
 msgstr ""
 
@@ -460,7 +460,7 @@ msgstr ""
 
 #: inc/dglib/core/functions.php:203
 #: inc/dglib/widgets/function-dg-widget-dependencies.php:20
-#: inc/widgets/class-dg-blockposts-widget.php:130
+#: inc/widgets/class-dg-blockposts-widget.php:131
 msgid "Default"
 msgstr ""
 
@@ -958,7 +958,7 @@ msgstr ""
 #: inc/dglib/customizer/templates/templates-archive-page.php:131
 #: inc/dglib/customizer/templates/templates-blog-page.php:131
 #: inc/dglib/customizer/templates/templates-search-page.php:133
-#: inc/widgets/class-dg-blockposts-widget.php:135
+#: inc/widgets/class-dg-blockposts-widget.php:136
 #: inc/widgets/class-dg-featured-posts-widget.php:114
 msgid "Description Length"
 msgstr ""
@@ -1253,7 +1253,7 @@ msgstr ""
 msgid "Please put some fields to show on metabox"
 msgstr ""
 
-#: inc/dglib/walkers/class-dg-walker-mega-menu.php:148
+#: inc/dglib/walkers/class-dg-walker-mega-menu.php:151
 msgid "Preloader"
 msgstr ""
 
@@ -1440,11 +1440,11 @@ msgstr ""
 #: inc/dglib/widgets/class-dg-author-info-widget.php:74
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:70
 #: inc/widgets/class-dg-adsbanner-widget.php:68
-#: inc/widgets/class-dg-blockposts-widget.php:72
-#: inc/widgets/class-dg-carousel-widget.php:74
+#: inc/widgets/class-dg-blockposts-widget.php:73
+#: inc/widgets/class-dg-carousel-widget.php:75
 #: inc/widgets/class-dg-featured-posts-widget.php:71
 #: inc/widgets/class-dg-featured-slider-widget.php:69
-#: inc/widgets/class-dg-recent-posts-widget.php:68
+#: inc/widgets/class-dg-recent-posts-widget.php:69
 msgid "Title link"
 msgstr ""
 
@@ -1469,8 +1469,8 @@ msgid "Avatar Size"
 msgstr ""
 
 #: inc/dglib/widgets/class-dg-author-info-widget.php:122
-#: inc/widgets/class-dg-blockposts-widget.php:143
-#: inc/widgets/class-dg-carousel-widget.php:95
+#: inc/widgets/class-dg-blockposts-widget.php:144
+#: inc/widgets/class-dg-carousel-widget.php:96
 #: inc/widgets/class-dg-featured-posts-widget.php:102
 msgid "Layout"
 msgstr ""
@@ -1505,11 +1505,11 @@ msgstr ""
 
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:50
 #: inc/widgets/class-dg-adsbanner-widget.php:48
-#: inc/widgets/class-dg-blockposts-widget.php:52
-#: inc/widgets/class-dg-carousel-widget.php:54
+#: inc/widgets/class-dg-blockposts-widget.php:53
+#: inc/widgets/class-dg-carousel-widget.php:55
 #: inc/widgets/class-dg-featured-posts-widget.php:51
 #: inc/widgets/class-dg-featured-slider-widget.php:49
-#: inc/widgets/class-dg-recent-posts-widget.php:48
+#: inc/widgets/class-dg-recent-posts-widget.php:49
 msgid "Link Target"
 msgstr ""
 
@@ -1641,6 +1641,360 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
+#: inc/tgmpa/class-tgm-plugin-activation.php:327 inc/tgmpa/init.php:47
+msgid "Install Recommended Plugins"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:328 inc/tgmpa/init.php:48
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:330 inc/tgmpa/init.php:50
+#. translators: %s: plugin name.
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:332 inc/tgmpa/init.php:52
+#. translators: %s: plugin name.
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:333 inc/tgmpa/init.php:53
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:370 inc/tgmpa/init.php:90
+#. translators: 1: plugin name(s).
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:375 inc/tgmpa/init.php:95
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:380 inc/tgmpa/init.php:100
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:385
+msgid "Return to Recommended Plugins Installer"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:386
+#: inc/tgmpa/class-tgm-plugin-activation.php:827
+#: inc/tgmpa/class-tgm-plugin-activation.php:2533
+#: inc/tgmpa/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:387
+#: inc/tgmpa/class-tgm-plugin-activation.php:3159 inc/tgmpa/init.php:106
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:388
+#: inc/tgmpa/class-tgm-plugin-activation.php:2952 inc/tgmpa/init.php:107
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:390 inc/tgmpa/init.php:109
+#. translators: 1: plugin name.
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:392 inc/tgmpa/init.php:111
+#. translators: 1: plugin name.
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:394 inc/tgmpa/init.php:113
+#. translators: 1: dashboard link.
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:395 inc/tgmpa/init.php:114
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:396 inc/tgmpa/init.php:115
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:397 inc/tgmpa/init.php:116
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:934
+#: inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1982
+#. translators: %s: version number
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2392
+#. translators: 1: number of plugins.
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2396
+#. translators: 1: number of plugins.
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2400
+#. translators: 1: number of plugins.
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2603
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2608
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2614
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3498
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3501
+#. translators: 1: plugin name, 2: error message.
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3503
+#. translators: 1: plugin name.
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take "
+"a while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#. translators: 1: plugin name.
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3512
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+#. translators: 1: plugin name.
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3520
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgmpa/init.php:30
+msgid "Universal Google AdSense"
+msgstr ""
+
+#: inc/tgmpa/init.php:105
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
 #: inc/widgets/class-dg-adsbanner-widget.php:19
 msgid "You can place a banner as an advertisement with links."
 msgstr ""
@@ -1678,66 +2032,70 @@ msgid "DG: Block Posts"
 msgstr ""
 
 #: inc/widgets/class-dg-blockposts-widget.php:46
-#: inc/widgets/class-dg-carousel-widget.php:48
+msgid "Block Posts"
+msgstr ""
+
+#: inc/widgets/class-dg-blockposts-widget.php:47
+#: inc/widgets/class-dg-carousel-widget.php:49
 #: inc/widgets/class-dg-featured-posts-widget.php:45
 #: inc/widgets/class-dg-featured-slider-widget.php:43
 msgid "Enter your block title. (Optional - Leave blank to hide the title.)"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:78
+#: inc/widgets/class-dg-blockposts-widget.php:79
 msgid "Block Category"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:85
+#: inc/widgets/class-dg-blockposts-widget.php:86
 msgid "Tab Category List"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:90
+#: inc/widgets/class-dg-blockposts-widget.php:91
 msgid "Block Category List"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:91
+#: inc/widgets/class-dg-blockposts-widget.php:92
 msgid "Others Category List"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:121
+#: inc/widgets/class-dg-blockposts-widget.php:122
 msgid "Tab Categories"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:129
+#: inc/widgets/class-dg-blockposts-widget.php:130
 msgid "Default Tab Label"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:138
+#: inc/widgets/class-dg-blockposts-widget.php:139
 msgid "Enter the short description length in character."
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:147
+#: inc/widgets/class-dg-blockposts-widget.php:148
 msgid "Block Layouts"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:151
+#: inc/widgets/class-dg-blockposts-widget.php:152
 msgid "Layout 1"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:152
+#: inc/widgets/class-dg-blockposts-widget.php:153
 msgid "Layout 2"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:153
+#: inc/widgets/class-dg-blockposts-widget.php:154
 msgid "Layout 3"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:154
+#: inc/widgets/class-dg-blockposts-widget.php:155
 msgid "Layout 4"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:159
+#: inc/widgets/class-dg-blockposts-widget.php:160
 msgid "Large Image Size"
 msgstr ""
 
-#: inc/widgets/class-dg-blockposts-widget.php:167
-#: inc/widgets/class-dg-recent-posts-widget.php:80
+#: inc/widgets/class-dg-blockposts-widget.php:168
+#: inc/widgets/class-dg-recent-posts-widget.php:81
 #: inc/widgets/class-dg-tabbed-widget.php:66
 msgid "Thumbnail Image Size"
 msgstr ""
@@ -1755,17 +2113,17 @@ msgstr ""
 msgid "Block title"
 msgstr ""
 
-#: inc/widgets/class-dg-carousel-widget.php:80
+#: inc/widgets/class-dg-carousel-widget.php:81
 #: inc/widgets/class-dg-featured-posts-widget.php:77
 msgid "Block Categories"
 msgstr ""
 
-#: inc/widgets/class-dg-carousel-widget.php:86
+#: inc/widgets/class-dg-carousel-widget.php:87
 #: inc/widgets/class-dg-featured-posts-widget.php:106
 msgid "Image Size"
 msgstr ""
 
-#: inc/widgets/class-dg-carousel-widget.php:99
+#: inc/widgets/class-dg-carousel-widget.php:100
 msgid "Carousel Layouts"
 msgstr ""
 
@@ -1817,7 +2175,11 @@ msgstr ""
 msgid "DG: Recent Posts"
 msgstr ""
 
-#: inc/widgets/class-dg-recent-posts-widget.php:74
+#: inc/widgets/class-dg-recent-posts-widget.php:43
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/widgets/class-dg-recent-posts-widget.php:75
 msgid "No. of Posts"
 msgstr ""
 
@@ -1929,7 +2291,7 @@ msgstr ""
 msgid "BlogMagazine"
 msgstr ""
 
-#: template-parts/footer/footer-bottom.php:25
+#: template-parts/footer/footer-bottom.php:29
 #. translators: 1: Theme name, 2: Theme author.
 msgid "Theme: %1$s by %2$s."
 msgstr ""
@@ -2043,4 +2405,29 @@ msgstr ""
 #. language.
 msgctxt "Titillium Web font: on or off"
 msgid "on"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1121
+#: inc/tgmpa/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2342
+#. translators: 1: install status, 2: update status
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2388
+#. translators: 1: number of plugins.
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
 msgstr ""

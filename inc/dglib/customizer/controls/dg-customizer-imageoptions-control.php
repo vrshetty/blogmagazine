@@ -100,7 +100,7 @@ if(!class_exists('Dglib_Customize_Imageoptions_Control')):
             <div class="buttonset dg-imageoption-wrapper">
                 <# for ( key in data.choices ) { #>
                     <# if(data.option_nature=='radio') { #>
-                        <# var is_checked = ( key === data.value) ? 'checked="checked"' : ''; #>
+                        <# var is_checked = ( key == data.value) ? 'checked="checked"' : 'radiofalse'; #>
                     <# }else{ #>
                         <# var imageoption_value = data.value.replace(/&quot;/g,'"'); #>
                         <# var imageoption_value = (imageoption_value) ? imageoption_value : '[]'; #>

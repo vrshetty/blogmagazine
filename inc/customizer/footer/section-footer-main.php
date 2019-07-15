@@ -8,9 +8,9 @@
 $wp_customize->add_section(
     'blogmagazine_footer_widget_section',
     array(
-        'title'		=> esc_html__( 'Widget Area', 'blogmagazine' ),
+        'title'		=> esc_html__( 'Footer Main', 'blogmagazine' ),
         'panel'     => 'site_footer_options',
-        'priority'  => 10,
+        'priority'  => 20,
     )
 );
 
