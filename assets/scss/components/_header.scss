@@ -14,11 +14,20 @@ Header CSS
 .blogmagazine-top-left-section-wrapper{
     float: left;
     font-size: 12px;
+    @media (max-width: 600px){
+        float: none;
+        display: block;
+        text-align: center;
+    }
     .date-section {
         float: left;
         padding:8px 0;
         line-height:1.6em;
         margin-right: 10px;
+        @media (max-width: 600px){
+            float: none;
+            display: inline-block;
+        }
         &:before {
             content: "\f017";
             display: inline-block;
@@ -28,16 +37,21 @@ Header CSS
     }
 }
 
-.top-navigation {
+.top-navigation{
     float: left;
+    @media (max-width: 600px){
+        float: none;
+        display: inline-block;
+    }
     ul{
         margin: 0;
-        list-style: outside none none;
+        padding:10px 0;
+        list-style:none;
         li{
-            border-left: 1px solid #fff;
-            display: inline-block;
             line-height: 12px;
-            padding: 0 10px;
+            padding: 0 8px;
+            display: inline-block;
+            border-right: 1px solid #fff;
             a{
                 color: #fff;
             }
@@ -50,6 +64,11 @@ Header CSS
 
 .blogmagazine-top-right-section-wrapper{
     float: right;
+    @media (max-width: 600px){
+        float: none;
+        display: block;
+        text-align: center;
+    }
     .social-link{
         float: left;
         display: block;
@@ -70,6 +89,9 @@ Header CSS
             float: left;
             max-width:35%;    
         }
+        @media (max-width: 979px){
+            text-align: center;
+        }
         .custom-logo{
             width:auto;
             height:auto;
@@ -79,6 +101,14 @@ Header CSS
     }
     .blogmagazine-header-ads-area{
         float: right;
+        @media (max-width: 1170px){
+            width: 65%;
+            margin-top: 5px;
+        }
+        @media (max-width: 979px){
+            width: 100%;
+            text-align: center;
+        }
         .blogmagazine_ads_banner {
             margin: 0;
             padding: 0;
@@ -118,6 +148,9 @@ Header CSS
             position: absolute;
             margin-left: -480px;
         }
+    }
+    @media (max-width: 768px){
+        position: relative;
     }
 }
 
@@ -364,10 +397,26 @@ Header CSS
     font-size: 20px;
     line-height:48px;
     padding: 0px 12px;
+    @media (max-width: 768px){
+        display: block;
+    }
 }
 
 .sub-toggle {
     display: none;
+    @media (max-width: 768px){
+        background: #fff;
+        color: #029FB2;
+        cursor: pointer;
+        display: block;
+        height: 24px;
+        line-height: 25px;
+        position: absolute;
+        right: 15px;
+        text-align: center;
+        top: 6px;
+        width: 24px;
+    }
 }
 
 
@@ -510,5 +559,92 @@ Ticker CSS
         padding: 1px 12px;
         text-transform: capitalize;
         background-color:#029fb2;
+    }
+}
+
+
+#site-navigation{
+    @media (min-width: 1000px){
+        display: block;
+    }
+    @media (max-width: 768px){
+        background: #029FB2;
+        display: none;
+        left: 0;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        z-index: 99;
+    }
+    li{
+        &.menu-item-has-children{
+            a:before{
+                @media (max-width: 768px){
+                    display:none;
+                }
+            }
+        }
+    }
+    ul{
+        li{
+            @media (max-width: 768px){
+                display: block;
+                float: none;
+            }
+            &:hover, &.current-menu-item, &.current-menu-ancestor{
+                &>.sub-toggle{
+                    @media (max-width: 768px){
+                        background: #fff;
+                    }
+                }
+            }
+        }
+        &>li{
+            &:hover{
+                &>.sub-menu, &>.children{
+                    @media (max-width: 768px){
+                        top:0;
+                    }
+                }
+            }
+        }
+        &#primary-menu{
+            &>li{
+                &:hover, &.current-menu-item{
+                    &>a:after{
+                        @media (max-width: 768px){
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        &.sub-menu, &.children{
+            @media (max-width: 768px){
+                top: 0;
+                left: 0;
+                opacity: 1;
+                display: none;
+                min-width: 100%;
+                background: none;
+                transition: none;
+                position: static;
+                visibility: visible;
+            }
+            li{
+                @media (max-width: 768px){
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+
+.ticker-caption {
+    @media (max-width: 600px){
+        float: none;
+        text-align: center;
+        width: 100%;
     }
 }

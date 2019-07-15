@@ -119,3 +119,21 @@
 	}
 }
 	
+.blogmagazine_default_tabbed{
+    .blogmagazine-post-title{
+        &.small-size{
+            a{
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .blogmagazine-post-thumb{
+        img{
+            @media (max-width: 979px){
+                width: 100%;
+            }
+        }
+    }
+}

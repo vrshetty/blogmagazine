@@ -1,0 +1,37 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @version 1.0.7
+ */
+.error404{
+    .page-title{
+        background: #029FB2;
+        color: #fff;
+        font-size: 20px;
+        margin: 0;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .page-content{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.error-404{
+    &.not-found{
+        border: 1px solid #1e73be;
+        border-top:0px;
+        margin:0 0 30px;
+    }
+}
+
+.error-num{
+    font-size: 114px;
+    font-weight: 700;
+    text-align: center;
+    &>span {
+        font-size: 34px;
+        text-transform: uppercase;
+    }
+}

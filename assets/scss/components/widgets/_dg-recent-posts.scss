@@ -25,3 +25,38 @@
     margin-left: 4%;
     width: 66%;
 }
+
+.blogmagazine_recent_posts{
+    .blogmagazine-recent-posts-wrapper{
+        .blogmagazine-post-title{
+            &.small-size{
+                a{
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .blogmagazine-post-thumb {
+            @media (max-width: 979px) {
+                float: left;
+                width: 30%;
+            }
+            img{
+                @media (max-width: 979px){
+                    width: 100%;
+                }
+            }
+            .blogmagazine-post-title{
+                &.small-size{
+                    a{
+                        @media (max-width: 979px) {
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

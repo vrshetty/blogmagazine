@@ -5,11 +5,19 @@ Sidebar layout css
 #primary{
     float: left;
     width: 70%;
+    @media (max-width: 768px){
+        float: none;
+        width: 100%;
+    }
 }
 
 .sidebar-main{
     float: right;
-    width: 27%;
+    width: 30%;
+    @media (max-width: 768px){
+        float: none;
+        width: 100%;
+    }
     &.sidebar-left{
         float:left;
     }
@@ -22,11 +30,25 @@ body{
     &.left-sidebar{
         #primary{
             float: right;
+            padding-left:30px;
+            @media (max-width: 768px){
+                padding-left:0px;
+            }
+        }
+        .sidebar-main{
+
         }
     }
     &.right-sidebar{
         #primary{
             float: left;
+            padding-right:30px;
+            @media (max-width: 768px){
+                padding-right:0px;
+            }
+        }
+        .sidebar-main{
+
         }
     }
     &.no-sidebar{
