@@ -304,29 +304,31 @@ module.exports = function (grunt) {
         //'css'
     ]);
 
-    /*grunt.registerTask('js', [
+    grunt.registerTask('js', [
         //'jshint',
         'uglify:assets'
 
-    ]);*/
+    ]);
 
-    /*grunt.registerTask('css', [
+    grunt.registerTask('css', [
         'sass',
         'postcss',
         'cssmin',
         'rtlcss',
         //'concat'
-    ]);*/
+    ]);
 
-    /*grunt.registerTask('dev', [
+    grunt.registerTask('dev', [
         'default',
         'makepot'
-    ]);*/
+    ]);
 
-    /*grunt.registerTask('zip', [
-        'dev',
-        //'compress'
-    ]);*/
+    grunt.registerTask('zip', [
+        'css',
+        'js',
+        'makepot',
+        'compress'
+    ]);
 
     /*grunt.registerTask('watch', [
         'watch',

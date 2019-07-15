@@ -41,6 +41,9 @@ if( ! function_exists( 'dglib_widget_title_callback' ) ) :
 					$title_other_html .= '</li>';
 				}
 				foreach($title_terms as $tab_term_id){
+					if(!term_exists($tab_term_id, $tab_taxonomy)){
+						continue;
+					}
 					$tab_ajax_data['data']['terms_ids'] = $tab_term_id;
 					$tab_term_detail = get_term_by( 'id', absint( $tab_term_id ), $tab_taxonomy );
 					$title_other_html .= '<li class="wdgt-tab-term">';

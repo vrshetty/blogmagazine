@@ -111,6 +111,9 @@ class Dglib_Walker_Mega_Menu extends Walker_Nav_Menu{
                 $megamenu_html .= '<li class="dglib-term-list-item active-item" data-tab="dglib-megamenu-tab-all"><a data-config=\''.json_encode($megamenu_ajax_data).'\' data-term-ids="'.json_encode($megamenu_categories).'">'.esc_html__('All', 'blogmagazine').'</a></li>';
             }
             foreach($megamenu_categories as $index=>$category_id){
+                if(!term_exists( $category_id, 'category')){
+                    continue;
+                }
                 $category_details = get_term_by( 'term_id', $category_id, 'category' );
                 $megamenu_ajax_data['data']['term_ids'] = $category_id;
                 $megamenu_html .= '<li class="dglib-term-list-item" data-tab="dglib-megamenu-tab-'.$category_id.'"><a data-config=\''.json_encode($megamenu_ajax_data).'\' href="'.get_category_link($category_id).'" data-term-ids="'.json_encode($category_id).'">'.esc_html($category_details->name).'</a></li>';

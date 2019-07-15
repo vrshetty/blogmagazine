@@ -30,3 +30,8 @@ require_once blogmagazine_file_directory( 'inc/customizer/init.php' );
  * BlogMagazine Customizer
  */
 require_once blogmagazine_file_directory( 'inc/metabox/init.php' );
+
+/**
+ * BlogMagazine Customizer
+ */
+require_once blogmagazine_file_directory( 'inc/tgmpa/init.php' );
