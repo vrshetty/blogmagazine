@@ -43,6 +43,7 @@ if(!class_exists( 'BlogMagazine_BlockPosts_Widget' ) ):
                                 'title' => array(
                                     'dg_widget_field_name'         => 'title',
                                     'dg_widget_field_title'        => esc_html__( 'Title', 'blogmagazine' ),
+                                    'dg_widget_field_default'  => esc_html_('Block Posts', 'blogmagazine'),
                                     'dg_widget_field_description'  => esc_html__( 'Enter your block title. (Optional - Leave blank to hide the title.)', 'blogmagazine' ),
                                     'dg_widget_field_type'   => 'text'
                                 ),
