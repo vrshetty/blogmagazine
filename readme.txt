@@ -53,7 +53,7 @@ https://github.com/sachinchoolur/lightslider - MIT License
 == Changelog ==
 
 = 1.0.7 - 2019/07/12 =
-    * Fixed: All posible snifier warning fixed
+    * Fixed: All snifier warning fixed
     * Added: Hook added for more flexibility to developers
     * Fixed: Alternative grid Design Optimized
     * Fixed: Social Icon issue Fixed on repeater

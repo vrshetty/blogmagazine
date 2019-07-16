@@ -29,8 +29,6 @@ class BlogMagazine_Carousel_widget extends Dglib_Master_Widget{
      * Array is used in update and form functions
      */
     public function widget_fields( $instance = array() ) {
-
-        $blogmagazine_categories_lists = blogmagazine_categories_lists();
         
         $fields = array(
             'dg_widget_tab'       => array(
@@ -79,8 +77,8 @@ class BlogMagazine_Carousel_widget extends Dglib_Master_Widget{
                             'terms_ids' => array(
                                 'dg_widget_field_name'         => 'terms_ids',
                                 'dg_widget_field_title'        => esc_html__( 'Block Categories', 'blogmagazine' ),
-                                'dg_widget_field_type'   => 'multiselect',
-                                'dg_widget_field_options' => $blogmagazine_categories_lists
+                                'dg_widget_field_type'   => 'multitermlist',
+                                'dg_widget_taxonomy_type' => 'category',
                             ),
                             'thumbnail_size' => array(
                                 'dg_widget_field_name'         => 'thumbnail_size',

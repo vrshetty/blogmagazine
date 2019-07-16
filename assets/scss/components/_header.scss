@@ -1,14 +1,20 @@
 /*--------------------------------------------------------------
-Header CSS
+Header Media
 --------------------------------------------------------------*/
-/*
- * Top Header CSS
- */
+
+
+/*--------------------------------------------------------------
+Top Header
+--------------------------------------------------------------*/
 
 .blogmagazine-top-header-wrap{
     color: #fff;
     line-height:1em;
     background-color: #029fb2;
+}
+
+.blogmagazine-social-icons-wrapper{
+    display:inline-block;
 }
 
 .blogmagazine-top-left-section-wrapper{
@@ -48,12 +54,12 @@ Header CSS
         padding:10px 0;
         list-style:none;
         li{
-            line-height: 12px;
             padding: 0 8px;
             display: inline-block;
             border-right: 1px solid #fff;
             a{
                 color: #fff;
+                line-height:1.4em;
             }
         }
         &.sub-menu{
@@ -81,6 +87,10 @@ Header CSS
         }
     }
 }
+
+/*--------------------------------------------------------------
+Site Branding
+--------------------------------------------------------------*/
 
 .site-header{
     .site-branding{
@@ -116,13 +126,6 @@ Header CSS
     }
 }
 
-.blogmagazine-logo-section-wrapper{
-    padding: 20px 0;
-}
-
-/*--------------------------------------------------------------
-## Menu Header CSS
---------------------------------------------------------------*/
 .site-title {
   font-size: 32px;
   font-weight: 700;
@@ -132,6 +135,31 @@ Header CSS
 
 .site-description{
   margin: 0;
+}
+
+.blogmagazine-logo-section-wrapper{
+    padding: 20px 0;
+}
+
+/*--------------------------------------------------------------
+## Menu Header CSS
+--------------------------------------------------------------*/
+
+.blogmagazine-home-icon{
+    a {
+        color: #fff;
+        display: block;
+        float: left;
+        font-size: 20px;
+        line-height: 48px;
+        padding: 0 12px;
+        position: relative;
+        &:hover{
+            @media(min-width:768px){
+                background-color: #028a9a;
+            }
+        }
+    }
 }
 
 .blogmagazine-header-menu-wrapper{
@@ -149,31 +177,17 @@ Header CSS
             margin-left: -480px;
         }
     }
-    @media (max-width: 768px){
-        position: relative;
-    }
 }
 
-.blogmagazine-home-icon{
-    a {
-        color: #fff;
-        display: block;
-        float: left;
-        font-size: 20px;
-        line-height: 48px;
-        padding: 0 12px;
-        position: relative;
-        &:hover{
+.home{
+    .blogmagazine-home-icon{
+        a{
             background-color: #028a9a;
         }
     }
 }
 
-.home .blogmagazine-home-icon a{
-    background-color: #028a9a;
-}
-
-.main-navigation {
+.main-navigation{
     float: left;
     ul{
         margin: 0;
@@ -193,12 +207,17 @@ Header CSS
                 border-left: 1px solid rgba(255, 255, 255, 0.2);
                 border-right: 1px solid rgba(0, 0, 0, 0.08);
             }
-            &.current-menu-item, &.current-page-ancestor, &:hover{
+            &.current-menu-item, &.current-page-ancestor{
                 &>a{
                     background-color: #028a9a;
                 }
             }
             &:hover{
+                &>a{
+                    @media(min-width:768px){
+                        background-color: #028a9a;
+                    }
+                }
                 &>.sub-menu{
                     top: 100%;
                     opacity: 1;
@@ -390,38 +409,156 @@ Header CSS
     }
 }
 
-.menu-toggle {
+.menu-toggle{
     color: #fff;
     display: none;
     float: left;
     font-size: 20px;
     line-height:48px;
     padding: 0px 12px;
+    &:hover{
+        color:#fff;
+    }
     @media (max-width: 768px){
         display: block;
+    }
+    &.hide{
+        @media (max-width: 768px){
+            display: block;
+        }
     }
 }
 
 .sub-toggle {
+    top: 0;
+    right:0;
+    color: #fff;
+    width: 48px;
+    height: 48px;
     display: none;
+    cursor: pointer;
+    text-align:center;
+    position: absolute;
+    background-color:#118593;
+    .fa{
+        margin:0;
+        padding:0;
+        line-height:48px;        
+    }
     @media (max-width: 768px){
-        background: #fff;
-        color: #029FB2;
-        cursor: pointer;
+        display:block;
+    }
+}
+
+
+#site-navigation{
+    @media (min-width: 1000px){
         display: block;
-        height: 24px;
-        line-height: 25px;
+    }
+    @media (max-width: 768px){
+        background: #029FB2;
+        display: none;
+        left: 0;
         position: absolute;
-        right: 15px;
-        text-align: center;
-        top: 6px;
-        width: 24px;
+        top: 100%;
+        width: 100%;
+        z-index: 99;
+    }
+    li{
+        &.menu-item-has-children{
+            li{
+                @media (max-width: 768px){
+                    padding-left:15px;
+                    a{
+                        border-left:none;
+                        border-bottom:1px solid #f3f3f3;
+                    }
+                }
+            }
+            a:before{
+                @media (max-width: 768px){
+                    display:none;
+                }
+            }
+        }
+    }
+    ul{
+        li{
+            @media (max-width: 768px){
+                float: none;
+                display: block;
+                border-bottom: 1px solid #f3f3f3;
+            }
+        }
+        &>li{
+            &:hover{
+                &>.sub-menu, &>.children{
+                    @media (max-width: 768px){
+                        top:0;
+                    }
+                }
+            }
+        }
+        &#primary-menu{
+            &>li{
+                &:hover, &.current-menu-item{
+                    &>a:after{
+                        @media (max-width: 768px){
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        &.sub-menu, &.children{
+            @media (max-width: 768px){
+                top: 0;
+                left: 0;
+                opacity: 1;
+                display: none;
+                min-width: 100%;
+                background: none;
+                transition: none;
+                position: static;
+                visibility: visible;
+            }
+            li{
+                @media (max-width: 768px){
+                    border-bottom: none;
+                }
+            }
+        }
     }
 }
 
 
 /*--------------------------------------------------------------
-Ticker CSS
+Others Css
+--------------------------------------------------------------*/
+
+
+
+.post-cats-list{
+    span{
+        display: inline-block;
+        vertical-align: top;
+    }
+    a{
+        color: #fff;
+        display: block;
+        font-size: 12px;
+        font-weight: 500;
+        margin-right: 5px;
+        padding: 1px 12px;
+        text-transform: capitalize;
+        background-color:#029fb2;
+    }
+}
+
+
+
+/*--------------------------------------------------------------
+Ticker Section
 --------------------------------------------------------------*/
 
 .blogmagazine-ticker-wrapper{
@@ -435,6 +572,11 @@ Ticker CSS
     margin-right: 20px;
     padding: 5px 15px;
     background: #464646;
+    @media (max-width: 600px){
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
 }
 
 .ticker-content-wrapper{
@@ -446,7 +588,8 @@ Ticker CSS
         margin-right: 15px;
         @media (max-width: 600px){
             float: none;
-            display: inline-block;
+            clear:both;
+            display: block;
         }
     }
     .lslide.active{
@@ -542,109 +685,5 @@ Ticker CSS
         .lSFade {
             position: static;
         }
-    }
-}
-
-.post-cats-list{
-    span{
-        display: inline-block;
-        vertical-align: top;
-    }
-    a{
-        color: #fff;
-        display: block;
-        font-size: 12px;
-        font-weight: 500;
-        margin-right: 5px;
-        padding: 1px 12px;
-        text-transform: capitalize;
-        background-color:#029fb2;
-    }
-}
-
-
-#site-navigation{
-    @media (min-width: 1000px){
-        display: block;
-    }
-    @media (max-width: 768px){
-        background: #029FB2;
-        display: none;
-        left: 0;
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        z-index: 99;
-    }
-    li{
-        &.menu-item-has-children{
-            a:before{
-                @media (max-width: 768px){
-                    display:none;
-                }
-            }
-        }
-    }
-    ul{
-        li{
-            @media (max-width: 768px){
-                display: block;
-                float: none;
-            }
-            &:hover, &.current-menu-item, &.current-menu-ancestor{
-                &>.sub-toggle{
-                    @media (max-width: 768px){
-                        background: #fff;
-                    }
-                }
-            }
-        }
-        &>li{
-            &:hover{
-                &>.sub-menu, &>.children{
-                    @media (max-width: 768px){
-                        top:0;
-                    }
-                }
-            }
-        }
-        &#primary-menu{
-            &>li{
-                &:hover, &.current-menu-item{
-                    &>a:after{
-                        @media (max-width: 768px){
-                            display: none;
-                        }
-                    }
-                }
-            }
-        }
-        &.sub-menu, &.children{
-            @media (max-width: 768px){
-                top: 0;
-                left: 0;
-                opacity: 1;
-                display: none;
-                min-width: 100%;
-                background: none;
-                transition: none;
-                position: static;
-                visibility: visible;
-            }
-            li{
-                @media (max-width: 768px){
-                    border-bottom: none;
-                }
-            }
-        }
-    }
-}
-
-
-.ticker-caption {
-    @media (max-width: 600px){
-        float: none;
-        text-align: center;
-        width: 100%;
     }
 }

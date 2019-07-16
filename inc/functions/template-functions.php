@@ -239,10 +239,10 @@ endif;
  */
 if( !function_exists( 'blogmagazine_categories_lists' ) ):
     function blogmagazine_categories_lists() {
-        $blogmagazine_categories = get_categories( array( 'hide_empty' => 1 ) );
+        $blogmagazine_categories = get_categories( array( 'hide_empty' => false ) );
         $blogmagazine_categories_lists = array();
         foreach( $blogmagazine_categories as $category ) {
-            $blogmagazine_categories_lists[$category->term_id] = $category->name;
+            $blogmagazine_categories_lists[$category->term_id] = $category->name . ' ('.$category->count.')';
         }
         return $blogmagazine_categories_lists;
     }
@@ -260,7 +260,7 @@ if( !function_exists( 'blogmagazine_categories_dropdown' ) ):
         $blogmagazine_categories_lists = array();
         $blogmagazine_categories_lists['0'] = esc_html__( 'Select Category', 'blogmagazine' );
         foreach( $blogmagazine_categories as $category ) {
-            $blogmagazine_categories_lists[esc_attr( $category->term_id )] = esc_html( $category->name );
+            $blogmagazine_categories_lists[esc_attr( $category->term_id )] = esc_html( $category->name . ' ('.$category->count.')' );
         }
         return $blogmagazine_categories_lists;
     }

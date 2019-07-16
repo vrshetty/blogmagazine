@@ -1,0 +1,2 @@
+[16-Jul-2019 16:33:34 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 16:39:21 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75

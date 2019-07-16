@@ -76,4 +76,4 @@ if( ! function_exists( 'blogmagazine_dynamic_styles' ) ) :
     }
 endif;
 
-add_action( 'wp_enqueue_scripts', 'blogmagazine_dynamic_styles' );
+//add_action( 'wp_enqueue_scripts', 'blogmagazine_dynamic_styles' );

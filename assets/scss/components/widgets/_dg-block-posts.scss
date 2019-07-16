@@ -5,7 +5,10 @@
  */
 
 .blogmagazine_block_posts{
-
+    img{
+        width:100%;
+        height:auto;
+    }
     .no-thumb{
         display:block;
         padding-top:100%;
@@ -40,7 +43,6 @@
         width: 45%;
         @media (max-width: 600px){
             float: none;
-            margin-top: 20px;
             width: 100%;
         }
         .blogmagazine-post-thumb{
@@ -52,13 +54,11 @@
             width: 66%;
         }
         .blogmagazine-single-post{
+            margin-bottom: 10px;
+            padding-bottom: 10px;
             border-bottom: 1px solid #e1e1e1;
-            margin-bottom: 12px;
-            padding-bottom: 12px;
             &:last-child{
-                border-bottom: none;
                 margin-bottom: 0;
-                padding-bottom: 0;
             }
         }
         .blogmagazine-post-meta{
@@ -84,20 +84,26 @@
                 width: 50%;
                 float:left;
                 display: block;
-                padding-bottom:12px;
+                padding-bottom:10px;
                 &:nth-child(2n+1){
                     clear:both;
                     padding-right:7.5px;
+                    @media (max-width: 600px){
+                        padding-right:0px;
+                    }
                 }
                 &:nth-child(2n+2){
                     padding-left:7.5px;
+                    @media (max-width: 600px){
+                        padding-left:0px;
+                    }
                 }
             }
         }
         .blogmagazine-secondary-block-wrap{
             .blogmagazine-single-post:nth-child(4) {
                 border-bottom: 1px solid #e1e1e1;
-                padding-bottom: 12px;
+                padding-bottom: 10px;
             }
         }
 
@@ -105,11 +111,11 @@
             .blogmagazine-single-post{
                 @media (max-width: 600px){
                     float: none;
-                    width: 97%;
+                    width: 100%;
                 }
                 &:first-child{
                     @media (max-width: 600px){
-                        margin-bottom: 3%;
+                        margin-bottom: 15px;
                     }
                 }
             }
@@ -118,7 +124,7 @@
             .blogmagazine-single-post{
                 @media (max-width: 600px){
                     float: none;
-                    width: 97%;
+                    width: 100%;
                 }
             }
         }
@@ -132,6 +138,8 @@
 		.blogmagazine-primary-block-wrap{
             width: 100%;
 			position:relative;
+            padding-right:0px;
+            margin-bottom:15px;
 			.blogmagazine-single-post{
 				.blogmagazine-post-content{
 					left: 0;
@@ -143,18 +151,16 @@
 				}
 			}
 		}
-        .blogmagazine-secondary-block-wrap {
-            margin-top: 20px;
-            width: 102%;
-            margin-left: -2%;
+        .blogmagazine-secondary-block-wrap{
+            width:auto;
+            float:none;
+            margin: 0 -7.5px;
             .blogmagazine-single-post {
                 border: medium none;
                 float: left;
+                padding: 0 7.5px;
+                width: 33.33%;
                 margin-bottom: 0;
-                margin-left: 2%;
-                padding: 0;
-                width: 31.33%;
-                margin-top: 10px;
                 .blogmagazine-post-thumb, .blogmagazine-post-content {
                     float: none;
                     width: 100%;
@@ -217,10 +223,7 @@
             left:0;
             right:0;
             height:50%;
-            @media(min-width:768px) and (max-width:991px){
-                height:auto;
-                position:static;
-            }
+            width:100%;
             @media(max-width:600px){
                 height:auto;
                 position:static;
@@ -243,9 +246,6 @@
 			padding: 11px 15px 15px;
 			border:1px solid #f2f2f2;
             background-color:#f2f2f278;
-            @media(min-width:768px) and (max-width:991px){
-                margin-bottom:15px;
-            }
             @media(max-width:600px){
                 margin-bottom:15px;
             }
@@ -258,11 +258,6 @@
 		    display:block;
 		    position:relative;
 		    padding-top:66.66%;
-            @media(min-width:768px) and (max-width:991px){
-                width: 100%;
-                padding-top:0px;
-                display: block;
-            }
             @media (max-width: 600px){
                 width: 100%;
                 padding-top:0px;

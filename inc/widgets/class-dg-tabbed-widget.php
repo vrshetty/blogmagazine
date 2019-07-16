@@ -88,7 +88,9 @@ class BlogMagazine_Tabbed_Widget extends Dglib_Master_Widget{
                 )
             )
         );
-        return $fields;
+        $widget_fields_key = 'fields_'.$this->id_base;
+        $widgets_fields = apply_filters( $widget_fields_key, $fields );
+        return $widgets_fields;
     }
 
     /**
@@ -104,7 +106,6 @@ class BlogMagazine_Tabbed_Widget extends Dglib_Master_Widget{
         extract( $args );
         $latest_tab_title   = isset( $instance['latest_tab_title'] ) ? esc_html($instance['latest_tab_title']) : esc_html__('Latest', 'blogmagazine');
         $comments_tab_title   = isset( $instance['comments_tab_title'] ) ? esc_html($instance['comments_tab_title']) : esc_html__('Comments', 'blogmagazine');
-        
         $posts_per_page   = isset( $instance['posts_per_page'] ) ? absint($instance['posts_per_page']) : 6;
         $comments_per_page   = isset( $instance['comments_per_page'] ) ? absint($instance['comments_per_page']) : 6;
         $thumbnail_size   = isset( $instance['thumbnail_size'] ) ? esc_attr($instance['thumbnail_size']) : 'blogmagazine-thumb-136x102';
@@ -113,7 +114,6 @@ class BlogMagazine_Tabbed_Widget extends Dglib_Master_Widget{
         dglib_before_widget($args);
         ?>
         <div class="blogmagazine-default-tabbed-wrapper dg-clearfix" id="blogmagazine-tabbed-widget">
-
             <ul class="widget-tabs dg-clearfix blogmagazine-widget-tab" >
                 <li class="active-item"><a href="#<?php echo esc_attr( 'latest_' . $this->id ); ?>"><?php echo esc_html( $latest_tab_title ); ?></a></li>
                 <li><a href="#<?php echo esc_attr( 'comments_' . $this->id ); ?>"><?php echo esc_html( $comments_tab_title ); ?></a></li>
@@ -121,10 +121,10 @@ class BlogMagazine_Tabbed_Widget extends Dglib_Master_Widget{
 
             <div id="<?php echo esc_attr( 'latest_' . $this->id ); ?>" class="blogmagazine-tabbed-section tabbed-latest dg-clearfix active">
                 <?php
-                $args = array(
+                $latest_args = array(
                     'posts_per_page' => $posts_per_page
                 );
-                $latest_query = new WP_Query( $args );
+                $latest_query = new WP_Query( $latest_args );
                 if( $latest_query->have_posts() ) {
                     while( $latest_query->have_posts() ) {
                         $latest_query->the_post();
@@ -170,7 +170,6 @@ class BlogMagazine_Tabbed_Widget extends Dglib_Master_Widget{
 
         </div><!-- .blogmagazine-default-tabbed-wrapper -->
         <?php
-    
         dglib_after_widget($args);
     
     }

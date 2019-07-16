@@ -273,7 +273,7 @@ module.exports = function (grunt) {
                     },*/
                     port: 4000,
                     watchTask: true,
-                    proxy: "localhost/dinesh/themes/blogmagazine",
+                    proxy: "localhost/themecentury/themes/blogmagazine",
                 },
             },
         },
@@ -297,7 +297,7 @@ module.exports = function (grunt) {
 
     // Register tasks
     grunt.registerTask('default', [
-        //'browserSync',
+        'browserSync',
         'watch',
         //'jshint',
         //'uglify',

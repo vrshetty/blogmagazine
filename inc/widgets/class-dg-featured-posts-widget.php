@@ -26,9 +26,7 @@ class BlogMagazine_Featured_Posts_Widget extends Dglib_Master_Widget{
      * Array is used in update and form functions
      */
     public function widget_fields( $instance = array() ) {
-
-        $blogmagazine_categories_lists = blogmagazine_categories_lists();
-        
+       
         $fields = array(
             'dg_widget_tab'       => array(
                 'dg_widget_field_name'     => 'dg_widget_tab',
@@ -121,7 +119,9 @@ class BlogMagazine_Featured_Posts_Widget extends Dglib_Master_Widget{
                 )
             )
         );
-        return $fields;
+        $widget_fields_key = 'fields_'.$this->id_base;
+        $widgets_fields = apply_filters( $widget_fields_key, $fields );
+        return $widgets_fields;
     }
 
     /**

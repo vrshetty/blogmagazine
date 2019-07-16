@@ -20,9 +20,10 @@
 				<nav id="top-navigation" class="top-navigation" role="navigation">
 					<?php
 					$top_menu_args = array( 
-						'theme_location' => 'blogmagazine_top_menu', 
-						'fallback_cb' => false, 
-						'menu_id' => 'top-menu' 
+						'depth'				=> 1,
+						'fallback_cb' 		=> false, 
+						'menu_id' 			=> 'top-menu',
+						'theme_location' 	=> 'blogmagazine_top_menu', 
 					);
 					wp_nav_menu( $top_menu_args );
 					?>

@@ -89,7 +89,9 @@ class BlogMagazine_Recent_Posts_Widget extends Dglib_Master_Widget{
                 )
             )
         );
-        return $fields;
+        $widget_fields_key = 'fields_'.$this->id_base;
+        $widgets_fields = apply_filters( $widget_fields_key, $fields );
+        return $widgets_fields;
     }
 
     /**
