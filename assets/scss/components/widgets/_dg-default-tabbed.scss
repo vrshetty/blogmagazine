@@ -4,7 +4,10 @@
  * @since 1.0.2
  */
 .blogmagazine_default_tabbed{
-	.blogmagazine-post-thumb {
+	img{
+		width:100%;
+	}
+	.blogmagazine-post-thumb{
 	    float: left;
 	    width: 30%;
 	}

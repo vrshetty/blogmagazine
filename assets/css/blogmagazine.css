@@ -1208,6 +1208,9 @@ author Widgets
  * @subpackage blogmagazine
  * @since 1.0.2
  */
+.blogmagazine_default_tabbed img {
+  width: 100%; }
+
 .blogmagazine_default_tabbed .blogmagazine-post-thumb {
   float: left;
   width: 30%; }
@@ -1549,9 +1552,18 @@ author Widgets
  * @since 1.0.2
  */
 .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper ul {
-  list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
+
+@media (max-width: 979px) {
+  .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-title.small-size a {
+    font-size: 16px;
+    font-weight: 500; } }
+
+@media (max-width: 768px) {
+  .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-title.small-size a {
+    font-size: 16px; } }
 
 .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-single-post {
   margin-bottom: 10px;
@@ -1560,29 +1572,17 @@ author Widgets
 .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-thumb {
   float: left;
   width: 30%; }
+  .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-thumb img {
+    width: 100%; }
+  @media (max-width: 979px) {
+    .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-thumb {
+      float: left;
+      width: 30%; } }
 
 .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-content {
   float: left;
-  margin-left: 4%;
-  width: 66%; }
-
-@media (max-width: 768px) {
-  .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-title.small-size a {
-    font-size: 16px; } }
-
-@media (max-width: 979px) {
-  .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-thumb {
-    float: left;
-    width: 30%; } }
-
-@media (max-width: 979px) {
-  .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-thumb img {
-    width: 100%; } }
-
-@media (max-width: 979px) {
-  .blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-thumb .blogmagazine-post-title.small-size a {
-    font-size: 16px;
-    font-weight: 500; } }
+  width: 66%;
+  margin-left: 4%; }
 
 /*
  * @package dineshghimire

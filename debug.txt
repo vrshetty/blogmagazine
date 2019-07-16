@@ -1,2 +1,81 @@
-[16-Jul-2019 16:33:34 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
-[16-Jul-2019 16:39:21 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 16:50:41 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 16:52:40 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 16:53:49 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 17:14:19 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 17:15:37 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 17:16:16 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:16 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:16 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:16 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:16 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:16 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:16 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:16 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:16 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:16 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:16 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:16 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:17 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:17 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:17 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:17 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:17 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:17 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:17 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 17:16:17 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:17 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:17 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:17 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:17 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:17 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:18 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:16:18 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:01:18 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:01:18 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:01:18 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:01:18 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:01:18 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:01:18 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:01:18 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:14 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:15 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:15 UTC] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:02:15 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:02:15 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:02:15 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:02:15 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:02:15 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:02:15 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 23:02:15 Asia/Kathmandu] PHP Warning:  sprintf(): Too few arguments in E:\xampp\htdocs\themecentury\themes\wp-includes\widgets.php on line 1120
+[16-Jul-2019 17:17:22 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 17:17:32 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 17:19:08 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 17:24:16 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 17:27:50 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 17:30:04 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 17:30:45 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75
+[16-Jul-2019 17:33:29 UTC] PHP Notice:  Undefined index: title in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\features-by-woothemes\classes\class-woothemes-widget-features.php on line 75

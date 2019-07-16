@@ -3,60 +3,45 @@
  * @subpackage blogmagazine
  * @since 1.0.2
  */
-
-.blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-single-post {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-}
-
-.blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-thumb {
-    float: left;
-    width: 30%;
-}
-
-.blogmagazine_recent_posts .blogmagazine-recent-posts-wrapper .blogmagazine-post-content {
-    float: left;
-    margin-left: 4%;
-    width: 66%;
-}
-
 .blogmagazine_recent_posts{
     .blogmagazine-recent-posts-wrapper{
+        ul{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
         .blogmagazine-post-title{
             &.small-size{
                 a{
+                    @media (max-width: 979px) {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
                     @media (max-width: 768px) {
                         font-size: 16px;
                     }
                 }
             }
         }
-        .blogmagazine-post-thumb {
+        .blogmagazine-single-post{
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+        .blogmagazine-post-thumb{
+            float: left;
+            width: 30%;
+            img{
+                width:100%;
+            }
             @media (max-width: 979px) {
                 float: left;
                 width: 30%;
             }
-            img{
-                @media (max-width: 979px){
-                    width: 100%;
-                }
-            }
-            .blogmagazine-post-title{
-                &.small-size{
-                    a{
-                        @media (max-width: 979px) {
-                            font-size: 16px;
-                            font-weight: 500;
-                        }
-                    }
-                }
-            }
+        }
+        .blogmagazine-post-content{
+            float: left;
+            width: 66%;
+            margin-left: 4%;
         }
     }
 }
