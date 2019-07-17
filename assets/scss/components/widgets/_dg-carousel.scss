@@ -4,22 +4,96 @@
  * @since 1.0.0
  */
 .blogmagazine-block-carousel{
-	margin:0;
+	margin:0 -7px;
 	list-style:none;
-	li{
-		display:none;
-		&:first-child{
-			display:block;
-		}
-	}
-	&.lightSlider{
-		li{
-			display:block;
-		}
-	}
+    img{
+        width:100%;
+    }
+    .no-thumbnail{
+        display:block;
+        padding-top:75%;
+        background-color:#f3f3f3;
+    }
+    li{
+        float:left;
+        padding:0 7px;
+    }
+    &.column1{
+        li{
+            width:100%;
+            &:nth-child(n+2){
+                display:none;
+            }
+        }
+    }
+    &.column2{
+        li{
+            width:50%;
+            &:nth-child(n+3){
+                display:none;
+            }
+        }
+    }
+    &.column3{
+        li{
+            width:33.33%;
+            &:nth-child(n+4){
+                display:none;
+            }
+        }
+    }
+    &.column4{
+        li{
+            width:25%;
+            &:nth-child(n+5){
+                display:none;
+            }
+        }
+    }
+    &.lightSlider{
+        margin:0;
+        li{
+            width:100%;
+            display:block;
+            padding:0;
+        }
+        &.column1{
+            li{
+                &:nth-child(n+2){
+                    display:block;
+                }
+            }
+        }
+        &.column2{
+            li{
+                &:nth-child(n+3){
+                    display:block;
+                }
+            }
+        }
+        &.column3{
+            li{
+                &:nth-child(n+4){
+                    display:block;
+                }
+            }
+        }
+        &.column4{
+            li{
+                &:nth-child(n+5){
+                    display:block;
+                }
+            }
+        }
+    }
 	.blogmagazine-single-post{
 	    position: relative;
 	}
+    &:after{
+        content:"";
+        clear:both;
+        display:block;
+    }
 }
 
 .blogmagazine_carousel{

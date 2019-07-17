@@ -1161,16 +1161,53 @@ author Widgets
  * @since 1.0.0
  */
 .blogmagazine-block-carousel {
-  margin: 0;
+  margin: 0 -7px;
   list-style: none; }
+  .blogmagazine-block-carousel img {
+    width: 100%; }
+  .blogmagazine-block-carousel .no-thumbnail {
+    display: block;
+    padding-top: 75%;
+    background-color: #f3f3f3; }
   .blogmagazine-block-carousel li {
-    display: none; }
-    .blogmagazine-block-carousel li:first-child {
+    float: left;
+    padding: 0 7px; }
+  .blogmagazine-block-carousel.column1 li {
+    width: 100%; }
+    .blogmagazine-block-carousel.column1 li:nth-child(n+2) {
+      display: none; }
+  .blogmagazine-block-carousel.column2 li {
+    width: 50%; }
+    .blogmagazine-block-carousel.column2 li:nth-child(n+3) {
+      display: none; }
+  .blogmagazine-block-carousel.column3 li {
+    width: 33.33%; }
+    .blogmagazine-block-carousel.column3 li:nth-child(n+4) {
+      display: none; }
+  .blogmagazine-block-carousel.column4 li {
+    width: 25%; }
+    .blogmagazine-block-carousel.column4 li:nth-child(n+5) {
+      display: none; }
+  .blogmagazine-block-carousel.lightSlider {
+    margin: 0; }
+    .blogmagazine-block-carousel.lightSlider li {
+      width: 100%;
+      display: block;
+      padding: 0; }
+    .blogmagazine-block-carousel.lightSlider.column1 li:nth-child(n+2) {
       display: block; }
-  .blogmagazine-block-carousel.lightSlider li {
-    display: block; }
+    .blogmagazine-block-carousel.lightSlider.column2 li:nth-child(n+3) {
+      display: block; }
+    .blogmagazine-block-carousel.lightSlider.column3 li:nth-child(n+4) {
+      display: block; }
+    .blogmagazine-block-carousel.lightSlider.column4 li:nth-child(n+5) {
+      display: block; }
   .blogmagazine-block-carousel .blogmagazine-single-post {
     position: relative; }
+  .blogmagazine-block-carousel:after {
+    content: "";
+    clear: both;
+    display: block; }
 
 .blogmagazine_carousel .blogmagazine-single-post .blogmagazine-post-title a {
   color: #fff;
@@ -1349,6 +1386,10 @@ author Widgets
   .blogmagazine_featured_posts .blogmagazine-single-post-wrap .blogmagazine-post-thumb {
     float: left;
     width: 42%; }
+    .blogmagazine_featured_posts .blogmagazine-single-post-wrap .blogmagazine-post-thumb .no-thumbnail {
+      display: block;
+      padding-top: 100%;
+      background-color: #f3f3f3; }
   .blogmagazine_featured_posts .blogmagazine-single-post-wrap .blogmagazine-post-content {
     float: left;
     margin-left: 4%;

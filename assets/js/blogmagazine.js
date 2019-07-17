@@ -74,40 +74,30 @@
                  */
                 $('.blogmagazine-block-carousel').each(function(){
 
-                    var blogmagazine_args = {
-                        auto: true,
-                        loop: true,
-                        speed: 2000,
-                        pause: 6000,
-                        pager: false,
-                        controls: false,
-                        pauseOnHover: true,
-                        adaptiveHeight:true,
-                        prevHtml: '<i class="fa fa-angle-left"></i>',
-                        nextHtml: '<i class="fa fa-angle-right"></i>',
-                        item: 4,
-                        responsive: [{
-                            breakpoint: 840,
-                            settings: {
-                                item: 2,
-                                slideMove: 1,
-                                slideMargin: 6,
-                            }
-                        },{
-                            breakpoint: 480,
-                            settings: {
-                                item: 1,
-                                slideMove: 1,
-                            }
-                        }]
-                    };
-                    if($(this).closest('.sidebar-right, .sidebar-left').length){
+                    var blogmagazine_args = $(this).data( 'config' );
+                    if($(this).closest('.sidebar-main').length){
+                        blogmagazine_args.item = 1;
+                    }
+                    blogmagazine_args.responsive = [{
+                        breakpoint: 840,
+                        settings: {
+                            item: (blogmagazine_args.item>2) ? 2 : blogmagazine-args.item,
+                            slideMove: 1,
+                        }
+                    },{
+                        breakpoint: 480,
+                        settings: {
+                            item: 1,
+                            slideMove: 1,
+                        }
+                    }];
+                    if($(this).closest('.sidebar-main').length){
                         blogmagazine_args.item = 1;
                     }
                     var blogmagazine_slider_obj = $(this).lightSlider(blogmagazine_args);
-                    var carousel_controls = blogmagazine_slider_obj.closest('.widget').find('.blogmagazine-carousel-control');
+                    var carousel_controls = blogmagazine_slider_obj.closest('.widget').find('.dglib-carousel-control');
                     carousel_controls.on('click', function(evt){
-                        if( $(this).hasClass('blogmagazine-nav-prev') ){
+                        if( $(this).hasClass('dglib-nav-prev') ){
                             blogmagazine_slider_obj.goToPrevSlide();
                         }else{
                             blogmagazine_slider_obj.goToNextSlide();

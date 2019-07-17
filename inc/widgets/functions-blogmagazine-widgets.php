@@ -324,17 +324,36 @@ endif;
 if( ! function_exists( 'blogmagazine_carousel_default_layout_section' ) ) :
 	function blogmagazine_carousel_default_layout_section( $blogmagazine_block_args ) {
 		$query_args = (isset($blogmagazine_block_args['query_args'])) ? $blogmagazine_block_args['query_args'] : array();
+		if(!$query_args){
+			return;
+		}
 		$thumbnail_size = (isset($blogmagazine_block_args['thumbnail_size'])) ? $blogmagazine_block_args['thumbnail_size'] : 'blogmagazine-thumb-800x600';
+		$no_of_columns = (isset($blogmagazine_block_args['no_of_columns'])) ? absint($blogmagazine_block_args['no_of_columns']) : 4;
+
+
+		$carousel_config = array(
+			'auto'			=> true,
+			'loop'			=> true,
+			'speed'			=> 2000,
+			'pause'			=> 6000,
+			'pager'			=> false,
+			'slideMargin'	=> 15,
+			'controls'		=> false,
+			'pauseOnHover'	=> true,
+			'adaptiveHeight'=> true,
+			'item'			=> $no_of_columns,
+		);
 		$blogmagazine_block_query = new WP_Query( $query_args );
-		if( $blogmagazine_block_query->have_posts() ) {
-			echo '<ul class="blogmagazine-block-carousel">';
+		if( $blogmagazine_block_query->have_posts() ){
+			?><ul class="blogmagazine-block-carousel column<?php echo absint($no_of_columns); ?>" data-config="<?php echo esc_attr( json_encode( $carousel_config ) ); ?>"><?php
 			while( $blogmagazine_block_query->have_posts() ){
 				$blogmagazine_block_query->the_post();
 				?>
 				<li>
 					<div class="blogmagazine-single-post dg-clearfix">
 						<div class="blogmagazine-post-thumb">
-							<a href="<?php the_permalink(); ?>">
+							<?php $thumbnail_class  = (has_post_thumbnail()) ? 'has-thumbnail' : 'no-thumbnail'; ?>
+							<a href="<?php the_permalink(); ?>" class="<?php echo esc_attr($thumbnail_class); ?>">
 								<?php the_post_thumbnail( $thumbnail_size ); ?>
 							</a>
 						</div><!-- .blogmagazine-post-thumb -->
@@ -347,7 +366,7 @@ if( ! function_exists( 'blogmagazine_carousel_default_layout_section' ) ) :
 				</li>
 				<?php
 			}
-			echo '</ul>';
+			?></ul><?php
 		}
 		wp_reset_postdata();
 	}

@@ -184,7 +184,8 @@ class BlogMagazine_Featured_Posts_Widget extends Dglib_Master_Widget{
                             <div class="blogmagazine-single-post-wrap dg-clearfix">
                                 <div class="blogmagazine-single-post">
                                     <div class="blogmagazine-post-thumb">
-                                        <a href="<?php the_permalink(); ?>">
+                                        <?php $thumbanil_class = (has_post_thumbnail()) ? 'has-thumbnail' : 'no-thumbnail'; ?>
+                                        <a href="<?php the_permalink(); ?>" class="<?php echo esc_attr($thumbanil_class); ?>" >
                                             <?php
                                             if( has_post_thumbnail() ) {
                                                 the_post_thumbnail( $thumbnail_size );

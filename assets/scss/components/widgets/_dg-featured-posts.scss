@@ -48,6 +48,12 @@
         .blogmagazine-post-thumb{
             float: left;
             width: 42%;
+            .no-thumbnail{
+                display:block;
+                padding-top:100%;
+                background-color:#f3f3f3;
+            }
+
         }
         .blogmagazine-post-content{
             float: left;
