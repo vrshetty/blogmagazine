@@ -129,103 +129,98 @@ class BlogMagazine_Featured_Slider_Widget extends Dglib_Master_Widget{
             ?>
             <div class="slider-posts">
                 <?php
-                if( !empty( $slider_term_ids ) ) {
-                    $blogmagazine_post_count = apply_filters( 'blogmagazine_slider_posts_count', 4 );
-                    $blogmagazine_slider_args = array(
-                        'post_type' => 'post',
-                        'tax_query' => array(
-                            array(
-                                'taxonomy' => 'category',
-                                'field'    => 'term_id',
-                                'terms'    => $slider_term_ids,
-                            ),
-                        ),
-                        /*'meta_query' => array(
-                            array(
-                                'key'     => '_thumbnail_id',
-                                'value'   => '',
-                                'compare' => '!=',
-                            )
-                        ),*/
-                        'posts_per_page' => absint( $blogmagazine_post_count )
+                $blogmagazine_post_count = apply_filters( 'blogmagazine_slider_posts_count', 4 );
+                $blogmagazine_slider_args = array(
+                    'post_type' => 'post',
+                    'posts_per_page' => absint( $blogmagazine_post_count )
+                );
+                if($slider_term_ids){
+                    $blogmagazine_slider_args['tax_query'] = array(
+                        array(
+                            'taxonomy' => 'category',
+                            'field'    => 'term_id',
+                            'terms'    => $slider_term_ids,
+                        )
                     );
-                    $blogmagazine_slider_query = new WP_Query( $blogmagazine_slider_args );
-                    if( $blogmagazine_slider_query->have_posts() ){
-                        echo '<ul class="blogmagazine-featured-main-slider">';
+                }
+                $blogmagazine_slider_query = new WP_Query( $blogmagazine_slider_args );
+                if( $blogmagazine_slider_query->have_posts() ){
+                    ?>
+                    <ul class="blogmagazine-featured-main-slider">
+                        <?php
                         while( $blogmagazine_slider_query->have_posts() ) {
                             $blogmagazine_slider_query->the_post();
-                            //if( has_post_thumbnail() ){
-                                ?>
-                                <li>
-                                    <div class="blogmagazine-single-slide-wrap">
-                                        <div class="blogmagazine-slide-thumb">
-                                            <a href="<?php the_permalink(); ?>" class="<?php echo (has_post_thumbnail()) ? 'slide-has-thumbnail' : 'slide-no-thumbnail'; ?>">
-                                                <?php 
-                                                the_post_thumbnail( 'blogmagazine-thumb-800x600' ); 
-                                                ?>
-                                            </a>
-                                        </div><!-- .blogmagazine-slide-thumb -->
-                                        <div class="blogmagazine-slide-content-wrap">
-                                            <?php blogmagazine_post_categories_list(); ?>
-                                            <h3 class="post-title large-size"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                            <div class="blogmagazine-post-meta"><?php blogmagazine_posted_on(); ?></div>
-                                        </div> <!-- blogmagazine-slide-content-wrap -->
-                                    </div><!-- .single-slide-wrap -->
-                                </li>
-                                <?php
-                            //}
+                            ?>
+                            <li>
+                                <div class="blogmagazine-single-slide-wrap">
+                                    <div class="blogmagazine-slide-thumb">
+                                        <a href="<?php the_permalink(); ?>" class="<?php echo (has_post_thumbnail()) ? 'slide-has-thumbnail' : 'slide-no-thumbnail'; ?>">
+                                            <?php 
+                                            the_post_thumbnail( 'blogmagazine-thumb-800x600' ); 
+                                            ?>
+                                        </a>
+                                    </div><!-- .blogmagazine-slide-thumb -->
+                                    <div class="blogmagazine-slide-content-wrap">
+                                        <?php blogmagazine_post_categories_list(); ?>
+                                        <h3 class="post-title large-size"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                        <div class="blogmagazine-post-meta"><?php blogmagazine_posted_on(); ?></div>
+                                    </div> <!-- blogmagazine-slide-content-wrap -->
+                                </div><!-- .single-slide-wrap -->
+                            </li>
+                            <?php
                         }
-                        echo '</ul>';
-                    }
-                    wp_reset_postdata();
+                        ?>
+                    </ul>
+                    <?php
                 }
+                wp_reset_postdata();
                 ?>
             </div><!-- .slider-posts -->
             <div class="featured-posts">
                 <div class="featured-posts-wrapper">
                     <?php
-                    if( !empty( $featured_term_ids ) ) {
-                        $blogmagazine_post_count = apply_filters( 'blogmagazine_slider_featured_posts_count', 4 );
-                        $blogmagazine_slider_args = array(
-                            'post_type' => 'post',
-                            'tax_query' => array(
-                                array(
-                                    'taxonomy' => 'category',
-                                    'field'    => 'term_id',
-                                    'terms'    => $featured_term_ids,
-                                ),
-                            ),
-                            'posts_per_page' => absint( $blogmagazine_post_count )
+                    $blogmagazine_post_count = apply_filters( 'blogmagazine_slider_featured_posts_count', 4 );
+                    $blogmagazine_slider_args = array(
+                        'post_type' => 'post',
+                        'posts_per_page' => absint( $blogmagazine_post_count )
+                    );
+                    if($featured_term_ids){
+                        $blogmagazine_slider_args['tax_query'] = array(
+                            array(
+                                'taxonomy' => 'category',
+                                'field'    => 'term_id',
+                                'terms'    => $featured_term_ids,
+                            )
                         );
-                        $blogmagazine_slider_query = new WP_Query( $blogmagazine_slider_args );
-                        if( $blogmagazine_slider_query->have_posts() ) {
-                            while( $blogmagazine_slider_query->have_posts() ) {
-                                $blogmagazine_slider_query->the_post();
-                                ?>
-                                <div class="blogmagazine-single-post-wrap dg-clearfix">
-                                    <div class="blogmagazine-single-post">
-                                        <div class="blogmagazine-post-thumb">
-                                            <a href="<?php the_permalink(); ?>" class="<?php echo (has_post_thumbnail()) ? 'featured-has-thumbnail' : 'featured-no-thumbnail'; ?>">
-                                                <?php
-                                                if( has_post_thumbnail() ) {
-                                                    the_post_thumbnail( 'blogmagazine-thumb-500x365' );
-                                                }
-                                                ?>
-                                            </a>
-                                        </div><!-- .blogmagazine-post-thumb -->
-                                        <div class="blogmagazine-post-content">
-                                            <?php blogmagazine_post_categories_list(); ?>
-                                            <h3 class="blogmagazine-post-title small-size"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                            <div class="blogmagazine-post-meta"><?php blogmagazine_posted_on(); ?></div>
-                                        </div><!-- .blogmagazine-post-content -->
-                                    </div> <!-- blogmagazine-single-post -->
-                                </div><!-- .blogmagazine-single-post-wrap -->
-
-                                <?php
-                            }
-                        }
-                        wp_reset_postdata();
                     }
+                    $blogmagazine_slider_query = new WP_Query( $blogmagazine_slider_args );
+                    if( $blogmagazine_slider_query->have_posts() ) {
+                        while( $blogmagazine_slider_query->have_posts() ) {
+                            $blogmagazine_slider_query->the_post();
+                            ?>
+                            <div class="blogmagazine-single-post-wrap dg-clearfix">
+                                <div class="blogmagazine-single-post">
+                                    <div class="blogmagazine-post-thumb">
+                                        <a href="<?php the_permalink(); ?>" class="<?php echo (has_post_thumbnail()) ? 'featured-has-thumbnail' : 'featured-no-thumbnail'; ?>">
+                                            <?php
+                                            if( has_post_thumbnail() ) {
+                                                the_post_thumbnail( 'blogmagazine-thumb-500x365' );
+                                            }
+                                            ?>
+                                        </a>
+                                    </div><!-- .blogmagazine-post-thumb -->
+                                    <div class="blogmagazine-post-content">
+                                        <?php blogmagazine_post_categories_list(); ?>
+                                        <h3 class="blogmagazine-post-title small-size"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                        <div class="blogmagazine-post-meta"><?php blogmagazine_posted_on(); ?></div>
+                                    </div><!-- .blogmagazine-post-content -->
+                                </div> <!-- blogmagazine-single-post -->
+                            </div><!-- .blogmagazine-single-post-wrap -->
+
+                            <?php
+                        }
+                    }
+                    wp_reset_postdata();
                     ?>
                 </div>
             </div><!-- .featured-posts -->

@@ -1,1 +1,9 @@
-{"version":3,"sources":["../scss/admin-styles.scss"],"names":[],"mappings":"AAAA;;GAEG;AACH;EAGG,qBAAmB,EACnB","file":"admin-styles.css"}
+{
+	"version": 3,
+	"file": "admin-styles.css",
+	"sources": [
+		"../scss/admin-styles.scss"
+	],
+	"names": [],
+	"mappings": "AAAA;;GAEG;AACH,AAEE,kBAFgB,CACjB,eAAe,CACd,gBAAgB,CAAA;EACf,MAAM,EAAC,YAAY,GACnB"
+}

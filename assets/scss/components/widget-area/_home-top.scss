@@ -5,16 +5,5 @@
  */
 
 .blogmagazine-home-top-section{
-    .blogmagazine_featured_posts{
-        width: 100%;
-    }
-    .blogmagazine_featured_posts{
-        .blogmagazine-block-wrapper{
-            &.layout2{
-                @media (max-width: 480px) {
-                    padding: 10px;
-                }
-            }
-        }
-    }
+    
 }

@@ -1,0 +1,51 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+ 
+ .middle-aside, 
+.sidebar-main{
+
+	/*------------------------------------------------------------------------
+	Block Posts Widget
+	------------------------------------------------------------------------*/
+    .blogmagazine_block_posts{
+    	.blogmagazine-primary-block-wrap,
+    	.blogmagazine-secondary-block-wrap{
+    		width:100%;
+    	}
+
+    	.blogmagazine-primary-block-wrap{
+    		padding-right:0px;
+    	}
+    }
+
+    /*------------------------------------------------------------------------
+	Featured Posts Widget
+	------------------------------------------------------------------------*/
+    .blogmagazine_featured_posts{
+    	.blogmagazine-single-post-wrap{
+    		width:100%;
+    	}
+    }
+
+    /*------------------------------------------------------------------------
+	Featured Slider Widget
+	------------------------------------------------------------------------*/
+	.blogmagazine_featured_slider{
+		.slider-posts{
+			width:100%;
+			margin-bottom: 15px;
+		}
+
+		.featured-posts{
+			width:100%;
+			.blogmagazine-single-post-wrap{
+				width:100%;
+				margin:0 0 15px;
+			}
+		}
+	}
+
+}

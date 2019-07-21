@@ -169,45 +169,51 @@ class BlogMagazine_Featured_Posts_Widget extends Dglib_Master_Widget{
             ?>
             <div class="blogmagazine-featured-posts-wrapper">
                 <?php
-                if( !empty( $terms_ids ) ) {
-                    $blogmagazine_post_count = apply_filters( 'blogmagazine_featured_posts_count', 4 );
-                    $blogmagazine_posts_args = array(
-                        'post_type' => 'post',
-                        'cat' => $terms_ids,
-                        'posts_per_page' => absint( $blogmagazine_post_count )
+                $blogmagazine_post_count = apply_filters( 'blogmagazine_featured_posts_count', 4 );
+                $blogmagazine_posts_args = array(
+                    'post_type' => 'post',
+                    'posts_per_page' => absint( $blogmagazine_post_count )
+                );
+                if($terms_ids){
+                    $blogmagazine_posts_args['tax_query'] = array(
+                        array(
+                            'taxonomy' => 'category',
+                            'field'    => 'term_id',
+                            'terms'    => $terms_ids,
+                        )
                     );
-                    $blogmagazine_posts_query = new WP_Query( $blogmagazine_posts_args );
-                    if( $blogmagazine_posts_query->have_posts() ) {
-                        while( $blogmagazine_posts_query->have_posts() ) {
-                            $blogmagazine_posts_query->the_post();
-                            ?>
-                            <div class="blogmagazine-single-post-wrap dg-clearfix">
-                                <div class="blogmagazine-single-post">
-                                    <div class="blogmagazine-post-thumb">
-                                        <?php $thumbanil_class = (has_post_thumbnail()) ? 'has-thumbnail' : 'no-thumbnail'; ?>
-                                        <a href="<?php the_permalink(); ?>" class="<?php echo esc_attr($thumbanil_class); ?>" >
-                                            <?php
-                                            if( has_post_thumbnail() ) {
-                                                the_post_thumbnail( $thumbnail_size );
-                                            }
-                                            ?>
-                                        </a>
-                                    </div><!-- .blogmagazine-post-thumb -->
-                                    <div class="blogmagazine-post-content">
-                                        <h3 class="blogmagazine-post-title small-size"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                        <?php if( $show_postdate || $show_author ): ?>
-                                            <div class="blogmagazine-post-meta"><?php blogmagazine_posted_on( $show_postdate, $show_author ); ?></div>
-                                        <?php endif; ?>
-                                    </div><!-- .blogmagazine-post-content -->
-                                    <?php if($excerpt_length>0){ ?>
-                                        <div class="blogmagazine-post-description">
-                                            <?php dglib_the_excerpt($excerpt_length, false); ?>
-                                        </div><!-- .blogmagazine-post-description -->
-                                    <?php } ?>
-                                </div> <!-- blogmagazine-single-post -->
-                            </div><!-- .blogmagazine-single-post-wrap -->
-                            <?php
-                        }
+                }
+                $blogmagazine_posts_query = new WP_Query( $blogmagazine_posts_args );
+                if( $blogmagazine_posts_query->have_posts() ) {
+                    while( $blogmagazine_posts_query->have_posts() ) {
+                        $blogmagazine_posts_query->the_post();
+                        ?>
+                        <div class="blogmagazine-single-post-wrap dg-clearfix">
+                            <div class="blogmagazine-single-post">
+                                <div class="blogmagazine-post-thumb">
+                                    <?php $thumbanil_class = (has_post_thumbnail()) ? 'has-thumbnail' : 'no-thumbnail'; ?>
+                                    <a href="<?php the_permalink(); ?>" class="<?php echo esc_attr($thumbanil_class); ?>" >
+                                        <?php
+                                        if( has_post_thumbnail() ) {
+                                            the_post_thumbnail( $thumbnail_size );
+                                        }
+                                        ?>
+                                    </a>
+                                </div><!-- .blogmagazine-post-thumb -->
+                                <div class="blogmagazine-post-content">
+                                    <h3 class="blogmagazine-post-title small-size"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                    <?php if( $show_postdate || $show_author ): ?>
+                                        <div class="blogmagazine-post-meta"><?php blogmagazine_posted_on( $show_postdate, $show_author ); ?></div>
+                                    <?php endif; ?>
+                                </div><!-- .blogmagazine-post-content -->
+                                <?php if($excerpt_length>0){ ?>
+                                    <div class="blogmagazine-post-description">
+                                        <?php dglib_the_excerpt($excerpt_length, false); ?>
+                                    </div><!-- .blogmagazine-post-description -->
+                                <?php } ?>
+                            </div> <!-- blogmagazine-single-post -->
+                        </div><!-- .blogmagazine-single-post-wrap -->
+                        <?php
                     }
                 }
                 ?>
