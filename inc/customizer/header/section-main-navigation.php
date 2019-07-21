@@ -6,7 +6,7 @@ $wp_customize->add_section(
     'blogmagazine_header_navigation',
     array(
         'title'     => esc_html__( 'Main Navigation', 'blogmagazine' ),
-        'priority'  => 30,
+        'priority'  => 50,
         'panel'     => 'site_header_panel'
     )
 );    

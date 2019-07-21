@@ -6,7 +6,7 @@ $wp_customize->add_section(
     'blogmagazine_topheader_section',
     array(
         'title'     => esc_html__( 'Top Header', 'blogmagazine' ),
-        'priority'  => 10,
+        'priority'  => 30,
         'panel'     => 'site_header_panel'
     )
 );

@@ -6,7 +6,7 @@ $wp_customize->add_section(
     'blogmagazine_ticker_section',
     array(
         'title'     => esc_html__( 'Ticker Section', 'blogmagazine' ),
-        'priority'  => 40,
+        'priority'  => 60,
         'panel'     => 'site_header_panel'
     )
 );

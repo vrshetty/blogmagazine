@@ -114,6 +114,8 @@ if( ! function_exists( 'blogmagazine_section_header_callback' ) ) :
 
 		echo '<header id="masthead" class="site-header" role="banner">';
 
+		do_action( 'blogmagazine_inneer_header_before' );
+
 		do_action( 'blogmagazine_header_media' );
 
 		$blogmagazine_top_header_option = get_theme_mod( 'blogmagazine_top_header_option', 'show' );
@@ -159,6 +161,8 @@ if( ! function_exists( 'blogmagazine_section_header_callback' ) ) :
 		     */
 		    do_action( 'blogmagazine_header_ticker' );
 		}
+
+		do_action( 'blogmagazine_inneer_header_after' );
 
 		echo '</header>';
 
