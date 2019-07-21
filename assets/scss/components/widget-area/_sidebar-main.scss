@@ -3,8 +3,10 @@
  * @subpackage blogmagazine
  * @since 1.0.0
  */
- 
- .middle-aside, 
+
+.footer_column_4,
+.footer_column_3,
+.middle-aside, 
 .sidebar-main{
 
 	/*------------------------------------------------------------------------
@@ -18,6 +20,27 @@
 
     	.blogmagazine-primary-block-wrap{
     		padding-right:0px;
+    	}
+
+    	.layout3{
+    		.blogmagazine-secondary-block-wrap{
+    			clear:both;
+    			width:auto;
+    			.blogmagazine-single-post{
+    				width:100%;
+    				margin-bottom:15px;
+    			}
+    		}
+    	}
+    	.layout4{
+    		.blogmagazine-post-thumb,
+    		.blogmagazine-post-content{
+    			position:static;
+    		}
+    		.blogmagazine-alt-grid-post{
+    			width:100%;
+    			padding-top:0px;
+    		}
     	}
     }
 

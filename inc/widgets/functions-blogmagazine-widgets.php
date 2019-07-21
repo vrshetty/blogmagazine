@@ -195,9 +195,6 @@ if( ! function_exists( 'blogmagazine_block_box_layout_section' ) ) :
 		$thumbnail_size = $blogmagazine_args['thumbnail_size'];
 		$largeimg_size = $blogmagazine_args['largeimg_size'];
 		$excerpt_length = $blogmagazine_args['excerpt_length'];
-		if( empty( $terms_ids ) ) {
-			return;
-		}
 		$posts_page_page = apply_filters( 'blogmagazine_block_box_posts_count', 4 );
 		$block_args = array(
 			'post_type' => 'post',
@@ -272,15 +269,12 @@ if( ! function_exists( 'blogmagazine_block_alternate_grid_section' ) ) :
 		$thumbnail_size = $blogmagazine_args['thumbnail_size'];
 		$largeimg_size = $blogmagazine_args['largeimg_size'];
 		$excerpt_length = $blogmagazine_args['excerpt_length'];
-		if( empty( $terms_ids ) ) {
-			return;
-		}
 		$posts_page_page = apply_filters( 'blogmagazine_block_alternate_grid_posts_count', 3 );
 		$block_args = array(
 			'post_type' => 'post',
 			'posts_per_page' => absint( $posts_page_page ),
 		);
-		if( ! empty( $terms_ids ) ) {
+		if( $terms_ids ){
 			$block_args['tax_query'] = array(
 				array(
 					'taxonomy' => 'category',

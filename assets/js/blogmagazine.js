@@ -75,13 +75,13 @@
                 $('.blogmagazine-block-carousel').each(function(){
 
                     var blogmagazine_args = $(this).data( 'config' );
-                    if($(this).closest('.sidebar-main').length){
+                    if($(this).closest('.sidebar-main, .middle-aside, .footer_column_4').length){
                         blogmagazine_args.item = 1;
                     }
                     blogmagazine_args.responsive = [{
                         breakpoint: 840,
                         settings: {
-                            item: (blogmagazine_args.item>2) ? 2 : blogmagazine-args.item,
+                            item: (blogmagazine_args.item>2) ? 2 : blogmagazine_args.item,
                             slideMove: 1,
                         }
                     },{
