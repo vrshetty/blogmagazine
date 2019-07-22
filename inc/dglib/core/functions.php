@@ -378,19 +378,6 @@ if(!function_exists('dglib_before_widget')):
 
     	echo $before_widget;
     	
-        /*$allowed_html = array(
-            'section' => array(
-                'id' => array(),
-                'class' => array()
-            ),
-            'aside' => array(
-                'id' => array(),
-                'class' => array()
-            ),
-        );*/
-
-        //echo wp_kses( $before_widget, $allowed_html );
-
     }
 
 endif;
