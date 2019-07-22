@@ -29,11 +29,13 @@ foreach ( $categories as $category_list ) {
 		)
 	);
 
+	
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control(
 			$wp_customize, 
 			'dglib_category_color_'.esc_attr( strtolower( $category_list->slug ) ),
 			array(
+				/* translators: %s: Category Name */
 				'label'    => sprintf( esc_html__( ' %s Button Background', 'blogmagazine' ), esc_attr( $category_list->name ) ),
 				'section'  => 'dglib_categories_color_options',
 				'priority' => $priority

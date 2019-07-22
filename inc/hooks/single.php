@@ -16,6 +16,27 @@ if (!function_exists('blogmagazine_author_box_callback')):
     function blogmagazine_author_box_callback(){
         global $post;
         $author_id = $post->post_author;
+        $allowed_html = array(
+        	'img' => array(
+        		'alt'=> array(),
+        		'src' => array(),
+        		'title' => array(),
+        		'class' => array(),
+        		'id'	=> array(),
+        		'srcset' => array(),
+        		'height' => array(),
+        		'width' => array(),
+        	),
+        );
+        $description_html = array(
+        	'a' => array(
+        		'href' => array(),
+        		'title' => array()
+        	),
+        	'br' => array(),
+        	'em' => array(),
+        	'strong' => array(),
+        );
         $author_avatar = get_avatar($author_id, '150');
         $author_nickname = get_the_author_meta('display_name');
         $blogmagazine_author_option = get_theme_mod('dglib_author_info_post', 'show');
@@ -23,13 +44,12 @@ if (!function_exists('blogmagazine_author_box_callback')):
             ?>
             <div class="blogmagazine-author-wrapper clearfix">
                 <div class="author-avatar">
-                    <a class="author-image"
-                       href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>"><?php echo $author_avatar; ?></a>
+                    <a class="author-image" href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>"><?php echo wp_kses( $author_avatar, $allowed_html ); ?></a>
                 </div><!-- .author-avatar -->
                 <div class="author-desc-wrapper">
                     <a class="author-title"
                        href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>"><?php echo esc_html($author_nickname); ?></a>
-                    <div class="author-description"><?php echo get_the_author_meta('description'); ?></div>
+                    <div class="author-description"><p><?php echo wp_kses(get_the_author_meta('description'), $description_html); ?></p></div>
                     <a href="<?php echo esc_url(get_the_author_meta('user_url')); ?>"
                        target="_blank"><?php echo esc_url(get_the_author_meta('user_url')); ?></a>
                 </div><!-- .author-desc-wrapper-->

@@ -61,7 +61,7 @@ if(!function_exists('dglib_additional_javascript')):
 		<script type="text/javascript">
 			(function ($) {
 				"use strict";
-				<?php echo base64_decode($custom_javascript) . "\n"; ?>
+				<?php echo $custom_javascript . "\n"; ?>
 			})(jQuery);
 		</script>
 		<?php

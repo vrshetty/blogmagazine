@@ -2,8 +2,9 @@
 /**
  * This file contains the recommended plugin lists to this theme
  */
-
-
+if(!has_action( 'tgmpa_register')):
+    require_once blogmagazine_file_directory('inc/tgmpa/class-tgm-plugin-activation.php');
+endif;
 /**
  * Register the recommended plugins for this theme.
  *
@@ -17,12 +18,12 @@ function blogmagazine_register_recommend_plugins(){
     $plugins = array(
         // Include Contact form 7 Importer as recommended
         array(
-            'name' => 'Contact Form 7',
+            'name' => esc_html__('Contact Form 7', 'blogmagazine'),
             'slug' => 'contact-form-7',
             'required' => false,
         ),
         array(
-            'name' => 'Century ToolKit',
+            'name' => esc_html__( 'Century ToolKit', 'blogmagazine' ),
             'slug' => 'century-toolkit',
             'required' => false,
         ),
