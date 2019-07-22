@@ -237,8 +237,11 @@ add_filter( 'wp_edit_nav_menu_walker', 'dglib_edit_mega_menu_walker', 10, 1 );
 if(!function_exists('dglib_navmenu_args_filter')):
 
 	function dglib_navmenu_args_filter($args){
-
-		$args['walker'] = new Dglib_Walker_Mega_Menu();
+		
+		$theme_location (isset($args['theme_location'])) ? $args['theme_location'] : '';
+		if($theme_location == 'blogmagazine_primary_menu'){
+			$args['walker'] = new Dglib_Walker_Mega_Menu();
+		}
 		return $args;
 
 	}
