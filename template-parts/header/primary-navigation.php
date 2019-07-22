@@ -25,7 +25,7 @@
 				<?php 
 				$primary_menu_args = array(
 					'menu_id' => 'primary-menu',
-					'menu_class'=>'primary-menu menu'
+					'menu_class'=>'primary-menu menu',
 					'theme_location' => 'blogmagazine_primary_menu',
 					'fallback_cb' => 'blogmagazine_fallback_primary_menu',
 				);
