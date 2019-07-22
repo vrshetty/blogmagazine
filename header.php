@@ -39,6 +39,7 @@
 ?>
 
 <div id="page" class="site">
+	
 	<?php
 		/**
 	     * blogmagazine_header_section hook

@@ -6,6 +6,20 @@
  * @subpackage blogmagazine
  * @since 1.0.0
  */
+
+/**
+ * Skip Link 
+ *
+ * @since 1.0.0
+ */
+if(!function_exists('blogmagazine_skip_link_callback')):
+
+	function blogmagazine_skip_link_callback(){
+		?><a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'blogmagazine' ); ?></a><?php
+	}
+
+endif;
+add_action( 'blogmagazine_before_page', 'blogmagazine_skip_link_callback', 10 );
 /*-----------------------------------------------------------------------------------------------------------------------*/
 
 /**
