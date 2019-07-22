@@ -330,3 +330,18 @@ if( ! function_exists( 'blogmagazine_hover_color' ) ) :
     }
 endif;
 
+
+
+if(!function_exists('blogmagazine_fallback_menu')):
+
+    function blogmagazine_fallback_primary_menu(){
+        ?>
+        <div class="menu-primary-menu-container">
+            <ul id="primary-menu" class="primary-menu menu">
+                <li class="menu-item"><a href="<?php echo esc_url(site_url()); ?>"><?php esc_html_e( 'Home', 'blogmagazine' ); ?></a></li>
+            </ul>
+        </div>
+        <?php
+    }
+    
+endif;

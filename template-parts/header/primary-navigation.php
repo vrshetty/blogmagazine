@@ -22,7 +22,14 @@
 			<?php } ?>
 			<a href="javascript:void(0)" class="menu-toggle hide"> <i class="fa fa-navicon"> </i> </a>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'blogmagazine_primary_menu', 'menu_id' => 'primary-menu', 'menu_class'=>'primary-menu menu' ) );
+				<?php 
+				$primary_menu_args = array(
+					'menu_id' => 'primary-menu',
+					'menu_class'=>'primary-menu menu'
+					'theme_location' => 'blogmagazine_primary_menu',
+					'fallback_cb' => 'blogmagazine_fallback_primary_menu',
+				);
+				wp_nav_menu( $primary_menu_args );
 				?>
 			</nav><!-- #site-navigation -->
 			<div class="blogmagazine-header-search-wrapper">     
