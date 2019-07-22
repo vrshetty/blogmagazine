@@ -4,7 +4,7 @@
  */
 $wp_customize->add_setting(
     'enable_magazine_layout', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default' => 'enable',
     )
 );

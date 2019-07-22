@@ -21,7 +21,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting(
     'dglib_breadcrumbs_layout', 
     array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default' => 'layout1'
     )
 );
@@ -51,7 +51,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
     'dglib_breadcrumbs_background', 
     array(
-        'sanitize_callback' => 'esc_url',
+        'sanitize_callback' => 'esc_url_raw',
         'default'           => ''
     )
 );

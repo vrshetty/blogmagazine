@@ -21,7 +21,7 @@ $wp_customize->add_section(
  */
 $wp_customize->add_setting(
     'dglib_enable_breadcrumbs_page', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'enable',
     )
 );
@@ -97,7 +97,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_enable_featured_image_page', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'show',
     )
 );
@@ -127,7 +127,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_enable_reaction_page', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default' => 'disable',
     )
 );

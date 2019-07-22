@@ -3,7 +3,7 @@ $wp_customize->add_setting(
     'blogmagazine_search_layout',
     array(
         'default'           => 'classic',
-        'sanitize_callback' => 'sanitize_key',
+        'sanitize_callback' => 'sanitize_text_field',
     )
 );
 $wp_customize->add_control( 

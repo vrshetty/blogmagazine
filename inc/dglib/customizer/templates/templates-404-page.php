@@ -21,7 +21,7 @@ $wp_customize->add_section(
  */
 $wp_customize->add_setting(
     'dglib_enable_breadcrumbs_notfound', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'enable',
     )
 );
@@ -53,7 +53,7 @@ $wp_customize->add_setting(
     'dglib_default_notfound_sidebar',
     array(
         'default'           => 'right_sidebar',
-        'sanitize_callback' => 'sanitize_key',
+        'sanitize_callback' => 'sanitize_text_field',
     )
 );
 $wp_customize->add_control( 
@@ -98,7 +98,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_notfound_page_title', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => esc_html__( 'Oops! That page cant be found.', 'blogmagazine'),
     )
 );
@@ -121,7 +121,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_notfound_page_description', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => esc_html__( 'It looks like nothing was found at this location. Maybe try a search?', 'blogmagazine'),
     )
 );

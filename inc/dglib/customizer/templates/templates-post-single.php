@@ -21,7 +21,7 @@ $wp_customize->add_section(
  */
 $wp_customize->add_setting(
     'dglib_enable_breadcrumbs_post', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'enable',
     )
 );
@@ -97,7 +97,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_enable_featured_image_post', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'show',
     )
 );
@@ -126,7 +126,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_enable_categories_post', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'show',
     )
 );
@@ -155,7 +155,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_enable_date_post', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'show',
     )
 );
@@ -184,7 +184,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_enable_authorname_post', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'show',
     )
 );
@@ -214,7 +214,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_enable_tags_post', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'show',
     )
 );
@@ -243,7 +243,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_prev_next_button_post', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'show',
     )
 );
@@ -272,7 +272,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_author_info_post', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'show',
     )
 );
@@ -301,7 +301,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_enable_reaction_post', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default' => 'enable',
     )
 );
@@ -332,7 +332,7 @@ $wp_customize->add_setting(
     'dglib_enable_related_posts',
     array(
         'default' => 'show',
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
     )
 );
 
@@ -375,7 +375,7 @@ $wp_customize->add_setting(
     'dglib_related_posts_from',
     array(
         'default'    => 'category',
-        'sanitize_callback' => 'esc_attr'
+        'sanitize_callback' => 'sanitize_text_field'
     )
 );
 $wp_customize->add_control(

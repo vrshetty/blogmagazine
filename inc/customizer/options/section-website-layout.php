@@ -18,7 +18,7 @@ $wp_customize->add_setting(
     'blogmagazine_site_layout',
     array(
         'default'           => 'fullwidth_layout',
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
     )
 );
 $wp_customize->add_control(

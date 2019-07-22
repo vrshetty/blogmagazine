@@ -23,7 +23,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting(
     'visitor_reaction_heading', array(
         'default' => esc_html__('Share your feeling about this article.', 'blogmagazine'),
-        'sanitize_callback' => 'esc_html',
+        'sanitize_callback' => 'sanitize_text_field',
     )
 );
 $wp_customize->add_control( 
@@ -48,7 +48,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
     'display_reaction_value', array(
         'default' => 'percentage',
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
     )
 );
 $wp_customize->add_control( 

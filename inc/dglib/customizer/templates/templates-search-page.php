@@ -21,7 +21,7 @@ $wp_customize->add_section(
  */
 $wp_customize->add_setting(
     'dglib_enable_breadcrumbs_search', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'enable',
     )
 );
@@ -98,7 +98,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_readmore_text_search', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => esc_html__('Read More...', 'blogmagazine'),
     )
 );
@@ -144,7 +144,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_enable_date_search', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'show',
     )
 );
@@ -173,7 +173,7 @@ $wp_customize->add_control(
  */
 $wp_customize->add_setting(
     'dglib_enable_authorname_search', array(
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'sanitize_text_field',
         'default'           => 'show',
     )
 );
