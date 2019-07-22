@@ -98,25 +98,19 @@
 
 .blogmagazine_carousel{
     .blogmagazine-single-post{
+        position: relative;
         .blogmagazine-post-title{
+            line-height: 26px;
+            margin: 5px 0;
             a{
                 color: #fff;
-                font-size: 20px;
+                font-size: 16px;
+                line-height:1.4em;
                 text-transform: capitalize;
                 &:hover{
                     color: #029fb2;
                 }
             }
-        }
-    }
-}
-
-.blogmagazine_carousel{
-    .blogmagazine-single-post{
-        position: relative;
-        .blogmagazine-post-title{
-            line-height: 26px;
-            margin: 5px 0;
         }
         .blogmagazine-post-meta{
             span{

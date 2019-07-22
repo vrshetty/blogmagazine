@@ -79,6 +79,12 @@
                         blogmagazine_args.item = 1;
                     }
                     blogmagazine_args.responsive = [{
+                        breakpoint: 991,
+                        settings: {
+                            item: (blogmagazine_args.item>3) ? 3 : blogmagazine_args.item,
+                            slideMove: 1,
+                        }
+                    },{
                         breakpoint: 840,
                         settings: {
                             item: (blogmagazine_args.item>2) ? 2 : blogmagazine_args.item,

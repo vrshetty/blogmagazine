@@ -193,7 +193,8 @@ Block Post Widget CSS
 }
 
 .blogmagazine-post-title{
-    &.small-size, &.large-size{
+    &.small-size,
+     &.large-size{
         margin: 15px 0 10px;
         text-transform: capitalize;
         a{
@@ -208,7 +209,6 @@ Block Post Widget CSS
         margin: 2px 0 3px;
         a{
             font-size: 14px;
-            font-weight: 500;
             &:hover{
                 color: #029FB2
             }
@@ -267,11 +267,12 @@ Block Post Widget CSS
     }
 }
 
-.blogmagazine-block-title-nav-wrap{
+.blogmagazine-block-title{
     position: relative;
     .carousel-nav-action{
         top: 0;
         right: 0;
+        padding:6px;
         position: absolute;
         .blogmagazine-carousel-control{
             color: #fff;

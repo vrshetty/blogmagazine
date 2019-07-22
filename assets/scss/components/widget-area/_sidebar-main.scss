@@ -71,4 +71,19 @@
 		}
 	}
 
+	/*------------------------------------------------------------------------
+	Recent Post Widget
+	------------------------------------------------------------------------*/
+
+	.blogmagazine_recent_posts{
+		.blogmagazine-recent-posts-wrapper{
+			.blogmagazine-post-thumb{
+				width:30%;
+			}
+			.blogmagazine-post-content{
+				width:70%;
+			}
+		}
+	}
+
 }

@@ -17,9 +17,6 @@
                         font-size: 16px;
                         font-weight: 500;
                     }
-                    @media (max-width: 768px) {
-                        font-size: 16px;
-                    }
                 }
             }
         }
@@ -30,18 +27,16 @@
         .blogmagazine-post-thumb{
             float: left;
             width: 30%;
+            width:150px;
             img{
                 width:100%;
-            }
-            @media (max-width: 979px) {
-                float: left;
-                width: 30%;
             }
         }
         .blogmagazine-post-content{
             float: left;
-            width: 66%;
-            margin-left: 4%;
+            width: 70%;
+            padding-left:15px;
+            width: calc( 100% - 150px );
         }
     }
 }
