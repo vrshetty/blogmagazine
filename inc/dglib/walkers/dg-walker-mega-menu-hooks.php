@@ -231,7 +231,7 @@ if(!function_exists('dglib_edit_mega_menu_walker')):
 	}
 
 endif;
-//add_filter( 'wp_edit_nav_menu_walker', 'dglib_edit_mega_menu_walker', 10, 1 );
+add_filter( 'wp_edit_nav_menu_walker', 'dglib_edit_mega_menu_walker', 10, 1 );
 
 
 if(!function_exists('dglib_navmenu_args_filter')):
