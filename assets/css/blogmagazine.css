@@ -3174,6 +3174,7 @@ Block Post Widget CSS
     font-size: 16px; }
 
 .blogmagazine-post-title.small-size, .blogmagazine-post-title.large-size {
+  font-weight: normal;
   margin: 15px 0 10px;
   text-transform: capitalize; }
   .blogmagazine-post-title.small-size a, .blogmagazine-post-title.large-size a {

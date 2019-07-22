@@ -194,7 +194,8 @@ Block Post Widget CSS
 
 .blogmagazine-post-title{
     &.small-size,
-     &.large-size{
+    &.large-size{
+        font-weight:normal;
         margin: 15px 0 10px;
         text-transform: capitalize;
         a{
