@@ -125,15 +125,6 @@ if( ! function_exists( 'dglib_sanitize_repeater' ) ) :
 					$repeater_field_value = isset($repeater_row[$repeater_field_name]) ? $repeater_row[$repeater_field_name] : '';
 					$sanitize_repeater_value[$row_index][$repeater_field_name] = dg_widgets_updated_field_value( $repeater_field,  $repeater_field_value);
 
-					/*switch($repeater_field_type){
-						case 'url':
-						$sanitize_repeater_value[$row_index][$repeater_field_name] = esc_url_raw( $repeater_field_value  );
-						case 'upload':
-						$sanitize_repeater_value[$row_index][$repeater_field_name] = esc_url_raw( $repeater_field_value  );
-						default:
-						$sanitize_repeater_value[$row_index][$repeater_field_name] = wp_kses_post( sanitize_text_field( $repeater_field_value  ) );
-						break;
-					}*/
 				}
 			}
 		}
