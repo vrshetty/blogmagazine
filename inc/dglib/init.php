@@ -44,8 +44,6 @@ if( !function_exists('dglib_directory_uri') ){
 
 require_once dglib_file_directory('core/init.php');
 
-require_once dglib_file_directory('walkers/init.php');
-
 require_once dglib_file_directory('widgets/init.php');
 
 require_once dglib_file_directory('customizer/init.php');
