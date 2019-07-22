@@ -27,11 +27,6 @@ require_once blogmagazine_file_directory( 'inc/hooks/init.php' );
 require_once blogmagazine_file_directory( 'inc/customizer/init.php' );
 
 /**
- * BlogMagazine Customizer
- */
-require_once blogmagazine_file_directory( 'inc/metabox/init.php' );
-
-/**
- * BlogMagazine Customizer
+ * BlogMagazine TGMPA initialized
  */
 require_once blogmagazine_file_directory( 'inc/tgmpa/init.php' );

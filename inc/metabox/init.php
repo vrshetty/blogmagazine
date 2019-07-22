@@ -1,4 +1,0 @@
-<?php
-/**
- * Sidebar Metabox
- */
