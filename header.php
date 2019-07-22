@@ -22,8 +22,13 @@
 </head>
 
 <body <?php body_class(); ?> <?php do_action('blogmagazine_body_attribute'); ?>>
-
 <?php
+
+	// Check wp_body_open function for older version of wordpress
+	if(function_exists('wp_body_open')):
+		wp_body_open();
+	endif;
+
 	/**
      * blogmagazine_before_page hook
      *

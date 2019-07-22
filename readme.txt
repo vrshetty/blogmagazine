@@ -9,11 +9,11 @@ Version:            1.0.6
 Stable tag:         trunk
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
-Tags:               grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header,  custom-logo, custom-menu, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, news
+Tags:               news, blog, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
 
 == Description ==
 
-A simple and clean WordPress blog style theme with many customization options. This theme is mainly applicable for blogs .It's customizable theme. If any support needed then hit the url https://dinesh-ghimire.com.np/forums/ please check the demo on https://demo.dinesh-ghimire.com.np/wpthemes/blogmagazine
+A simple and clean WordPress free blog and magazine style theme with many customization options. This theme is mainly applicable for magazine and blogs .It's customizable theme. If any support needed then hit the url https://dinesh-ghimire.com.np/forums/ please check the demo on https://demo.dinesh-ghimire.com.np/wpthemes/blogmagazine
 
 == Installation ==
 
@@ -52,12 +52,13 @@ https://github.com/sachinchoolur/lightslider - MIT License
 
 == Changelog ==
 
-= 1.0.7 - 2019/07/12 =
+= 1.0.7 - 2019/07/22 =
+    * Fixed: mlimon listed issue fixed
     * Fixed: All snifier warning fixed
     * Added: Hook added for more flexibility to developers
     * Fixed: Alternative grid Design Optimized
     * Fixed: Social Icon issue Fixed on repeater
-    * Updated: dglib updated latest github commit
+    * Updated: dglib updated
     * Updated: Gallery Design Optimized
     * Optimized: Css Design Optimized
 

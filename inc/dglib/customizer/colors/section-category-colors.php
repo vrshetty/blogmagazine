@@ -21,7 +21,7 @@ $categories = get_categories( array( 'hide_empty' => 0 ) );
 foreach ( $categories as $category_list ) {
 
 	$wp_customize->add_setting( 
-		'dglib_category_color_'.esc_html( strtolower( $category_list->slug ) ),
+		'dglib_category_color_'.esc_attr( strtolower( $category_list->slug ) ),
 		array(
 			'default'              => '#00a9e0',
 			'capability'           => 'edit_theme_options',
@@ -32,9 +32,9 @@ foreach ( $categories as $category_list ) {
 	$wp_customize->add_control( 
 		new WP_Customize_Color_Control(
 			$wp_customize, 
-			'dglib_category_color_'.esc_html( strtolower( $category_list->slug ) ),
+			'dglib_category_color_'.esc_attr( strtolower( $category_list->slug ) ),
 			array(
-				'label'    => sprintf( esc_html__( ' %s Button Background', 'blogmagazine' ), esc_html( $category_list->name ) ),
+				'label'    => sprintf( esc_html__( ' %s Button Background', 'blogmagazine' ), esc_attr( $category_list->name ) ),
 				'section'  => 'dglib_categories_color_options',
 				'priority' => $priority
 			)
