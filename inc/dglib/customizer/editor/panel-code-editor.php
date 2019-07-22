@@ -12,4 +12,3 @@ $wp_customize->add_panel(
 	)
 );
 require_once dglib_file_directory( 'customizer/editor/section-custom-css.php' );
-require_once dglib_file_directory( 'customizer/editor/section-custom-javascript.php' );
