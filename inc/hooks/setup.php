@@ -226,7 +226,8 @@ if(!function_exists('blogmagazine_admin_enqueue_scripts') ):
 		wp_enqueue_style( 'blogmagazine-admin-styles', get_template_directory_uri().'/assets/css/admin-styles.min.css', array(), '1.0.0');
 		wp_style_add_data( 'blogmagazine-admin-styles', 'rtl', 'replace' );
 
-		// This theme styles the visual editor to resemble the theme style,
+		// This theme styles the visual editor to resemble the theme style
+		// add_editor_style autometically enqueue .min-rtl.css if needed
         add_editor_style( 'assets/css/editor-style.min.css' );
 
 	}

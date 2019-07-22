@@ -33,7 +33,7 @@ if(!function_exists('dglib_sanitize_javascript')){
 	 */
 	function dglib_sanitize_javascript( $javascript_code ){
 
-        return base64_encode($javascript_code);
+        return esc_textarea($javascript_code);
 
 	}
 
