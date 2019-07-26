@@ -29,7 +29,7 @@
                 font-size: 14px;
             }
             &:hover{
-                color: #029fb2;
+                color: $primary_color;
             }
         }
     }
@@ -54,11 +54,11 @@
                 font-style: normal;
                 font-weight: 500;
                 &:hover{
-                    color: #029fb2;
+                    color: $primary_color;
                 }
             }
             &:hover{
-                color: #029fb2;
+                color: $primary_color;
             }
             .byline{
                 display: block;

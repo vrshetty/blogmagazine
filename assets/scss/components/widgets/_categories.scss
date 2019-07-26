@@ -6,12 +6,13 @@
 .widget_categories{
 	a{
 		display:inline;
+		color:$body_color;
 	    &:before{
-		    top: 0px;
+		    top: 0;
 		    left: 0;
-		    color: #9f9f9f;
 		    content: "\f07b";
 		    font-size: 14px;
+		    color:$body_color;
 		    position: absolute;
 		    font-family: "FontAwesome";
 		    transition: color 0.3s ease;

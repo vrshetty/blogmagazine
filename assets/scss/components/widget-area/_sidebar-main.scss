@@ -86,4 +86,23 @@
 		}
 	}
 
+    /*------------------------------------------------------------------------
+    Site Carousel Widget
+    ------------------------------------------------------------------------*/
+
+    .blogmagazine-block-carousel{
+        li{
+            width:100%;
+            display:none;
+            &:first-child{
+                display:block;
+            }
+        }
+        &.lightSlider{
+            li{
+                display:block;
+            }
+        }
+    }
+
 }

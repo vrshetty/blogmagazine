@@ -171,11 +171,11 @@
             .blogmagazine-single-post{
                 .blogmagazine-post-title{
                     a{
-                        color: #fff;
+                        color: $white_color;
                         font-size: 20px;
                         text-transform: capitalize;
                         &:hover{
-                            color: #029fb2;
+                            color: $primary_color;
                         }
                     }
                 }

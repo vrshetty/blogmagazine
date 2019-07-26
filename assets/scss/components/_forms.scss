@@ -18,8 +18,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    background: #029fb2;
-    color: #ffffff;
+    background: $primary_color;
+    color: $white_color;
     cursor: pointer;
     /* Improves usability and consistency of cursor style between image-type 'input' and others */
     font-size: 14px;
@@ -31,7 +31,7 @@ input[type="submit"] {
     display: inline-block;
     position: relative;
     text-shadow: none;
-    border: 1px solid #029fb2;
+    border: 1px solid $primary_color;
 }
 
 .navigation .nav-links a:hover,
@@ -40,7 +40,7 @@ button,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-    background: #029fb2;
+    background: $primary_color;
     color: #ffffff !important;
 }
 

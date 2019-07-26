@@ -19,7 +19,6 @@ function dg_widgets_show_widget_field( $centurywidget = '', $widget_field = '', 
 	$dglib_field_path = dglib_file_directory('widgets/fields/dg-'.$dg_widget_field_type.'-field.php');
 
 	$widget_field_path = ($dg_widget_custom_field_path) ? $dg_widget_custom_field_path : $dglib_field_path;
-
 	if( file_exists($widget_field_path) ){
 		require $widget_field_path;
 	}else{

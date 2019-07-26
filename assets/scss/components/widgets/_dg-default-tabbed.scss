@@ -51,7 +51,7 @@
 		margin: 0;
 		list-style: none;
 		li{
-			background: #029fb2 none repeat scroll 0 0;
+			background: $primary_color none repeat scroll 0 0;
 			display: inline-block;
 			margin-right: -4px;
 			padding: 5px 0;
@@ -59,7 +59,7 @@
 			width: 50%;
 			position: relative;
 			a{
-				color: #fff;
+				color: $white_color;
 				font-weight: 600;
 				text-transform: uppercase;
 				display: block;
@@ -72,7 +72,7 @@
 	.widget-tabs{
 		li{
 			&.active-item, &:hover{
-				background: #028A9A;
+				background: $secondary_color;
 				transition: all 0.5s ease;
 				&:before{
 				    bottom: 0;
@@ -82,7 +82,7 @@
 				    width: 0;
 				    position: absolute;
 				    transform: translateX(-50%);
-				    border-bottom: 5px solid #fff;
+				    border-bottom: 5px solid $white_color;
 				    border-left: 5px solid transparent;
 				    border-right: 5px solid transparent;
 				}

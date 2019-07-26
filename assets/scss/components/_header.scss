@@ -8,9 +8,9 @@ Top Header
 --------------------------------------------------------------*/
 
 .blogmagazine-top-header-wrap{
-    color: #fff;
+    color: $white_color;
     line-height:1em;
-    background-color: #029fb2;
+    background-color: $primary_color;
 }
 
 .blogmagazine-social-icons-wrapper{
@@ -56,9 +56,9 @@ Top Header
         li{
             padding: 0 8px;
             display: inline-block;
-            border-right: 1px solid #fff;
+            border-right: 1px solid $white_color;
             a{
-                color: #fff;
+                color: $white_color;
                 line-height:1.4em;
             }
         }
@@ -79,7 +79,7 @@ Top Header
         float: left;
         display: block;
         a{
-            color: #fff;
+            color: $white_color;
             display: block;
             padding: 0 10px;
             font-size: 14px;
@@ -147,7 +147,7 @@ Site Branding
 
 .blogmagazine-home-icon{
     a {
-        color: #fff;
+        color: $white_color;
         display: block;
         float: left;
         font-size: 20px;
@@ -156,7 +156,7 @@ Site Branding
         position: relative;
         &:hover{
             @media(min-width:768px){
-                background-color: #028a9a;
+                background-color: $secondary_color;
             }
         }
     }
@@ -182,7 +182,7 @@ Site Branding
 .home{
     .blogmagazine-home-icon{
         a{
-            background-color: #028a9a;
+            background-color: $secondary_color;
         }
     }
 }
@@ -199,7 +199,7 @@ Site Branding
             margin-right: -3px;
             position: relative;
             &>a{
-                color: #fff;
+                color: $white_color;
                 display: block;
                 padding: 0 15px;
                 position: relative;
@@ -209,13 +209,13 @@ Site Branding
             }
             &.current-menu-item, &.current-page-ancestor{
                 &>a{
-                    background-color: #028a9a;
+                    background-color: $secondary_color;
                 }
             }
             &:hover{
                 &>a{
                     @media(min-width:768px){
-                        background-color: #028a9a;
+                        background-color: $secondary_color;
                     }
                 }
                 &>.sub-menu{
@@ -245,7 +245,7 @@ Site Branding
             position: absolute;
             visibility: hidden;
             transition: all 0.5s ease;
-            background-color: #029fb2;
+            background-color: $primary_color;
             .menu-item{
                 margin: 0;
                 float: none;
@@ -287,7 +287,7 @@ Site Branding
 .blogmagazine-home-icon a:hover::after,
 .main-navigation ul.primary-menu>li:hover>a:after,
 .main-navigation ul.primary-menu>li.current-menu-item>a::after {
-    border-bottom: 5px solid #fff;
+    border-bottom: 5px solid $white_color;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     bottom: 0;
@@ -304,7 +304,7 @@ Site Branding
 
 .blogmagazine-header-menu-wrapper::before,
 .blogmagazine-header-menu-wrapper::after {
-    background: #029fb2 none repeat scroll 0 0;
+    background: $primary_color none repeat scroll 0 0;
     content: "";
     height: 100%;
     left: -5px;
@@ -321,7 +321,7 @@ Site Branding
 }
 
 .blogmagazine-header-menu-block-wrap{
-    background-color: #029fb2;
+    background-color: $primary_color;
     &:before, &:after{
         width: 5px;
         height: 0;
@@ -351,13 +351,13 @@ Site Branding
 
 .other-menu-icon {   
     cursor: pointer;
-    color: #ffffff;
+    color: $white_color;
     font-size:20px;
     padding:0 5px;
     line-height: 48px;
     display: inline-block;
     &:hover{
-        color:#fff;
+        color:$white_color;
     }
 }
 
@@ -373,8 +373,8 @@ Site Branding
         padding: 15px;
         position: absolute;
         visibility: hidden;
-        background: #ffffff;
-        border-top: 2px solid #029FB2;
+        background: $white_color;
+        border-top: 2px solid $primary_color;
         box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
         .search-field{
             border-radius: 0;
@@ -386,12 +386,12 @@ Site Branding
             border: medium none;
             border-radius: 0;
             box-shadow: none;
-            color: #fff;
+            color: $white_color;
             float: left;
             padding: 10px 0 10px;
             width: 20%;
             height: 36px;
-            background: #029FB2;
+            background: $primary_color;
         }
         &.active-search {
             opacity: 1;
@@ -403,21 +403,21 @@ Site Branding
         top: -10px;
         right: 15px;
         position: absolute;
-        border-bottom: 10px solid #029FB2;
+        border-bottom: 10px solid $primary_color;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
     }
 }
 
 .menu-toggle{
-    color: #fff;
+    color: $white_color;
     display: none;
     float: left;
     font-size: 20px;
     line-height:48px;
     padding: 0px 12px;
     &:hover{
-        color:#fff;
+        color:$white_color;
     }
     @media (max-width: 768px){
         display: block;
@@ -432,7 +432,7 @@ Site Branding
 .sub-toggle {
     top: 0;
     right:0;
-    color: #fff;
+    color: $white_color;
     width: 48px;
     height: 48px;
     display: none;
@@ -456,7 +456,7 @@ Site Branding
         display: block;
     }
     @media (max-width: 768px){
-        background: #029FB2;
+        background: $primary_color;
         display: none;
         left: 0;
         position: absolute;
@@ -544,14 +544,14 @@ Others Css
         vertical-align: top;
     }
     a{
-        color: #fff;
+        color: $white_color;
         display: block;
         font-size: 12px;
         font-weight: 500;
         margin-right: 5px;
         padding: 1px 12px;
         text-transform: capitalize;
-        background-color:#029fb2;
+        background-color:$primary_color;
     }
 }
 
@@ -566,7 +566,7 @@ Ticker Section
 }
 
 .ticker-caption {
-    color: #fff;
+    color: $white_color;
     display: block;
     float: left;
     margin-right: 20px;
@@ -640,7 +640,7 @@ Ticker Section
         position: absolute;
         a{
             @media(max-width: 600px){
-                color:#fff;
+                color:$white_color;
             }
         }
         &>a{
@@ -651,11 +651,11 @@ Ticker Section
             display: block;
             position: static;
             .fa{
-                color:#fff;
+                color:$white_color;
                 padding: 0 10px;
                 line-height: 25px;
                 border-width:0 1px;
-                background-color:#029fb2;
+                background-color:$primary_color;
             }
             
         }

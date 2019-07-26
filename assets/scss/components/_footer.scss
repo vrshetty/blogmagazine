@@ -4,7 +4,7 @@ Footer CSS
 --------------------------------------------------------------*/
 
 .blogmagazine-middle-footer{
-    color:#fff;
+    color:$white_color;
     padding-top: 30px;
     background-color: #100f15;
     .dg-footer-widget-wrapper{
@@ -17,9 +17,9 @@ Footer CSS
                 color: #cfcfcf;
             }
             &:hover{
-                color: #029fb2;
+                color: $primary_color;
                 &:before{
-                    color: #029fb2;
+                    color: $primary_color;
                 }
             }
         }
@@ -29,7 +29,14 @@ Footer CSS
             }
             &:hover{
                 &:before{
-                    color: #029fb2;
+                    color: $primary_color;
+                }
+            }
+        }
+        .blogmagazine-post-title{
+            &.small-size, &.large-size{
+                a{
+                    color: #cfcfcf;
                 }
             }
         }
@@ -110,7 +117,7 @@ Footer CSS
                 padding-left: 10px;
                 border-left: 2px solid #7f7f7f;
                 &:hover{
-                    color: #029fb2;
+                    color: $primary_color;
                 }
             }
             &:first-child{
@@ -133,7 +140,7 @@ scroll to top css
     bottom: 20px;
     height: 40px;
     display: none;
-    color: #ffffff;
+    color: $white_color;
     cursor: pointer;
     font-size: 16px;
     position: fixed;
@@ -141,9 +148,9 @@ scroll to top css
     border-radius: 3px;
     text-align: center;
     transition: all 0.5s ease;
-    background-color: #029FB2;
+    background-color: $primary_color;
     &:hover, &:focus, &:active{
-        color: #ffffff;
+        color: $white_color;
         border-radius: 100%;
     }
 }

@@ -5,10 +5,11 @@
  */
 .widget_archive{
 	a{
+		color:$body_color;
 	    &:before{
 		    top: 0px;
 		    left: 0;
-		    color: #9f9f9f;
+		    color: $body_color;
 		    content: "\f187";
 		    font-size: 14px;
 		    position: absolute;

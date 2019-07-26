@@ -1,6 +1,12 @@
 /*
  * BlogMagazine Main CSS Files
  */
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.7
+ */
+/*change theme color*/
 /*--------------------------------------------------------------
 Reset
 --------------------------------------------------------------*/
@@ -260,7 +266,7 @@ td {
  * Links
  */
 a {
-  color: #029fb2;
+  color: #0c4da2;
   text-decoration: none;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -270,7 +276,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #029fb2; }
+  color: #0c4da2; }
 
 /*--------------------------------------------------------------
 Forms
@@ -291,8 +297,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background: #029fb2;
-  color: #ffffff;
+  background: #0c4da2;
+  color: #fff;
   cursor: pointer;
   /* Improves usability and consistency of cursor style between image-type 'input' and others */
   font-size: 14px;
@@ -304,7 +310,7 @@ input[type="submit"] {
   display: inline-block;
   position: relative;
   text-shadow: none;
-  border: 1px solid #029fb2; }
+  border: 1px solid #0c4da2; }
 
 .navigation .nav-links a:hover,
 .bttn:hover,
@@ -312,7 +318,7 @@ button,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background: #029fb2;
+  background: #0c4da2;
   color: #ffffff !important; }
 
 input[type="checkbox"],

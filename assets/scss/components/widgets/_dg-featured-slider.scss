@@ -28,10 +28,10 @@
 				.blogmagazine-post-title{
 				    line-height: 20px;
 				    a{
-				    	color: #fff;
+				    	color: $white_color;
 					    font-size: 15px;
 					    &:hover{
-					    	color: #029fb2;
+					    	color: $primary_color;
 					    }
 				    }
 				}
@@ -108,7 +108,7 @@
     		&>a{
     			opacity: 1;
 	    		width: 25px;
-	    		color: #fff;
+	    		color: $white_color;
 	    		height: 25px;
 	    		margin-left:5px;
 	    		font-size: 18px;
@@ -118,8 +118,8 @@
 	    		display: inline-block;
 	    		background: rgba(0, 0, 0, 0.7);
 	    		&:hover{
-	    			color: #fff;
-	    			background: #029FB2;
+	    			color: $white_color;
+	    			background: $primary_color;
 	    		}
     		}
 		}
@@ -136,11 +136,11 @@
 		margin: 5px 0;
 	    line-height: 26px;
 	    a{
-		    color: #fff;
+		    color: $white_color;
 		    font-size: 20px;
 		    text-transform: capitalize;
 		    &:hover{
-		    	color: #029fb2;
+		    	color: $primary_color;
 		    }
 	    }
     }

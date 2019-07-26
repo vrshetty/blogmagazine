@@ -6,6 +6,7 @@
 .widget_recent_entries{
 	a{
 		display:inline;
+		color:$body_color;
 	    &:before{
 		    left: 0;
 		    top: 0.5em;

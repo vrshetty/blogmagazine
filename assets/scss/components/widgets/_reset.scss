@@ -8,16 +8,23 @@
     margin: 0 0 30px;
     a{
         &:hover{
-            color: #029FB2;
+            color: $primary_color;
             &:before{
                 color:inherit;
+            }
+        }
+    }
+    .post-cats-list{
+        a{
+            &:hover{
+                color:$white_color;
             }
         }
     }
     li{
         &:hover{
             &:before{
-                color: #029FB2;
+                color: $primary_color;
             }
         }
     }
@@ -25,22 +32,27 @@
         max-width: 100%;
     }
 }
-
+.dglib-carousel-control{
+    background-color:$primary_color;
+    &:hover{
+        background-color:$secondary_color;
+    }
+}
 .blogmagazine-block-title{
-    color:#fff;
+    color:$white_color;
     display:block;
     font-size: 16px;
     margin: 0 0 20px;
     text-align: left;
     line-height:1em;
-    border: 1px solid #029FB2;
-    border-bottom:3px solid #029FB2;
+    border: 1px solid $primary_color;
+    border-bottom:3px solid $primary_color;
     .title-wrapper{
         line-height:1.5em;
         padding:6px 15px;
         display:inline-block;
         vertical-align: top;
-        background-color:#029FB2; 
+        background-color:$primary_color; 
         text-transform: uppercase; 
         a{
             color:inherit;
@@ -54,7 +66,7 @@
         vertical-align: top;
     }
     .wdgt-tab-term{
-        color:#029FB2;
+        color:$primary_color;
         font-size:12px;
         line-height:3em;
         display:inline-block;
@@ -66,8 +78,8 @@
             transition:none;
         }
         &:hover, &.active-item{
-            color:#fff;
-            background-color:#029FB2;
+            color:$white_color;
+            background-color:$primary_color;
         }
     }
 }

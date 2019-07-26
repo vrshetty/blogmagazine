@@ -10,6 +10,8 @@ project.properties
 # Grunt
 /node_modules/
 
+requirement.txt
+
 # Sass
 .sass-cache/
 

@@ -5,8 +5,12 @@
  */
 .calendar_wrap{
 	caption{
+		color: $white_color;
 		font-size:18px;
 		font-weight:600;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: $primary_color;
 	}
 	.pad{
 		background-color:#e1dbdb1a;

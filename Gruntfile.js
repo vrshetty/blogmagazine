@@ -272,7 +272,7 @@ module.exports = function (grunt) {
                     /*server:{
                         baseDir: "./assets/css",
                     },*/
-                    port: 4000,
+                    port: 3500,
                     watchTask: true,
                     proxy: "localhost/themecentury/themes/blogmagazine",
                 },

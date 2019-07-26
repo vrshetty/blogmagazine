@@ -65,8 +65,9 @@ if ( ! class_exists( 'Dglib_Master_Widget' ) ) {
                 $widget_fields = $tab_details['dg_widget_field_options'];
                 foreach ( $widget_fields as $widget_field ) {
                     extract( $widget_field );
-                                // Use helper function to get updated field values
-                    $dg_widget_field_value = isset($new_instance[$dg_widget_field_name]) ? $new_instance[$dg_widget_field_name] : '';
+                    // Use helper function to get updated field values
+                    $dg_widget_field_default = isset($dg_widget_field_options['dg_widget_field_default']) ? $dg_widget_field_options['dg_widget_field_default'] : '';
+                    $dg_widget_field_value = isset($new_instance[$dg_widget_field_name]) ? $new_instance[$dg_widget_field_name] : $dg_widget_field_default;
                     $instance[$dg_widget_field_name] = dg_widgets_updated_field_value( $widget_field, $dg_widget_field_value );
                     $instance = $this->field_wise_update($widget_field, $new_instance, $instance);
                 }
@@ -93,7 +94,8 @@ if ( ! class_exists( 'Dglib_Master_Widget' ) ) {
                 foreach ( $widget_fields as $widget_field ) {
                     extract( $widget_field );
                     // Use helper function to get updated field values
-                    $dg_widget_field_value = isset($new_instance[$dg_widget_field_name]) ? $new_instance[$dg_widget_field_name] : '';
+                    $dg_widget_field_default = isset($dg_widget_field_options['dg_widget_field_default']) ? $dg_widget_field_options['dg_widget_field_default'] : '';
+                    $dg_widget_field_value = isset($new_instance[$dg_widget_field_name]) ? $new_instance[$dg_widget_field_name] : $dg_widget_field_default;
                     $instance[$dg_widget_field_name] = dg_widgets_updated_field_value( $widget_field, $dg_widget_field_value );
                     $instance = $this->field_wise_update($widget_field, $new_instance, $instance);
                 }
@@ -142,8 +144,9 @@ if ( ! class_exists( 'Dglib_Master_Widget' ) ) {
                 extract( $widget_field );
 
                 // Use helper function to get updated field values
-                $dg_main_widget_value = isset($new_instance[$dg_widget_field_name]) ? $new_instance[$dg_widget_field_name] : '';
-                $instance[$dg_widget_field_name] = dg_widgets_updated_field_value( $widget_field,  $dg_main_widget_value);
+                $dg_widget_field_default = isset($widget_field['dg_widget_field_default']) ? $widget_field['dg_widget_field_default'] : '';
+                $dg_widget_field_value = isset($new_instance[$dg_widget_field_name]) ? $new_instance[$dg_widget_field_name] : $dg_widget_field_default;
+                $instance[$dg_widget_field_name] = dg_widgets_updated_field_value( $widget_field,  $dg_widget_field_value);
 
                 $instance = $this->field_wise_update($widget_field, $new_instance, $instance );
                 

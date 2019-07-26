@@ -15,7 +15,7 @@ h1.entry-title {
 }
 
 h1.entry-title a {
-    color: #3d3d3d;
+    color: $body_color;
 }
 
 .hentry {
@@ -54,7 +54,7 @@ nav.navigation{
 }
 
 .edit-link .post-edit-link {
-    background: #029fb2;
+    background: $primary_color;
     padding: 4px 10px;
     color: #FFF !important;
     line-height: 1;
@@ -149,7 +149,7 @@ article.hentry .entry-footer>span {
 }
 
 .entry-footer a:hover {
-    color: #029fb2
+    color: $primary_color
 }
 
 .nav-links{
@@ -250,7 +250,7 @@ Asides
 
 .logged-in-as{
     a{
-        color: #029fb2;
+        color: $primary_color;
     }
 }
 

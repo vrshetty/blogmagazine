@@ -6,17 +6,16 @@
 .widget_tag_cloud{
     .tagcloud{
         a{
-            color: #909090;
+            color: $primary_color;
             font-size: 14px;
             padding: 1px 10px;
             display: inline-block;
             margin: 0 5px 10px 0;
-            border-radius: 2px;
-            border: 1px solid #cfcfcf;
+            border: 1px solid;
             &:hover{
-                color: #fff;
-                border-color: #F54037;
-                background-color: #F54037;
+                color: $white_color;
+                border-color: $primary_color;
+                background-color: $primary_color;
             }
         }
     }

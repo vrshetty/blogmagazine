@@ -102,18 +102,16 @@ body{
     line-height: 1.8;
     &.boxed_layout{
         #page{
-            width: 1200px;
+            width:100%;
+            max-width: 1200px;
             margin: 0 auto;
-            background: #ffffff;
+            background: $white_color;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            @media (max-width: 1200px){
-                width: 100%;
-            }
         }
     }
     &.fullwidth-layout{
         #page{
-            background: #fff;
+            background: $white_color;
         }
     }
 }
@@ -174,15 +172,15 @@ Block Post Widget CSS
     line-height:1em;
     border-left: none;
     border-right: none;
-    border: 1px solid #029FB2;
-    border-bottom:3px solid #029FB2;
+    border: 1px solid $primary_color;
+    border-bottom:3px solid $primary_color;
     .page-title{
-        color:#fff;
+        color:$white_color;
         margin:0 0 0 0;
         font-size:inherit;
         padding:6px 15px;
         display:inline-block;
-        background-color:#029FB2; 
+        background-color:$primary_color; 
         text-transform: uppercase; 
     }
     .archive-description{
@@ -211,7 +209,7 @@ Block Post Widget CSS
         a{
             font-size: 14px;
             &:hover{
-                color: #029FB2
+                color: $primary_color
             }
         }
     }
@@ -226,7 +224,7 @@ Block Post Widget CSS
         transition: all 0.5s ease;
         display: inline-block;
         &:hover{
-            color: #029fb2;
+            color: $primary_color;
         }
     }
     span{
@@ -276,7 +274,7 @@ Block Post Widget CSS
         padding:6px;
         position: absolute;
         .blogmagazine-carousel-control{
-            color: #fff;
+            color: $white_color;
             font-size: 16px;
             margin-left: 0;
             padding: 3px 13px;
@@ -285,7 +283,7 @@ Block Post Widget CSS
             background-color: #333;
             transition: all 0.5s ease;
             &:hover{
-                background-color: #029FB2;
+                background-color: $primary_color;
             }
         }
     }
@@ -317,7 +315,7 @@ Archive CSS
         left: 20px;
         top: -15px;
         position: absolute;
-        border-bottom: 15px solid #fff;
+        border-bottom: 15px solid $white_color;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
     }
@@ -343,16 +341,16 @@ Archive CSS
 .entry-title{
     a{
         &:hover{
-            color: #029fb2;
+            color: $primary_color;
         }
     }
     span{
         &:hover{
-            color: #029fb2;
+            color: $primary_color;
         }
         a{
             hover{
-                color: #029fb2;
+                color: $primary_color;
             }
         }
     }
@@ -392,12 +390,10 @@ article.hentry{
 }
 
 .dg-container{
-    width: 1170px;
+    width:100%;
     margin: 0 auto;
-    @media (max-width: 1200px){
-        padding: 0 2%;
-        width: 100%;
-    }
+    padding: 0 15px;
+    max-width: 1200px;
 }
 
 #middle-footer{
@@ -425,3 +421,7 @@ article.hentry{
     }
 }
 
+
+.readmore-wrapper {
+    padding-left: 10px;
+}
