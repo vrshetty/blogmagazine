@@ -255,6 +255,7 @@ module.exports = function (grunt) {
                     '!phpcs.ruleset.xml',
                     '!demo-content/**',
                     '!*.gitignore',
+                    '!requirement.txt',
                 ],
                 dest: 'blogmagazine',
                 expand: true
