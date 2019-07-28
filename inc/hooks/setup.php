@@ -92,7 +92,7 @@ function blogmagazine_setup() {
 		apply_filters( 
 			'blogmagazine_custom_background_args', 
 			array(
-				'default-color' => 'ffffff',
+				'default-color' => '#ffffff',
 				'default-image' => '',
 			) 
 		) 
@@ -125,7 +125,7 @@ function blogmagazine_setup() {
 		'uploads'                => true,
 		'random-default'         => false,
 		'header-text'            => true,
-		'default-text-color'     => '#f00',
+		'default-text-color'     => '#0c4da2',
 	);
 	add_theme_support( 'custom-header', $defaults );
 

@@ -11,7 +11,7 @@ $blogmagazine_color_section->panel    = 'site_color_options';
 $wp_customize->add_setting(
     'blogmagazine_theme_color',
     array(
-        'default'     => '#029FB2',
+        'default'     => '#0c4da2',
         'sanitize_callback' => 'sanitize_hex_color',
     )
 ); 
@@ -29,7 +29,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
     'blogmagazine_site_title_color',
     array(
-        'default'     => '#029FB2',
+        'default'     => '#0c4da2',
         'transport' => 'postMessage',
         'sanitize_callback' => 'sanitize_hex_color',
     )
