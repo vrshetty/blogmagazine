@@ -9,17 +9,17 @@ if( ! function_exists( 'blogmagazine_dynamic_styles' ) ) :
     function blogmagazine_dynamic_styles() {
 
         $get_categories = get_categories( array( 'hide_empty' => 1 ) );
-        $blogmagazine_theme_color = get_theme_mod( 'blogmagazine_theme_color', '#029FB2' );
+        $blogmagazine_theme_color = get_theme_mod( 'blogmagazine_theme_color', '#0c4da2' );
         $blogmagazine_theme_hover_color = blogmagazine_hover_color( $blogmagazine_theme_color, '-50' );
 
         $blogmagazine_site_title_option = get_theme_mod( 'blogmagazine_site_title_option', 'true' );        
-        $blogmagazine_site_title_color = get_theme_mod( 'blogmagazine_site_title_color', '#029FB2' );
+        $blogmagazine_site_title_color = get_theme_mod( 'blogmagazine_site_title_color', '#0c4da2' );
 
         $output_css = '';
 
         foreach( $get_categories as $category ){
 
-            $cat_color = get_theme_mod( 'dglib_category_color_'.strtolower( $category->slug ), '#00a9e0' );
+            $cat_color = get_theme_mod( 'dglib_category_color_'.strtolower( $category->slug ), '#0c4da2' );
 
             $cat_hover_color = blogmagazine_hover_color( $cat_color, '-50' );
             $cat_id = $category->term_id;

@@ -280,6 +280,10 @@
 .blgmg-wdgt-preloader{
 	min-height: 500px;
 	text-align: center;
+    img{
+        width:auto;
+        max-width:100px;
+    }
 	.helper{
 		height: 500px;
 		display: inline-block;

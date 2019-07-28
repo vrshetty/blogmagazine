@@ -52,7 +52,7 @@ https://github.com/sachinchoolur/lightslider - MIT License
 
 == Changelog ==
 
-= 1.0.7 - 2019/07/22 =
+= 1.0.7 - 2019/07/28 =
     * Fixed: mlimon listed issue fixed
     * Fixed: All snifier warning fixed
     * Added: Hook added for more flexibility to developers

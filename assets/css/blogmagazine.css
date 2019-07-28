@@ -1168,6 +1168,9 @@ author Widgets
 .blgmg-wdgt-preloader {
   min-height: 500px;
   text-align: center; }
+  .blgmg-wdgt-preloader img {
+    width: auto;
+    max-width: 100px; }
   .blgmg-wdgt-preloader .helper {
     height: 500px;
     display: inline-block;
@@ -2945,7 +2948,10 @@ Footer CSS
 .blogmagazine-middle-footer {
   color: #fff;
   padding-top: 30px;
-  background-color: #100f15; }
+  background-color: #100f15;
+  /*--------------------------------------------------------------
+    Tag Cloud Widget Css
+    --------------------------------------------------------------*/ }
   .blogmagazine-middle-footer .dg-footer-widget-wrapper {
     margin: 0 -7.5px; }
   .blogmagazine-middle-footer .widget a {
@@ -2992,6 +2998,8 @@ Footer CSS
     @media (max-width: 600px) {
       .blogmagazine-middle-footer.footer_column_4 .dg-footer-widget {
         width: 100%; } }
+  .blogmagazine-middle-footer .widget_tag_cloud .tagcloud a:hover {
+    color: #fff; }
 
 .bottom-footer {
   color: #bfbfbf;
