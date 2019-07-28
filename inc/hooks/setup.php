@@ -116,8 +116,8 @@ function blogmagazine_setup() {
 	);
 
 	$defaults = array(
-		'width'                  => 0,
-		'height'                 => 0,
+		'width'                  => 1200,
+		'height'                 => 800,
 		'audio'					=> true,
 		'video'					 => true,
 		'flex-height'            => true,

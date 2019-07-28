@@ -65,7 +65,7 @@ if( ! function_exists( 'blogmagazine_dynamic_styles' ) ) :
                             clip: rect(1px, 1px, 1px, 1px);
                         }\n";
             } else {
-                $output_css .=".site-title a, .site-description {
+                $output_css .=".site-title a{
                             color:". esc_attr( $blogmagazine_site_title_color ) .";
                         }\n";
             }
@@ -76,4 +76,4 @@ if( ! function_exists( 'blogmagazine_dynamic_styles' ) ) :
     }
 endif;
 
-//add_action( 'wp_enqueue_scripts', 'blogmagazine_dynamic_styles' );
+add_action( 'wp_enqueue_scripts', 'blogmagazine_dynamic_styles' );

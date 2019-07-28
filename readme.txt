@@ -5,7 +5,7 @@ Donate link:        https://dinesh-ghimire.com.np/
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.2.2
 Requires PHP:       5.3
-Version:            1.0.6
+Version:            1.0.7
 Stable tag:         trunk
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
@@ -13,7 +13,7 @@ Tags:               news, blog, accessibility-ready, custom-background, custom-c
 
 == Description ==
 
-A simple and clean WordPress free blog and magazine style theme with many customization options. This theme is mainly applicable for magazine and blogs .It's customizable theme. If any support needed then hit the url https://dinesh-ghimire.com.np/forums/ please check the demo on https://demo.dinesh-ghimire.com.np/wpthemes/blogmagazine
+A simple and clean WordPress free blog and magazine style theme with many customization options. This theme is mainly applicable for magazine and blogs .It's customizable theme. If any support needed then hit the url https://dinesh-ghimire.com.np/forums/ please check the demo on https://demo.dinesh-ghimire.com.np/wpthemes/blogmagazine Click this link for documentation http://docs.dinesh-ghimire.com.np/blogmagazine.html
 
 == Installation ==
 
