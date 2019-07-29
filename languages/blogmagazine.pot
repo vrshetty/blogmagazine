@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
-"POT-Creation-Date: 2019-07-28 13:26:25+00:00\n"
+"POT-Creation-Date: 2019-07-28 20:50:17+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -517,7 +517,7 @@ msgstr ""
 msgid "Category Colors"
 msgstr ""
 
-#: inc/dglib/customizer/colors/section-category-colors.php:39
+#: inc/dglib/customizer/colors/section-category-colors.php:38
 #. translators: %s: Category Name
 msgid " %s Button Background"
 msgstr ""

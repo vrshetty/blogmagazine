@@ -667,6 +667,11 @@ textarea#comment {
  * @subpackage blogmagazine
  * @since 1.0.0
  */
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
 .wp-block-gallery {
   margin: 0 0 15px; }
   .wp-block-gallery .blocks-gallery-image,
@@ -698,6 +703,24 @@ textarea#comment {
   @media (min-width: 600px) {
     .wp-block-gallery.columns-3 .blocks-gallery-item {
       margin: 0; } }
+
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+.wp-block-search {
+  margin: 0 0 15px; }
+  .wp-block-search label {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .wp-block-search .wp-block-search__input {
+    width: 70%; }
+  .wp-block-search .wp-block-search__button {
+    margin: 0;
+    width: 30%;
+    height: 36px; }
 
 /*
  * @package dineshghimire
@@ -2927,9 +2950,6 @@ Ticker Section
         line-height: 25px;
         border-width: 0 1px;
         background-color: #0c4da2; }
-    @media (max-width: 600px) {
-      .blogmagazine-ticker-block .lSAction {
-        top: 4px; } }
   .blogmagazine-ticker-block .vertical .lSAction > a {
     margin: 0;
     background: rgba(0, 0, 0, 0); }

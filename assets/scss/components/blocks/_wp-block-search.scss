@@ -1,0 +1,25 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+
+.wp-block-search{
+	margin:0 0 15px;
+	label{
+		display:block;
+		font-weight:700;
+		text-transform:uppercase;
+	}
+
+	.wp-block-search__input{
+		width:70%;
+	}
+
+	.wp-block-search__button{
+		margin:0;
+		width:30%;
+		height:36px;
+	}
+
+}
