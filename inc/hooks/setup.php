@@ -48,7 +48,10 @@ function blogmagazine_setup() {
 	add_image_size( 'blogmagazine-thumb-305x207', 305, 207, true );
 	add_image_size( 'blogmagazine-thumb-622x420', 622, 420, true );
 
+	add_image_size( 'blogmagazine-thumb-400x600', 400, 600, true );
 	add_image_size( 'blogmagazine-thumb-500x365', 500, 365, true );
+	add_image_size( 'blogmagazine-thumb-600x600', 600, 600, true );
+	add_image_size( 'blogmagazine-thumb-800x400', 800, 400, true );
 	add_image_size( 'blogmagazine-thumb-800x600', 800, 600, true );
 
 	$blogmagazine_image_src_set_option = get_theme_mod( 'blogmagazine_image_src_set_option', 'disable' );

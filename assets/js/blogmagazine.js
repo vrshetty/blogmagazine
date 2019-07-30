@@ -41,8 +41,8 @@
                     enableTouch: false,
                     verticalHeight: 35,
                     adaptiveHeight:true,
-                    prevHtml: '<i class="fa fa-angle-left"></i>',
-                    nextHtml: '<i class="fa fa-angle-right"></i>',
+                    prevHtml: '<i class="fa fa-angle-up"></i>',
+                    nextHtml: '<i class="fa fa-angle-down"></i>',
                 };
                 $('.blogmagazine-newsticker').each(function(){
                     $(this).lightSlider(newsticker_args);
@@ -68,6 +68,25 @@
                 $('.blogmagazine-featured-main-slider').each(function() {
                     $(this).lightSlider(blogmagazine_mainslider_args);
                 });
+
+                var gallery_slider_obj = $('.blogmagazine-gallery-slider');
+                if(gallery_slider_obj.length){
+                    var gallery_slider_args = {
+                        'item':1,
+                        'auto':true,
+                        'loop':true,
+                        'speed':2000,
+                        'pause':6000,
+                        'pager':false,
+                        'slideMargin':0,
+                        'controls':true,
+                        'pauseOnHover':true,
+                        'adaptiveHeight':true,
+                        'prevHtml' : '<i class="fa fa-angle-left"></i>',
+                        'nextHtml' : '<i class="fa fa-angle-right"></i>'
+                    };
+                    gallery_slider_obj.lightSlider(gallery_slider_args);
+                }
 
                 /**
                  * Block carousel layout

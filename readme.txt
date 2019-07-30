@@ -52,6 +52,9 @@ https://github.com/sachinchoolur/lightslider - MIT License
 
 == Changelog ==
 
+= 1.0.8 - 2019/07/29 =
+    * Fixed: Gutenberg blog css improvements
+
 = 1.0.7 - 2019/07/28 =
     * Fixed: mlimon listed issue fixed
     * Fixed: All snifier warning fixed
@@ -99,6 +102,17 @@ https://github.com/sachinchoolur/lightslider - MIT License
     * Initial release
 
 == Upgrade Notice ==
+
+
+= 1.0.7 =
+    * Fixed: mlimon listed issue fixed
+    * Fixed: All snifier warning fixed
+    * Added: Hook added for more flexibility to developers
+    * Fixed: Alternative grid Design Optimized
+    * Fixed: Social Icon issue Fixed on repeater
+    * Updated: dglib updated
+    * Updated: Gallery Design Optimized
+    * Optimized: Css Design Optimized
 
 = 1.0.6 =
     * Modify: Updated minimal features on dglib

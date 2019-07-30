@@ -583,8 +583,6 @@ Ticker Section
 }
 
 .ticker-content-wrapper{
-    width: 80%;
-    float: left;
     display: block;
     .post-cats-list{
         float: left;
@@ -600,6 +598,18 @@ Ticker Section
     }
     .cS-hidden{
         opacity: 1;
+    }
+    .lSSlideOuter{
+        &.vertical{
+            .lSAction{
+                top:5px;
+                right:5px;
+                .lSPrev, .lSNext{
+                    float:left;
+                    margin: 0 3px;
+                }
+            }
+        }
     }
     @media (max-width: 600px){
         float: none;
@@ -635,55 +645,4 @@ Ticker Section
 .blogmagazine-ticker-block{
     position: relative;
     border: 1px solid #e1e1e1;
-    .lSAction{
-        top: 0;
-        right: 0;
-        padding:0 10px;
-        font-size: 20px;
-        position: absolute;
-        a{
-            @media(max-width: 600px){
-                color:$white_color;
-            }
-        }
-        &>a{
-            opacity: 1;
-            width: auto;
-            height: auto;
-            float:left;
-            display: block;
-            position: static;
-            .fa{
-                color:$white_color;
-                padding: 0 10px;
-                line-height: 25px;
-                border-width:0 1px;
-                background-color:$primary_color;
-            }
-            
-        }
-    }
-    .vertical{
-        .lSAction{
-            &>a{
-                margin:0;
-                background: rgba(0, 0, 0, 0);
-                &.lSPrev{
-                    margin-right:5px;
-                }
-            }
-        }
-    }
-
-    .lSSlideOuter{
-        &.vertical{
-            position: static;
-        }
-    }
-    .lSSlideWrapper{
-        position: static;
-        .lSFade {
-            position: static;
-        }
-    }
 }

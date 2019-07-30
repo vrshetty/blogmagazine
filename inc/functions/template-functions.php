@@ -345,3 +345,67 @@ if(!function_exists('blogmagazine_fallback_menu')):
     }
     
 endif;
+
+if(!function_exists('blogmagazine_post_format_gallery_html')){
+
+    function blogmagazine_post_format_gallery_html(){
+        $gallery_image_ids = array();
+        if(function_exists('has_block') && has_block('gallery')){
+            $all_blocks = parse_blocks( get_the_content() );
+            $block_index = array_search('core/gallery', array_column($all_blocks, 'blockName')); 
+            $gallery_image_ids = isset($all_blocks[$block_index]['attrs']['ids']) ? $all_blocks[$block_index]['attrs']['ids'] : array();                    
+        }
+        if(!$gallery_image_ids){
+            $gallery = get_post_gallery(get_the_ID(), false);
+            $gallery_image_ids = (isset($gallery['ids']) ) ? $gallery['ids'] : array();
+        }
+        if(!$gallery_image_ids){
+            return false;
+        }
+        ?>
+        <div class="post-format-wrapper post-format-gallery">
+            <ul class="blogmagazine-gallery-slider">
+                <?php foreach($gallery_image_ids as $attachment_id){ ?>
+                    <li class="format-gallery-item">
+                        <figure>
+                            <?php echo wp_get_attachment_image($attachment_id, 'blogmagazine-thumb-800x400'); ?>
+                        </figure>
+                        <?php
+                        $attachment_caption = wp_get_attachment_caption($attachment_id); 
+                        if($attachment_caption):
+                            ?>
+                            <figcaption><?php echo esc_html($attachment_caption); ?></figcaption>
+                            <?php
+                        endif;
+                        ?>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
+        <?php
+        return true;
+    }
+
+}
+
+
+if(!function_exists('blogmagazine_post_format_html')){
+
+    function blogmagazine_post_format_html(){
+        $is_post_format = false;
+        $post_format_value = get_post_format();
+        switch($post_format_value){
+            case 'gallery':
+                $is_post_format = blogmagazine_post_format_gallery_html();
+                break;
+            case 'image':
+                $is_post_format = blogmagazine_post_format_gallery_html();
+                break;
+            default:
+                break;
+        }
+        return $is_post_format;
+
+    }
+
+}

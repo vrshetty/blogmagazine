@@ -660,6 +660,73 @@ textarea#comment {
 /*
  * @package dineshghimire
  * @subpackage blogmagazine
+ * @version 1.0.7
+ */
+/*--------------------------------------------------------------
+Light Slider
+--------------------------------------------------------------*/
+.lSSlideOuter.vertical .lSAction .lSPrev, .lSSlideOuter.vertical .lSAction .lSNext {
+  float: none;
+  display: block;
+  position: static; }
+
+.lSAction {
+  top: 10px;
+  right: 10px;
+  position: absolute; }
+
+.lSAction a {
+  opacity: 1;
+  width: 25px;
+  color: #fff;
+  height: 25px;
+  margin-left: 5px;
+  font-size: 18px;
+  position: static;
+  text-align: center;
+  line-height: 25px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.7); }
+  .lSAction a:hover {
+    color: #fff;
+    background: #0c4da2; }
+
+/*--------------------------------------------------------------
+Gallery
+--------------------------------------------------------------*/
+.format-gallery-item {
+  position: relative; }
+  .format-gallery-item img {
+    width: 100%; }
+  .format-gallery-item figcaption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    padding: 20px;
+    display: block;
+    font-size: 16px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -moz- oldlinear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0; }
+
+.blogmagazine-gallery-slider {
+  padding: 0;
+  margin: 0px;
+  list-style: none; }
+  .blogmagazine-gallery-slider .format-gallery-item {
+    display: none; }
+    .blogmagazine-gallery-slider .format-gallery-item:first-child {
+      display: block; }
+  .blogmagazine-gallery-slider.lightSlider .format-gallery-item {
+    display: block; }
+
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
  * @since 1.0.0
  */
 /*
@@ -1551,25 +1618,8 @@ author Widgets
           display: block; }
       .blogmagazine_featured_slider .slider-posts ul.lightSlider li {
         display: block; }
-    .blogmagazine_featured_slider .slider-posts .lSAction {
-      top: 10px;
-      right: 10px;
-      position: absolute; }
-      .blogmagazine_featured_slider .slider-posts .lSAction > a {
-        opacity: 1;
-        width: 25px;
-        color: #fff;
-        height: 25px;
-        margin-left: 5px;
-        font-size: 18px;
-        position: static;
-        text-align: center;
-        line-height: 25px;
-        display: inline-block;
-        background: rgba(0, 0, 0, 0.7); }
-        .blogmagazine_featured_slider .slider-posts .lSAction > a:hover {
-          color: #fff;
-          background: #0c4da2; }
+    .blogmagazine_featured_slider .slider-posts .lSAction a:hover {
+      color: #fff; }
 
 .blogmagazine-slide-content-wrap {
   left: 0;
@@ -2886,8 +2936,6 @@ Ticker Section
       width: 100%; } }
 
 .ticker-content-wrapper {
-  width: 80%;
-  float: left;
   display: block; }
   .ticker-content-wrapper .post-cats-list {
     float: left;
@@ -2901,6 +2949,12 @@ Ticker Section
     height: auto !important; }
   .ticker-content-wrapper .cS-hidden {
     opacity: 1; }
+  .ticker-content-wrapper .lSSlideOuter.vertical .lSAction {
+    top: 5px;
+    right: 5px; }
+    .ticker-content-wrapper .lSSlideOuter.vertical .lSAction .lSPrev, .ticker-content-wrapper .lSSlideOuter.vertical .lSAction .lSNext {
+      float: left;
+      margin: 0 3px; }
   @media (max-width: 600px) {
     .ticker-content-wrapper {
       float: none;
@@ -2928,39 +2982,6 @@ Ticker Section
 .blogmagazine-ticker-block {
   position: relative;
   border: 1px solid #e1e1e1; }
-  .blogmagazine-ticker-block .lSAction {
-    top: 0;
-    right: 0;
-    padding: 0 10px;
-    font-size: 20px;
-    position: absolute; }
-    @media (max-width: 600px) {
-      .blogmagazine-ticker-block .lSAction a {
-        color: #fff; } }
-    .blogmagazine-ticker-block .lSAction > a {
-      opacity: 1;
-      width: auto;
-      height: auto;
-      float: left;
-      display: block;
-      position: static; }
-      .blogmagazine-ticker-block .lSAction > a .fa {
-        color: #fff;
-        padding: 0 10px;
-        line-height: 25px;
-        border-width: 0 1px;
-        background-color: #0c4da2; }
-  .blogmagazine-ticker-block .vertical .lSAction > a {
-    margin: 0;
-    background: rgba(0, 0, 0, 0); }
-    .blogmagazine-ticker-block .vertical .lSAction > a.lSPrev {
-      margin-right: 5px; }
-  .blogmagazine-ticker-block .lSSlideOuter.vertical {
-    position: static; }
-  .blogmagazine-ticker-block .lSSlideWrapper {
-    position: static; }
-    .blogmagazine-ticker-block .lSSlideWrapper .lSFade {
-      position: static; }
 
 /*--------------------------------------------------------------
 Footer CSS
