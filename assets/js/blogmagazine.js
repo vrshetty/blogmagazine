@@ -69,7 +69,7 @@
                     $(this).lightSlider(blogmagazine_mainslider_args);
                 });
 
-                var gallery_slider_obj = $('.blogmagazine-gallery-slider');
+                var gallery_slider_obj = $('.blogmagazine-post-format-slider');
                 if(gallery_slider_obj.length){
                     var gallery_slider_args = {
                         'item':1,

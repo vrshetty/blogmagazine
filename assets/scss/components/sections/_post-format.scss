@@ -5,50 +5,28 @@
  */
 
 /*--------------------------------------------------------------
-Light Slider
+Post Format Slider Reset 
 --------------------------------------------------------------*/
 
-.lSSlideOuter{
-	&.vertical{
-		.lSAction{
-			.lSPrev, .lSNext{
-				float:none;
-				display:block;
-				position:static;
-			}
+.blogmagazine-post-format-slider{
+	padding:0;
+	margin:0px;
+	list-style:none;
+	.post-format-slide-item{
+		display:none;
+		&:first-child{
+			display:block;
+		}
+	}
+	&.lightSlider{
+		.post-format-slide-item{
+			display:block;
 		}
 	}
 }
 
-.lSAction{
-	top:10px;
-	right:10px;
-	position:absolute;
-}
-
-.lSAction{
-	a{
-		opacity: 1;
-		width: 25px;
-		color: #fff;
-		height: 25px;
-		margin-left: 5px;
-		font-size: 18px;
-		position: static;
-		text-align: center;
-		line-height: 25px;
-		display: inline-block;
-		background: rgba(0,0,0,0.7);
-		&:hover{
-			color: $white_color;
-	    	background: $primary_color;
-	    }
-	}
-}
-
-
 /*--------------------------------------------------------------
-Gallery
+Post Format Gallery 
 --------------------------------------------------------------*/
 
 .format-gallery-item{
@@ -69,19 +47,8 @@ Gallery
 	}
 }
 
-.blogmagazine-gallery-slider{
-	padding:0;
-	margin:0px;
-	list-style:none;
-	.format-gallery-item{
-		display:none;
-		&:first-child{
-			display:block;
-		}
-	}
-	&.lightSlider{
-		.format-gallery-item{
-			display:block;
-		}
-	}
-}
+
+/*--------------------------------------------------------------
+Quotes Post Format
+--------------------------------------------------------------*/
+

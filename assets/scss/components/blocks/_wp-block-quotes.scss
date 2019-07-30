@@ -1,0 +1,35 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.7
+ */
+blockquote{
+	margin:0 0 20px;
+	font-size:18px;
+	position:relative;
+	background-color:#f2f2f2;
+	padding:50px 15px 15px 50px;
+	border-left:10px solid $primary_color;
+	&:before{
+		top:0;
+		left: 0;
+		font-size:7em;
+		line-height:1em;
+		content: "\201C";
+		font-family:Arial;
+		position: absolute;
+		color:$primary_color;
+	}
+}
+
+.wp-block-quote{
+	&.is-large, &.is-style-large{
+		border:none;
+		font-size:24px;
+		margin:0 0 20px;
+		padding:60px 15px 15px 60px;
+		p{
+			font-size:100%;
+		}
+	}
+}

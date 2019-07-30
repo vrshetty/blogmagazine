@@ -1,0 +1,42 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @version 1.0.7
+ */
+.lSSlideOuter{
+	&.vertical{
+		.lSAction{
+			.lSPrev, .lSNext{
+				float:none;
+				display:block;
+				position:static;
+			}
+		}
+	}
+}
+
+.lSAction{
+	top:10px;
+	right:10px;
+	position:absolute;
+}
+
+.lSAction{
+	a{
+		opacity: 1;
+		width: 25px;
+		color: #fff;
+		height: 25px;
+		margin-left: 5px;
+		font-size: 18px;
+		position: static;
+		text-align: center;
+		line-height: 25px;
+		display: inline-block;
+		background: rgba(0,0,0,0.7);
+		&:hover{
+			color: $white_color;
+	    	background: $primary_color;
+	    }
+	}
+}

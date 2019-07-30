@@ -1,0 +1,18 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.7
+ */
+
+.wp-block-pullquote{
+	margin:0 0 20px;
+	border-top:10px solid $primary_color;
+	blockquote{
+		border:none;
+		padding:0px;
+		background:none;
+		&:before{
+			display:none;
+		}
+	}
+}

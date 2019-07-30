@@ -346,6 +346,35 @@ if(!function_exists('blogmagazine_fallback_menu')):
     
 endif;
 
+if(!function_exists('blogmagazine_post_format_quotes_html')){
+
+    function blogmagazine_post_format_quotes_html(){
+
+        $regular_expression = "/<\s*blockquote[^>]*>(.*?)<\s*\/\s*blockquote>/mi";
+        $block_quotes=array();
+        preg_match_all($regular_expression, get_the_content(), $quotes_details);
+        $block_quotes = (isset($quotes_details[0])) ? $quotes_details[0] : array();
+        if(!$block_quotes){
+            return false;
+        }
+        ?>
+        <div class="post-format-wrapper post-format-gallery">
+            <ul class="blogmagazine-blockquote-slider blogmagazine-post-format-slider">
+                <?php foreach($block_quotes as $quotes_html){ ?>
+                    <li class="post-format-slide-item blockquote-slide-item">
+                        <?php echo $quotes_html; ?>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
+        <?php
+        
+        return true;
+
+    }
+
+}
+
 if(!function_exists('blogmagazine_post_format_gallery_html')){
 
     function blogmagazine_post_format_gallery_html(){
@@ -364,9 +393,9 @@ if(!function_exists('blogmagazine_post_format_gallery_html')){
         }
         ?>
         <div class="post-format-wrapper post-format-gallery">
-            <ul class="blogmagazine-gallery-slider">
+            <ul class="blogmagazine-gallery-slider blogmagazine-post-format-slider">
                 <?php foreach($gallery_image_ids as $attachment_id){ ?>
-                    <li class="format-gallery-item">
+                    <li class="post-format-slide-item format-gallery-item">
                         <figure>
                             <?php echo wp_get_attachment_image($attachment_id, 'blogmagazine-thumb-800x400'); ?>
                         </figure>
@@ -398,8 +427,8 @@ if(!function_exists('blogmagazine_post_format_html')){
             case 'gallery':
                 $is_post_format = blogmagazine_post_format_gallery_html();
                 break;
-            case 'image':
-                $is_post_format = blogmagazine_post_format_gallery_html();
+            case 'quote':
+                $is_post_format = blogmagazine_post_format_quotes_html();
                 break;
             default:
                 break;

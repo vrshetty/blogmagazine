@@ -1,1 +1,0 @@
-[30-Jul-2019 12:45:23 UTC] PHP Notice:  Undefined index: disable_ad in E:\xampp\htdocs\themecentury\themes\wp-content\plugins\universal-google-adsense-and-ads-manager\includes\custom-fields\class-ugaam-post-field.php on line 81
