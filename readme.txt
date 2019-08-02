@@ -38,7 +38,6 @@ BlogMagazine theme is translation ready.
 * Yes, this theme is translation ready. You can use any WordPress language translation plugin.
 
 == Screenshots ==
-
 1. https://pxhere.com/en/photo/1419836 - License CC0 Public Domain
 2. https://pxhere.com/en/photo/732395 - License CC0 Public Domain
 3. https://pxhere.com/en/photo/1082017 - License CC0 Public Domain
@@ -46,17 +45,23 @@ BlogMagazine theme is translation ready.
 5. https://pxhere.com/en/photo/1087225 - License CC0 Public Domain
 
 == Licenses ==
+https://github.com/developerdinesh/blank-theme/ - MIT License
 https://github.com/FortAwesome/Font-Awesome - MIT License
 https://github.com/garand/sticky - MIT License
 https://github.com/sachinchoolur/lightslider - MIT License
+https://github.com/TGMPA/TGM-Plugin-Activation - MIT License
+https://github.com/justintadlock/breadcrumb-trail - GPL V2 or later
+
 
 == Changelog ==
 
 = 1.0.8 - 2019/07/29 =
     * Fixed: Gutenberg blog css improvements
+    * Added: Post Format Support Features added
+    * 
 
 = 1.0.7 - 2019/07/28 =
-    * Fixed: mlimon listed issue fixed
+    * Fixed: reviewer listed issue fixed
     * Fixed: All snifier warning fixed
     * Added: Hook added for more flexibility to developers
     * Fixed: Alternative grid Design Optimized

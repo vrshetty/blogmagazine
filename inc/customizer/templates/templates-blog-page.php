@@ -6,7 +6,7 @@ $wp_customize->add_setting(
     'blogmagazine_index_layout',
     array(
         'default'           => 'classic',
-        'sanitize_callback' => 'sanitize_text_field',
+        'sanitize_callback' => 'blogmagazine_sanitize_list_item_layout',
     )
 );
 $wp_customize->add_control( 

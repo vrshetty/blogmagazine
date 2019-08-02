@@ -46,9 +46,10 @@ $wp_customize->add_control(
  * @since 1.0.0
  */
 $wp_customize->add_setting(
-    'display_reaction_value', array(
+    'display_reaction_value', 
+    array(
         'default' => 'percentage',
-        'sanitize_callback' => 'sanitize_text_field',
+        'sanitize_callback' => 'dglib_sanitize_reaction_type',
     )
 );
 $wp_customize->add_control( 

@@ -3,8 +3,9 @@
  * Static Front Page
  */
 $wp_customize->add_setting(
-    'enable_magazine_layout', array(
-        'sanitize_callback' => 'sanitize_text_field',
+    'enable_magazine_layout', 
+    array(
+        'sanitize_callback' => 'blogmagazine_sanitize_enable_disable_option',
         'default' => 'enable',
     )
 );

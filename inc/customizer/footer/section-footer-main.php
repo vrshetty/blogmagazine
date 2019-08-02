@@ -18,7 +18,7 @@ $wp_customize->add_setting(
     'blogmagazine_footer_widget_option',
     array(
         'default' => 'show',
-        'sanitize_callback' => 'blogmagazine_sanitize_switch_option',
+        'sanitize_callback' => 'blogmagazine_sanitize_show_hide_option',
     )
 );
 $wp_customize->add_control( 

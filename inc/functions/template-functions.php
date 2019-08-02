@@ -191,7 +191,7 @@ if ( ! function_exists( 'blogmagazine_fonts_url' ) ) :
         if ( 'off' !== _x( 'on', 'Titillium Web font: on or off', 'blogmagazine' ) ) {
             $font_families[] = 'Titillium Web:400,600,700,300';
         }       
-
+        $font_families = apply_filters( 'blogmagazine_google_fontfamilies', $font_families );
         if( $font_families ) {
             $query_args = array(
                 'family' => urlencode( implode( '|', $font_families ) ),
@@ -338,7 +338,7 @@ if(!function_exists('blogmagazine_fallback_menu')):
         ?>
         <div class="menu-primary-menu-container">
             <ul id="primary-menu" class="primary-menu menu">
-                <li class="menu-item"><a href="<?php echo esc_url(site_url()); ?>"><?php esc_html_e( 'Home', 'blogmagazine' ); ?></a></li>
+                <li class="menu-item"><a href="<?php echo esc_url(home_url()); ?>"><?php esc_html_e( 'Home', 'blogmagazine' ); ?></a></li>
             </ul>
         </div>
         <?php

@@ -16,7 +16,7 @@ $wp_customize->add_setting(
     'blogmagazine_menu_sticky_option',
     array(
         'default' => 'show',
-        'sanitize_callback' => 'blogmagazine_sanitize_switch_option',
+        'sanitize_callback' => 'blogmagazine_sanitize_show_hide_option',
     )
 );
 $wp_customize->add_control( 
@@ -42,7 +42,7 @@ $wp_customize->add_setting(
     'blogmagazine_home_icon_option',
     array(
         'default' => 'show',
-        'sanitize_callback' => 'blogmagazine_sanitize_switch_option',
+        'sanitize_callback' => 'blogmagazine_sanitize_show_hide_option',
     )
 );
 $wp_customize->add_control( 
@@ -67,7 +67,7 @@ $wp_customize->add_setting(
     'blogmagazine_search_icon_option',
     array(
         'default' => 'show',
-        'sanitize_callback' => 'blogmagazine_sanitize_switch_option',
+        'sanitize_callback' => 'blogmagazine_sanitize_show_hide_option',
     )
 );
 $wp_customize->add_control( 
@@ -92,7 +92,7 @@ $wp_customize->add_setting(
     'blogmagazine_random_post_option',
     array(
         'default' => 'show',
-        'sanitize_callback' => 'blogmagazine_sanitize_switch_option',
+        'sanitize_callback' => 'blogmagazine_sanitize_show_hide_option',
     )
 );
 $wp_customize->add_control( 
@@ -117,7 +117,7 @@ $wp_customize->add_setting(
     'blogmagazine_random_post_icon',
     array(
         'default' => 'fa-random',
-        'sanitize_callback' => 'esc_attr',
+        'sanitize_callback' => 'blogmagazine_sanitize_font_awesome_icons',
     )
 );
 $wp_customize->add_control( 

@@ -20,35 +20,27 @@
 
 <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?> <?php do_action('blogmagazine_body_attribute'); ?>>
 <?php
-
-	// Check wp_body_open function for older version of WordPress
-	if(function_exists('wp_body_open')):
-		wp_body_open();
-	endif;
-
+	// body open hooks
+	do_action( 'wp_body_open' );
 	/**
      * blogmagazine_before_page hook
      *
      * @since 1.0.0
      */
     do_action( 'blogmagazine_before_page' );
-
-?>
-
-<div id="page" class="site">
-	
-	<?php
-		/**
-	     * blogmagazine_header_section hook
-	     *
-	     * @hooked - blogmagazine_section_header_callback - 10
-	     *
-	     * @since 1.0.0
-	     */
-	    do_action( 'blogmagazine_header_section' );
 	?>
-	<div id="content" class="site-content">
-		<div class="dg-container">
+	<div id="page" class="site">	
+		<?php
+			/**
+		     * blogmagazine_header_section hook
+		     *
+		     * @hooked - blogmagazine_section_header_callback - 10
+		     *
+		     * @since 1.0.0
+		     */
+		    do_action( 'blogmagazine_header_section' );
+		?>
+		<div id="content" class="site-content">
+			<div class="dg-container">

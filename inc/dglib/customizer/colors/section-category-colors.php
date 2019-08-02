@@ -23,7 +23,7 @@ foreach ( $categories as $category_list ) {
 	$wp_customize->add_setting( 
 		'dglib_category_color_'.esc_attr( strtolower( $category_list->slug ) ),
 		array(
-			'default'              => '#0c4da2',
+			'default'              => '',
 			'capability'           => 'edit_theme_options',
 			'sanitize_callback'    => 'sanitize_hex_color'
 		)

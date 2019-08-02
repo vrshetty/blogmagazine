@@ -14,7 +14,7 @@ $wp_customize->add_setting(
     'blogmagazine_image_src_set_option',
     array(
         'default' => 'disable',
-        'sanitize_callback' => 'blogmagazine_sanitize_switch_option',
+        'sanitize_callback' => 'blogmagazine_sanitize_enable_disable_option',
     )
 );
 $wp_customize->add_control( 

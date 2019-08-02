@@ -16,7 +16,7 @@ $wp_customize->add_setting(
     'blogmagazine_top_header_option',
     array(
         'default' => 'show',
-        'sanitize_callback' => 'blogmagazine_sanitize_switch_option',
+        'sanitize_callback' => 'blogmagazine_sanitize_show_hide_option',
     )
 );
 $wp_customize->add_control( 
@@ -41,7 +41,7 @@ $wp_customize->add_setting(
     'blogmagazine_top_date_option',
     array(
         'default' => 'show',
-        'sanitize_callback' => 'blogmagazine_sanitize_switch_option',
+        'sanitize_callback' => 'blogmagazine_sanitize_show_hide_option',
     )
 );
 $wp_customize->add_control( 
@@ -67,7 +67,7 @@ $wp_customize->add_setting(
     'blogmagazine_top_social_option',
     array(
         'default' => 'show',
-        'sanitize_callback' => 'blogmagazine_sanitize_switch_option',
+        'sanitize_callback' => 'blogmagazine_sanitize_show_hide_option',
     )
 );
 $wp_customize->add_control( 
