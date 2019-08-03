@@ -111,3 +111,97 @@ if( !function_exists('blogmagazine_sanitize_list_item_layout') ):
 	}
 
 endif;
+
+
+/*
+ * BlogMagazine sanitize tab term list
+ */
+if( !function_exists('blogmagazine_sanitize_widget_tab_options') ):
+	
+	function blogmagazine_sanitize_widget_tab_options($widget_value){
+
+		$return_value = 'none';
+		switch($customizer_value){
+			case 'grid':
+			case 'selected':
+			case 'otherterm':
+				$return_value = $widget_value;
+				break;
+			default:
+				$return_value = 'none';
+				break;
+		}
+
+		return $return_value;
+
+	}
+
+endif;
+
+
+/*
+ * BlogMagazine sanitize tab term list
+ */
+if( !function_exists('blogmagazine_sanitize_image_size') ):
+	
+	function blogmagazine_sanitize_image_size($image_size){
+
+		$return_value = 'thumbnail';
+		$all_image_size = dglib_get_image_sizes();
+		if(isset($all_image_size[$image_size])){
+			$return_value = $image_size;
+		}
+		return $return_value;
+
+	}
+
+endif;
+
+/*
+ * BlogMagazine sanitize blockposts widget layout
+ */
+if( !function_exists('blogmagazine_sanitize_block_post_layout') ):
+	
+	function blogmagazine_sanitize_block_post_layout($widget_value){
+
+		$return_value = 'layout1';
+		switch($customizer_value){
+			case 'layout1':
+			case 'layout2':
+			case 'layout3':
+			case 'layout4':
+				$return_value = $widget_value;
+				break;
+			default:
+				$return_value = 'layout1';
+				break;
+		}
+
+		return $return_value;
+
+	}
+
+endif;
+
+/*
+ * BlogMagazine sanitize carousel widget layout
+ */
+if( !function_exists('blogmagazine_sanitize_carousel_layout') ):
+	
+	function blogmagazine_sanitize_carousel_layout($widget_value){
+
+		$return_value = 'layout1';
+		switch($customizer_value){
+			case 'layout1':
+				$return_value = $widget_value;
+				break;
+			default:
+				$return_value = 'layout1';
+				break;
+		}
+
+		return $return_value;
+
+	}
+
+endif;

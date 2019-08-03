@@ -52,13 +52,16 @@ https://github.com/sachinchoolur/lightslider - MIT License
 https://github.com/TGMPA/TGM-Plugin-Activation - MIT License
 https://github.com/justintadlock/breadcrumb-trail - GPL V2 or later
 
+== Credits ==
+https://wordpress.org/themes/lekh/ Use their library to this theme - (GPL License)
+
 
 == Changelog ==
 
 = 1.0.8 - 2019/07/29 =
     * Fixed: Gutenberg blog css improvements
+    * Fixed: Customizer and Widget field sanitized
     * Added: Post Format Support Features added
-    * 
 
 = 1.0.7 - 2019/07/28 =
     * Fixed: reviewer listed issue fixed

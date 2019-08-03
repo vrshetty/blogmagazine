@@ -131,3 +131,31 @@ if( ! function_exists( 'dglib_sanitize_repeater' ) ) :
 		return $sanitize_repeater_value;
 	}
 endif;
+
+/**
+ * Function to sanitize target
+ *
+ * @since 1.0.0
+ *
+ * @param $link_target
+ * @return array
+ *
+ */
+if( ! function_exists( 'dglib_sanitize_link_target' ) ) :
+	function dglib_sanitize_link_target( $target_value ) {
+		
+		$new_field_value = '';
+		switch ($target_value){
+			case '_blank':
+			case '_self':
+				$new_field_value = $target_value;
+				break;
+			default:
+				$new_field_value = '';
+				break;
+		}
+
+		return $new_field_value;
+
+	}
+endif;

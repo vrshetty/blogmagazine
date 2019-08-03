@@ -106,12 +106,12 @@ class BlogMagazine_Featured_Slider_Widget extends Dglib_Master_Widget{
 
         extract( $args );
 
-        $title = isset( $instance['title'] ) ? esc_attr($instance['title']) : '';
+        $title = isset( $instance['title'] ) ? sanitize_text_field($instance['title']) : '';
         $title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
         $title_link = isset( $instance['title_link'] ) ? esc_url($instance['title_link']) : '';
-        $title_target = isset( $instance['title_target'] ) ? esc_attr($instance['title_target']) : '';
-        $slider_term_ids    = empty( $instance['slider_term_ids'] ) ? '' : $instance['slider_term_ids'];
-        $featured_term_ids  = empty( $instance['featured_term_ids'] ) ? '' : $instance['featured_term_ids'];
+        $title_target = isset( $instance['title_target'] ) ? dglib_sanitize_link_target($instance['title_target']) : '';
+        $slider_term_ids    = isset( $instance['slider_term_ids'] ) ?  $instance['slider_term_ids'] : '';
+        $featured_term_ids  = isset( $instance['featured_term_ids'] ) ?  $instance['featured_term_ids'] : '';
 
         dglib_before_widget($args);
 

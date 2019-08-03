@@ -104,11 +104,11 @@ class BlogMagazine_Tabbed_Widget extends Dglib_Master_Widget{
     public function widget( $args, $instance ) {
 
         extract( $args );
-        $latest_tab_title   = isset( $instance['latest_tab_title'] ) ? esc_html($instance['latest_tab_title']) : esc_html__('Latest', 'blogmagazine');
-        $comments_tab_title   = isset( $instance['comments_tab_title'] ) ? esc_html($instance['comments_tab_title']) : esc_html__('Comments', 'blogmagazine');
+        $latest_tab_title   = isset( $instance['latest_tab_title'] ) ? sanitize_text_field($instance['latest_tab_title']) : esc_html__('Latest', 'blogmagazine');
+        $comments_tab_title   = isset( $instance['comments_tab_title'] ) ? sanitize_text_field($instance['comments_tab_title']) : esc_html__('Comments', 'blogmagazine');
         $posts_per_page   = isset( $instance['posts_per_page'] ) ? absint($instance['posts_per_page']) : 6;
         $comments_per_page   = isset( $instance['comments_per_page'] ) ? absint($instance['comments_per_page']) : 6;
-        $thumbnail_size   = isset( $instance['thumbnail_size'] ) ? esc_attr($instance['thumbnail_size']) : 'blogmagazine-thumb-136x102';
+        $thumbnail_size   = isset( $instance['thumbnail_size'] ) ? blogmagazine_sanitize_image_size($instance['thumbnail_size']) : 'blogmagazine-thumb-136x102';
         $avatar_size   = isset( $instance['avatar_size'] ) ? absint($instance['avatar_size']) : 150;
         $comments_length   = isset( $instance['comments_length'] ) ? absint($instance['comments_length']) : 50;
         dglib_before_widget($args);

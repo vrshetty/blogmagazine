@@ -106,14 +106,16 @@ class BlogMagazine_Recent_Posts_Widget extends Dglib_Master_Widget{
 
         extract( $args );
         
-        $title = isset( $instance['title'] ) ? esc_attr($instance['title']) : '';
+        $title = isset( $instance['title'] ) ? sanitize_text_field($instance['title']) : '';
         $title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
         $title_link = isset( $instance['title_link'] ) ? esc_url($instance['title_link']) : '';
-        $title_target = isset( $instance['title_target'] ) ? esc_attr($instance['title_target']) : '';
+        $title_target = isset( $instance['title_target'] ) ? dglib_sanitize_link_target($instance['title_target']) : '';
         $posts_per_page   = isset( $instance['posts_per_page'] ) ? absint($instance['posts_per_page']) : 0;
-        $thumbnail_size   = isset( $instance['thumbnail_size'] ) ? absint($instance['thumbnail_size']) : 'blogmagazine-thumb-136x102';
+        $thumbnail_size   = isset( $instance['thumbnail_size'] ) ? blogmagazine_sanitize_image_size($instance['thumbnail_size']) : 'blogmagazine-thumb-136x102';
 
         $recent_args = array(
+            'post_type' => 'post',
+            'post_status' => 'publish',
             'posts_per_page' => $posts_per_page
         );
         $blogmagazine_query = new WP_Query( $recent_args );

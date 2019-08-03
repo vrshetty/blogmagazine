@@ -200,22 +200,22 @@ if(!class_exists( 'BlogMagazine_BlockPosts_Widget' ) ):
             /*
              * General Tab
              */
-            $title = isset( $instance['title'] ) ? esc_attr($instance['title']) : '';
+            $title = isset( $instance['title'] ) ? sanitize_text_field($instance['title']) : '';
             $title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
             $title_link = isset( $instance['title_link'] ) ? esc_url($instance['title_link']) : '';
-            $title_target = isset( $instance['title_target'] ) ? esc_attr($instance['title_target']) : '';
+            $title_target = isset( $instance['title_target'] ) ? dglib_sanitize_link_target($instance['title_target']) : '';
             $terms_ids   = isset( $instance['terms_ids'] ) ? $instance['terms_ids'] : '';
-            $default_tablabel   = isset( $instance['default_tablabel'] ) ? esc_attr($instance['default_tablabel']) : '';
-            $excerpt_length   = isset( $instance['excerpt_length'] ) ? $instance['excerpt_length'] : 100;
-            $tab_term_list   = isset( $instance['tab_term_list'] ) ? esc_attr($instance['tab_term_list']) : 'none';
+            $default_tablabel   = isset( $instance['default_tablabel'] ) ? sanitize_text_field($instance['default_tablabel']) : '';
+            $excerpt_length   = isset( $instance['excerpt_length'] ) ? absint($instance['excerpt_length']) : 100;
+            $tab_term_list   = isset( $instance['tab_term_list'] ) ? blogmagazine_sanitize_widget_tab_options($instance['tab_term_list']) : 'none';
             $tabs_terms   = isset( $instance['tabs_terms'] ) ? $instance['tabs_terms'] : '';
 
             /*
              * Layout Tab
              */
-            $block_layout   = isset( $instance['block_layout'] ) ? esc_attr($instance['block_layout']) : 'layout1';
-            $thumbnail_size = isset( $instance['thumbnail_size'] ) ? esc_attr($instance['thumbnail_size']) : 'thumbnail';
-            $largeimg_size = isset( $instance['largeimg_size'] ) ? esc_attr($instance['largeimg_size']) : 'full';
+            $block_layout   = isset( $instance['block_layout'] ) ? blogmagazine_sanitize_block_post_layout($instance['block_layout']) : 'layout1';
+            $thumbnail_size = isset( $instance['thumbnail_size'] ) ? blogmagazine_sanitize_image_size($instance['thumbnail_size']) : 'thumbnail';
+            $largeimg_size = isset( $instance['largeimg_size'] ) ? blogmagazine_sanitize_image_size($instance['largeimg_size']) : 'full';
 
             dglib_before_widget($args);
 
@@ -274,7 +274,7 @@ if(!class_exists( 'BlogMagazine_BlockPosts_Widget' ) ):
                 <?php do_action( 'blogmagazine_widget_blockposts_pagination', $blogmagazine_args ); ?>
                 <figure class="blgmg-wdgt-preloader hidden">
                     <span class="helper"></span>
-                    <img src="<?php echo esc_url( dglib_directory_uri('assets/img/preloader/loader3.gif') ); ?>" height="100" width="100" alt="Preloader" title="Preloader" />
+                    <img src="<?php echo esc_url( dglib_directory_uri('assets/img/preloader/loader3.gif') ); ?>" height="100" width="100" alt="<?php esc_html_e('Preloader', 'blogmagazine'); ?>" title="<?php esc_html_e('Preloader', 'blogmagazine'); ?>" />
                 </figure>
             </div><!--- .blogmagazine-block-wrapper -->
             <?php

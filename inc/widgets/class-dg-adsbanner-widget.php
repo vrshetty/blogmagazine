@@ -118,12 +118,12 @@ class BlogMagazine_Ads_Banner_Widget extends Dglib_Master_Widget{
         /*
          * General Tabs
          */
-        $title  = isset( $instance['title'] ) ? esc_html($instance['title']) : '';
-        $title_target  = isset( $instance['title_target'] ) ? esc_html($instance['title_target']) : '';
-        $title_link  = isset( $instance['title_link'] ) ? esc_html($instance['title_link']) : '';
+        $title  = isset( $instance['title'] ) ? sanitize_text_field($instance['title']) : '';
+        $title_target  = isset( $instance['title_target'] ) ? dglib_sanitize_link_target($instance['title_target']) : '';
+        $title_link  = isset( $instance['title_link'] ) ? esc_url($instance['title_link']) : '';
         $banner_image  = isset( $instance['banner_image'] ) ? esc_url($instance['banner_image']) : '';
         $banner_url    = isset( $instance['banner_url'] ) ? esc_url($instance['banner_url']) : '';
-        $banner_target = isset( $instance['banner_target'] ) ? esc_attr($instance['banner_target']) : '';
+        $banner_target = isset( $instance['banner_target'] ) ? dglib_sanitize_link_target($instance['banner_target']) : '';
         $banner_rel    = isset( $instance['banner_rel'] ) ? '' : 'nofollow';
 
         dglib_before_widget($args);

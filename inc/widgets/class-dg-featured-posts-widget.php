@@ -138,10 +138,10 @@ class BlogMagazine_Featured_Posts_Widget extends Dglib_Master_Widget{
         /*
          * General tabs
          */
-        $title = isset( $instance['title'] ) ? esc_attr($instance['title']) : '';
+        $title = isset( $instance['title'] ) ? sanitize_text_field($instance['title']) : '';
         $title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
         $title_link = isset( $instance['title_link'] ) ? esc_url($instance['title_link']) : '';
-        $title_target = isset( $instance['title_target'] ) ? esc_attr($instance['title_target']) : '';
+        $title_target = isset( $instance['title_target'] ) ? dglib_sanitize_link_target($instance['title_target']) : '';
         $terms_ids  = isset( $instance['terms_ids'] ) ? $instance['terms_ids'] : '';
 
         $show_postdate  = isset( $instance['show_postdate'] ) ? absint($instance['show_postdate']) : 0;
@@ -150,7 +150,7 @@ class BlogMagazine_Featured_Posts_Widget extends Dglib_Master_Widget{
         /*
          * Layout tabs
          */
-        $thumbnail_size = isset( $instance['thumbnail_size'] ) ? esc_attr($instance['thumbnail_size']) : 'full';
+        $thumbnail_size = isset( $instance['thumbnail_size'] ) ? blogmagazine_sanitize_image_size($instance['thumbnail_size']) : 'full';
         $excerpt_length = isset( $instance['excerpt_length'] ) ? absint($instance['excerpt_length']) : 0;
 
         dglib_before_widget($args);

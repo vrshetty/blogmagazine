@@ -149,18 +149,18 @@ class BlogMagazine_Carousel_widget extends Dglib_Master_Widget{
 
         extract($args);
 
-        $title = isset( $instance['title'] ) ? esc_html($instance['title']) : '';
+        $title = isset( $instance['title'] ) ? sanitize_text_field($instance['title']) : '';
         $title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
         $title_link = isset( $instance['title_link'] ) ? esc_url($instance['title_link']) : '';
-        $title_target = isset( $instance['title_target'] ) ? esc_attr($instance['title_target']) : '';
+        $title_target = isset( $instance['title_target'] ) ? dglib_sanitize_link_target($instance['title_target']) : '';
         $terms_ids  = isset( $instance['terms_ids'] ) ? $instance['terms_ids'] : '';
-        $thumbnail_size   = isset( $instance['thumbnail_size'] ) ? esc_attr($instance['thumbnail_size']) : 'blogmagazine-thumb-800x600';
+        $thumbnail_size   = isset( $instance['thumbnail_size'] ) ? blogmagazine_sanitize_image_size($instance['thumbnail_size']) : 'blogmagazine-thumb-800x600';
         $total_no_slides   = isset( $instance['total_no_slides'] ) ? absint($instance['total_no_slides']) : 10;
 
         /*
          * Layout Options
          */
-        $block_layout   = isset( $instance['block_layout'] ) ? esc_attr($instance['block_layout']) : 'layout1';
+        $block_layout   = isset( $instance['block_layout'] ) ? blogmagazine_sanitize_carousel_layout($instance['block_layout']) : 'layout1';
         $no_of_columns   = isset( $instance['no_of_columns'] ) ? absint($instance['no_of_columns']) : 4;
 
         dglib_before_widget($args);
