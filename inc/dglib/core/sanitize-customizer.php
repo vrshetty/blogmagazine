@@ -15,7 +15,7 @@ if ( ! function_exists( 'dglib_sanitize_repeater_data' ) ){
 						$repeater_json[$boxes][$key] = dglib_sanitize_checkbox( $value );
 					}
 					else{
-						$repeater_json[$boxes][$key] = esc_attr( $value );
+						$repeater_json[$boxes][$key] = sanitize_text_field( $value );
 					}
 				}
 			}

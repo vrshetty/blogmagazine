@@ -75,7 +75,7 @@ if( ! function_exists( 'dglib_sanitize_multiselect' ) ) :
 		$multiselect_list = array();
 		if(is_array($new_field_value)){
 			foreach($new_field_value as $key=>$value){
-				$multiselect_list[] = esc_attr($value);
+				$multiselect_list[] = sanitize_text_field($value);
 			}
 		}
 		return $multiselect_list;
@@ -96,7 +96,7 @@ if( ! function_exists( 'dglib_sanitize_accordion' ) ) :
 		$dropdown_accordions = array();
 		if(is_array($new_field_value)){
 			foreach($new_field_value as $key=>$value){
-				$dropdown_accordions[] = esc_attr($value);
+				$dropdown_accordions[] = sanitize_text_field($value);
 			}
 		}
 		return $dropdown_accordions;
