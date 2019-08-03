@@ -53,7 +53,7 @@ https://github.com/TGMPA/TGM-Plugin-Activation - MIT License
 https://github.com/justintadlock/breadcrumb-trail - GPL V2 or later
 
 == Credits ==
-https://wordpress.org/themes/lekh/ Use their library to this theme - (GPL License)
+https://wordpress.org/themes/lekh/ Use their library to develop this theme - (GPL License)
 
 
 == Changelog ==
