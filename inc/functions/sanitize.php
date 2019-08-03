@@ -121,7 +121,7 @@ if( !function_exists('blogmagazine_sanitize_widget_tab_options') ):
 	function blogmagazine_sanitize_widget_tab_options($widget_value){
 
 		$return_value = 'none';
-		switch($customizer_value){
+		switch($widget_value){
 			case 'grid':
 			case 'selected':
 			case 'otherterm':
@@ -165,7 +165,7 @@ if( !function_exists('blogmagazine_sanitize_block_post_layout') ):
 	function blogmagazine_sanitize_block_post_layout($widget_value){
 
 		$return_value = 'layout1';
-		switch($customizer_value){
+		switch($widget_value){
 			case 'layout1':
 			case 'layout2':
 			case 'layout3':
@@ -191,7 +191,7 @@ if( !function_exists('blogmagazine_sanitize_carousel_layout') ):
 	function blogmagazine_sanitize_carousel_layout($widget_value){
 
 		$return_value = 'layout1';
-		switch($customizer_value){
+		switch($widget_value){
 			case 'layout1':
 				$return_value = $widget_value;
 				break;
