@@ -32,6 +32,7 @@ if( ! function_exists( 'dglib_widget_title_callback' ) ) :
 			}
 			$title_other_html = '';
 			if($title_terms && $tab_taxonomy){
+				$title_other_html .= '<span class="wdgt-tab-toggle"><i class="fa fa-angle-down"></i></span>';
 				$title_other_html .= '<ul class="wdgt-title-tabs">';
 				if($default_tablabel){
 					$title_other_html .= '<li class="wdgt-tab-term active-item">';

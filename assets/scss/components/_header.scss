@@ -588,9 +588,7 @@ Ticker Section
         float: left;
         margin-right: 15px;
         @media (max-width: 600px){
-            float: none;
-            clear:both;
-            display: block;
+            display: none;
         }
     }
     .lslide.active{
@@ -618,12 +616,16 @@ Ticker Section
     }
 }
 .news-ticker-title{
+    padding-right:70px;
     &>a{
         color: #333;
         display: block;
         margin: 5px 0 0;
+        overflow: hidden;
+        white-space: nowrap;
         @media (max-width: 600px){
-            display:inline-block;
+            text-align: left;
+            padding-left: 10px;
         }
     }
 }

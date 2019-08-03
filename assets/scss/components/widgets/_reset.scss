@@ -58,12 +58,48 @@
             color:inherit;
         }
     }
+    .wdgt-tab-toggle{
+        float:right;
+        display:none;
+        .fa{
+            cursor:pointer;
+            padding:6px 8px;
+            display:block;
+            font-size:20px;
+            line-height:25px;
+            background-color:$primary_color;
+        }
+        @media(max-width:600px){
+            display:block;
+        }
+    }
     .wdgt-title-tabs{
         margin:0;
         padding:0 8px;
         display:inline;
         list-style:none;
         vertical-align: top;
+        @media(max-width:600px){
+            left:0;
+            right:0;
+            top:100%;
+            z-index:1;
+            width:100%;
+            max-height:0px;
+            padding:0px;
+            display:block;
+            overflow:hidden;
+            position:absolute;
+            background-color:#fff;
+            border:1px solid $primary_color;
+            transition: max-height .3s linear;
+        }
+        &.show-tabs{
+            @media(max-width:600px){
+                max-height:500px;
+                display:block;
+            }
+        }
     }
     .wdgt-tab-term{
         color:$primary_color;
@@ -80,6 +116,10 @@
         &:hover, &.active-item{
             color:$white_color;
             background-color:$primary_color;
+        }
+        @media(max-width:600px){
+            width:100%;
+            display:block;
         }
     }
 }

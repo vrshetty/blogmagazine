@@ -41,8 +41,8 @@
                     enableTouch: false,
                     verticalHeight: 35,
                     adaptiveHeight:true,
-                    prevHtml: '<i class="fa fa-angle-up"></i>',
-                    nextHtml: '<i class="fa fa-angle-down"></i>',
+                    prevHtml: '<i class="fa fa-angle-left"></i>',
+                    nextHtml: '<i class="fa fa-angle-right"></i>',
                 };
                 $('.blogmagazine-newsticker').each(function(){
                     $(this).lightSlider(newsticker_args);
@@ -131,6 +131,19 @@
                 });
             },
 
+            Title_Tab_Toggle: function(evt){
+                var widget_title = $(this).closest('.blogmagazine-block-title, .widget-title');
+                var arrow_icon = widget_title.find('.wdgt-tab-toggle .fa');
+                if(arrow_icon.hasClass('fa-angle-up')){
+                    arrow_icon.removeClass( 'fa-angle-up').addClass('fa-angle-down');
+                    widget_title.find('.wdgt-title-tabs').removeClass('show-tabs');
+                }else{
+                    arrow_icon.removeClass( 'fa-angle-down').addClass('fa-angle-up');
+                    widget_title.find('.wdgt-title-tabs').addClass('show-tabs');
+                }
+                
+            },
+
             Widget_Title_Tab: function(evt){
 
                 evt.preventDefault();
@@ -144,7 +157,7 @@
                 }
 
                 var tab_content_class = tab_item.data('tab');
-                var widget_title = tab_item.closest('.blogmagazine-block-title');
+                var widget_title = tab_item.closest('.blogmagazine-block-title, .widget-title');
                 var block_post_widget = tab_item.closest('.widget');
                 
                 widget_title_tabs.find('.wdgt-tab-term').removeClass('active-item');
@@ -250,6 +263,9 @@
             var dgwidt_title_tab = snipits.Widget_Title_Tab;
             docObj.on( 'click', '.dgwidgt-title-tab', dgwidt_title_tab );
 
+            var toggle_title_tab = snipits.Title_Tab_Toggle;
+            docObj.on( 'click', '.wdgt-tab-toggle, .dgwidgt-title-tab', toggle_title_tab );
+
             var blogmag_scroll_up = snipits.ScrollUp;
             docObj.on( 'click', '#blogmagazine-scrollup', blogmag_scroll_up );
 
@@ -267,6 +283,7 @@
 
             var tabbed_widget = snipits.TabbedWidget;
             docObj.on( 'click', '.blogmagazine-widget-tab a', tabbed_widget );
+
 
         },
     
