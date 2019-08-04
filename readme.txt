@@ -5,7 +5,7 @@ Donate link:        https://dinesh-ghimire.com.np/
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.2.2
 Requires PHP:       5.3
-Version:            1.0.7
+Version:            1.0.8
 Stable tag:         trunk
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
@@ -55,13 +55,12 @@ https://github.com/justintadlock/breadcrumb-trail - GPL V2 or later
 == Credits ==
 https://wordpress.org/themes/lekh/ Use their library to develop this theme - (GPL License)
 
-
 == Changelog ==
 
 = 1.0.8 - 2019/07/29 =
     * Fixed: Gutenberg block css improvements
     * Fixed: Customizer and Widget field sanitized
-    * Added: Post Format Support Features added
+    * Fixed: Credit given to lekh theme library
 
 = 1.0.7 - 2019/07/28 =
     * Fixed: reviewer listed issue fixed
