@@ -839,7 +839,8 @@ blockquote {
  */
 .wp-block-pullquote {
   margin: 0 0 20px;
-  border-top: 10px solid #0c4da2; }
+  border-top: 10px solid #0c4da2;
+  border-bottom: 10px solid #0c4da2; }
   .wp-block-pullquote blockquote {
     border: none;
     padding: 0px;
@@ -3096,8 +3097,6 @@ Footer CSS
   /*--------------------------------------------------------------
     Tag Cloud Widget Css
     --------------------------------------------------------------*/ }
-  .blogmagazine-middle-footer .dg-footer-widget-wrapper {
-    margin: 0 -7.5px; }
   .blogmagazine-middle-footer .widget a {
     color: #cfcfcf; }
     .blogmagazine-middle-footer .widget a:before {

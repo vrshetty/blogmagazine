@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
-"POT-Creation-Date: 2019-07-29 07:48:44+00:00\n"
+"POT-Creation-Date: 2019-08-03 08:06:28+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -181,7 +181,7 @@ msgstr ""
 
 #: inc/customizer/header/section-main-navigation.php:32
 #: inc/customizer/options/section-image-settings.php:30
-#: inc/customizer/templates/templates-homepage.php:22
+#: inc/customizer/templates/templates-homepage.php:23
 #: inc/dglib/customizer/templates/templates-404-page.php:39
 #: inc/dglib/customizer/templates/templates-archive-page.php:38
 #: inc/dglib/customizer/templates/templates-blog-page.php:38
@@ -195,7 +195,7 @@ msgstr ""
 
 #: inc/customizer/header/section-main-navigation.php:33
 #: inc/customizer/options/section-image-settings.php:31
-#: inc/customizer/templates/templates-homepage.php:23
+#: inc/customizer/templates/templates-homepage.php:24
 #: inc/dglib/core/functions.php:147
 #: inc/dglib/customizer/templates/templates-404-page.php:40
 #: inc/dglib/customizer/templates/templates-archive-page.php:39
@@ -350,11 +350,11 @@ msgstr ""
 msgid "Blog Layouts"
 msgstr ""
 
-#: inc/customizer/templates/templates-homepage.php:16
+#: inc/customizer/templates/templates-homepage.php:17
 msgid "Static homepage as Magazine Layout"
 msgstr ""
 
-#: inc/customizer/templates/templates-homepage.php:25
+#: inc/customizer/templates/templates-homepage.php:26
 msgid "Enable static homepage as magazine layout."
 msgstr ""
 
@@ -715,47 +715,47 @@ msgstr ""
 msgid "Reactions Heading"
 msgstr ""
 
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:59
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:60
 msgid "Display Reactions Type"
 msgstr ""
 
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:60
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:61
 msgid "Choose display reaction type."
 msgstr ""
 
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:66
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:67
 msgid "Percentage"
 msgstr ""
 
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:67
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:68
 msgid "Total Values"
 msgstr ""
 
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:90
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:91
 msgid "Visitor reaction icons."
 msgstr ""
 
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:94
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:95
 msgid "Add Reaction"
 msgstr ""
 
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:95
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:96
 msgid "Reaction Details"
 msgstr ""
 
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:100
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:101
 msgid "Reaction Icon"
 msgstr ""
 
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:101
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:102
 msgid "Choose reaction icon."
 msgstr ""
 
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:105
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:106
 msgid "Reaction Title"
 msgstr ""
 
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:106
+#: inc/dglib/customizer/sections/section-visitor-reaction.php:107
 msgid "Enter reaction title here."
 msgstr ""
 
@@ -892,7 +892,6 @@ msgstr ""
 #: inc/dglib/customizer/templates/templates-blog-page.php:101
 #: inc/dglib/customizer/templates/templates-search-page.php:102
 #: template-parts/layouts/classic.php:25 template-parts/layouts/grid.php:40
-#: template-parts/post-format/content.php:25
 msgid "Read More..."
 msgstr ""
 
@@ -1446,15 +1445,15 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: inc/hooks/setup.php:60
+#: inc/hooks/setup.php:63
 msgid "Top Menu"
 msgstr ""
 
-#: inc/hooks/setup.php:61
+#: inc/hooks/setup.php:64
 msgid "Primary Menu"
 msgstr ""
 
-#: inc/hooks/setup.php:62
+#: inc/hooks/setup.php:65
 msgid "Footer Menu"
 msgstr ""
 
@@ -1925,6 +1924,10 @@ msgstr ""
 msgid "Thumbnail Image Size"
 msgstr ""
 
+#: inc/widgets/class-dg-blockposts-widget.php:277
+msgid "Preloader"
+msgstr ""
+
 #: inc/widgets/class-dg-carousel-widget.php:20
 msgid "Displays posts from selected categories in carousel layouts."
 msgstr ""
@@ -2141,34 +2144,13 @@ msgstr ""
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: template-parts/post-format/content-none.php:15
-msgid "Nothing Found"
-msgstr ""
-
-#: template-parts/post-format/content-none.php:26
-#. translators: 1: link to WP admin new post page.
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: template-parts/post-format/content-none.php:39
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-
-#: template-parts/post-format/content-none.php:45
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-
 #: template-parts/single-details/content-page.php:31
-#: template-parts/single-details/content-single.php:65
+#: template-parts/single-details/content-single.php:68
 #: template-parts/single-details/content.php:40
 msgid "Pages:"
 msgstr ""
 
-#: template-parts/single-details/content-single.php:54
+#: template-parts/single-details/content-single.php:57
 #: template-parts/single-details/content.php:30
 #. translators: %s: Name of current post. Only visible to screen readers
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"

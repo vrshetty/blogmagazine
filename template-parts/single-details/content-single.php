@@ -13,8 +13,9 @@
 	<?php
 	$show_featured_image = get_theme_mod( 'dglib_enable_featured_image_post', 'show' );
 	if($show_featured_image=='show' ){
-		$is_post_format = blogmagazine_post_format_html();
-		if($is_post_format!=true){
+		do_action( 'blogmagazine_single_before_post_thumbnail' );
+		$show_featured_image = apply_filters( 'blogmagazine_show_featuredimage_single', true );
+		if($show_featured_image){
 			?>
 			<div class="blogmagazine-article-thumb">
 				<?php the_post_thumbnail( 'full' ); ?>

@@ -59,7 +59,7 @@ https://wordpress.org/themes/lekh/ Use their library to develop this theme - (GP
 == Changelog ==
 
 = 1.0.8 - 2019/07/29 =
-    * Fixed: Gutenberg blog css improvements
+    * Fixed: Gutenberg block css improvements
     * Fixed: Customizer and Widget field sanitized
     * Added: Post Format Support Features added
 
