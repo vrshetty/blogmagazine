@@ -45,7 +45,6 @@ BlogMagazine theme is translation ready.
 5. https://pxhere.com/en/photo/1087225 - License CC0 Public Domain
 
 == Licenses ==
-https://github.com/developerdinesh/blank-theme/ - MIT License
 https://github.com/FortAwesome/Font-Awesome - MIT License
 https://github.com/garand/sticky - MIT License
 https://github.com/sachinchoolur/lightslider - MIT License
