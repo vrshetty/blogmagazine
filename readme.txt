@@ -58,9 +58,11 @@ https://wordpress.org/themes/lekh/ Use their library to develop this theme - (GP
 == Changelog ==
 
 = 1.0.8 - 2019/07/29 =
-    * Fixed: Gutenberg block css improvements
-    * Fixed: Customizer and Widget field sanitized
-    * Fixed: Credit given to lekh theme library
+    * Improvements: Customizer and Widget field proper sanitized
+    * Credit: Credit given to lekh theme library
+    * Improvements: Ticker responsive improvements
+    * Improvements: Block post tab responsive
+    * Improvements: Gutenberg block css improvements
 
 = 1.0.7 - 2019/07/28 =
     * Fixed: reviewer listed issue fixed
