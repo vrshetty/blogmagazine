@@ -275,7 +275,7 @@ module.exports = function (grunt) {
                     },*/
                     port: 3500,
                     watchTask: true,
-                    proxy: "localhost/themecentury/themes/blogmagazine",
+                    proxy: "localhost/dinesh/themes/blogmagazine",
                 },
             },
         },
