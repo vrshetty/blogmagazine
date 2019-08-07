@@ -12,8 +12,7 @@
 <div class="blogmagazine-logo-section-wrapper">
 	<div class="dg-container">
 		<div class="site-branding">
-
-			<?php if ( the_custom_logo() ) { ?>
+			<?php if ( has_custom_logo() ) { ?>
 				<div class="site-logo">
 					<?php the_custom_logo(); ?>
 				</div><!-- .site-logo -->

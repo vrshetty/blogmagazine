@@ -22,11 +22,11 @@
  				var switch_wrapper = switch_single.closest('.dg-customizer-switch-wrapper');
  				var switch_main_field = switch_wrapper.siblings('.dg-customizer-switch-value');
  				if(switch_wrapper.hasClass('checkbox')){
- 					var switch_array = [];
+ 					var switch_array = {};
  					switch_wrapper.find('.dg-switch-item').each(function(){
  						if( $(this).is(':checked') ){
  							var switch_value = $(this).val();
- 							switch_array.push(switch_value);
+ 							switch_array[switch_value]=switch_value;
  						}
  					});
  					switch_value = JSON.stringify(switch_array);

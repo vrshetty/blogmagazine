@@ -16,10 +16,6 @@ Top Header
     background-color: $primary_color;
 }
 
-.blogmagazine-social-icons-wrapper{
-    display:inline-block;
-}
-
 .blogmagazine-top-left-section-wrapper{
     float: left;
     font-size: 12px;
@@ -82,11 +78,16 @@ Top Header
         float: left;
         display: block;
         a{
-            color: $white_color;
             display: block;
             padding: 0 10px;
             font-size: 14px;
-            line-height: 35px;
+            line-height: 1em;
+            color: $white_color;
+            .fa{
+                &:before{
+                    line-height:37px;
+                }
+            }
         }
     }
 }
@@ -298,23 +299,20 @@ Site Branding
     height: 0;
     left: 50%;
     position: absolute;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 0;
 }
 
 .blogmagazine-header-menu-wrapper::before,
 .blogmagazine-header-menu-wrapper::after {
-    background: $primary_color none repeat scroll 0 0;
     content: "";
     height: 100%;
     left: -5px;
-    position: absolute;
     top: 0;
     width: 5px;
     z-index: 99;
+    position: absolute;
+    background-color: $primary_color;
 }
 
 .blogmagazine-header-menu-wrapper::after {

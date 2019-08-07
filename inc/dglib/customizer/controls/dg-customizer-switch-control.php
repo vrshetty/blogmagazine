@@ -39,7 +39,7 @@ class Dglib_Customize_Switch_Control extends WP_Customize_Control {
         $switch_type = $this->switch_type;
         $checked_value = $this->value();
         if( dglib_is_json($checked_value) ){
-            $checked_value = json_decode( $checked_value, false );
+            $checked_value = json_decode( $checked_value, true );
         }
         ?>
         <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
@@ -59,7 +59,7 @@ class Dglib_Customize_Switch_Control extends WP_Customize_Control {
             }
             ?>
         </div>
-        <input class="dg-customizer-switch-value" value="<?php echo esc_attr($this->value()); ?>" type="hidden" <?php $this->link(); ?> />
+        <input class="dg-customizer-switch-value" value='<?php echo esc_attr($this->value()); ?>' type="hidden" <?php $this->link(); ?> />
         <?php
     }
 

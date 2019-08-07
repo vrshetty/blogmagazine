@@ -100,11 +100,11 @@ if(!class_exists('Dglib_Customize_Imageoptions_Control')):
             <div class="buttonset dg-imageoption-wrapper">
                 <# for ( key in data.choices ) { #>
                     <# if(data.option_nature=='radio') { #>
-                        <# var is_checked = ( key == data.value) ? 'checked="checked"' : 'radiofalse'; #>
+                        <# var is_checked = ( key == data.value) ? 'checked="checked"' : 'data-type="radio"'; #>
                     <# }else{ #>
                         <# var imageoption_value = data.value.replace(/&quot;/g,'"'); #>
                         <# var imageoption_value = (imageoption_value) ? imageoption_value : '[]'; #>
-                        <# var is_checked = (  _.contains(JSON.parse(imageoption_value), key) ) ? 'checked="checked"' : ''; #>
+                        <# var is_checked = (  _.contains(JSON.parse(imageoption_value), key) ) ? 'checked="checked"' : 'data-type="checkbox"'; #>
                     <# } #>
                     <fieldset class="dg-imageoption-single">
                         <input type="{{ data.option_nature }}" class="dglib-imageoption-{{ data.option_nature }}" value="{{ key }}" name="_customize-{{ data.type }}-{{ data.id }}" id="{{ data.id }}-{{ key }}" {{{ is_checked }}} <# if (data.option_nature=='radio') { #>{{{ data.link }}}<# }  #> /> 
