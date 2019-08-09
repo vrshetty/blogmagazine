@@ -38,6 +38,74 @@
         background-color:$secondary_color;
     }
 }
+
+.widget-title,
+.blogmagazine-block-title{
+    .wdgt-tab-toggle{
+        float:right;
+        display:none;
+        .fa{
+            cursor:pointer;
+            padding:6px 8px;
+            display:block;
+            font-size:20px;
+            line-height:25px;
+            background-color:$primary_color;
+        }
+        @media(max-width:600px){
+            display:block;
+        }
+    }
+    .wdgt-title-tabs{
+        margin:0;
+        padding:0 15px;
+        display:inline;
+        list-style:none;
+        vertical-align: top;
+        @media(max-width:600px){
+            left:0;
+            right:0;
+            top:100%;
+            z-index:1;
+            width:100%;
+            padding:0px;
+            display:block;
+            overflow:hidden;
+            position:absolute;
+            max-height:10px 0px;
+            background-color:#fff;
+            border:1px solid $primary_color;
+            transition: max-height .3s linear;
+        }
+        &.show-tabs{
+            @media(max-width:600px){
+                max-height:500px;
+                display:block;
+            }
+        }
+    }
+    .wdgt-tab-term{
+        color:$primary_color;
+        font-size:12px;
+        display:inline-block;
+        text-transform: uppercase;
+        a{
+            color:inherit;
+            padding:10px;
+            display:block;
+            transition:none;
+        }
+        &:hover, &.active-item{
+            color:$white_color;
+            background-color:$primary_color;
+        }
+        @media(max-width:600px){
+            width:100%;
+            display:block;
+        }
+    }
+}
+
 .blogmagazine-block-title{
     color:$white_color;
     display:block;
@@ -58,68 +126,24 @@
             color:inherit;
         }
     }
-    .wdgt-tab-toggle{
-        float:right;
-        display:none;
-        .fa{
-            cursor:pointer;
-            padding:6px 8px;
-            display:block;
-            font-size:20px;
-            line-height:25px;
-            background-color:$primary_color;
-        }
-        @media(max-width:600px){
-            display:block;
-        }
-    }
-    .wdgt-title-tabs{
-        margin:0;
-        padding:0 8px;
-        display:inline;
-        list-style:none;
-        vertical-align: top;
-        @media(max-width:600px){
-            left:0;
-            right:0;
-            top:100%;
-            z-index:1;
-            width:100%;
-            max-height:0px;
-            padding:0px;
-            display:block;
-            overflow:hidden;
-            position:absolute;
-            background-color:#fff;
-            border:1px solid $primary_color;
-            transition: max-height .3s linear;
-        }
-        &.show-tabs{
-            @media(max-width:600px){
-                max-height:500px;
-                display:block;
-            }
-        }
-    }
+}
+
+.widget-title{
+    margin: 0 0 20px;
+    text-align: left;
+    padding: 6px 0;
+    color:inherit;
+    font-size:20px;
+    text-transform: uppercase;
     .wdgt-tab-term{
-        color:$primary_color;
-        font-size:12px;
-        line-height:3em;
-        display:inline-block;
-        text-transform: uppercase;
+        color:$white_color;
         a{
             color:inherit;
-            padding:0 6px;
-            display:block;
-            transition:none;
+            padding: 0 8px;
         }
         &:hover, &.active-item{
-            color:$white_color;
-            background-color:$primary_color;
-        }
-        @media(max-width:600px){
-            width:100%;
-            display:block;
+            color:$footer_color;
+            background-color:transparent;
         }
     }
 }
