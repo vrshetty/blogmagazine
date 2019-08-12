@@ -78,6 +78,7 @@ if( ! function_exists( 'blogmagazine_dynamic_styles' ) ) :
         $refine_output_css = blogmagazine_css_strip_whitespace( $output_css );
 
         wp_add_inline_style( 'blogmagazine-style', $refine_output_css );
+        
     }
 endif;
 

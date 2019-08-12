@@ -498,8 +498,10 @@ Clearings
  * @subpackage blogmagazine
  * @since 1.0.0
  */
-.dglib-breadcrumbs-wrapper .layout2 li.trail-item > a, .dglib-breadcrumbs-wrapper .layout2 li.trail-item > span {
-  line-height: 30px; }
+.dglib-breadcrumbs-wrapper {
+  background-color: transparent; }
+  .dglib-breadcrumbs-wrapper .layout2 li.trail-item > a, .dglib-breadcrumbs-wrapper .layout2 li.trail-item > span {
+    line-height: 30px; }
 
 /*
  * @package dineshghimire
@@ -1630,7 +1632,7 @@ author Widgets
 .blogmagazine_featured_posts .blogmagazine-post-title.small-size {
   line-height: 1em; }
   .blogmagazine_featured_posts .blogmagazine-post-title.small-size a {
-    color: #333;
+    color: #3d3d3d;
     font-size: 16px;
     line-height: 1.4em;
     text-transform: capitalize; }

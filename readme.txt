@@ -13,7 +13,7 @@ Tags:               news, blog, accessibility-ready, custom-background, custom-c
 
 == Description ==
 
-A simple and clean WordPress free blog and magazine style theme with many customization options. This theme is mainly applicable for magazine and blogs .It's customizable theme. If any support needed then hit the url https://dinesh-ghimire.com.np/forums/ please check the demo on https://demo.dinesh-ghimire.com.np/wpthemes/blogmagazine Click this link for documentation http://docs.dinesh-ghimire.com.np/blogmagazine.html
+A simple and clean WordPress free blog and magazine style theme with many customization options. This theme is mainly applicable for magazine and blogs .It's customizable theme. If any support needed then hit the url https://dinesh-ghimire.com.np/forums/ please check the demo on https://demo.dinesh-ghimire.com.np/?name=BlogMagazine Click this link for documentation http://docs.dinesh-ghimire.com.np/blogmagazine.html
 
 == Installation ==
 
