@@ -243,9 +243,9 @@ Site Branding
         &.sub-menu{
             left: 0;            
             top: 120%;
-            z-index: 99;
+            z-index: 1;
             opacity: 0;
-            min-width: 200px;
+            min-width: 250px;
             position: absolute;
             visibility: hidden;
             transition: all 0.5s ease;

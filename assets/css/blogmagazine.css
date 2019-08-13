@@ -1011,6 +1011,32 @@ blockquote {
       color: #cfcfcf;
       background-color: transparent; }
 
+.widget-title,
+.blogmagazine-block-title {
+  position: relative; }
+  .widget-title .carousel-nav-action,
+  .blogmagazine-block-title .carousel-nav-action {
+    top: 0;
+    right: 0;
+    padding: 6px;
+    position: absolute; }
+    .widget-title .carousel-nav-action .blogmagazine-carousel-control,
+    .blogmagazine-block-title .carousel-nav-action .blogmagazine-carousel-control {
+      color: #fff;
+      font-size: 16px;
+      margin-left: 0;
+      padding: 3px 13px;
+      cursor: pointer;
+      display: inline-block;
+      background-color: #333;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      .widget-title .carousel-nav-action .blogmagazine-carousel-control:hover,
+      .blogmagazine-block-title .carousel-nav-action .blogmagazine-carousel-control:hover {
+        background-color: #0c4da2; }
+
 /*
  * @package dineshghimire
  * @subpackage blogmagazine
@@ -1115,6 +1141,12 @@ author Widgets
     height: 30px;
     line-height: 30px;
     font-size: 1.2em; }
+
+/*  ----------------------------------------------------
+author Widgets
+-------------------------------------------------------- */
+.card {
+  background: transparent; }
 
 /*
  * @package dineshghimire
@@ -2812,9 +2844,9 @@ Site Branding
     .main-navigation ul.sub-menu {
       left: 0;
       top: 120%;
-      z-index: 99;
+      z-index: 1;
       opacity: 0;
-      min-width: 200px;
+      min-width: 250px;
       position: absolute;
       visibility: hidden;
       -webkit-transition: all 0.5s ease;
@@ -3469,28 +3501,6 @@ Block Post Widget CSS
   font-size: 12px; }
   .blgmg-related-posts-wrap .blogmagazine-post-meta span a {
     font-size: 12px; }
-
-.blogmagazine-block-title {
-  position: relative; }
-  .blogmagazine-block-title .carousel-nav-action {
-    top: 0;
-    right: 0;
-    padding: 6px;
-    position: absolute; }
-    .blogmagazine-block-title .carousel-nav-action .blogmagazine-carousel-control {
-      color: #fff;
-      font-size: 16px;
-      margin-left: 0;
-      padding: 3px 13px;
-      cursor: pointer;
-      display: inline-block;
-      background-color: #333;
-      -webkit-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
-      .blogmagazine-block-title .carousel-nav-action .blogmagazine-carousel-control:hover {
-        background-color: #0c4da2; }
 
 /*--------------------------------------------------------------
 Archive CSS

@@ -184,7 +184,7 @@
                 };
                 ajax_args.fail = function( xhr, textStatus, errorThrown ){
                     widget_title_tabs.attr( 'data-loading', 0 );
-                    console.warn('Sorry faild widget tab ajax call');
+                    console.warn('Sorry faild to call widget tab ajax.');
                 };
                 $.ajax(ajax_args);                
 
