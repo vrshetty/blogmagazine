@@ -48,7 +48,7 @@ if( ! function_exists( 'dglib_widget_title_callback' ) ) :
 					$tab_ajax_data['data']['terms_ids'] = $tab_term_id;
 					$tab_term_detail = get_term_by( 'id', absint( $tab_term_id ), $tab_taxonomy );
 					$title_other_html .= '<li class="wdgt-tab-term">';
-					$title_other_html .= '<a data-tab="dglib-tab-term-'.absint($tab_term_id).'" class="dgwidgt-title-tab" data-ajax-args=\'' . json_encode($tab_ajax_data) . '\' href="'.get_term_link($tab_term_id, $tab_taxonomy).'">';
+					$title_other_html .= '<a data-tab="dglib-tab-term-'.absint($tab_term_id).'" class="dgwidgt-title-tab" data-ajax-args=\'' . json_encode($tab_ajax_data) . '\' href="'.esc_url(get_term_link($tab_term_id, $tab_taxonomy) ).'">';
 					$title_other_html .= $tab_term_detail->name;
 					$title_other_html .= '</a>';
 					$title_other_html .= '</li>';

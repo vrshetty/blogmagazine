@@ -173,7 +173,7 @@ class Dglib_Social_Icons_Widget extends Dglib_Master_Widget{
                 title="<?php esc_html_e('Lekh Social Media Icons', 'blogmagazine'); ?>" 
                 target="<?php echo esc_attr($social_media_target); ?>" 
                 <?php if($social_media_target){ ?>
-                href="<?php echo esc_attr($social_media_link); ?>" 
+                href="<?php echo esc_url($social_media_link); ?>" 
                 <?php } ?> 
                 style="background-color:<?php echo esc_attr( $social_media_color ); ?>"
                 ><i 
