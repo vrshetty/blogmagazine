@@ -44,6 +44,53 @@ $wp_customize->add_control(
 );
 
 /**
+ * Sidebar Options for Single Page
+ *
+ * @since 1.0.0
+ */
+$wp_customize->add_setting(
+    'dglib_default_post_sidebar',
+    array(
+        'default'           => 'right_sidebar',
+        'sanitize_callback' => 'sanitize_key',
+    )
+);
+$wp_customize->add_control( 
+    new Dglib_Customize_Imageoptions_Control(
+        $wp_customize,
+        'dglib_default_post_sidebar',
+        array(
+            'label'    => esc_html__( 'Sidebar Layout', 'blogmagazine' ),
+            'description' => esc_html__( 'Choose sidebar from available layouts', 'blogmagazine' ),
+            'section'  => 'template_post_options',
+            'choices'  => array(
+                'left_sidebar' => array(
+                    'label' => esc_html__( 'Left Sidebar', 'blogmagazine' ),
+                    'url'   => '%s/inc/dglib/assets/img/sidebars/left-sidebar.png'
+                ),
+                'right_sidebar' => array(
+                    'label' => esc_html__( 'Right Sidebar', 'blogmagazine' ),
+                    'url'   => '%s/inc/dglib/assets/img/sidebars/right-sidebar.png'
+                ),
+                'no_sidebar' => array(
+                    'label' => esc_html__( 'No Sidebar', 'blogmagazine' ),
+                    'url'   => '%s/inc/dglib/assets/img/sidebars/no-sidebar.png'
+                ),
+                'no_sidebar_center' => array(
+                    'label' => esc_html__( 'No Sidebar Center', 'blogmagazine' ),
+                    'url'   => '%s/inc/dglib/assets/img/sidebars/no-sidebar-center.png'
+                ),
+                'both_sidebar' => array(
+                    'label' => esc_html__( 'Both Sidebar', 'blogmagazine' ),
+                    'url'   => '%s/inc/dglib/assets/img/sidebars/both-sidebar.png'
+                )
+            ),
+            'priority' => 20
+        )
+    )
+);
+
+/**
  * Enable Featured Image
  *
  * @since 1.0.0
@@ -247,34 +294,6 @@ $wp_customize->add_control(
     )
 );
 
-/**
- * Enable Reactions
- *
- * @since 1.0.0
- */
-$wp_customize->add_setting(
-    'dglib_enable_reaction_post', array(
-        'sanitize_callback' => 'sanitize_text_field',
-        'default' => 'enable',
-    )
-);
-$wp_customize->add_control(
-    new Dglib_Customize_Switch_Control(
-        $wp_customize, 
-        'dglib_enable_reaction_post', 
-        array(
-            'label' => esc_html__('Enable Reactions', 'blogmagazine'),
-            'section' => 'template_post_options',
-            'priority' => 100,
-            'type'=>'switch',
-            'choices'=> array(
-                'enable'=> esc_html__('Enable', 'blogmagazine'),
-                'disable'=> esc_html__('Disable', 'blogmagazine'),
-            ),
-            'description'=> esc_html__('You can enable reaction to show after post details.', 'blogmagazine'),
-        )
-    )
-);
 
 /**
  * Related Posts
