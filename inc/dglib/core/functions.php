@@ -236,7 +236,7 @@ if(!function_exists('dglib_get_excerpt')):
         $excerpt = substr($content_without_tags, 0, $excerpt_length);
         if($readmore){
             $default_readmore = '<span class="readmore-wrapper">';
-            $default_readmore.= '<a href="'.get_the_permalink().'">';
+            $default_readmore.= '<a href="'.esc_url(get_the_permalink()).'">';
             if($readmore_text){
             	$default_readmore.= esc_html($readmore_text);
             }else{

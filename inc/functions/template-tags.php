@@ -243,15 +243,3 @@ if( ! function_exists( 'blogmagazine_single_post_categories_list' ) ):
 		}
 	}
 endif;
-
-if(!function_exists('centurylib_excerpt_more')):
-
-	function centurylib_excerpt_more( $more ) {
-		$more = ' <a class="centurylib-readmore-button" href="'.get_the_permalink().'">';
-		$more .= esc_html__('Read More', 'blogmagazine');
-		$more .= '</a>';
-		return $more;
-	}
-
-endif;
-add_filter('excerpt_more', 'centurylib_excerpt_more');

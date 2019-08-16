@@ -118,34 +118,3 @@ $wp_customize->add_control(
         )
     )
 );
-
-
-/**
- * Enable Reactions on Page
- *
- * @since 1.0.0
- */
-$wp_customize->add_setting(
-    'dglib_enable_reaction_page', array(
-        'sanitize_callback' => 'sanitize_text_field',
-        'default' => 'disable',
-    )
-);
-$wp_customize->add_control(
-    new Dglib_Customize_Switch_Control(
-        $wp_customize, 
-        'dglib_enable_reaction_page', 
-        array(
-            'label' => esc_html__('Enable Reactions', 'blogmagazine'),
-            'section' => 'template_page_options',
-            'priority' => 40,
-            'type'=>'switch',
-            'choices'=> array(
-                'enable'=> esc_html__('Enable', 'blogmagazine'),
-                'disable'=> esc_html__('Disable', 'blogmagazine'),
-            ),
-            'description'=> esc_html__('You can enable reaction to show after page details.', 'blogmagazine'),
-        )
-    )
-);
-

@@ -156,7 +156,7 @@ if ( ! class_exists( 'Dglib_Customizer_Repeater_Control' )):
 													class="dg-customizer-imageoption-label" 
 													for="<?php echo esc_attr($key.'_'.$reaction_slug); ?>">
 														<span class="screen-reader-text"><?php echo esc_html($reaction_label); ?></span>
-														<img src="<?php echo esc_html($reaction_url); ?>" title="<?php echo esc_html($reaction_label); ?>" alt="<?php echo esc_html($reaction_label); ?>" />
+														<img src="<?php echo esc_url($reaction_url); ?>" title="<?php echo esc_attr($reaction_label); ?>" alt="<?php echo esc_attr($reaction_label); ?>" />
 													</label>
 												</fieldset>
 											<?php } ?>
@@ -293,7 +293,7 @@ if ( ! class_exists( 'Dglib_Customizer_Repeater_Control' )):
 													class="dg-customizer-imageoption-label" 
 													for="<?php echo esc_attr($key.'_'.$reaction_slug.'_'.$field_index ); ?>">
 														<span class="screen-reader-text"><?php echo esc_html($reaction_label); ?></span>
-														<img src="<?php echo esc_html($reaction_url); ?>" title="<?php echo esc_html($reaction_label); ?>" alt="<?php echo esc_html($reaction_label); ?>" />
+														<img src="<?php echo esc_url($reaction_url); ?>" title="<?php echo esc_attr($reaction_label); ?>" alt="<?php echo esc_attr($reaction_label); ?>" />
 													</label>
 												</fieldset>
 											<?php } ?>

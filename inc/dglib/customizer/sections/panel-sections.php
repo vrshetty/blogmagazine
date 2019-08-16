@@ -13,6 +13,5 @@ $wp_customize->add_panel(
 );
 
 require_once dglib_file_directory( 'customizer/sections/section-social-icons.php' );
-require_once dglib_file_directory( 'customizer/sections/section-visitor-reaction.php' );
 require_once dglib_file_directory( 'customizer/sections/section-breadcrumbs.php' );
 

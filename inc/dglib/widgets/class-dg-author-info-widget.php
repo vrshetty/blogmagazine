@@ -77,7 +77,7 @@ if (!class_exists('Dglib_Author_Info_Widget')) {
                                 ),
                                 'author_id'    => array(
                                     'dg_widget_field_name'     => 'author_id',
-                                    'tcy_widget_field_wraper'   => 'centurylib-post-type',
+                                    'tcy_widget_field_wraper'   => 'dglib-post-type',
                                     'dg_widget_field_title'    => esc_html__( 'Choose author/user', 'blogmagazine' ),
                                     'dg_widget_field_default'  => 'post',
                                     'dg_widget_field_type'     => 'select',

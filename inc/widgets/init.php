@@ -98,7 +98,6 @@ if(!function_exists('blogmagazine_register_widgets')):
     function blogmagazine_register_widgets(){
 
         require_once blogmagazine_file_directory('inc/widgets/functions-blogmagazine-widgets.php');
-        require_once blogmagazine_file_directory('inc/widgets/class-dg-adsbanner-widget.php');
         require_once blogmagazine_file_directory('inc/widgets/class-dg-blockposts-widget.php');
         require_once blogmagazine_file_directory('inc/widgets/class-dg-carousel-widget.php');
         require_once blogmagazine_file_directory('inc/widgets/class-dg-featured-posts-widget.php');
@@ -106,7 +105,6 @@ if(!function_exists('blogmagazine_register_widgets')):
         require_once blogmagazine_file_directory('inc/widgets/class-dg-tabbed-widget.php');
         require_once blogmagazine_file_directory('inc/widgets/class-dg-recent-posts-widget.php');
 
-        register_widget( 'BlogMagazine_Ads_Banner_Widget' );
         register_widget( 'BlogMagazine_BlockPosts_Widget' );
         register_widget( 'BlogMagazine_Carousel_Widget' );
         register_widget( 'BlogMagazine_Featured_Posts_Widget' );

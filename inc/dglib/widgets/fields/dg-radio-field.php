@@ -15,7 +15,7 @@
 		<?php
 			foreach ( $dg_widget_field_options as $athm_option_name => $athm_option_title ){
 		?>
-			<input id="<?php echo esc_attr( $centurywidget->get_field_id( $athm_option_name ) ); ?>" name="<?php echo esc_attr( $centurywidget->get_field_name( $dg_widget_field_name ) ); ?>" type="radio" value="<?php echo esc_html( $athm_option_name ); ?>" <?php checked( $athm_option_name, $dg_widget_field_value ); ?> />
+			<input id="<?php echo esc_attr( $centurywidget->get_field_id( $athm_option_name ) ); ?>" name="<?php echo esc_attr( $centurywidget->get_field_name( $dg_widget_field_name ) ); ?>" type="radio" value="<?php echo esc_attr( $athm_option_name ); ?>" <?php checked( $athm_option_name, $dg_widget_field_value ); ?> />
 				<label for="<?php echo esc_attr( $centurywidget->get_field_id( $athm_option_name ) ); ?>"><?php echo esc_html( $athm_option_title ); ?>:</label>
 		<?php } ?>
 	</div>
