@@ -57,6 +57,7 @@ https://wordpress.org/themes/lekh/ Use their library to develop this theme - (GP
 == Changelog ==
 
 = 1.0.9 - 2019/08/18 =
+    * Renived Social reactions removed from theme(this is plugin Territory)
     * Removed: Banner ads widget(Default image widget works like banner ads widget)
     * Fixed: replace esc_html function to esc_attr to html attributes
     * Fixed: sanitize get_the_permalink() function when print
