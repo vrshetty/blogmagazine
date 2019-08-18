@@ -224,10 +224,22 @@ add_action( 'wp_head', 'blogmagazine_pingback_header' );
  */
 if(!function_exists('blogmagazine_admin_enqueue_scripts') ):
 
-	function blogmagazine_admin_enqueue_scripts(){
+	function blogmagazine_admin_enqueue_scripts($hooks){
 
-		wp_enqueue_style( 'blogmagazine-admin-styles', get_template_directory_uri().'/assets/css/admin-styles.min.css', array(), '1.0.0');
-		wp_style_add_data( 'blogmagazine-admin-styles', 'rtl', 'replace' );
+		$load_related_page = array(
+			'nav-menus.php',
+			'widgets.php',
+			'post.php',
+			'edit.php',
+			'post-new.php',
+			'customize.php'
+		);
+		if(in_array($hooks, $load_related_page)){
+		
+			wp_enqueue_style( 'blogmagazine-admin-styles', get_template_directory_uri().'/assets/css/admin-styles.min.css', array(), '1.0.0');
+			wp_style_add_data( 'blogmagazine-admin-styles', 'rtl', 'replace' );
+
+		}
 
 		// This theme styles the visual editor to resemble the theme style
 		// add_editor_style autometically enqueue .min-rtl.css if needed
@@ -237,7 +249,7 @@ if(!function_exists('blogmagazine_admin_enqueue_scripts') ):
 
 endif;
 
-add_action('admin_enqueue_scripts', 'blogmagazine_admin_enqueue_scripts');
+add_action('admin_enqueue_scripts', 'blogmagazine_admin_enqueue_scripts', 20, 1);
 
 
 /*-----------------------------------------------------------------------------------------------------------------------*/

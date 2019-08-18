@@ -5,7 +5,7 @@ Donate link:        https://dinesh-ghimire.com.np/
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.2.2
 Requires PHP:       5.3
-Version:            1.0.8
+Version:            1.0.9
 Stable tag:         trunk
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
@@ -55,6 +55,12 @@ https://github.com/justintadlock/breadcrumb-trail - GPL V2 or later
 https://wordpress.org/themes/lekh/ Use their library to develop this theme - (GPL License)
 
 == Changelog ==
+
+= 1.0.9 - 2019/08/18 =
+    * Removed: Banner ads widget(Default image widget works like banner ads widget)
+    * Fixed: replace esc_html function to esc_attr to html attributes
+    * Fixed: sanitize get_the_permalink() function when print
+    * Fixed: Enqueue scripts only for specific pages
 
 = 1.0.8 - 2019/07/29 =
     * Improvements: Customizer and Widget field proper sanitized
@@ -111,6 +117,12 @@ https://wordpress.org/themes/lekh/ Use their library to develop this theme - (GP
 
 == Upgrade Notice ==
 
+= 1.0.8 =
+    * Improvements: Customizer and Widget field proper sanitized
+    * Credit: Credit given to lekh theme library
+    * Improvements: Ticker responsive improvements
+    * Improvements: Block post tab responsive
+    * Improvements: Gutenberg block css improvements
 
 = 1.0.7 =
     * Fixed: mlimon listed issue fixed

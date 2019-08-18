@@ -20,7 +20,19 @@ add_action( 'after_setup_theme', 'dglib_after_setup_theme' );
 
 if(!function_exists('dglib_admin_enqueue_scripts') ):
 
-	function dglib_admin_enqueue_scripts(){
+	function dglib_admin_enqueue_scripts($hooks){
+
+		$load_related_page = array(
+			'nav-menus.php',
+			'widgets.php',
+			'post.php',
+			'edit.php',
+			'post-new.php',
+			'customize.php'
+		);
+		if(!in_array($hooks, $load_related_page)){
+			return;
+		}
 
 		wp_enqueue_style('wp-color-picker');
 		wp_enqueue_script('wp-color-picker');
@@ -34,7 +46,7 @@ if(!function_exists('dglib_admin_enqueue_scripts') ):
 
 endif;
 
-add_action('admin_enqueue_scripts', 'dglib_admin_enqueue_scripts');
+add_action('admin_enqueue_scripts', 'dglib_admin_enqueue_scripts', 10, 1);
 
 if(!function_exists('dglib_front_enqueue_scripts') ):
 
