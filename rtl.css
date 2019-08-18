@@ -21,3 +21,23 @@
 .blogmagazine-ticker-block .vertical .lSAction > a.lSPrev{
 	margin:0 5px 0 0;
 }
+.blogmagazine-block-posts-wrapper{
+	direction:ltr;
+}
+.blogmagazine-block-carousel{
+	direction:rtl;
+}
+
+.lSAction,
+.carousel-nav-action{
+	direction: ltr;
+}
+
+.ticker-content-wrapper .lSSlideOuter.vertical .lSAction .lSNext, 
+.ticker-content-wrapper .lSSlideOuter.vertical .lSAction .lSPrev{
+	float:left;
+}
+
+.blogmagazine-post-content{
+	text-align:right;
+}

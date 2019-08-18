@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
-"POT-Creation-Date: 2019-08-15 11:27:55+00:00\n"
+"POT-Creation-Date: 2019-08-18 10:37:49+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -107,7 +107,7 @@ msgstr ""
 #: inc/dglib/customizer/templates/templates-post-single.php:231
 #: inc/dglib/customizer/templates/templates-post-single.php:260
 #: inc/dglib/customizer/templates/templates-post-single.php:289
-#: inc/dglib/customizer/templates/templates-post-single.php:350
+#: inc/dglib/customizer/templates/templates-post-single.php:322
 #: inc/dglib/customizer/templates/templates-search-page.php:161
 #: inc/dglib/customizer/templates/templates-search-page.php:190
 msgid "Show"
@@ -133,7 +133,7 @@ msgstr ""
 #: inc/dglib/customizer/templates/templates-post-single.php:232
 #: inc/dglib/customizer/templates/templates-post-single.php:261
 #: inc/dglib/customizer/templates/templates-post-single.php:290
-#: inc/dglib/customizer/templates/templates-post-single.php:351
+#: inc/dglib/customizer/templates/templates-post-single.php:323
 #: inc/dglib/customizer/templates/templates-search-page.php:162
 #: inc/dglib/customizer/templates/templates-search-page.php:191
 msgid "Hide"
@@ -186,9 +186,7 @@ msgstr ""
 #: inc/dglib/customizer/templates/templates-archive-page.php:38
 #: inc/dglib/customizer/templates/templates-blog-page.php:38
 #: inc/dglib/customizer/templates/templates-page-details.php:38
-#: inc/dglib/customizer/templates/templates-page-details.php:144
 #: inc/dglib/customizer/templates/templates-post-single.php:38
-#: inc/dglib/customizer/templates/templates-post-single.php:318
 #: inc/dglib/customizer/templates/templates-search-page.php:39
 msgid "Enable"
 msgstr ""
@@ -201,9 +199,7 @@ msgstr ""
 #: inc/dglib/customizer/templates/templates-archive-page.php:39
 #: inc/dglib/customizer/templates/templates-blog-page.php:39
 #: inc/dglib/customizer/templates/templates-page-details.php:39
-#: inc/dglib/customizer/templates/templates-page-details.php:145
 #: inc/dglib/customizer/templates/templates-post-single.php:39
-#: inc/dglib/customizer/templates/templates-post-single.php:319
 #: inc/dglib/customizer/templates/templates-search-page.php:40
 msgid "Disable"
 msgstr ""
@@ -471,7 +467,7 @@ msgstr ""
 msgid "fa-5x"
 msgstr ""
 
-#: inc/dglib/core/functions.php:243 inc/functions/template-tags.php:251
+#: inc/dglib/core/functions.php:243
 msgid "Read More"
 msgstr ""
 
@@ -699,66 +695,6 @@ msgstr ""
 msgid "Choose social media icon background color."
 msgstr ""
 
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:11
-msgid "Visitor Reactions"
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:14
-msgid "Set reaction format and display visitor reactions in perentage and number."
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:25
-msgid "Share your feeling about this article."
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:34
-msgid "Reactions Heading"
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:60
-msgid "Display Reactions Type"
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:61
-msgid "Choose display reaction type."
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:67
-msgid "Percentage"
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:68
-msgid "Total Values"
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:91
-msgid "Visitor reaction icons."
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:95
-msgid "Add Reaction"
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:96
-msgid "Reaction Details"
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:101
-msgid "Reaction Icon"
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:102
-msgid "Choose reaction icon."
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:106
-msgid "Reaction Title"
-msgstr ""
-
-#: inc/dglib/customizer/sections/section-visitor-reaction.php:107
-msgid "Enter reaction title here."
-msgstr ""
-
 #: inc/dglib/customizer/templates/panel-templates.php:14
 msgid "Template Options"
 msgstr ""
@@ -979,15 +915,6 @@ msgstr ""
 msgid "If you can show featured image on single page check on show button."
 msgstr ""
 
-#: inc/dglib/customizer/templates/templates-page-details.php:139
-#: inc/dglib/customizer/templates/templates-post-single.php:313
-msgid "Enable Reactions"
-msgstr ""
-
-#: inc/dglib/customizer/templates/templates-page-details.php:147
-msgid "You can enable reaction to show after page details."
-msgstr ""
-
 #: inc/dglib/customizer/templates/templates-post-single.php:11
 msgid "Post Options"
 msgstr ""
@@ -1048,28 +975,24 @@ msgstr ""
 msgid "If you can show author info on post details please check show button."
 msgstr ""
 
-#: inc/dglib/customizer/templates/templates-post-single.php:321
-msgid "You can enable reaction to show after post details."
-msgstr ""
-
-#: inc/dglib/customizer/templates/templates-post-single.php:346
+#: inc/dglib/customizer/templates/templates-post-single.php:318
 msgid "Related Post Option"
 msgstr ""
 
-#: inc/dglib/customizer/templates/templates-post-single.php:347
+#: inc/dglib/customizer/templates/templates-post-single.php:319
 msgid "Show/Hide option for related posts section at single post page."
 msgstr ""
 
-#: inc/dglib/customizer/templates/templates-post-single.php:360
+#: inc/dglib/customizer/templates/templates-post-single.php:332
 #: inc/hooks/single.php:94
 msgid "Related Posts"
 msgstr ""
 
-#: inc/dglib/customizer/templates/templates-post-single.php:368
+#: inc/dglib/customizer/templates/templates-post-single.php:340
 msgid "Related Post Title"
 msgstr ""
 
-#: inc/dglib/customizer/templates/templates-post-single.php:385
+#: inc/dglib/customizer/templates/templates-post-single.php:357
 msgid "Related Posts from?"
 msgstr ""
 
@@ -1214,8 +1137,6 @@ msgstr ""
 #: inc/dglib/widgets/class-dg-author-info-widget.php:42
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:33
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:38
-#: inc/widgets/class-dg-adsbanner-widget.php:33
-#: inc/widgets/class-dg-adsbanner-widget.php:38
 #: inc/widgets/class-dg-blockposts-widget.php:36
 #: inc/widgets/class-dg-blockposts-widget.php:41
 #: inc/widgets/class-dg-carousel-widget.php:36
@@ -1237,7 +1158,6 @@ msgstr ""
 
 #: inc/dglib/widgets/class-dg-author-info-widget.php:74
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:70
-#: inc/widgets/class-dg-adsbanner-widget.php:68
 #: inc/widgets/class-dg-blockposts-widget.php:73
 #: inc/widgets/class-dg-carousel-widget.php:73
 #: inc/widgets/class-dg-featured-posts-widget.php:69
@@ -1302,7 +1222,6 @@ msgid "DG - Social Icons"
 msgstr ""
 
 #: inc/dglib/widgets/class-dg-social-icons-widget.php:50
-#: inc/widgets/class-dg-adsbanner-widget.php:48
 #: inc/widgets/class-dg-blockposts-widget.php:53
 #: inc/widgets/class-dg-carousel-widget.php:53
 #: inc/widgets/class-dg-featured-posts-widget.php:49
@@ -1548,6 +1467,10 @@ msgstr ""
 
 #: inc/tgmpa/class-tgm-plugin-activation.php:397 inc/tgmpa/init.php:117
 msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
 msgstr ""
 
 #: inc/tgmpa/class-tgm-plugin-activation.php:523
@@ -1817,34 +1740,6 @@ msgstr ""
 
 #: inc/tgmpa/init.php:106
 msgid "Return to Required Plugins Installer"
-msgstr ""
-
-#: inc/widgets/class-dg-adsbanner-widget.php:19
-msgid "You can place a banner as an advertisement with links."
-msgstr ""
-
-#: inc/widgets/class-dg-adsbanner-widget.php:21
-msgid "DG: Banner Ads"
-msgstr ""
-
-#: inc/widgets/class-dg-adsbanner-widget.php:42
-msgid "Banner title"
-msgstr ""
-
-#: inc/widgets/class-dg-adsbanner-widget.php:74
-msgid "Select banner image"
-msgstr ""
-
-#: inc/widgets/class-dg-adsbanner-widget.php:79
-msgid "Banner Link"
-msgstr ""
-
-#: inc/widgets/class-dg-adsbanner-widget.php:85
-msgid "Open in new tab"
-msgstr ""
-
-#: inc/widgets/class-dg-adsbanner-widget.php:90
-msgid "Rel attribute for link"
 msgstr ""
 
 #: inc/widgets/class-dg-blockposts-widget.php:22

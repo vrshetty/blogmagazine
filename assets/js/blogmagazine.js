@@ -25,6 +25,8 @@
 
             Sliders: function(){
 
+                var is_rtl = ($('html').attr('dir')=='rtl') ? true : false;
+
                 /**
                  * Ticker script
                  */
@@ -35,6 +37,7 @@
                     speed: 2000,
                     pause: 6000,
                     pager: false,
+                    rtl: is_rtl,
                     controls: true,
                     vertical: true,
                     enableDrag: false,
@@ -57,6 +60,7 @@
                     loop: true,
                     speed: 2000,
                     pause: 6000,
+                    rtl: is_rtl,
                     pager: false,
                     slideMargin: 0,
                     enableDrag: false,
@@ -75,6 +79,7 @@
                         'item':1,
                         'auto':true,
                         'loop':true,
+                        'rtl': is_rtl,
                         'speed':2000,
                         'pause':6000,
                         'pager':false,
