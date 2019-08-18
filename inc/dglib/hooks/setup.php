@@ -37,8 +37,10 @@ if(!function_exists('dglib_admin_enqueue_scripts') ):
 		wp_enqueue_style('wp-color-picker');
 		wp_enqueue_script('wp-color-picker');
 
-		wp_enqueue_style( 'dg-admin-styles', dglib_assets_url('css/dg-admin-styles.css'), array(), '1.0.0');
 		wp_enqueue_style( 'font-awesome', dglib_assets_url('library/font-awesome/css/font-awesome.min.css'), array(), '1.0.0');
+
+		wp_enqueue_style( 'dg-admin-styles', dglib_assets_url('css/dg-admin-styles.min.css'), array(), '1.0.0');
+		wp_style_add_data( 'dg-admin-styles', 'rtl', 'replace' );
 
 		wp_enqueue_script('dg-admin-script', dglib_assets_url('js/dg-admin-script.min.js'), array('jquery'), '1.0.0', true);
 
@@ -54,6 +56,7 @@ if(!function_exists('dglib_front_enqueue_scripts') ):
 
 		wp_enqueue_style( 'font-awesome', dglib_assets_url('library/font-awesome/css/font-awesome.min.css'), array(), '1.0.0');
 		wp_enqueue_style( 'db-front-style', dglib_assets_url('css/dg-front-style.min.css'), array(), '1.0.0' );
+		wp_style_add_data( 'dg-front-style', 'rtl', 'replace' );
 
 		wp_enqueue_script('dg-front-script', dglib_assets_url('js/dg-front-script.min.js'), array('jquery'), '1.0.0', true);
 		
