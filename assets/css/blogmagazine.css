@@ -2775,6 +2775,9 @@ Site Branding
 .blogmagazine-logo-section-wrapper {
   padding: 20px 0; }
 
+.blogmagazine-header-ads-area .widget {
+  margin: 0; }
+
 /*--------------------------------------------------------------
 ## Menu Header CSS
 --------------------------------------------------------------*/

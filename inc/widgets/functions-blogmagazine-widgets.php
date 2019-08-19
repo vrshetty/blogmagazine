@@ -166,14 +166,14 @@ if( ! function_exists( 'blogmagazine_block_second_layout_section' ) ) :
 						<h3 class="blogmagazine-post-title <?php echo esc_attr( $title_size ); ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<div class="blogmagazine-post-meta"><?php blogmagazine_posted_on(); ?></div>
 						<?php if( $post_count <= 2 ) { ?>
-							<div class="blogmagazine-post-excerpt"><?php the_excerpt(); ?></div>
+							<div class="blogmagazine-post-excerpt"><?php dglib_the_excerpt($excerpt_length); ?></div>
 						<?php } ?>
 					</div><!-- .blogmagazine-post-content -->
 				</div><!-- .blogmagazine-single-post -->
 				<?php
-				if( $post_count == 2 ) {
+				if( $post_count == 2 ){
 					echo '</div><!-- .blogmagazine-primary-block-wrap -->';
-				} elseif( $post_count == $total_posts_count ) {
+				}elseif( $post_count == $total_posts_count ){
 					echo '</div><!-- .blogmagazine-secondary-block-wrap -->';
 				}
 				$post_count++;
@@ -366,67 +366,3 @@ if( ! function_exists( 'blogmagazine_carousel_default_layout_section' ) ) :
 	}
 endif;
 
-/**
- * Block Second Layout
- *
- * @since 1.0.0
- */
-if( ! function_exists( 'blogmagazine_block_second_layout_section' ) ) :
-	function blogmagazine_block_second_layout_section( $terms_ids ) {
-		if( empty( $terms_ids ) ) {
-			return;
-		}
-		$posts_page_page = apply_filters( 'blogmagazine_block_second_layout_posts_count', 6 );
-		$block_args = array(
-			'cat' => $terms_ids,
-			'posts_per_page' => absint( $posts_page_page ),
-		);
-		$block_query = new WP_Query( $block_args );
-		$total_posts_count = $block_query->post_count;
-		if( $block_query->have_posts() ) {
-			$post_count = 1;
-			while( $block_query->have_posts() ) {
-				$block_query->the_post();
-				if( $post_count == 1 ) {
-					echo '<div class="blogmagazine-primary-block-wrap">';
-				} elseif( $post_count == 3 ) {
-					echo '<div class="blogmagazine-secondary-block-wrap">';
-				}
-				if( $post_count <= 2 ) {
-					$title_size = 'large-size';
-				} else {
-					$title_size = 'small-size';
-				}
-				?>
-				<div class="blogmagazine-single-post dg-clearfix">
-					<div class="blogmagazine-post-thumb">
-						<a href="<?php the_permalink(); ?>">
-							<?php 
-							if( $post_count <= 2 ) {
-								the_post_thumbnail( 'blogmagazine-thumb-622x420' );
-							} else {
-								the_post_thumbnail( 'blogmagazine-thumb-136x102' );
-							}
-							?>
-						</a>
-					</div><!-- .blogmagazine-post-thumb -->
-					<div class="blogmagazine-post-content">
-						<h3 class="blogmagazine-post-title <?php echo esc_attr( $title_size ); ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-						<div class="blogmagazine-post-meta"><?php blogmagazine_posted_on(); ?></div>
-						<?php if( $post_count <= 2 ) { ?>
-							<div class="blogmagazine-post-excerpt"><?php the_excerpt(); ?></div>
-						<?php } ?>
-					</div><!-- .blogmagazine-post-content -->
-				</div><!-- .blogmagazine-single-post -->
-				<?php
-				if( $post_count == 2 ) {
-					echo '</div><!-- .blogmagazine-primary-block-wrap -->';
-				} elseif( $post_count == $total_posts_count ) {
-					echo '</div><!-- .blogmagazine-secondary-block-wrap -->';
-				}
-				$post_count++;
-			}
-		}
-		wp_reset_postdata();
-	}
-endif;
