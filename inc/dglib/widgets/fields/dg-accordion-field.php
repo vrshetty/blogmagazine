@@ -7,8 +7,8 @@
  * @description this file for accordion field
  */
 $dg_widget_field_options = isset($widget_field['dg_widget_field_options']) ? $widget_field['dg_widget_field_options'] : array();
-$all_values = get_option('widget_' . $centurywidget->id_base);
-$this_widget_instance = isset($all_values[$centurywidget->number]) ? $all_values[$centurywidget->number] : array();
+$all_values = get_option('widget_' . $dglibwidget->id_base);
+$this_widget_instance = isset($all_values[$dglibwidget->number]) ? $all_values[$dglibwidget->number] : array();
 $dg_widget_field_value = (array)$dg_widget_field_value;
 ?>
 <div class="dg-widget-field-wrapper dg-widget-accordion-wrapper <?php echo esc_attr($dg_widget_field_wraper); ?>">
@@ -22,9 +22,9 @@ $dg_widget_field_value = (array)$dg_widget_field_value;
 			$accordion_icon_class = ($is_dropdown) ? 'fa-angle-up' : 'fa-angle-down';
 			?>
 			<div class="dg-accordion-wrapper <?php echo esc_attr($accordion_wraper_class); ?>">
-				<label for="<?php echo esc_attr( $centurywidget->get_field_id( $dg_widget_field_name.$accordion_key ) ); ?>" class="dg-accordion-title"><?php esc_html($dg_widget_field_title); ?>
+				<label for="<?php echo esc_attr( $dglibwidget->get_field_id( $dg_widget_field_name.$accordion_key ) ); ?>" class="dg-accordion-title"><?php esc_html($dg_widget_field_title); ?>
 					<?php echo esc_html($dg_widget_field_title); ?><i class="dg-accordion-arrow fa <?php echo esc_attr($accordion_icon_class); ?>"></i>
-					<input id="<?php echo esc_attr( $centurywidget->get_field_id( $dg_widget_field_name.$accordion_key ) ); ?>" name="<?php echo esc_attr( $centurywidget->get_field_name( $dg_widget_field_name ) ); ?>[]" value="<?php echo esc_attr($accordion_key); ?>" <?php checked( 1, $is_dropdown ) ?> class="dg-hidden" type="checkbox">
+					<input id="<?php echo esc_attr( $dglibwidget->get_field_id( $dg_widget_field_name.$accordion_key ) ); ?>" name="<?php echo esc_attr( $dglibwidget->get_field_name( $dg_widget_field_name ) ); ?>[]" value="<?php echo esc_attr($accordion_key); ?>" <?php checked( 1, $is_dropdown ) ?> class="dg-hidden" type="checkbox">
 				</label>
 				<div class="dg-accordion-content">
 					<?php
@@ -37,7 +37,7 @@ $dg_widget_field_value = (array)$dg_widget_field_value;
 							return;
 						}
 						$current_widgets_field_value = isset($this_widget_instance[$current_field_widget_name]) ? $this_widget_instance[$current_field_widget_name] : $current_widgets_field_default;
-						dg_widgets_show_widget_field( $centurywidget, $accordion_field, $current_widgets_field_value );
+						dg_widgets_show_widget_field( $dglibwidget, $accordion_field, $current_widgets_field_value );
 					endforeach;
 				else:
 					?>

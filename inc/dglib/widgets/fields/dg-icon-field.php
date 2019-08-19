@@ -28,5 +28,5 @@
         }
         ?>
     </div>
-    <input class="widefat dg-icon-value <?php echo esc_attr($dg_widget_relation_class); ?>" id="<?php echo esc_attr( $centurywidget->get_field_id( $dg_widget_field_name ) ); ?>" type="hidden" name="<?php echo esc_attr( $centurywidget->get_field_name( $dg_widget_field_name ) ); ?>" value="<?php echo esc_attr( $dg_widget_field_value ); ?>" placeholder="fa-desktop"  data-relations="<?php echo esc_attr($dg_widget_relation_json) ?>"/>
+    <input class="widefat dg-icon-value <?php echo esc_attr($dg_widget_relation_class); ?>" id="<?php echo esc_attr( $dglibwidget->get_field_id( $dg_widget_field_name ) ); ?>" type="hidden" name="<?php echo esc_attr( $dglibwidget->get_field_name( $dg_widget_field_name ) ); ?>" value="<?php echo esc_attr( $dg_widget_field_value ); ?>" placeholder="fa-desktop"  data-relations="<?php echo esc_attr($dg_widget_relation_json) ?>"/>
 </div>

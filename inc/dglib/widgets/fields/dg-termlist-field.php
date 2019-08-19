@@ -8,7 +8,7 @@
  */
 ?>
 <p class="dg-widget-field-wrapper <?php echo esc_attr($dg_widget_field_wraper); ?>">
-	<label for="<?php echo esc_attr( $centurywidget->get_field_id( $dg_widget_field_name ) ); ?>">
+	<label for="<?php echo esc_attr( $dglibwidget->get_field_id( $dg_widget_field_name ) ); ?>">
 		<?php echo esc_html( $dg_widget_field_title ); ?>: 
 	</label>
 	<?php
@@ -24,15 +24,15 @@
 			'echo'               => 1,
 			'selected'           => $dg_widget_field_value,
 			'hierarchical'       => 1,
-			'name'               => esc_attr( $centurywidget->get_field_name( $dg_widget_field_name ) ),
-			'id'                 => esc_attr( $centurywidget->get_field_id( $dg_widget_field_name ) ),
+			'name'               => esc_attr( $dglibwidget->get_field_name( $dg_widget_field_name ) ),
+			'id'                 => esc_attr( $dglibwidget->get_field_id( $dg_widget_field_name ) ),
 			'class'              => 'widefat',
 			'taxonomy'           => $dg_widget_taxonomy_type,
 			'hide_if_empty'      => false,
 		);
 		wp_dropdown_categories( $args );	
 	}else{
-		?><select id="<?php echo esc_attr( $centurywidget->get_field_id( $dg_widget_field_name ) ); ?>" name="<?php echo esc_attr( $centurywidget->get_field_name( $dg_widget_field_name ) ); ?>" class="widefat">
+		?><select id="<?php echo esc_attr( $dglibwidget->get_field_id( $dg_widget_field_name ) ); ?>" name="<?php echo esc_attr( $dglibwidget->get_field_name( $dg_widget_field_name ) ); ?>" class="widefat">
 			<option value=""><?php esc_html_e( 'No terms found in this taxonomy', 'blogmagazine' ); ?></option>
 		</select><?php
 	}	

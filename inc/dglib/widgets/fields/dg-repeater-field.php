@@ -13,7 +13,7 @@ $coder_repeater_depth = 'coderRepeaterDepth_'.'0';
 $dg_repeater_main_key = $dg_widget_field_name;
 ?>
 <div class="dg-widget-field-wrapper dg-widget-repeater-wrapper <?php echo esc_attr($dg_widget_field_wraper); ?>">
-	<label class="dg-widget-repeater-heading" for="<?php echo esc_attr( $centurywidget->get_field_id( $dg_widget_field_name ) ); ?>"><?php echo esc_html( $dg_widget_field_title ); ?>:</label>
+	<label class="dg-widget-repeater-heading" for="<?php echo esc_attr( $dglibwidget->get_field_id( $dg_widget_field_name ) ); ?>"><?php echo esc_html( $dg_widget_field_title ); ?>:</label>
 	<div class="dg-repeater">
 		<?php
 		$repeater_count = 0;
@@ -36,12 +36,12 @@ $dg_repeater_main_key = $dg_widget_field_name;
 						foreach($dg_widget_field_options as $repeater_slug => $repeater_data){
 							
 							$dg_repeater_child_field_name = (isset($repeater_data['dg_widget_field_name'] ) ) ? esc_attr($repeater_data['dg_widget_field_name']) : '';
-							$repeater_field_id  = esc_attr($centurywidget->get_field_id( $dg_widget_field_name).$dg_repeater_child_field_name);
+							$repeater_field_id  = esc_attr($dglibwidget->get_field_id( $dg_widget_field_name).$dg_repeater_child_field_name);
 							$dg_widget_field_name = esc_attr($dg_repeater_main_key.'['.$repeater_count.']['.$dg_repeater_child_field_name.']');
 							$repeater_data['dg_widget_field_name'] = $dg_widget_field_name;
 							$dg_widget_field_default = (isset($repeater_data['dg_widget_field_default']) ) ? $repeater_data['dg_widget_field_default'] : '';
 							$dg_widget_field_value = ( isset($repeater_details[$dg_repeater_child_field_name] ) ) ? $repeater_details[$dg_repeater_child_field_name] : $dg_widget_field_default;
-							dg_widgets_show_widget_field( $centurywidget, $repeater_data, $dg_widget_field_value );
+							dg_widgets_show_widget_field( $dglibwidget, $repeater_data, $dg_widget_field_value );
 						}
 						?>
 						<div class="dg-repeater-control-actions">
@@ -74,11 +74,11 @@ $dg_repeater_main_key = $dg_widget_field_name;
 					foreach($dg_widget_field_options as $repeater_slug => $repeater_data){
 						/**/
 						$dg_repeater_child_field_name = (isset($repeater_data['dg_widget_field_name'] ) ) ? esc_attr($repeater_data['dg_widget_field_name']) : '';
-						$repeater_field_id  = esc_attr($centurywidget->get_field_id( $dg_widget_field_name).$dg_repeater_child_field_name);
+						$repeater_field_id  = esc_attr($dglibwidget->get_field_id( $dg_widget_field_name).$dg_repeater_child_field_name);
 						$dg_widget_field_name = esc_attr($dg_repeater_main_key.'['.$coder_repeater_depth.']['.$dg_repeater_child_field_name.']');
 						$repeater_data['dg_widget_field_name'] = $dg_widget_field_name;
 						$dg_widget_field_default = isset($repeater_data['dg_widget_field_default']) ? $repeater_data['dg_widget_field_default'] : '';
-						dg_widgets_show_widget_field( $centurywidget, $repeater_data, $dg_widget_field_default );
+						dg_widgets_show_widget_field( $dglibwidget, $repeater_data, $dg_widget_field_default );
 					}
 					?>
 					<div class="dg-repeater-control-actions">

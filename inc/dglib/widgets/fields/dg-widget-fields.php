@@ -6,7 +6,7 @@
  * @version 1.0.0
  * @description show widget fueld field for widget
  */
-function dg_widgets_show_widget_field( $centurywidget = '', $widget_field = '', $dg_widget_field_value = '' ){
+function dg_widgets_show_widget_field( $dglibwidget = '', $widget_field = '', $dg_widget_field_value = '' ){
 
 	extract( $widget_field );
 

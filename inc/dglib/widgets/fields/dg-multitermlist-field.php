@@ -8,7 +8,7 @@
  */
 ?>
 <div class="dg-widget-field-wrapper <?php echo esc_attr($dg_widget_field_wraper); ?>">
-	<label for="<?php echo esc_attr( $centurywidget->get_field_id( $dg_widget_field_name ) ); ?>">
+	<label for="<?php echo esc_attr( $dglibwidget->get_field_id( $dg_widget_field_name ) ); ?>">
 		<?php echo esc_html( $dg_widget_field_title ); ?>: 
 	</label>
 	<ul class="dg-multiple-checkbox">
@@ -28,13 +28,13 @@
 					?>
 					<li>
 						<input 
-						id="<?php echo esc_attr( $centurywidget->get_field_id($dg_widget_field_name) .'_'.$dg_widget_taxonomy_type.'_'.$teg_term_id ); ?>" 
-						name="<?php echo esc_attr( $centurywidget->get_field_name($dg_widget_field_name).'[]' ); ?>" 
+						id="<?php echo esc_attr( $dglibwidget->get_field_id($dg_widget_field_name) .'_'.$dg_widget_taxonomy_type.'_'.$teg_term_id ); ?>" 
+						name="<?php echo esc_attr( $dglibwidget->get_field_name($dg_widget_field_name).'[]' ); ?>" 
 						type="checkbox" 
 						value="<?php echo esc_attr( $teg_term_id ); ?>" 
 						<?php checked(in_array($teg_term_id, (array)$dg_widget_field_value)); ?> 
 						/>
-						<label for="<?php echo esc_attr( $centurywidget->get_field_id($dg_widget_field_name) .'_'.$dg_widget_taxonomy_type.'_'.$teg_term_id ); ?>"><?php echo esc_html( $teg_term_name .' ('.$single_term->count.')' ); ?></label>
+						<label for="<?php echo esc_attr( $dglibwidget->get_field_id($dg_widget_field_name) .'_'.$dg_widget_taxonomy_type.'_'.$teg_term_id ); ?>"><?php echo esc_html( $teg_term_name .' ('.$single_term->count.')' ); ?></label>
 					</li>
 					<?php
 				}
