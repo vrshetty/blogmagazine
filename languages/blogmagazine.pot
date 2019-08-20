@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
-"POT-Creation-Date: 2019-08-19 16:33:36+00:00\n"
+"POT-Creation-Date: 2019-08-20 06:32:55+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1376,42 +1376,42 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:327 inc/tgmpa/init.php:48
+#: inc/tgmpa/class-tgm-plugin-activation.php:327 inc/tgmpa/init.php:43
 msgid "Install Recommended Plugins"
 msgstr ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:328 inc/tgmpa/init.php:49
+#: inc/tgmpa/class-tgm-plugin-activation.php:328 inc/tgmpa/init.php:44
 msgid "Install Plugins"
 msgstr ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:330 inc/tgmpa/init.php:51
+#: inc/tgmpa/class-tgm-plugin-activation.php:330 inc/tgmpa/init.php:46
 #. translators: %s: plugin name.
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:332 inc/tgmpa/init.php:53
+#: inc/tgmpa/class-tgm-plugin-activation.php:332 inc/tgmpa/init.php:48
 #. translators: %s: plugin name.
 msgid "Updating Plugin: %s"
 msgstr ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:333 inc/tgmpa/init.php:54
+#: inc/tgmpa/class-tgm-plugin-activation.php:333 inc/tgmpa/init.php:49
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:370 inc/tgmpa/init.php:91
+#: inc/tgmpa/class-tgm-plugin-activation.php:370 inc/tgmpa/init.php:86
 #. translators: 1: plugin name(s).
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:375 inc/tgmpa/init.php:96
+#: inc/tgmpa/class-tgm-plugin-activation.php:375 inc/tgmpa/init.php:91
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:380 inc/tgmpa/init.php:101
+#: inc/tgmpa/class-tgm-plugin-activation.php:380 inc/tgmpa/init.php:96
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
@@ -1429,43 +1429,43 @@ msgid "Return to the Dashboard"
 msgstr ""
 
 #: inc/tgmpa/class-tgm-plugin-activation.php:387
-#: inc/tgmpa/class-tgm-plugin-activation.php:3159 inc/tgmpa/init.php:107
+#: inc/tgmpa/class-tgm-plugin-activation.php:3159 inc/tgmpa/init.php:102
 msgid "Plugin activated successfully."
 msgstr ""
 
 #: inc/tgmpa/class-tgm-plugin-activation.php:388
-#: inc/tgmpa/class-tgm-plugin-activation.php:2952 inc/tgmpa/init.php:108
+#: inc/tgmpa/class-tgm-plugin-activation.php:2952 inc/tgmpa/init.php:103
 msgid "The following plugin was activated successfully:"
 msgstr ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:390 inc/tgmpa/init.php:110
+#: inc/tgmpa/class-tgm-plugin-activation.php:390 inc/tgmpa/init.php:105
 #. translators: 1: plugin name.
 msgid "No action taken. Plugin %1$s was already active."
 msgstr ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:392 inc/tgmpa/init.php:112
+#: inc/tgmpa/class-tgm-plugin-activation.php:392 inc/tgmpa/init.php:107
 #. translators: 1: plugin name.
 msgid ""
 "Plugin not activated. A higher version of %s is needed for this theme. "
 "Please update the plugin."
 msgstr ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:394 inc/tgmpa/init.php:114
+#: inc/tgmpa/class-tgm-plugin-activation.php:394 inc/tgmpa/init.php:109
 #. translators: 1: dashboard link.
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:395 inc/tgmpa/init.php:115
+#: inc/tgmpa/class-tgm-plugin-activation.php:395 inc/tgmpa/init.php:110
 msgid "Dismiss this notice"
 msgstr ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:396 inc/tgmpa/init.php:116
+#: inc/tgmpa/class-tgm-plugin-activation.php:396 inc/tgmpa/init.php:111
 msgid ""
 "There are one or more required or recommended plugins to install, update or "
 "activate."
 msgstr ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:397 inc/tgmpa/init.php:117
+#: inc/tgmpa/class-tgm-plugin-activation.php:397 inc/tgmpa/init.php:112
 msgid "Please contact the administrator of this site for help."
 msgstr ""
 
@@ -1734,11 +1734,7 @@ msgstr ""
 msgid "Century ToolKit"
 msgstr ""
 
-#: inc/tgmpa/init.php:31
-msgid "Universal Google AdSense"
-msgstr ""
-
-#: inc/tgmpa/init.php:106
+#: inc/tgmpa/init.php:101
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
