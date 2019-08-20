@@ -37,7 +37,6 @@
                     speed: 2000,
                     pause: 6000,
                     pager: false,
-                    rtl: is_rtl,
                     controls: true,
                     vertical: true,
                     enableDrag: false,
