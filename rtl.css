@@ -53,6 +53,13 @@ Widget Sections
 }
 
 /*
+ * Widget meta
+ */
+.widget_meta a::before{
+	content: "\f104";
+}
+
+/*
  * Featured Slider Section
  *
  * All rtl related css generated from grunt and this rtl css is just for issue fixing for rtl mode.

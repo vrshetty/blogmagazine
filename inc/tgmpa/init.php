@@ -27,11 +27,6 @@ function blogmagazine_register_recommend_plugins(){
             'slug' => 'century-toolkit',
             'required' => false,
         ),
-        array(
-            'name'      => esc_html__( 'Universal Google AdSense', 'blogmagazine' ),
-            'slug'      => 'universal-google-adsense-and-ads-manager',
-            'required'  => false,
-        ),
     );
 
     $config = array(
