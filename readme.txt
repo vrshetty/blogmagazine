@@ -5,7 +5,7 @@ Donate link:        https://dinesh-ghimire.com.np/
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.2.2
 Requires PHP:       5.3
-Version:            1.0.9
+Version:            1.1.0
 Stable tag:         trunk
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
@@ -56,8 +56,13 @@ https://wordpress.org/themes/lekh/ Use their library to develop this theme - (GP
 
 == Changelog ==
 
+= 1.1.0 - 2019/08/20 =
+    * Fixed: escaping issue fixed
+    * Improvements: RTL design optimized
+    * 
+
 = 1.0.9 - 2019/08/18 =
-    * Renived Social reactions removed from theme(this is plugin Territory)
+    * Removed: Social reactions removed from theme(this is plugin Territory)
     * Removed: Banner ads widget(Default image widget works like banner ads widget)
     * Fixed: replace esc_html function to esc_attr to html attributes
     * Fixed: sanitize get_the_permalink() function when print
