@@ -455,7 +455,6 @@ Site Branding
     }
 }
 
-
 #site-navigation{
     @media (min-width: 1000px){
         display: block;
@@ -473,7 +472,6 @@ Site Branding
         &.menu-item-has-children{
             li{
                 @media (max-width: 768px){
-                    padding-left:15px;
                     a{
                         border-left:none;
                         border-bottom:1px solid #f3f3f3;

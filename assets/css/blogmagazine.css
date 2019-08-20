@@ -3045,11 +3045,9 @@ Site Branding
     z-index: 99; } }
 
 @media (max-width: 768px) {
-  #site-navigation li.menu-item-has-children li {
-    padding-left: 15px; }
-    #site-navigation li.menu-item-has-children li a {
-      border-left: none;
-      border-bottom: 1px solid #f3f3f3; } }
+  #site-navigation li.menu-item-has-children li a {
+    border-left: none;
+    border-bottom: 1px solid #f3f3f3; } }
 
 @media (max-width: 768px) {
   #site-navigation li.menu-item-has-children a:before {

@@ -14,13 +14,20 @@
     "use strict";
     var winObj = $(window);
     var docObj = $(document);
+    var winWidth = winObj.width();
+    var winHeight = winObj.height();
     var BLOGMAGAZINE = {
 
         Snipits: {
 
+            Variables: function(){
+                winWidth = winObj.width();
+                winHeight = winObj.height();
+            },
+
             AppendHTML: function(){
                 //responsive sub menu toggle
-                $('#site-navigation .menu-item-has-children').append('<span class="sub-toggle"> <i class="fa fa-angle-right"></i> </span>');
+                $('#site-navigation .menu-item-has-children').append('<span class="sub-toggle"> <i class="fa fa-plus"></i> </span>');
             },
 
             Sliders: function(){
@@ -135,6 +142,16 @@
                 });
             },
 
+            ManageStyle: function(evt){
+
+                var main_navigation = $('#site-navigation');
+                if(winWidth>768){
+                    main_navigation.removeAttr('style');
+                }
+
+
+            },
+
             Title_Tab_Toggle: function(evt){
                 var widget_title = $(this).closest('.blogmagazine-block-title, .widget-title');
                 var arrow_icon = widget_title.find('.wdgt-tab-toggle .fa');
@@ -218,7 +235,7 @@
 
             SubmenuToggle: function(){
                 $(this).parent('.menu-item-has-children').children('ul.sub-menu').first().slideToggle('1000');
-                $(this).children('.fa-angle-right').first().toggleClass('fa-angle-down');
+                $(this).children('.fa-plus').first().toggleClass('fa-minus');
             },
 
             SearchToggle: function(){
@@ -309,7 +326,10 @@
         },
 
         Resize: function(){
-
+            var __this = BLOGMAGAZINE;
+            var snipits = __this.Snipits;
+            snipits.Variables();
+            snipits.ManageStyle();
         },
 
         Scroll: function(){
