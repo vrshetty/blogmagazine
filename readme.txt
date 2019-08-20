@@ -37,6 +37,10 @@ BlogMagazine theme is translation ready.
 
 * Yes, this theme is translation ready. You can use any WordPress language translation plugin.
 
+= Does the theme is support RTL format? =
+
+* Yes, this theme is support RTL(Right to left) format. Just change RTL language from backend this theme autometically detect RTL language.
+
 == Screenshots ==
 1. https://pxhere.com/en/photo/1419836 - License CC0 Public Domain
 2. https://pxhere.com/en/photo/732395 - License CC0 Public Domain
