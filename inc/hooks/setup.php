@@ -273,3 +273,15 @@ function blogmagazine_admin_scripts( $hook ) {
 }
 
 add_action( 'admin_enqueue_scripts', 'blogmagazine_admin_scripts' );
+
+if(!function_exists('blogmagazine_customizer_print_styles')){
+
+	function blogmagazine_customizer_print_styles(){
+
+		wp_enqueue_style( 'blogmagazine-customizer-style', get_template_directory_uri().'/assets/css/customizer.min.css', array(), '1.0.0', false );
+
+	}
+
+}
+
+add_action( 'customize_controls_print_styles', 'blogmagazine_customizer_print_styles' );
