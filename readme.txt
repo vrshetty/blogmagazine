@@ -60,10 +60,13 @@ https://wordpress.org/themes/lekh/ Use their library to develop this theme - (GP
 
 == Changelog ==
 
+= 1.1.1 - 2019/08/21 = 
+    * Added: Make compatable for demo importer
+    * Added: Upsell Featured add on customizer
+
 = 1.1.0 - 2019/08/20 =
     * Fixed: escaping issue fixed
     * Improvements: RTL design optimized
-    * 
 
 = 1.0.9 - 2019/08/18 =
     * Removed: Social reactions removed from theme(this is plugin Territory)
