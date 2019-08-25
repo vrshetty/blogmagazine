@@ -220,7 +220,9 @@ if (!function_exists('dglib_is_json')){
 	 * @return boolean
 	 */
 	function dglib_is_json( $raw_json ){
-		return ( json_decode( $raw_json , true ) == NULL ) ? false : true ; 
+		return ((is_string($raw_json) &&
+            (is_object(json_decode($raw_json)) ||
+            is_array(json_decode($raw_json))))) ? true : false;
 	}
 
 }
