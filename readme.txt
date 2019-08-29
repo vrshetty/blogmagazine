@@ -63,6 +63,7 @@ https://wordpress.org/themes/lekh/ Use their library to develop this theme - (GP
 = 1.1.4 - 2019/08/29 = 
     * Added: Widget tab responsive issue fixing
     * Added: Title and tagline issue fixing
+    * Recommend: Everest form plugin recommend
 
 = 1.1.1 - 2019/08/21 = 
     * Added: Make compatable for demo importer
