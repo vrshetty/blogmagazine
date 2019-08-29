@@ -69,18 +69,18 @@
             z-index:1;
             width:100%;
             padding:0px;
-            display:none;
+            display:block;
+            max-height:0px;
             overflow:hidden;
             position:absolute;
-            max-height:10px 0px;
             background-color:#fff;
             border:1px solid $primary_color;
             transition: max-height .3s linear;
         }
         &.show-tabs{
             @media(max-width:600px){
-                max-height:500px;
-                display:block;
+                max-height:300px;
+                overflow-y:auto;
             }
         }
     }

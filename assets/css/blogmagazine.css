@@ -410,6 +410,20 @@ textarea {
 .no-results input[type="search"] {
   width: 45%; }
 
+.everest-forms .everest-forms-part-button,
+.everest-forms button, .everest-forms button[type="submit"],
+.everest-forms input[type="submit"] {
+  border: none;
+  border-radius: 0px;
+  background: #0c4da2; }
+  .everest-forms .everest-forms-part-button:hover,
+  .everest-forms button:hover, .everest-forms button[type="submit"]:hover,
+  .everest-forms input[type="submit"]:hover {
+    background: #0c4da2; }
+
+.everest-forms .evf-field-container .evf-frontend-row label {
+  margin-bottom: 0px; }
+
 /*--------------------------------------------------------------
 Accessibility
 --------------------------------------------------------------*/
@@ -943,10 +957,10 @@ blockquote {
       z-index: 1;
       width: 100%;
       padding: 0px;
-      display: none;
+      display: block;
+      max-height: 0px;
       overflow: hidden;
       position: absolute;
-      max-height: 10px 0px;
       background-color: #fff;
       border: 1px solid #0c4da2;
       -webkit-transition: max-height .3s linear;
@@ -956,8 +970,8 @@ blockquote {
   @media (max-width: 600px) {
     .widget-title .wdgt-title-tabs.show-tabs,
     .blogmagazine-block-title .wdgt-title-tabs.show-tabs {
-      max-height: 500px;
-      display: block; } }
+      max-height: 300px;
+      overflow-y: auto; } }
 
 .widget-title .wdgt-tab-term,
 .blogmagazine-block-title .wdgt-tab-term {
@@ -2728,6 +2742,9 @@ Top Header
       float: none;
       display: block;
       text-align: center; } }
+  @media (max-width: 600px) {
+    .blogmagazine-top-right-section-wrapper .blogmagazine-social-icons-wrapper {
+      display: inline-block; } }
   .blogmagazine-top-right-section-wrapper .social-link {
     float: left;
     display: block; }

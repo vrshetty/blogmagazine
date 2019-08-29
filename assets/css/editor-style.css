@@ -374,6 +374,20 @@ textarea {
 .no-results input[type="search"] {
   width: 45%; }
 
+.everest-forms .everest-forms-part-button,
+.everest-forms button, .everest-forms button[type="submit"],
+.everest-forms input[type="submit"] {
+  border: none;
+  border-radius: 0px;
+  background: #0c4da2; }
+  .everest-forms .everest-forms-part-button:hover,
+  .everest-forms button:hover, .everest-forms button[type="submit"]:hover,
+  .everest-forms input[type="submit"]:hover {
+    background: #0c4da2; }
+
+.everest-forms .evf-field-container .evf-frontend-row label {
+  margin-bottom: 0px; }
+
 /*--------------------------------------------------------------
 Accessibility
 --------------------------------------------------------------*/

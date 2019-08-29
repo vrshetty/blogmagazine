@@ -74,6 +74,11 @@ Top Header
         display: block;
         text-align: center;
     }
+    .blogmagazine-social-icons-wrapper{
+        @media(max-width:600px){
+            display:inline-block;
+        }
+    }
     .social-link{
         float: left;
         display: block;

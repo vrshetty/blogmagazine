@@ -17,7 +17,7 @@ $dg_repeater_main_key = $dg_widget_field_name;
 	<div class="dg-repeater">
 		<?php
 		$repeater_count = 0;
-		if( count( $dg_widget_field_value ) > 0 && is_array( $dg_widget_field_value ) ){
+		if( is_array( $dg_widget_field_value ) && count( $dg_widget_field_value ) > 0 ){
 			foreach ($dg_widget_field_value as $repeater_key=>$repeater_details){
 				?>
 				<div class="dg-widget-repeater-table">

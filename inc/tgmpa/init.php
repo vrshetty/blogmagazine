@@ -18,8 +18,8 @@ function blogmagazine_register_recommend_plugins(){
     $plugins = array(
         // Include Contact form 7 Importer as recommended
         array(
-            'name' => esc_html__('Contact Form 7', 'blogmagazine'),
-            'slug' => 'contact-form-7',
+            'name' => esc_html__('Everest Forms', 'blogmagazine'),
+            'slug' => 'everest-forms',
             'required' => false,
         ),
         array(

@@ -5,8 +5,8 @@ Donate link:        https://dinesh-ghimire.com.np/
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.2.2
 Requires PHP:       5.3
-Version:            1.1.3
-Stable tag:         1.1.3
+Version:            1.1.4
+Stable tag:         1.1.4
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
 Tags:               news, blog, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
@@ -59,6 +59,10 @@ https://github.com/justintadlock/breadcrumb-trail - GPL V2 or later
 https://wordpress.org/themes/lekh/ Use their library to develop this theme - (GPL License)
 
 == Changelog ==
+
+= 1.1.4 - 2019/08/29 = 
+    * Added: Widget tab responsive issue fixing
+    * Added: Title and tagline issue fixing
 
 = 1.1.1 - 2019/08/21 = 
     * Added: Make compatable for demo importer
