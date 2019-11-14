@@ -30,6 +30,7 @@
 					'fallback_cb' => 'blogmagazine_fallback_primary_menu',
 				);
 				wp_nav_menu( $primary_menu_args );
+				wp_reset_postdata();
 				?>
 			</nav><!-- #site-navigation -->
 			<div class="blogmagazine-header-search-wrapper">     

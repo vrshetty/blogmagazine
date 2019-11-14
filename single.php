@@ -27,7 +27,19 @@ do_action( 'dglib_breadcrumbs_section_template' );
 		<?php
 
 		while ( have_posts() ) : the_post();
+
+			/**
+		     * @since 1.1.5
+		     */
+			do_action('blogmagazine_before_featured_image');
+
 			get_template_part( 'template-parts/single-details/content', 'single' );
+
+			/**
+		     * @since 1.1.5
+		     */
+			do_action( 'blogmagazine_before_post_navigation' );
+
 			$show_before_after = get_theme_mod( 'dglib_prev_next_button_post', 'show' );
 			if($show_before_after=='show'){
 				the_post_navigation();

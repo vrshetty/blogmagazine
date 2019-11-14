@@ -31,6 +31,11 @@ else:
 		<main id="main" class="site-main" role="main">
 			<?php
 			while ( have_posts() ) : the_post();
+
+				/**
+			     * @since 1.1.5
+			     */
+				do_action('blogmagazine_before_featured_image');
 				
 				get_template_part( 'template-parts/single-details/content', 'page' );
 

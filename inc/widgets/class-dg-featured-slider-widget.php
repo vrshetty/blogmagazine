@@ -76,6 +76,12 @@ class BlogMagazine_Featured_Slider_Widget extends Dglib_Master_Widget{
                                 'dg_widget_taxonomy_type' => 'category',
                                 'dg_widget_field_type'   => 'multitermlist',
                             ),
+                            'no_of_slides' => array(
+                                'dg_widget_field_name'         => 'no_of_slides',
+                                'dg_widget_field_title'        => esc_html__( 'No of slides', 'blogmagazine' ),
+                                'dg_widget_field_type'   => 'number',
+                                'dg_widget_field_default'  => 4,
+                            ),
                             'featured_term_ids' => array(
                                 'dg_widget_field_name'         => 'featured_term_ids',
                                 'dg_widget_field_title'        => esc_html__( 'Featured Post Categories', 'blogmagazine' ),
@@ -111,6 +117,7 @@ class BlogMagazine_Featured_Slider_Widget extends Dglib_Master_Widget{
         $title_link = isset( $instance['title_link'] ) ? esc_url($instance['title_link']) : '';
         $title_target = isset( $instance['title_target'] ) ? dglib_sanitize_link_target($instance['title_target']) : '';
         $slider_term_ids    = isset( $instance['slider_term_ids'] ) ?  $instance['slider_term_ids'] : '';
+        $no_of_slides    = isset( $instance['no_of_slides'] ) ?  $instance['no_of_slides'] : 4;
         $featured_term_ids  = isset( $instance['featured_term_ids'] ) ?  $instance['featured_term_ids'] : '';
 
         dglib_before_widget($args);
@@ -129,10 +136,9 @@ class BlogMagazine_Featured_Slider_Widget extends Dglib_Master_Widget{
             ?>
             <div class="slider-posts">
                 <?php
-                $blogmagazine_post_count = apply_filters( 'blogmagazine_slider_posts_count', 4 );
                 $blogmagazine_slider_args = array(
                     'post_type' => 'post',
-                    'posts_per_page' => absint( $blogmagazine_post_count )
+                    'posts_per_page' => absint( $no_of_slides )
                 );
                 if($slider_term_ids){
                     $blogmagazine_slider_args['tax_query'] = array(

@@ -191,7 +191,7 @@ class BlogMagazine_Carousel_widget extends Dglib_Master_Widget{
                     )
                 );
                 if($terms_ids){
-                    $blogmagazineargs['tax_query'] = array(
+                    $blogmagazineargs['query_args']['tax_query'] = array(
                         array(
                             'taxonomy'  => 'category',
                             'terms'     => $terms_ids,

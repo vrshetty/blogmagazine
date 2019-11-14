@@ -40,3 +40,4 @@ if( !function_exists('blogmagazine_file_directory') ){
  * blogmagazine Initialize
  */
 require_once blogmagazine_file_directory( 'inc/init.php' );
+
