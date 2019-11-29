@@ -10,12 +10,12 @@ if( !function_exists('dglib_file_directory') ){
     function dglib_file_directory( $file_path ){
 
         $dglib_path = 'inc/dglib/'.$file_path;
-        $parent_file_path = trailingslashit( get_stylesheet_directory() ) . $dglib_path;
+        $parent_file_path = trailingslashit( get_template_directory() ) . $dglib_path;
         $child_file_path = trailingslashit( get_stylesheet_directory() ) . $dglib_path;
-        if( file_exists( wp_normalize_path( $parent_file_path ) ) ){
-            return wp_normalize_path( $parent_file_path );
-        }else{
+        if( file_exists( wp_normalize_path( $child_file_path ) ) ){
             return wp_normalize_path( $child_file_path );
+        }else{
+            return wp_normalize_path( $parent_file_path );
         }
 
     }

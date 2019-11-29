@@ -184,6 +184,9 @@ class BlogMagazine_Carousel_widget extends Dglib_Master_Widget{
                 $blogmagazineargs = array(
                     'no_of_columns'     => $no_of_columns,
                     'thumbnail_size'    => $thumbnail_size,
+                    'show_date'   => apply_filters( 'blogmagazine_site_carousel_show_date', 1, $instance, $this ),
+                    'show_author' => apply_filters( 'blogmagazine_site_carousel_show_author', 1, $instance, $this ),
+                    'show_categories' => apply_filters( 'blogmagazine_site_carousel_show_categories', 1, $instance, $this ),
                     'query_args'    => array(
                         'post_type'     => 'post',
                         'post_status'   => 'publish',

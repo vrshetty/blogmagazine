@@ -24,12 +24,12 @@ if( !function_exists('blogmagazine_file_directory') ){
 
     function blogmagazine_file_directory( $file_path ){
 
-    	$parent_file_path = trailingslashit( get_stylesheet_directory() ) . $file_path;
-		$child_file_path = trailingslashit( get_template_directory() ) . $file_path;
-        if( file_exists( wp_normalize_path( $parent_file_path ) ) ){
-            return wp_normalize_path( $parent_file_path );
-        }else{
+    	$child_file_path = trailingslashit( get_stylesheet_directory() ) . $file_path;
+		$parent_file_path = trailingslashit( get_template_directory() ) . $file_path;
+        if( file_exists( wp_normalize_path( $child_file_path ) ) ){
             return wp_normalize_path( $child_file_path );
+        }else{
+            return wp_normalize_path( $parent_file_path );
         }
 
     }

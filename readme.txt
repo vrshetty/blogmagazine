@@ -3,10 +3,10 @@
 Contributors:       developerdinesh1
 Donate link:        https://dinesh-ghimire.com.np/
 Requires at least:  WordPress 4.0
-Tested up to:       WordPress 5.2.2
+Tested up to:       WordPress 5.3
 Requires PHP:       5.3
-Version:            1.1.4
-Stable tag:         1.1.4
+Version:            1.1.5
+Stable tag:         1.1.5
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
 Tags:               news, blog, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
@@ -59,6 +59,10 @@ https://github.com/justintadlock/breadcrumb-trail - GPL V2 or later
 https://wordpress.org/themes/lekh/ Use their library to develop this theme - (GPL License)
 
 == Changelog ==
+
+= 1.1.5 - 2019/11/29 = 
+    * Added: Proper filters added on site carousel
+    * Fixed: Minor css fixing and Latest version tested
 
 = 1.1.4 - 2019/08/29 = 
     * Added: Widget tab responsive issue fixing
@@ -133,57 +137,3 @@ https://wordpress.org/themes/lekh/ Use their library to develop this theme - (GP
 = 1.0.0 - 2019/04/14 =
     * Initial release
 
-== Upgrade Notice ==
-
-= 1.0.8 =
-    * Improvements: Customizer and Widget field proper sanitized
-    * Credit: Credit given to lekh theme library
-    * Improvements: Ticker responsive improvements
-    * Improvements: Block post tab responsive
-    * Improvements: Gutenberg block css improvements
-
-= 1.0.7 =
-    * Fixed: mlimon listed issue fixed
-    * Fixed: All snifier warning fixed
-    * Added: Hook added for more flexibility to developers
-    * Fixed: Alternative grid Design Optimized
-    * Fixed: Social Icon issue Fixed on repeater
-    * Updated: dglib updated
-    * Updated: Gallery Design Optimized
-    * Optimized: Css Design Optimized
-
-= 1.0.6 =
-    * Modify: Updated minimal features on dglib
-    * Fixed: All issues fixed listed by poena
-    * Added: Multiple switch box added on templates
-    * Added: Additional Sections added
-
-= 1.0.5 =
-    * Fixed: All possible escaping issue fixed
-    * Added: Featured post added author date and name show field
-
-= 1.0.4 =
-    * Fixed: Screenshot Site description changed
-    * Added: Block Posts widget Pagination hook added
-    * Removed: Social Icon url default value removed
-
-= 1.0.3 =
-    * Fixed: Change Header Banner Image
-    * Fixed: Change Pexel image to pxhere image for GPL Issue
-    * Fixed: Screenshot Changed 
-    * Fixed: Reaction on customizer issue fixed
-    * Fixed: Widget Tab JS added multiple dom issue fixed
-
-= 1.0.2 =
-    * Added: Widget Tab added
-    * Added: Grid Images Added
-    * Fixed: Widget Default value issue fixed
-    * Fixed: Non validated/non sanitize issue fixing assign by  reviewer
-    * Fixed: All Error and worning issues assign by  reviewer
-    * Removed: Removed empty if statements assign by  reviewer
-
-= 1.0.1 = 
-*  All Error Fixed
-
-= 1.0.0 = 
-*  Initial Release

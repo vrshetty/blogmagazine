@@ -321,6 +321,9 @@ if( ! function_exists( 'blogmagazine_carousel_default_layout_section' ) ) :
 		if(!$query_args){
 			return;
 		}
+		$show_date = (isset($blogmagazine_block_args['show_date'])) ? $blogmagazine_block_args['show_date'] : '1';
+		$show_categories = (isset($blogmagazine_block_args['show_categories'])) ? $blogmagazine_block_args['show_categories'] : '1';
+		$show_author = (isset($blogmagazine_block_args['show_author'])) ? $blogmagazine_block_args['show_author'] : '1';
 		$thumbnail_size = (isset($blogmagazine_block_args['thumbnail_size'])) ? $blogmagazine_block_args['thumbnail_size'] : 'blogmagazine-thumb-800x600';
 		$no_of_columns = (isset($blogmagazine_block_args['no_of_columns'])) ? absint($blogmagazine_block_args['no_of_columns']) : 4;
 
@@ -352,9 +355,13 @@ if( ! function_exists( 'blogmagazine_carousel_default_layout_section' ) ) :
 							</a>
 						</div><!-- .blogmagazine-post-thumb -->
 						<div class="blogmagazine-post-content">
-							<?php blogmagazine_post_categories_list(); ?>
+							<?php 
+							if($show_categories): 
+								blogmagazine_post_categories_list(); 
+							endif;
+							?>
 							<h3 class="blogmagazine-post-title small-size"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-							<div class="blogmagazine-post-meta"><?php blogmagazine_posted_on(); ?></div>
+							<div class="blogmagazine-post-meta"><?php blogmagazine_posted_on(absint($show_date), absint($show_author)); ?></div>
 						</div><!-- .blogmagazine-post-content -->
 					</div><!-- .blogmagazine-single-post -->
 				</li>
