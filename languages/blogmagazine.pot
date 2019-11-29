@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: developer.dinesh1@gmail.com\n"
-"POT-Creation-Date: 2019-08-29 17:44:28+00:00\n"
+"POT-Creation-Date: 2019-11-29 05:23:13+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1911,6 +1911,10 @@ msgid "Slider Categories"
 msgstr ""
 
 #: inc/widgets/class-dg-featured-slider-widget.php:81
+msgid "No of slides"
+msgstr ""
+
+#: inc/widgets/class-dg-featured-slider-widget.php:87
 msgid "Featured Post Categories"
 msgstr ""
 
